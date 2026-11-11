@@ -1,7 +1,12 @@
 {
-  "name": "@gkd-kit/subscription-template",
+  "name": "gkd-subscription",
   "version": "0.0.0",
+  "description": "My personal GKD subscription rules",
   "type": "module",
+  "packageManager": "pnpm@11.20.0",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "postinstall": "simple-git-hooks",
     "format": "prettier --cache --write --ignore-unknown .",
