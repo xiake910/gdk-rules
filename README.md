@@ -5,7 +5,7 @@
 - 订阅名：**GDK规则**
 - 订阅 ID：`2026111101`
 - 作者：`xiake910`
-- 仓库：<https://github.com/xiake910/gdk->
+- 仓库：<https://github.com/xiake910/gdk-rules>
 - 当前版本：**v7**
 - 规模：**1056 个 App / 3508 个规则组 / 5432 条规则 / 11 个分类 / 3 个全局规则组**
 - 来源与授权详见 [SOURCES.md](SOURCES.md)
@@ -13,9 +13,9 @@
 ## 订阅地址（GKD 里粘贴一个）
 
 - 国内镜像（推荐）：
-  `https://fastly.jsdelivr.net/gh/xiake910/gdk-@main/dist/gkd.json5`
+  `https://fastly.jsdelivr.net/gh/xiake910/gdk-rules@main/dist/gkd.json5`
 - 直连：
-  `https://raw.githubusercontent.com/xiake910/gdk-/main/dist/gkd.json5`
+  `https://raw.githubusercontent.com/xiake910/gdk-rules/main/dist/gkd.json5`
 
 ## 规则来源（详见 SOURCES.md）
 
