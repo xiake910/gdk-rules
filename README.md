@@ -2,42 +2,39 @@
 
 基于 [gkd-kit/subscription-template](https://github.com/gkd-kit/subscription-template) 搭建的个人 GKD 规则订阅。
 
-- 订阅 ID：`2026111101`（随机大数字，避免和别人的订阅冲突）
+- 订阅 ID：`2026111101`
 - 作者：`xiake910`
 - 仓库：`https://github.com/xiake910/gdk-`
-- 构建产物：`dist/gkd.json5`（GKD 里添加这个文件的地址即可）
+- 当前版本：**v5**
+- 规则规模：**1003 个 App / 2510 个规则组 / 3962 条规则 / 11 个分类 / 3 个全局规则组**
 
-## 订阅地址（GKD 里粘贴这两个之一）
+## 订阅地址（GKD 里粘贴一个即可）
 
 - 直连：
   `https://raw.githubusercontent.com/xiake910/gdk-/main/dist/gkd.json5`
-- 国内镜像（推荐）：
+- 国内镜像（推荐，raw 不通时用它）：
   `https://fastly.jsdelivr.net/gh/xiake910/gdk-@main/dist/gkd.json5`
 
-## 当前规则
+## 规则来源与授权 ⚠️
 
-| App | 规则组 | 默认 | 说明 |
-|---|---|---|---|
-| 红果免费短剧 `com.phoenix.read` | 开屏广告 | 开 | 启动 8 秒内点「跳过」，最多一次 |
-| 红果免费短剧 | 更新提示 | 开 | 点「以后再说 / 暂不更新 / 稍后再说」 |
-| 红果免费短剧 | 权限提示-通知权限 | 开 | 弹「开启通知」时点「取消 / 暂不开启」 |
-| 红果免费短剧 | 功能类-[上滑]继续看短剧 | **关** | 刷到「上滑继续观看短剧」自动上滑 |
-| 哔哩哔哩 `tv.danmaku.bili` | 开屏广告 | 开 | 启动 8 秒内点「跳过」 |
-| 哔哩哔哩 | 更新提示 | 开 | 点「以后再说 / 暂不更新」 |
-
-> 红果的「功能类」组默认关闭，需要时在 GKD → 订阅 → 本订阅里单独打开。
-> B站只写了最不容易误触的两组，其他广告位要按真机快照加。
+- `src/apps/` 下绝大部分规则来自第三方订阅 **id667 的 GKD 订阅**（v631，镜像 `https://gkd667.vv.ax/gkd.json5`，
+  上游仓库 [Lin-arm/GKD_subscription](https://github.com/Lin-arm/GKD_subscription)），是原样导入的。
+- 那个订阅**没有声明开源许可证**，作者保留权利；这里仅作**个人自用/备份**，不是原创，请勿当作自有规则再分发或商用。
+  如果上游作者提出异议，请删除本仓库对应规则。
+- 上游 `author` 字段写着「源即将停用，建议更换」，所以这里等于做了一份离线快照；**以后上游更新不会自动同步**，
+  需要重新导入（见下面「重新导入上游规则」）。
+- 本项目自己写的规则（红果、B站的开屏/更新/通知权限等）保留了不同名的组；与上游同名的组以**上游版本**为准。
 
 ## 目录结构
 
 ```
 src/
   subscription.ts   订阅详情（id / 名称 / 作者 / 链接）
-  globalGroups.ts   全局规则组（对所有 App 生效，默认留空）
-  categories.ts     规则分类（按名字前缀捕获规则组）
-  apps/             各 App 的规则，一个 App 一个文件
+  apps/             规则（大部分为自动生成，来自 id667 订阅；少量为本项目手写）
+  categories.ts     规则分类（本项目 4 个 + 上游 7 个）
+  globalGroups.ts   全局规则组（3 个，来自上游）
 scripts/            构建/校验脚本
-dist/               构建产物（gkd.json5、版本文件、CHANGELOG、README）
+dist/               构建产物（gkd.json5 ≈ 1.38MB、版本文件、CHANGELOG、README）
 .github/workflows/  GitHub Actions（构建发布、提交检查）
 ```
 
@@ -47,58 +44,33 @@ dist/               构建产物（gkd.json5、版本文件、CHANGELOG、README
 
 ```bash
 pnpm install
-pnpm run build     # 类型检查 + 生成 dist/
+pnpm run build     # tsc 类型检查 + 选择器/正则校验 + 生成 dist/
 ```
 
-国内网络装依赖慢时：
-
-```bash
-pnpm install --registry=https://registry.npmmirror.com
-```
+国内装依赖慢时：`pnpm install --registry=https://registry.npmmirror.com`
 
 构建会做这些事：
-- `tsc --noEmit` 类型检查
-- 用 Node 22+ 的 WasmGc 校验选择器里的 Java/Kotlin 正则是否合法
-- 把 `src/` 合并成 `dist/gkd.json5`，版本号自动 +1，更新 `CHANGELOG.md`
+- `tsc --noEmit` 类型检查（现在有 1000+ 文件，会慢一些）
+- 用 Node 22+ 的 WasmGc 校验选择器里的 Java/Kotlin 正则
+- 合并 `src/` → `dist/gkd.json5`，版本号自动 +1，更新 `CHANGELOG.md`
 
-## 改了规则之后怎么发布
+## 重新导入上游规则（上游更新后）
 
-1. 改 `src/` 下对应文件
-2. 本地 `pnpm run build`，把 `src/` 和 `dist/` 的改动提交到 GitHub
-3. 也可以在仓库 **Actions → build_release → Run workflow** 让 GitHub 自动构建并提交
-   （需要先在 Settings → Actions → General → Workflow permissions 选 **Read and write permissions**）
-4. GKD 会自动检查更新：`checkUpdateUrl` 是相对路径 `./gkd.version.json5`，跟着订阅地址走
+1. 下载最新 `gkd.json5`（例如 `https://gkd667.vv.ax/gkd.json5`）
+2. 用 `scripts/gen-merge.ts`（需要时可重新生成该脚本）重新生成 `src/apps/`、`src/categories.ts`、`src/globalGroups.ts`
+3. `pnpm run build`
+4. 提交 `src/` 和 `dist/`
 
-## 加自己的规则
+## 改规则/加规则
 
-在 `src/apps/` 下新建 `<包名>.ts`，例如 `com.tencent.mm.ts`：
-
-```ts
-import { defineGkdApp } from '@gkd-kit/define';
-
-export default defineGkdApp({
-  id: 'com.tencent.mm',   // 包名
-  name: '微信',            // 没装这个 App 时显示的名字
-  groups: [
-    {
-      key: 1,             // 组内唯一，客户端靠它记住启用/禁用状态，定了就别改
-      name: '开屏广告',     // 以分类名前缀开头，才会被 categories 捕获
-      desc: '自动点跳过',
-      fastQuery: true,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [{ matches: '[text*="跳过"]', action: 'clickCenter' }],
-    },
-  ],
-});
-```
-
-常用字段看 [gkd.li/api](https://gkd.li/api)，选择器语法看 [gkd.li/guide/selector](https://gkd.li/guide/selector)。
-调试规则最省事的办法：GKD 里开「快照/审查工具」抓界面节点，再用选择器试。
+- 想改某条：直接编辑 `src/apps/<包名>.ts`（自动生成的文件顶部有注释，改完记得下次重新导入会被覆盖）
+- 想加自己的：新建 `src/apps/<包名>.ts`，用 `defineGkdApp` 写
+- 常用字段看 [gkd.li/api](https://gkd.li/api)，选择器语法看 [gkd.li/guide/selector](https://gkd.li/guide/selector)
+- 调试：GKD 里用「快照/审查工具」抓界面节点
 
 ## 注意
 
-- `src/subscription.ts` 里的 `id` **必须全局唯一**，换订阅时不要照抄别人的
-- `key` 一旦发布就不要改，否则用户的启用状态会错乱
-- 规则写错最多是点不到，但**全局规则**建议谨慎（默认留空就是这个原因）
-- 本项目只写规则，不包含 GKD App 本体：App 在 [gkd-kit/gkd](https://github.com/gkd-kit/gkd) 下载
+- `src/subscription.ts` 的 `id` 必须全局唯一（当前 `2026111101`），不要和别人的订阅撞车
+- `key` 一旦发布就不要改，否则 GKD 里的启用状态会错乱
+- 订阅变大后 GKD 加载/匹配会稍慢（1.38MB，和上游一样），属正常
+- 本项目只含规则，不含 GKD App 本体：[gkd-kit/gkd](https://github.com/gkd-kit/gkd)
