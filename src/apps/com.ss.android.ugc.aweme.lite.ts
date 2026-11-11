@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -54,7 +54,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/0e381602-a24a-45fa-839d-e20999ad30f9"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 8,
@@ -69,7 +69,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13650523"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 9,
@@ -146,7 +146,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 12,
@@ -160,7 +160,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/25208769"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 13,
@@ -213,7 +213,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/b7f062ff-1bff-4990-bb67-72bd0818e5d8"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 15,
@@ -250,7 +250,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/c1314e68-d89a-42e3-af74-c50303f5546a"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 16,
@@ -408,7 +408,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/13684791"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3002,

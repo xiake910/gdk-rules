@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -200,7 +200,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/24715184"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 4,
@@ -255,7 +255,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/21175698"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 6,
@@ -327,7 +327,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/23763930"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 20,
@@ -398,7 +398,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/23619869"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 22,
@@ -437,7 +437,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/21139028"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 23,
@@ -595,7 +595,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3002,
@@ -606,10 +606,10 @@ export default defineGkdApp({
       "activityIds": "com.tencent.qqlive.redpacket.rain.OpenRedPacketActivity",
       "rules": "@ImageView[clickable=true] < ViewGroup[childCount=5] < [id=\"android:id/content\"]",
       "snapshotUrls": "https://i.gkd.li/import/13842643",
-      "enable": false
+      "enable": true
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3003,
       "name": "全屏广告-请求通知权限弹窗",
       "resetMatch": "app",

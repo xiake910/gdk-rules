@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -18,7 +18,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/03f085e3-c1ca-4d0a-9b54-8dfadcbf2c8e"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 2,
@@ -54,7 +54,7 @@ export default defineGkdApp({
       "name": "全屏广告-跳过安全使用协议",
       "key": 3000,
       "desc": "自动点击略过并关闭反恶意软件协议",
-      "enable": false,
+      "enable": true,
       "rules": [
         {
           "key": 1,

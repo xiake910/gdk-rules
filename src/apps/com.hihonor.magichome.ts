@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -11,7 +11,7 @@ export default defineGkdApp({
       "activityIds": ".business.MainActivity",
       "rules": "[vid=\"item_close_image\"]",
       "snapshotUrls": "https://i.gkd.li/i/12843930",
-      "enable": false
+      "enable": true
     },
     {
       "key": 11,
@@ -42,7 +42,7 @@ export default defineGkdApp({
     {
       "key": 3000,
       "name": "全屏广告-推荐服务声明",
-      "enable": false,
+      "enable": true,
       "desc": "推荐服务声明弹窗。默认点击【取消】按钮",
       "activityIds": "com.hihonor.magichome.business.MainActivity",
       "rules": "[text$=\"推荐服务声明\"] < LinearLayout < LinearLayout + LinearLayout > [id=\"com.hihonor.magichome:id/negative_btn\"]",
@@ -56,7 +56,7 @@ export default defineGkdApp({
       "fastQuery": true,
       "rules": "TextView[text=\"立即更新\"] -2 [id=\"com.hihonor.magichome:id/negative_btn\"][text=\"以后再说\"]",
       "snapshotUrls": "https://i.gkd.li/import/12916700",
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

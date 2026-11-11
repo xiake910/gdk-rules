@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -67,7 +67,7 @@ export default defineGkdApp({
       "activityIds": "com.kuangxiangciweimao.novel.activity.bookshelf.reader.ReaderActivity4",
       "rules": "ImageView[id=\"com.kuangxiangciweimao.novel:id/closeImg\"]",
       "snapshotUrls": "https://i.gkd.li/import/15397865",
-      "enable": false
+      "enable": true
     },
     {
       "key": 3000,
@@ -78,7 +78,7 @@ export default defineGkdApp({
       "fastQuery": true,
       "rules": "@[id=\"com.kuangxiangciweimao.novel:id/imgclose\"] - [vid=\"img_activity\"]",
       "snapshotUrls": "https://i.gkd.li/import/16347338",
-      "enable": false
+      "enable": true
     },
     {
       "key": 3,
@@ -115,7 +115,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/17789233"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 5,

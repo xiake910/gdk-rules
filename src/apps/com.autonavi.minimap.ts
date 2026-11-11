@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -83,7 +83,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/ca2dae5b-10d8-458e-9d83-fe04652ff074"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 11,
@@ -99,7 +99,7 @@ export default defineGkdApp({
         "https://i.gkd.li/i/12818770",
         "https://i.gkd.li/i/13764540"
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 13,
@@ -143,7 +143,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/18627401"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 14,
@@ -180,7 +180,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/22287641"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 15,
@@ -221,7 +221,7 @@ export default defineGkdApp({
       "activityIds": "com.autonavi.map.activity.NewMapActivity",
       "rules": "RelativeLayout[desc=\"弹窗\"] > [id=\"com.autonavi.minimap:id/msgbox_popup_clear\"]",
       "snapshotUrls": "https://i.gkd.li/import/12642830",
-      "enable": false
+      "enable": true
     },
     {
       "enable": false,
@@ -240,7 +240,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 12,
       "name": "全屏广告-加油页面-优惠券弹窗",
       "activityIds": "com.autonavi.map.activity.NewMapActivity",

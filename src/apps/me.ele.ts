@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -82,7 +82,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 4,
@@ -131,7 +131,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/15443153"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 5,
@@ -144,7 +144,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13205301"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 6,
@@ -157,7 +157,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13295007"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 7,
@@ -180,7 +180,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/17321305"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 8,
@@ -249,7 +249,7 @@ export default defineGkdApp({
       "activityIds": "me.ele.component.pops2.TransparentAppWebActivity",
       "rules": "bb Button[text=\"关闭\"]",
       "snapshotUrls": "https://i.gkd.li/import/13205301",
-      "enable": false
+      "enable": true
     },
     {
       "key": 3001,
@@ -257,13 +257,13 @@ export default defineGkdApp({
       "activityIds": "me.ele.application.ui.Launcher.LauncherActivity",
       "rules": "LinearLayout >n FrameLayout >n ViewGroup[childCount=3] + ViewGroup[clickable=true]",
       "snapshotUrls": "https://i.gkd.li/import/13710588",
-      "enable": false
+      "enable": true
     },
     {
       "key": 3002,
       "name": "全屏广告-开启定位提醒",
       "desc": "自动点击X",
-      "enable": false,
+      "enable": true,
       "fastQuery": true,
       "rules": [
         {
@@ -292,7 +292,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/13931205"
         }
       ],
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

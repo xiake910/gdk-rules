@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -35,7 +35,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/28141509"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 9,
@@ -51,7 +51,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 10,
@@ -123,7 +123,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13624971"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 13,
@@ -218,7 +218,7 @@ export default defineGkdApp({
         ]
       },
       "snapshotUrls": "https://i.gkd.li/import/13248808",
-      "enable": false
+      "enable": true
     },
     {
       "key": 3001,
@@ -227,10 +227,10 @@ export default defineGkdApp({
       "activityIds": "com.xiaomi.market.ui.UpdateListActivity",
       "rules": "[id=\"com.xiaomi.market:id/iv_close_tip\"]",
       "snapshotUrls": "https://i.gkd.li/import/13197334",
-      "enable": false
+      "enable": true
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3002,
       "name": "全屏广告-忽略升级",
       "fastQuery": true,
@@ -284,7 +284,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3004,
@@ -296,7 +296,7 @@ export default defineGkdApp({
       "activityIds": "com.xiaomi.market.business_ui.main.MarketTabActivity",
       "rules": "[id=\"com.xiaomi.market:id/close_float_recommend\"]",
       "snapshotUrls": "https://i.gkd.li/import/13624971",
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

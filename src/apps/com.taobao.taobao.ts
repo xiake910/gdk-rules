@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -108,7 +108,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/30710740"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 2,
@@ -154,7 +154,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/97345886-418c-4a43-a5e2-014ee822b6a2"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3,
@@ -181,7 +181,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/23289445"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 8,
@@ -346,7 +346,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 19,
@@ -362,7 +362,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/15124094"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 20,
@@ -411,7 +411,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/23923991"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 22,
@@ -478,7 +478,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3001,
@@ -508,10 +508,10 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3002,
       "name": "全屏广告-限时福利弹窗",
       "rules": [
@@ -557,10 +557,10 @@ export default defineGkdApp({
         "https://i.gkd.li/import/12642795",
         "https://i.gkd.li/import/13197877"
       ],
-      "enable": false
+      "enable": true
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3004,
       "name": "全屏广告-开启系统通知提示",
       "desc": "自动点击关闭",
@@ -581,7 +581,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3005,
       "name": "全屏广告-各级页面-添加到首页弹窗",
       "desc": "自动点击退出",
@@ -602,7 +602,7 @@ export default defineGkdApp({
       "activityIds": "com.taobao.tao.welcome.Welcome",
       "rules": "View[id=null] > [text=\"立即参加\"] + TextView[id=null][clickable=true]",
       "snapshotUrls": "https://i.gkd.li/import/12642813",
-      "enable": false
+      "enable": true
     },
     {
       "enable": false,
@@ -613,7 +613,7 @@ export default defineGkdApp({
       "snapshotUrls": "https://i.gkd.li/import/12642798"
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3006,
       "name": "全屏广告-小额免密支付弹窗",
       "desc": "点击关闭",
@@ -623,7 +623,7 @@ export default defineGkdApp({
       "snapshotUrls": "https://i.gkd.li/import/13438414"
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3007,
       "name": "全屏广告-将小组件添加到手机桌面",
       "desc": "点击取消",
@@ -637,7 +637,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3008,
       "name": "全屏广告-开启悬浮窗权限",
       "desc": "点击“否”",
@@ -681,7 +681,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/13898735"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3010,
@@ -696,7 +696,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/15212029"
         }
       ],
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

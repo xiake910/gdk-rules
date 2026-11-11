@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -97,7 +97,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 5,
@@ -122,7 +122,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/20403710"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 8,
@@ -158,7 +158,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/12620588"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 9,
@@ -191,7 +191,7 @@ export default defineGkdApp({
       "enable": false
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3000,
       "name": "局部广告-首页信息流广告",
       "desc": "点击广告卡片x关闭按钮-关闭反馈理由弹窗",
@@ -227,7 +227,7 @@ export default defineGkdApp({
       "fastQuery": true,
       "rules": "[id=\"com.dongqiudi.news:id/iv_close\"]",
       "snapshotUrls": "https://i.gkd.li/import/13260467",
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

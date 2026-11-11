@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -19,7 +19,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/12695751"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 2,
@@ -92,7 +92,7 @@ export default defineGkdApp({
       "activityIds": "com.smzdm.client.android.app.HomeActivity",
       "rules": "[id=\"com.smzdm.client.android:id/dialog_home_close\"]",
       "snapshotUrls": "https://i.gkd.li/import/12695751",
-      "enable": false
+      "enable": true
     },
     {
       "key": 3001,
@@ -101,7 +101,7 @@ export default defineGkdApp({
       "activityIds": "com.smzdm.client.android.app.HomeActivity",
       "rules": "@[text=\"暂不允许\"] + [text=\"允许\"]",
       "snapshotUrls": "https://i.gkd.li/import/13198020",
-      "enable": false
+      "enable": true
     },
     {
       "key": 3002,
@@ -117,7 +117,7 @@ export default defineGkdApp({
         "https://i.gkd.li/import/13438810",
         "https://i.gkd.li/import/13626746"
       ],
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

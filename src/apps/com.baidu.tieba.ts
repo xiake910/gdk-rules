@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -275,7 +275,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/26934788"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3,
@@ -293,7 +293,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13060892"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 4,
@@ -321,7 +321,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/602291ca-dd06-4116-8252-65fe8d4e610d"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 7,
@@ -384,7 +384,7 @@ export default defineGkdApp({
           "excludeSnapshotUrls": "https://i.gkd.li/i/29640529"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 10,
@@ -430,7 +430,7 @@ export default defineGkdApp({
           "excludeSnapshotUrls": "https://i.gkd.li/i/20361318"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 11,
@@ -457,7 +457,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/17992981"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 12,
@@ -505,7 +505,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14586847"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 14,
@@ -528,7 +528,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 16,
@@ -551,7 +551,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 15,
@@ -596,7 +596,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3000,
@@ -623,7 +623,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/13804455"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3001,
@@ -641,10 +641,10 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/13060892"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 8,
       "name": "局部广告-帖子底部内容推荐卡片",
       "desc": "关闭时弹窗选原因",
@@ -696,10 +696,10 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3003,
       "name": "局部广告-吧内-悬浮卡通-进吧逛逛",
       "actionMaximum": 1,

@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -25,7 +25,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13070974"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 9,
@@ -42,7 +42,7 @@ export default defineGkdApp({
           "exampleUrls": "https://m.gkd.li/57941037/0f4f6a7f-55ce-4f87-a4cb-97e9c7107359"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 10,
@@ -109,7 +109,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13440341"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 15,
@@ -123,7 +123,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13848688"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 1,
@@ -161,7 +161,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/13070974"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3001,
@@ -173,10 +173,10 @@ export default defineGkdApp({
       "activityIds": "com.unionpay.activity.UPActivityMain",
       "rules": "[id=\"com.unionpay:id/view_locate_close\"]",
       "snapshotUrls": "https://i.gkd.li/import/13634882",
-      "enable": false
+      "enable": true
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 11,
       "name": "全屏广告-访问位置请求弹窗",
       "desc": "自动点击【不允许】。默认关闭，请手动开启",
@@ -192,7 +192,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3002,
       "name": "全屏广告-开启消息通知弹窗",
       "desc": "默认关闭，请手动开启",
@@ -215,7 +215,7 @@ export default defineGkdApp({
       "activityIds": "com.unionpay.activity.UPActivityMain",
       "rules": "[id=\"com.unionpay:id/container\"] + [id=\"com.unionpay:id/image\"][clickable=true]",
       "snapshotUrls": "https://i.gkd.li/import/13440341",
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

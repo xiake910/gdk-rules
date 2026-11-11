@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -104,7 +104,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/79947364-3b02-4113-a7de-2c26cca14286"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 4,
@@ -147,7 +147,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 6,
@@ -251,7 +251,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/84123bd4-a6d5-4186-88fe-e35320a241cb"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 12,
@@ -292,7 +292,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/a11d58b2-70fd-420c-86f1-7a11a8603ee7"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 14,
@@ -451,7 +451,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/f969ad39-da92-458f-95f6-e2939857c808"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3000,
@@ -476,7 +476,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3001,
@@ -507,7 +507,7 @@ export default defineGkdApp({
         "https://i.gkd.li/import/12818198",
         "https://i.gkd.li/import/13469004"
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3003,
@@ -517,7 +517,7 @@ export default defineGkdApp({
       "activityIds": "com.afollestad.materialdialogs.MaterialDialog",
       "rules": "@[id=\"com.qidian.QDReader:id/ivClose\"] + [text^=\"开启推送\"]",
       "snapshotUrls": "https://i.gkd.li/import/12640242",
-      "enable": false
+      "enable": true
     },
     {
       "key": 3004,
@@ -529,7 +529,7 @@ export default defineGkdApp({
       "matchTime": 10000,
       "rules": "View[desc=\"我知道了\"]",
       "snapshotUrls": "https://i.gkd.li/import/13606901",
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

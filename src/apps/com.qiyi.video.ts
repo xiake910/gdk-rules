@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -52,7 +52,7 @@ export default defineGkdApp({
           "excludeSnapshotUrls": "https://i.gkd.li/i/24324750"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3,
@@ -116,7 +116,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/18135562"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 1,
@@ -141,7 +141,7 @@ export default defineGkdApp({
       "rules": [
         "@[id=\"com.qiyi.video:id/unused_res_a\"][clickable=true] > [id=\"com.qiyi.video:id/close\"]"
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3001,
@@ -174,7 +174,7 @@ export default defineGkdApp({
     },
     {
       "key": 3003,
-      "enable": false,
+      "enable": true,
       "name": "局部广告-播放页-插入广告",
       "desc": "视频播放前或播放中途插入的广告。默认关闭。",
       "activityIds": "org.iqiyi.video.activity.PlayerActivity",

@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -45,7 +45,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14731003"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 2,
@@ -78,7 +78,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 4,
@@ -175,7 +175,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/17974166"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 6,
@@ -209,7 +209,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/15229577"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 10,
@@ -227,7 +227,7 @@ export default defineGkdApp({
       "activityIds": "com.jd.lib.settlement.fillorder.activity.NewFillOrderActivity",
       "rules": "ImageView[clickable=true && desc=\"关闭\"]",
       "snapshotUrls": "https://i.gkd.li/i/13191146",
-      "enable": false
+      "enable": true
     },
     {
       "key": 12,
@@ -241,7 +241,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13446362"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 13,
@@ -255,7 +255,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/15047243"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 14,
@@ -349,7 +349,7 @@ export default defineGkdApp({
       "enable": false
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3001,
       "name": "全屏广告-购物车界面-砸金蛋",
       "activityIds": "com.jingdong.app.mall.MainFrameActivity",
@@ -357,7 +357,7 @@ export default defineGkdApp({
       "snapshotUrls": "https://i.gkd.li/import/12642266"
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3002,
       "name": "局部广告-我的界面-悬浮广告",
       "activityIds": "com.jingdong.app.mall.MainFrameActivity",
@@ -380,7 +380,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3,
       "name": "局部广告-首页-右侧浮层广告",
       "activityIds": "com.jingdong.app.mall.MainFrameActivity",
@@ -393,7 +393,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3003,
       "name": "全屏广告-通知提示-请求打开通知",
       "activityIds": [
@@ -453,10 +453,10 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3005,
       "name": "局部广告-首页-底部横幅广告",
       "activityIds": "com.jingdong.app.mall.MainFrameActivity",
@@ -468,7 +468,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 7,
       "name": "全屏广告-首页弹窗-打开通知",
       "desc": "自动点击正下方的【x】",
@@ -482,7 +482,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3006,
       "name": "全屏广告-支付界面-产品推荐",
       "desc": "自动点击右上角【x】",
@@ -491,7 +491,7 @@ export default defineGkdApp({
       "snapshotUrls": "https://i.gkd.li/import/13191146"
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3007,
       "name": "全屏广告-购物车界面-支付成功广告弹窗",
       "desc": "自动点击正下方的【x】",

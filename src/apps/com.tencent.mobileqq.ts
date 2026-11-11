@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -100,7 +100,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/33948809"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 2,
@@ -187,7 +187,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 7,
@@ -399,7 +399,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 27,
@@ -667,7 +667,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/32656070"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 39,
@@ -680,7 +680,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/30869035"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 40,
@@ -791,7 +791,7 @@ export default defineGkdApp({
       "enable": false
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3002,
       "name": "局部广告-消息页面-顶部广告",
       "desc": "规则误触,待修复,需要快照准确定位",
@@ -821,7 +821,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3003,
       "name": "分段广告-好友动态-广告卡片",
       "rules": [
@@ -903,10 +903,10 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/12708844"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 4,
       "name": "局部广告-顶部SVIP广告",
       "desc": "消息界面-搜索框和消息记录之间的广告卡片,点击关闭右侧x",
@@ -921,7 +921,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 5,
       "name": "局部广告-好友热播",
       "desc": "好友动态中的好友热播，自动选择“减少好友热播” - 默认关闭",
@@ -983,7 +983,7 @@ export default defineGkdApp({
       "enable": false
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3005,
       "name": "局部广告-消息页面顶部-无法接收新消息通知",
       "desc": "消息界面-搜索框和消息记录之间的通知卡片,点击关闭右侧x",
@@ -997,7 +997,7 @@ export default defineGkdApp({
       "activityIds": "com.tencent.mobileqq.activity.QQBrowserActivity",
       "rules": "TextView[text=\"QQ等级规则\"] + View > TextView[id=null&&text.length=0]",
       "snapshotUrls": "https://i.gkd.li/import/12914734",
-      "enable": false
+      "enable": true
     },
     {
       "enable": false,
@@ -1012,7 +1012,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 12,
       "name": "局部广告-QQ小世界评论区广告",
       "desc": "点击广告-弹出原因框-关闭此条广告",
@@ -1050,7 +1050,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 14,
@@ -1061,10 +1061,10 @@ export default defineGkdApp({
         "https://i.gkd.li/import/12914978",
         "https://i.gkd.li/import/12914886"
       ],
-      "enable": false
+      "enable": true
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 15,
       "name": "局部广告-好友动态-为你推荐",
       "fastQuery": true,
@@ -1093,7 +1093,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 19,
       "name": "全屏广告-内测邀请弹窗",
       "fastQuery": true,
@@ -1107,7 +1107,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 20,
       "name": "全屏广告-钱包-卡片广告",
       "fastQuery": true,
@@ -1142,7 +1142,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/13797876"
         }
       ],
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

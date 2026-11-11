@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -20,7 +20,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13466647"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 2,
@@ -67,7 +67,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 4,
@@ -122,7 +122,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/24605359"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 6,
@@ -140,7 +140,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/18587501"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 7,
@@ -162,7 +162,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/18587745"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 8,
@@ -185,10 +185,10 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3000,
       "name": "全屏广告-更新与已安装界面-查看更多",
       "desc": "在更新界面自动点击查看更多按钮，展开所有应用",
@@ -206,7 +206,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3001,
       "name": "全屏广告-更新界面-软件推荐",
       "activityIds": [
@@ -242,7 +242,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/13416401"
         }
       ],
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

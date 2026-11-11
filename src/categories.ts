@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（分类默认值：只有「开屏广告」默认启用）
+// 自动生成, 请勿手改（分类默认值：广告类启用）
 import { defineGkdCategories } from '@gkd-kit/define';
 
 export default defineGkdCategories([
@@ -40,17 +40,17 @@ export default defineGkdCategories([
   {
     "key": 107,
     "name": "局部广告",
-    "enable": false
+    "enable": true
   },
   {
     "key": 108,
     "name": "全屏广告",
-    "enable": false
+    "enable": true
   },
   {
     "key": 109,
     "name": "分段广告",
-    "enable": false
+    "enable": true
   },
   {
     "key": 110,

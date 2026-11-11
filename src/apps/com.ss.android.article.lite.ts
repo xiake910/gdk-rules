@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -42,7 +42,7 @@ export default defineGkdApp({
       "enable": false
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 10,
       "name": "全屏广告-首页-红包弹窗",
       "activityIds": "com.ss.android.article.lite.activity.SplashActivity",
@@ -55,10 +55,10 @@ export default defineGkdApp({
       "activityIds": "com.ss.android.article.lite.activity.SplashActivity",
       "rules": "FrameLayout[id!=null] > @ImageView[id!=null][clickable=true] + ImageView[id!=null]",
       "snapshotUrls": "https://i.gkd.li/import/12705452",
-      "enable": false
+      "enable": true
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 12,
       "name": "全屏广告-首页-你可能感兴趣的人",
       "activityIds": "com.ss.android.article.lite.activity.SplashActivity",
@@ -79,7 +79,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 21,
       "name": "局部广告-任务页面-右侧悬浮红包",
       "activityIds": "com.ss.android.article.lite.activity.SplashActivity",
@@ -87,7 +87,7 @@ export default defineGkdApp({
       "snapshotUrls": "https://i.gkd.li/import/12705447"
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 22,
       "name": "全屏广告-任务页面-答题弹窗",
       "activityIds": "com.ss.android.article.lite.activity.SplashActivity",
@@ -100,7 +100,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 30,
       "name": "全屏广告-搜索页面-搜索得金币弹窗",
       "activityIds": "com.android.bytedance.search.SearchActivity",

@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -12,7 +12,7 @@ export default defineGkdApp({
       "rules": "[vid=\"card_ad_tag\"] + [vid=\"card_close\"]",
       "exampleUrls": "https://e.gkd.li/772a24be-ca12-459f-8abf-e9573cde3f56",
       "snapshotUrls": "https://i.gkd.li/i/12668813",
-      "enable": false
+      "enable": true
     },
     {
       "key": 2,
@@ -37,7 +37,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/17002087"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3,
@@ -58,7 +58,7 @@ export default defineGkdApp({
       "name": "全屏广告-开屏vip提示",
       "activityIds": "com.intsig.camscanner.guide.guidevideo.GuideVideoActivity",
       "rules": "[id=`com.intsig.camscanner:id/tv_drop_cnl_close_new`]",
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

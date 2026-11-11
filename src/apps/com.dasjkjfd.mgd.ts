@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -26,7 +26,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/e293b105-db09-4940-a4c2-7a3074ff67e0"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 2,
@@ -52,7 +52,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/cc89f931-daf3-41be-bae4-54e471c601ee"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3,
@@ -74,7 +74,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/67e9c8a2-f9ed-477b-ae46-39f493035a20"
         }
       ],
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

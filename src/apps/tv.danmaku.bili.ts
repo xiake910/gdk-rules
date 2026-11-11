@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -43,7 +43,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 2,
@@ -65,7 +65,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/12700243"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3,
@@ -178,7 +178,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/696de68a-489f-4d42-b652-afbdf7351145"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 8,
@@ -221,7 +221,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 9,
@@ -315,7 +315,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 11,
@@ -331,7 +331,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13448905"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 12,
@@ -380,7 +380,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/23385023"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 13,
@@ -398,7 +398,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/15858057"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 14,
@@ -432,7 +432,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 15,
@@ -509,7 +509,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 16,
@@ -843,7 +843,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/25357810"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 28,
@@ -880,7 +880,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/25563755"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 30,
@@ -917,7 +917,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/027bbea9-3479-4c8c-a0b2-88fee8f03a85"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 32,
@@ -937,7 +937,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/2fed6260-9cd4-4546-a8ea-de89fce88b5d"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 33,
@@ -989,7 +989,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/12700243"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3001,
@@ -1029,7 +1029,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 5,
@@ -1078,7 +1078,7 @@ export default defineGkdApp({
       "exampleUrls": [
         "https://github.com/gkd-kit/inspect/assets/38517192/110db806-3f8b-4cd2-a445-06c5f5eb21eb"
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3003,
@@ -1090,7 +1090,7 @@ export default defineGkdApp({
       "activityIds": "com.bilibili.bililive.room.ui.roomv3.LiveRoomActivityV3",
       "rules": "[id=\"tv.danmaku.bili:id/shopping_close\"]",
       "snapshotUrls": "https://i.gkd.li/import/13200549",
-      "enable": false
+      "enable": true
     },
     {
       "enable": false,
@@ -1111,7 +1111,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3005,
       "name": "局部广告-首页-推荐视频卡片广告",
       "fastQuery": true,

@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -68,7 +68,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/29085445"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 2,
@@ -141,7 +141,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3,
@@ -180,7 +180,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/12798810"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 4,
@@ -383,7 +383,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/6196a859-31ce-4d04-9f53-b9346bee25d6"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 15,
@@ -410,7 +410,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/5a072c9d-f214-49c0-9446-cc5b185c3664"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3000,
@@ -457,7 +457,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/12798810"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3002,
@@ -524,7 +524,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3003,
@@ -565,14 +565,14 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/12798810"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3004,
       "name": "全屏广告-评价弹窗",
       "fastQuery": true,
       "matchTime": 10000,
-      "enable": false,
+      "enable": true,
       "rules": [
         {
           "activityIds": "com.twitter.app.main.MainActivity",
@@ -593,7 +593,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/13930126"
         }
       ],
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

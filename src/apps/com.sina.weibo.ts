@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -27,7 +27,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14033735"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 9,
@@ -151,7 +151,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 18,
@@ -321,7 +321,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 27,
@@ -352,7 +352,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/21828292"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3,
@@ -362,7 +362,7 @@ export default defineGkdApp({
       "activityIds": "com.sina.weibo.account.interest.InterestActivity",
       "rules": "[id=\"com.sina.weibo:id/rl_account_title_bar\"] > [id=\"com.sina.weibo:id/tv_title_bar_skip\"][text=\"跳过\"]",
       "snapshotUrls": "https://i.gkd.li/import/12531405",
-      "enable": false
+      "enable": true
     },
     {
       "key": 4,
@@ -378,7 +378,7 @@ export default defineGkdApp({
         "https://i.gkd.li/import/12531433",
         "https://i.gkd.li/import/12531434"
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 5,
@@ -411,10 +411,10 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/13787207"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 6,
       "name": "局部广告-评论区博主内容推荐",
       "desc": "评论区同一博主其他博文推荐",
@@ -456,10 +456,10 @@ export default defineGkdApp({
       "snapshotUrls": [
         "https://i.gkd.li/import/12705972"
       ],
-      "enable": false
+      "enable": true
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3000,
       "name": "全屏广告-请求开启通知弹窗",
       "desc": "自动点击暂不开启",
@@ -473,7 +473,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 10,
       "name": "全屏广告-请求开启通知提示信息",
       "desc": "自动点击x按钮",
@@ -487,7 +487,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 11,
       "name": "局部广告-首页顶部签到卡片",
       "desc": "自动点击x按钮",
@@ -523,7 +523,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/13206841"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3001,
@@ -549,7 +549,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/13255595"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 15,
@@ -559,7 +559,7 @@ export default defineGkdApp({
       "activityIds": "com.sina.weibo.feed.DetailWeiboActivity",
       "rules": "@[id=\"com.sina.weibo:id/close_layout\"] - LinearLayout [id=\"com.sina.weibo:id/btnFollow\"]",
       "snapshotUrls": "https://i.gkd.li/import/13482954",
-      "enable": false
+      "enable": true
     },
     {
       "key": 16,
@@ -569,7 +569,7 @@ export default defineGkdApp({
       "activityIds": "com.sina.weibo.feed.DetailWeiboActivity",
       "rules": "[text*=\"一键转发\"] < LinearLayout +2 [id=\"com.sina.weibo:id/tv_close\"]",
       "snapshotUrls": "https://i.gkd.li/import/13482960",
-      "enable": false
+      "enable": true
     },
     {
       "key": 3002,
@@ -591,7 +591,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/13852322"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3003,
@@ -603,7 +603,7 @@ export default defineGkdApp({
       "activityIds": "com.sina.weibo.MainTabActivity",
       "rules": "@[text=\"不了，谢谢\"] +4 [text=\"喜欢，给好评\"]",
       "snapshotUrls": "https://i.gkd.li/import/13620220",
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -243,7 +243,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 5,
@@ -320,7 +320,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/18717693"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 10,
@@ -370,7 +370,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/18717771"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 11,
@@ -495,7 +495,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 1,
@@ -540,10 +540,10 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/12509476"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3001,
       "name": "局部广告-信息流广告",
       "desc": "首页动态/推荐,小组讨论列表,帖子底部,点击广告关闭后出现关闭原因底部菜单-点击不感兴趣",
@@ -631,7 +631,7 @@ export default defineGkdApp({
         "matches": "[text=\"下次再说\"][id=\"com.douban.frodo:id/neutral\"]",
         "snapshotUrls": "https://i.gkd.li/import/12548314"
       },
-      "enable": false
+      "enable": true
     },
     {
       "key": 3003,
@@ -685,7 +685,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 9,
@@ -698,7 +698,7 @@ export default defineGkdApp({
         "matches": "[id=\"com.douban.frodo:id/info\"][text^=\"开启个性化推荐\"] - [id=\"com.douban.frodo:id/close\"]",
         "snapshotUrls": "https://i.gkd.li/import/12836798"
       },
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

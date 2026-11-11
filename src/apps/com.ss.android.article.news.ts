@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -55,7 +55,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13761236"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 10,
@@ -110,7 +110,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/12679277"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 12,
@@ -148,7 +148,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 13,
@@ -161,7 +161,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/12706699"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 14,
@@ -200,7 +200,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13828331"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 16,
@@ -266,7 +266,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/17681713"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3000,
@@ -286,7 +286,7 @@ export default defineGkdApp({
       "enable": false
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3001,
       "name": "全屏广告-请求通知权限弹窗",
       "activityIds": [
@@ -308,7 +308,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3002,
       "name": "局部广告-信息流广告",
       "desc": "点击右上角x按钮,点击不感兴趣",
@@ -352,7 +352,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3003,
       "name": "全屏广告-自动观看广告视频",
       "desc": "自动观看广告并等待30s后关闭",
@@ -386,7 +386,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/13828331"
         }
       ],
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

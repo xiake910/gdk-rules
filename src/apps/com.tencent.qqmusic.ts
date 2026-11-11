@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -112,7 +112,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/15756931"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 2,
@@ -203,7 +203,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/18428240"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3,
@@ -258,7 +258,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/15010226"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 11,
@@ -297,7 +297,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3001,
@@ -306,7 +306,7 @@ export default defineGkdApp({
       "activityIds": "com.tencent.qqmusic.activity.TranslucentWebViewActivity",
       "rules": "View[id=\"js_close_btn\"][desc=\"关闭\"]",
       "snapshotUrls": "https://i.gkd.li/import/13115121",
-      "enable": false
+      "enable": true
     },
     {
       "key": 3002,
@@ -316,7 +316,7 @@ export default defineGkdApp({
       "fastQuery": true,
       "rules": "[text=\"抢先体验\"] -2 [text=\"不再提醒\"]",
       "snapshotUrls": "https://i.gkd.li/import/13178485",
-      "enable": false
+      "enable": true
     },
     {
       "key": 4,
@@ -326,7 +326,7 @@ export default defineGkdApp({
       "fastQuery": true,
       "rules": "[text=\"流量够用\"]",
       "snapshotUrls": "https://i.gkd.li/import/13197868",
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

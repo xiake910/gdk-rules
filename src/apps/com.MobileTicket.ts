@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -38,7 +38,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/4e28cdee-3c01-4e1d-93c9-5d82e3f9a808"
         }
       ],
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

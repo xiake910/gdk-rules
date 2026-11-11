@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -119,7 +119,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/24842488"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3,
@@ -193,7 +193,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/23165473"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 7,
@@ -261,7 +261,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13800691"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 11,
@@ -284,7 +284,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14034073"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 12,
@@ -326,7 +326,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/17182888"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 14,
@@ -345,7 +345,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/9f1b0006-c4c2-4234-9cea-94ee97f48ae3"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3000,
@@ -387,7 +387,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/12739204"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3001,
@@ -411,7 +411,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/13682336"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3002,
@@ -425,10 +425,10 @@ export default defineGkdApp({
         "https://i.gkd.li/import/12639815",
         "https://i.gkd.li/import/12639734"
       ],
-      "enable": false
+      "enable": true
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3003,
       "name": "全屏广告-请求定位弹窗",
       "desc": "首页/外卖界面-【打开位置开关弹窗】-点击右侧x关闭",
@@ -447,7 +447,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3004,
       "name": "全屏广告-请求开启通知权限弹窗",
       "desc": "点击跳过",
@@ -476,7 +476,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/13695703"
         }
       ],
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

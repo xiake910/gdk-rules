@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -137,7 +137,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/23415363"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 11,
@@ -151,7 +151,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/84f6f033-7686-439a-b50e-87a2c8409ddf"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 12,
@@ -160,7 +160,7 @@ export default defineGkdApp({
       "activityIds": "com.hellobike.atlas.business.portal.PortalActivity",
       "rules": "@[vid=\"closeFloatArea\"] + [vid=\"floatADContainer\"]",
       "snapshotUrls": "https://i.gkd.li/i/12650071",
-      "enable": false
+      "enable": true
     },
     {
       "key": 15,
@@ -177,7 +177,7 @@ export default defineGkdApp({
       "enable": false
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3000,
       "name": "全屏广告-请求通知权限弹窗",
       "fastQuery": true,
@@ -192,7 +192,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3001,
       "name": "全屏广告-请求定位权限弹窗",
       "fastQuery": true,
@@ -213,7 +213,7 @@ export default defineGkdApp({
         "https://i.gkd.li/import/12650090",
         "https://i.gkd.li/import/13331231"
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3003,
@@ -226,7 +226,7 @@ export default defineGkdApp({
       "snapshotUrls": [
         "https://i.gkd.li/import/12650163"
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 13,
@@ -238,7 +238,7 @@ export default defineGkdApp({
       "snapshotUrls": [
         "https://i.gkd.li/import/12684673"
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 14,
@@ -250,7 +250,7 @@ export default defineGkdApp({
       "snapshotUrls": [
         "https://i.gkd.li/import/12739316"
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3004,

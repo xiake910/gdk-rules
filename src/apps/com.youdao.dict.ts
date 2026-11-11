@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -39,7 +39,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 2,
@@ -105,7 +105,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/18051512"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 4,
@@ -138,7 +138,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/16426631"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 5,
@@ -220,7 +220,7 @@ export default defineGkdApp({
           "excludeSnapshotUrls": "https://i.gkd.li/i/14468628"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 9,
@@ -270,7 +270,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14586448"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3000,
@@ -298,7 +298,7 @@ export default defineGkdApp({
           "excludeSnapshotUrls": "https://i.gkd.li/i/14468628"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3001,
@@ -325,7 +325,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3002,
@@ -365,7 +365,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/13931202"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3003,
@@ -374,7 +374,7 @@ export default defineGkdApp({
       "rules": "@ImageView[id=\"com.youdao.dict:id/iv_close\"]",
       "fastQuery": true,
       "snapshotUrls": "https://i.gkd.li/import/13263706",
-      "enable": false
+      "enable": true
     },
     {
       "key": 3004,
@@ -386,7 +386,7 @@ export default defineGkdApp({
       "matchDelay": 10000,
       "rules": "[id=\"com.youdao.dict:id/btn_never\"][text*=\"不再提醒\"]",
       "snapshotUrls": "https://i.gkd.li/import/13540941",
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

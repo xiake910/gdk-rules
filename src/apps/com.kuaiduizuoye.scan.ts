@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -36,7 +36,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/fc3499a7-a8a7-4b7d-9f47-71814bf7e811"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3000,
@@ -44,7 +44,7 @@ export default defineGkdApp({
       "activityIds": "com.hihonor.android.launcher.drawer.DrawerLauncher",
       "rules": "[id=\"com.kuaiduizuoye.scan:id/iv_advertisement_widget_close\"]",
       "snapshotUrls": "https://i.gkd.li/import/12716285",
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -127,7 +127,7 @@ export default defineGkdApp({
       "activityIds": "com.bilibili.video.story.StoryVideoActivity",
       "rules": "[text=\"对当前的评论区满意吗？\"] + [id=\"com.bilibili.app.in:id/close\"]",
       "snapshotUrls": "https://i.gkd.li/import/13115189",
-      "enable": false
+      "enable": true
     },
     {
       "key": 3001,
@@ -136,7 +136,7 @@ export default defineGkdApp({
       "activityIds": "tv.danmaku.bili.MainActivityV2",
       "rules": "[id=\"com.bilibili.app.in:id/cancel\"][text=\"下次再说\"]",
       "snapshotUrls": "https://i.gkd.li/import/13180746",
-      "enable": false
+      "enable": true
     },
     {
       "key": 3002,
@@ -145,7 +145,7 @@ export default defineGkdApp({
       "fastQuery": true,
       "rules": "[text=\"订阅感兴趣的通知\"] +2 LinearLayout [text=\"暂不开启\"]",
       "snapshotUrls": "https://i.gkd.li/import/13399195",
-      "enable": false
+      "enable": true
     },
     {
       "key": 3003,
@@ -156,7 +156,7 @@ export default defineGkdApp({
       "actionMaximum": 1,
       "rules": "[text=\"打开推送通知\"] +2 LinearLayout > [id=\"com.bilibili.app.in:id/close\"]",
       "snapshotUrls": "https://i.gkd.li/import/13600976",
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

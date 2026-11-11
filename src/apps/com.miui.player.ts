@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -42,7 +42,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13562649"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 2,
@@ -67,7 +67,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14711960"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3,
@@ -95,7 +95,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 5,
@@ -109,7 +109,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13623503"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 12,
@@ -147,7 +147,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/20420253"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 14,
@@ -173,7 +173,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/20420322"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 15,
@@ -188,7 +188,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/29175549"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3000,
@@ -198,7 +198,7 @@ export default defineGkdApp({
       "activityIds": "com.tencent.qqmusiclite.activity.player.MusicPlayerActivity",
       "rules": "[id=\"com.miui.player:id/free_mode_tips_layout\"] + [id=\"com.miui.player:id/iv_close\"]",
       "snapshotUrls": "https://i.gkd.li/import/13303283",
-      "enable": false
+      "enable": true
     },
     {
       "key": 3001,
@@ -208,7 +208,7 @@ export default defineGkdApp({
       "snapshotUrls": [
         "https://i.gkd.li/import/13304343"
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 4,
@@ -219,7 +219,7 @@ export default defineGkdApp({
       "snapshotUrls": [
         "https://i.gkd.li/import/13562649"
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3002,
@@ -230,10 +230,10 @@ export default defineGkdApp({
       "snapshotUrls": [
         "https://i.gkd.li/import/13623503"
       ],
-      "enable": false
+      "enable": true
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 10,
       "name": "全屏广告-会员过期续费弹窗",
       "activityIds": "com.tencent.qqmusiccommon.hybrid.HybridViewActivity",
@@ -241,7 +241,7 @@ export default defineGkdApp({
       "snapshotUrls": "https://i.gkd.li/import/12700955"
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 11,
       "name": "局部广告-我的页面-顶部 banner 广告",
       "activityIds": "com.tencent.qqmusiclite.activity.MainActivity",
@@ -249,7 +249,7 @@ export default defineGkdApp({
       "snapshotUrls": "https://i.gkd.li/import/12700984"
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3003,
       "name": "全屏广告-看广告视频领VIP",
       "desc": "等待15s自动点击【退出】",

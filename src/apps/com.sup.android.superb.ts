@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -48,7 +48,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13624220"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 7,
@@ -108,7 +108,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14151026"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 10,
@@ -123,7 +123,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14471869"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 11,
@@ -146,7 +146,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14886477"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3000,
@@ -156,7 +156,7 @@ export default defineGkdApp({
       "resetMatch": "app",
       "rules": "[text=\"开启推送通知\"] +2 * > [text=\"以后再说\"]",
       "snapshotUrls": "https://i.gkd.li/import/13691081",
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

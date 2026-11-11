@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -35,7 +35,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 2,
@@ -69,7 +69,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/23786698"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3,
@@ -134,7 +134,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13513914"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 6,
@@ -162,7 +162,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/a17eca15-c7bd-4ea6-ba84-0d3242641697"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 9,
@@ -255,7 +255,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/c033f70a-c2a9-43a5-83fd-519d7894d8c7"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3000,
@@ -287,7 +287,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3001,
@@ -302,7 +302,7 @@ export default defineGkdApp({
         "https://i.gkd.li/import/13259097",
         "https://i.gkd.li/import/12882712"
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3002,
@@ -327,7 +327,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/12882554"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3003,
@@ -349,7 +349,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/13513914"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3004,
@@ -358,7 +358,7 @@ export default defineGkdApp({
       "activityIds": "cn.wps.moffice.main.local.HomeRootActivity",
       "rules": "[id=\"cn.wps.moffice_eng:id/home_banner_ad_spread_close\"]",
       "snapshotUrls": "https://i.gkd.li/import/13804525",
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

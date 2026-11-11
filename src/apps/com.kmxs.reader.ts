@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -25,7 +25,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/17354753"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3,
@@ -42,7 +42,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 4,
@@ -52,7 +52,7 @@ export default defineGkdApp({
       "snapshotUrls": [
         "https://i.gkd.li/i/12640320"
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 99,
@@ -65,7 +65,7 @@ export default defineGkdApp({
       "snapshotUrls": [
         "https://i.gkd.li/i/12640287"
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 5,
@@ -105,7 +105,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13472955"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 8,
@@ -127,7 +127,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/17574170"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 9,
@@ -143,7 +143,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13941276"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 0,
@@ -168,7 +168,7 @@ export default defineGkdApp({
       "snapshotUrls": [
         "https://i.gkd.li/import/12640296"
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3001,
@@ -179,10 +179,10 @@ export default defineGkdApp({
       "snapshotUrls": [
         "https://i.gkd.li/import/13489942"
       ],
-      "enable": false
+      "enable": true
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3002,
       "name": "全屏广告-【字节】视频广告",
       "desc": "此规则有概率误触或失效，请谨慎选择开启。",
@@ -208,7 +208,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 6,
       "name": "全屏广告-【百度】全屏广告",
       "desc": "此规则有概率误触或失效，请谨慎选择开启。",
@@ -223,7 +223,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 7,
       "name": "全屏广告-【腾讯】全屏广告",
       "desc": "此规则有概率误触或失效，请谨慎选择开启。",

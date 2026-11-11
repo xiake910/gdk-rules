@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -17,7 +17,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13485051"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3000,
@@ -26,7 +26,7 @@ export default defineGkdApp({
       "activityIds": "com.doc360.client.activity.ReadRoomActivity",
       "rules": "@FrameLayout[desc^=\"dislike\"] <<n [id=\"com.doc360.client:id/fl_ad_container\"]",
       "snapshotUrls": "https://i.gkd.li/import/13485051",
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

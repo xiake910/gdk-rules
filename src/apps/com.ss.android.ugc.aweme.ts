@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -85,7 +85,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/689d03bf-5bb2-4b30-bef5-35bef5bed112"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3,
@@ -230,7 +230,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/c3980f6b-5459-45fe-b317-5bdc561319dc"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 15,
@@ -269,7 +269,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 18,
@@ -392,7 +392,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 23,
@@ -715,7 +715,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/1ee3aa97-345d-42a3-af64-262230b650be"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 33,
@@ -747,7 +747,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/f4c54b34-7d3c-499d-9ea0-f865f4cf9375"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 34,
@@ -796,7 +796,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/bd652ced-a3a8-4cbc-aae7-e309dcbfeb8e"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 37,
@@ -811,7 +811,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/7eff5d8e-60ca-4a49-838c-5d5fb1d0a54d"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 38,
@@ -924,7 +924,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3001,
@@ -960,7 +960,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/12675245"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 2,
@@ -974,7 +974,7 @@ export default defineGkdApp({
         "https://i.gkd.li/import/12525387",
         "https://i.gkd.li/import/12525389"
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3002,
@@ -996,7 +996,7 @@ export default defineGkdApp({
       "activityIds": "com.ss.android.ugc.aweme.main.MainActivity",
       "rules": "ViewGroup + FrameLayout[id=null] > FrameLayout[childCount=2][id!=null] > ImageView[desc=\"关闭\"][clickable=true][id!=null]",
       "snapshotUrls": "https://i.gkd.li/import/12749276",
-      "enable": false
+      "enable": true
     },
     {
       "key": 5,
@@ -1004,7 +1004,7 @@ export default defineGkdApp({
       "fastQuery": true,
       "rules": "[id=\"android:id/content\"] >2 RelativeLayout[childCount<=5] > @ImageView[clickable=true][id!=null] - TextView[text=\"广告\"][id!=null]",
       "snapshotUrls": "https://i.gkd.li/import/12769137",
-      "enable": false
+      "enable": true
     },
     {
       "key": 6,
@@ -1017,11 +1017,11 @@ export default defineGkdApp({
       "rules": "@[text=\"取消\"] +2 [text=\"五星好评\"]",
       "snapshotUrls": "https://i.gkd.li/import/13053628",
       "exampleUrls": "https://github.com/gkd-kit/inspect/assets/38517192/4554c785-39e0-4eac-9cfb-f1b1c2976008",
-      "enable": false
+      "enable": true
     },
     {
       "key": 7,
-      "enable": false,
+      "enable": true,
       "fastQuery": true,
       "name": "全屏广告-设置无声进入抖音",
       "desc": "点击[拒绝]",
@@ -1052,7 +1052,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3004,
       "name": "全屏广告-休息提醒",
       "fastQuery": true,
@@ -1098,7 +1098,7 @@ export default defineGkdApp({
       "activityIds": "com.ss.android.ugc.aweme.main.MainActivity",
       "rules": "FrameLayout > @[desc=\"关闭\"] + ViewGroup > [text$=\"打个招呼\"]",
       "snapshotUrls": "https://i.gkd.li/import/13379307",
-      "enable": false
+      "enable": true
     },
     {
       "key": 3006,
@@ -1106,7 +1106,7 @@ export default defineGkdApp({
       "desc": "点击【不感兴趣】",
       "rules": "@[text=\"不感兴趣\"][clickable=true] + [text=\"去商城搜索更多\"]",
       "snapshotUrls": "https://i.gkd.li/import/13800207",
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

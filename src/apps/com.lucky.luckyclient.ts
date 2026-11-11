@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -32,7 +32,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/12922834"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3,
@@ -46,13 +46,13 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13164114"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3000,
       "name": "全屏广告-超值换购",
       "desc": "关闭超值换购弹窗",
-      "enable": false,
+      "enable": true,
       "activityIds": "com.lucky.luckyclient.preview2.OrderPreviewActivity2",
       "fastQuery": true,
       "rules": "[id=\"com.lucky.luckyclient:id/close_iv\"][visibleToUser=true]",

@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -29,7 +29,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 4,
@@ -72,7 +72,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/30309831"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 7,
@@ -120,7 +120,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/4f9a66b8-3bf5-4a8e-8ca6-db35625df270"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 12,
@@ -159,7 +159,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/18326083"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 15,
@@ -173,7 +173,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/8b93b8fb-1d31-42d2-95a1-c76dc0186e96"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 10,
@@ -189,7 +189,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13251713"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 0,
@@ -200,7 +200,7 @@ export default defineGkdApp({
       "snapshotUrls": [
         "https://i.gkd.li/import/12472620"
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3000,
@@ -228,7 +228,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/13546642"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 2,
@@ -257,7 +257,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3,
@@ -272,7 +272,7 @@ export default defineGkdApp({
         "https://i.gkd.li/import/12506250",
         "https://i.gkd.li/import/12520626"
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3001,
@@ -309,7 +309,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 5,
@@ -321,7 +321,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/12506270"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 6,
@@ -329,7 +329,7 @@ export default defineGkdApp({
       "fastQuery": true,
       "rules": "[id=\"com.ximalaya.ting.android:id/host_tv_update_later\"]",
       "snapshotUrls": "https://i.gkd.li/import/12506287",
-      "enable": false
+      "enable": true
     },
     {
       "key": 8,
@@ -338,11 +338,11 @@ export default defineGkdApp({
       "fastQuery": true,
       "rules": "[id=\"com.ximalaya.ting.android:id/main_ad_close_real\"][visibleToUser=true]",
       "snapshotUrls": "https://i.gkd.li/import/12869426",
-      "enable": false
+      "enable": true
     },
     {
       "key": 9,
-      "enable": false,
+      "enable": true,
       "name": "局部广告-卡片式广告",
       "fastQuery": true,
       "rules": [
@@ -387,7 +387,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/13389145"
         }
       ],
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

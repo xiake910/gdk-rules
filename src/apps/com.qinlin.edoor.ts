@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -18,7 +18,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/12707733"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 2,
@@ -88,7 +88,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/18704056"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3,
@@ -105,7 +105,7 @@ export default defineGkdApp({
       "enable": false
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 10,
       "name": "全屏广告-开门有奖弹窗",
       "activityIds": "com.qinlin.edoor.MainActivity",
@@ -113,7 +113,7 @@ export default defineGkdApp({
       "snapshotUrls": "https://i.gkd.li/import/12707736"
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 11,
       "name": "全屏广告-获得金币弹窗",
       "activityIds": "com.qinlin.edoor.MainActivity",
@@ -130,7 +130,7 @@ export default defineGkdApp({
       "desc": "来自【腾讯广告sdk】",
       "rules": "[vid=\"interact_ad_root\"] >2 [vid=\"iv_close\"]",
       "snapshotUrls": "https://i.gkd.li/import/13932707",
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

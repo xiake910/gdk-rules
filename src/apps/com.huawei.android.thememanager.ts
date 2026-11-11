@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -47,7 +47,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/16993276"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 2,
@@ -102,7 +102,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 7,
@@ -123,7 +123,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 9,
@@ -151,7 +151,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/12647175"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3001,
@@ -173,7 +173,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3,
@@ -187,7 +187,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/12647268"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 4,
@@ -212,7 +212,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/12647326"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 5,
@@ -226,7 +226,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/12647393"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 6,
@@ -249,12 +249,12 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/12647655"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3002,
       "name": "全屏广告-首页活动弹窗-默认禁用",
-      "enable": false,
+      "enable": true,
       "activityIds": [
         "com.huawei.android.thememanager.HwThemeManagerActivity",
         "com.huawei.android.launcher.unihome.UniHomeLauncher"
@@ -283,7 +283,7 @@ export default defineGkdApp({
       "activityIds": "com.huawei.android.thememanager.base.widget.ActivatePushDialog",
       "rules": "@[text=\"取消\"] < * - * >n [text=\"开启消息通知\"]",
       "snapshotUrls": "https://i.gkd.li/import/12918192",
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

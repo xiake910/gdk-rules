@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -24,7 +24,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 1,
@@ -52,7 +52,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3,
@@ -83,7 +83,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/11cdf5b2-97a8-42f0-a2eb-dc1cb2c98ac1"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 4,
@@ -185,7 +185,7 @@ export default defineGkdApp({
           "excludeSnapshotUrls": "https://i.gkd.li/i/25461943"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 9,
@@ -214,7 +214,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 10,
@@ -302,7 +302,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/a144a709-4fa2-492a-9776-a78a1e45b1e4"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 14,
@@ -332,7 +332,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/1b442e3c-0e50-4b3d-b12d-75b7e725ed1d"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 16,
@@ -375,7 +375,7 @@ export default defineGkdApp({
       "activityIds": "com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity",
       "rules": "ImageView < @Button < ViewGroup +3 Button[desc*=\"YouTube Premium\"]",
       "snapshotUrls": "https://i.gkd.li/import/12877357",
-      "enable": false
+      "enable": true
     },
     {
       "key": 3001,
@@ -383,7 +383,7 @@ export default defineGkdApp({
       "activityIds": "com.google.android.apps.youtube.app.watchwhile.MainActivity",
       "rules": "ViewGroup[desc=\"免费试用 1 个月\"] < * - * > ViewGroup[text=\"不用了，谢谢\"]",
       "snapshotUrls": "https://i.gkd.li/import/13797512",
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

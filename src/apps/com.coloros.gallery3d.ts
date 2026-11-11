@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -49,7 +49,7 @@ export default defineGkdApp({
       "activityIds": "com.coloros.gallery3d.app.MainActivity",
       "rules": "[text=\"开启相册自动同步，保障相册数据安全\"] + [text=\"忽略\"]",
       "snapshotUrls": "https://i.gkd.li/import/13637185",
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

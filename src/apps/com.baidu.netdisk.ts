@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -29,7 +29,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 2,
@@ -45,7 +45,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/20414230"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 6,
@@ -118,7 +118,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14278618"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 13,
@@ -153,7 +153,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3000,
@@ -180,7 +180,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3001,
@@ -189,7 +189,7 @@ export default defineGkdApp({
       "fastQuery": true,
       "rules": "[id=\"com.baidu.netdisk:id/banner_item_close\"]",
       "snapshotUrls": "https://i.gkd.li/import/12706544",
-      "enable": false
+      "enable": true
     },
     {
       "key": 3,
@@ -198,7 +198,7 @@ export default defineGkdApp({
       "fastQuery": true,
       "rules": "[id=\"com.baidu.netdisk:id/vf_content\"] + [id=\"com.baidu.netdisk:id/close\"]",
       "snapshotUrls": "https://i.gkd.li/import/12706544",
-      "enable": false
+      "enable": true
     },
     {
       "key": 4,
@@ -207,7 +207,7 @@ export default defineGkdApp({
       "fastQuery": true,
       "rules": "@TextView + [text=\"专属福利\"]",
       "snapshotUrls": "https://i.gkd.li/import/12706549",
-      "enable": false
+      "enable": true
     },
     {
       "key": 5,
@@ -216,7 +216,7 @@ export default defineGkdApp({
       "activityIds": "com.baidu.netdisk.cloudimage.ui.album.AlbumGuideOneImageDialog",
       "rules": "@ImageView[id=\"com.baidu.netdisk:id/close_btn\"] + ImageView[id=\"com.baidu.netdisk:id/bg_image\"]",
       "snapshotUrls": "https://i.gkd.li/import/12648987",
-      "enable": false
+      "enable": true
     },
     {
       "key": 7,
@@ -230,7 +230,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/12924036"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "enable": false,
@@ -245,7 +245,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 10,
       "name": "全屏广告-看视频免费享极速下载弹窗",
       "desc": "自动点击x按钮",
@@ -266,7 +266,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/13806852"
         }
       ],
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

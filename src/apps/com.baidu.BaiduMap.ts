@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -126,7 +126,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/22616256"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 11,
@@ -154,7 +154,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/24633179"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 1,
@@ -171,7 +171,7 @@ export default defineGkdApp({
         "https://i.gkd.li/import/12801465",
         "https://i.gkd.li/import/12909281"
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 2,
@@ -180,10 +180,10 @@ export default defineGkdApp({
       "activityIds": "com.baidu.baidumaps.MapsActivity",
       "rules": "RelativeLayout[id=\"com.baidu.BaiduMap:id/rl_close_content\"]",
       "snapshotUrls": "https://i.gkd.li/import/12642307",
-      "enable": false
+      "enable": true
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3,
       "name": "全屏广告-美食大礼包弹窗",
       "fastQuery": true,
@@ -192,7 +192,7 @@ export default defineGkdApp({
       "snapshotUrls": "https://i.gkd.li/import/12642310"
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 4,
       "name": "全屏广告-酒店提前订弹窗",
       "fastQuery": true,
@@ -225,7 +225,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 6,
       "name": "全屏广告-打车界面-弹窗广告",
       "fastQuery": true,
@@ -249,7 +249,7 @@ export default defineGkdApp({
       "snapshotUrls": "https://i.gkd.li/import/13258995"
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3002,
       "name": "全屏广告-通勤卡-添加至桌面",
       "desc": "点击取消",

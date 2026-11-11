@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -104,13 +104,13 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3000,
       "name": "全屏广告-社区消息-更新提示",
       "fastQuery": true,
-      "enable": false,
+      "enable": true,
       "rules": [
         {
           "activityIds": "com.reddit.launch.main.MainActivity",
@@ -124,7 +124,7 @@ export default defineGkdApp({
       "name": "全屏广告-NSFW 内容提示",
       "desc": "自动点击 continue",
       "fastQuery": true,
-      "enable": false,
+      "enable": true,
       "rules": [
         {
           "activityIds": "com.reddit.launch.main.MainActivity",

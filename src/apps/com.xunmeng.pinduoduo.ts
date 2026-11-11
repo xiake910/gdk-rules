@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -155,7 +155,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/25572172"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 6,
@@ -187,7 +187,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/25088623"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 8,
@@ -211,7 +211,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 9,
@@ -266,7 +266,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13791119"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 11,
@@ -318,7 +318,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/a6d0caff-1785-4ff2-b2fb-e7bffa13502f"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 16,
@@ -390,7 +390,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14964851"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 20,
@@ -699,7 +699,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/12642058"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3001,
@@ -728,7 +728,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/12642053"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3002,
@@ -751,7 +751,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/12642038"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3003,
@@ -772,7 +772,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3004,
@@ -791,7 +791,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/13927594"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3005,
@@ -809,7 +809,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/13804657"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3006,
@@ -823,7 +823,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/15212017"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3007,

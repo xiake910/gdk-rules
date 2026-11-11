@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -47,7 +47,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/12639752"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 1,
@@ -64,7 +64,7 @@ export default defineGkdApp({
       "activityIds": "com.netease.newsreader.common.base.activity.SingleFragmentActivity",
       "rules": "[text*=\"开启系统推送\"] - ImageView < * < * < FrameLayout + FrameLayout >(3) Button[text=\"暂不开启\"]",
       "snapshotUrls": "https://i.gkd.li/import/12639800",
-      "enable": false
+      "enable": true
     },
     {
       "key": 3,
@@ -73,10 +73,10 @@ export default defineGkdApp({
       "activityIds": "com.netease.newsreader.common.base.activity.SingleFragmentActivity",
       "rules": "[text^=\"打开推送\"] +(2) RelativeLayout > ImageView",
       "snapshotUrls": "https://i.gkd.li/import/12639869",
-      "enable": false
+      "enable": true
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3001,
       "name": "局部广告-首页信息流广告",
       "desc": "点击广告卡片x关闭按钮-关闭反馈理由弹窗",

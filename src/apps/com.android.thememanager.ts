@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -27,7 +27,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 2,
@@ -50,7 +50,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3,
@@ -74,7 +74,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3000,
@@ -82,7 +82,7 @@ export default defineGkdApp({
       "desc": "注意如果使用ADB禁用了MIUI广告组件,点击此按钮会无反应,可关闭此规则,避免过多相同点击记录",
       "rules": "[id=\"com.android.thememanager:id/ad_close_btn\"][visibleToUser=true]",
       "snapshotUrls": "https://i.gkd.li/import/13227330",
-      "enable": false
+      "enable": true
     },
     {
       "key": 3001,
@@ -91,7 +91,7 @@ export default defineGkdApp({
       "activityIds": "com.android.thememanager.ThemeResourceTabActivity",
       "rules": "ImageView[id=\"com.android.thememanager:id/cancel\"][desc=\"关闭\"]",
       "snapshotUrls": "https://i.gkd.li/import/13215038",
-      "enable": false
+      "enable": true
     }
   ]
 } as any);

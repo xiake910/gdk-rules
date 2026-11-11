@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -141,7 +141,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/27366025"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 1,
@@ -551,7 +551,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14392392"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 26,
@@ -641,7 +641,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14436190"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 29,
@@ -677,7 +677,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14533286"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 31,
@@ -708,7 +708,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14549567"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 32,
@@ -842,7 +842,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 36,
@@ -880,7 +880,7 @@ export default defineGkdApp({
           "excludeSnapshotUrls": "https://i.gkd.li/i/16958795"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 38,
@@ -1403,7 +1403,7 @@ export default defineGkdApp({
       "enable": false
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 12,
       "name": "分段广告-朋友圈广告[英文]",
       "desc": "点击广告卡片右上角[Sponsored],直接关闭/出现菜单点击[Close the ad],确认关闭",
@@ -1453,7 +1453,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/13791202"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "enable": false,
@@ -1523,7 +1523,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3005,
       "name": "分段广告-订阅号文章广告",
       "desc": "⚠ 此规则有概率误触。自动点击关闭按钮，必须同时启用【订阅号文章广告反馈】规则",
@@ -1558,7 +1558,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 8,
       "name": "分段广告-订阅号文章广告反馈",
       "desc": "⚠ 此规则有概率误触。自动点击反馈理由，配合【订阅号文章广告】规则使用",
@@ -1618,10 +1618,10 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 13,
       "name": "全屏广告-提瓦特助手小程序-弹窗广告",
       "activityIds": "com.tencent.mm.plugin.appbrand.ui.AppBrandUI",
@@ -1645,7 +1645,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 14,
       "name": "分段广告-小程序-内部广告",
       "activityIds": [
@@ -1689,7 +1689,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 16,
       "name": "全屏广告-小程序-京东购物",
       "desc": "低价包邮广告",

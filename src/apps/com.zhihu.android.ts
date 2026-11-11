@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -165,7 +165,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 10,
@@ -230,7 +230,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14955183"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 13,
@@ -267,7 +267,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/24335648"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 14,
@@ -303,7 +303,7 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 15,
@@ -342,7 +342,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/16422471"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 16,
@@ -439,7 +439,7 @@ export default defineGkdApp({
         "com.zhihu.android.app.ui.activity.MainActivity"
       ],
       "rules": "@FrameLayout ImageView + TextView[text*=`虚假广告`][id=`com.zhihu.android:id/tv_content`]",
-      "enable": false
+      "enable": true
     },
     {
       "key": 2,
@@ -450,7 +450,7 @@ export default defineGkdApp({
         "[id=`com.zhihu.android:id/confirm_uninterest`]",
         "[id=`com.zhihu.android:id/revert_uninterest`] <n * + [id=`com.zhihu.android:id/reason_container`] > [id=`com.zhihu.android:id/uninterest_reason`]"
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3,
@@ -460,7 +460,7 @@ export default defineGkdApp({
       "rules": [
         "TextView + View + TextView + TextView[text$=`评论`][text*=`赞同`] + View"
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 5,
@@ -488,7 +488,7 @@ export default defineGkdApp({
           "matches": "@ImageView[id=null][clickable=true] -n TextView[text*=`广告`][index=0]"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3000,
@@ -524,7 +524,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/13849689"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 7,
@@ -593,14 +593,14 @@ export default defineGkdApp({
           ]
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 8,
       "name": "全屏广告-关闭首页广告",
       "activityIds": "com.zhihu.android.app.ui.activity.AdAlphaVideoActivity",
       "rules": "[id=`com.zhihu.android:id/tv_ad_close`]",
-      "enable": false
+      "enable": true
     },
     {
       "key": 9,
@@ -609,10 +609,10 @@ export default defineGkdApp({
       "rules": [
         "[id=\"com.zhihu.android:id/tv_ad_tag\"] + [id=\"com.zhihu.android:id/img_close_focus\"]"
       ],
-      "enable": false
+      "enable": true
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 3001,
       "name": "全屏广告-推送通知弹窗",
       "desc": "推送通知弹窗-点击x按钮",
@@ -625,7 +625,7 @@ export default defineGkdApp({
       ]
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 11,
       "name": "全屏广告-会员页面-月卡红包",
       "activityIds": "com.zhihu.android.app.ui.activity.MainActivity",
@@ -646,7 +646,7 @@ export default defineGkdApp({
       "snapshotUrls": [
         "https://i.gkd.li/import/12707676"
       ],
-      "enable": false
+      "enable": true
     },
     {
       "enable": false,

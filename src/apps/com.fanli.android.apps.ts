@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
+// 自动生成, 请勿手改（默认启用广告类规则组：开屏/全屏/局部/分段；其余默认关闭；来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -24,7 +24,7 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/47c6d3bf-7cff-4462-9288-1be6d2368f99"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 2,
@@ -52,7 +52,7 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/33924577"
         }
       ],
-      "enable": false
+      "enable": true
     },
     {
       "key": 3000,
@@ -60,7 +60,7 @@ export default defineGkdApp({
       "activityIds": "com.fanli.android.module.webview.ui.activity.TransparentBrowserInnerActivity",
       "rules": "[id=\"J_poplayer_box\"] >n @View + [text=\"main_bkg\"]",
       "snapshotUrls": "https://i.gkd.li/import/13245808",
-      "enable": false
+      "enable": true
     }
   ]
 } as any);
