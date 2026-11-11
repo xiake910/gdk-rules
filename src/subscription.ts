@@ -14,7 +14,7 @@ export default defineGkdSubscription({
   version: 0,
   author: 'xiake910',
   checkUpdateUrl: './gkd.version.json5',
-  supportUri: 'https://github.com/xiake910/gkd-subscription',
+  supportUri: 'https://github.com/xiake910/gdk-',
   categories,
   globalGroups,
   apps: await batchImportApps(`${import.meta.dirname}/apps`),
