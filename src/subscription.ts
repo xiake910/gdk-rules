@@ -4,12 +4,17 @@ import categories from './categories';
 import globalGroups from './globalGroups';
 
 export default defineGkdSubscription({
-  id: 233,
-  name: 'Subscription',
+  /**
+   * 订阅 ID, 必须是随机的大数字, 不能和其它订阅重复
+   * 提交前可以搜一下有没有撞车:
+   * https://github.com/search?q=export+default+defineGkdSubscription%28%7B+++id%3A+&type=code
+   */
+  id: 2026111101,
+  name: '我的订阅',
   version: 0,
-  author: 'author',
+  author: 'xiake910',
   checkUpdateUrl: './gkd.version.json5',
-  supportUri: 'https://github.com/gkd-kit/subscription-template',
+  supportUri: 'https://github.com/xiake910/gkd-subscription',
   categories,
   globalGroups,
   apps: await batchImportApps(`${import.meta.dirname}/apps`),
