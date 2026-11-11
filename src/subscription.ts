@@ -10,7 +10,7 @@ export default defineGkdSubscription({
    * https://github.com/search?q=export+default+defineGkdSubscription%28%7B+++id%3A+&type=code
    */
   id: 2026111101,
-  name: '我的订阅',
+  name: 'GDK规则',
   version: 0,
   author: 'xiake910',
   checkUpdateUrl: './gkd.version.json5',

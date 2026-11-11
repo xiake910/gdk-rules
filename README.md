@@ -1,41 +1,45 @@
-# 我的 GKD 订阅
+# GDK规则
 
-基于 [gkd-kit/subscription-template](https://github.com/gkd-kit/subscription-template) 搭建的个人 GKD 规则订阅。
+个人自用的 GKD 规则订阅，由多个公开订阅**去重合并**而来，只保留不重复的部分。
 
+- 订阅名：**GDK规则**
 - 订阅 ID：`2026111101`
 - 作者：`xiake910`
-- 仓库：`https://github.com/xiake910/gdk-`
-- 当前版本：**v5**
-- 规则规模：**1003 个 App / 2510 个规则组 / 3962 条规则 / 11 个分类 / 3 个全局规则组**
+- 仓库：<https://github.com/xiake910/gdk->
+- 当前版本：**v7**
+- 规模：**1056 个 App / 3508 个规则组 / 5432 条规则 / 11 个分类 / 3 个全局规则组**
+- 来源与授权详见 [SOURCES.md](SOURCES.md)
 
-## 订阅地址（GKD 里粘贴一个即可）
+## 订阅地址（GKD 里粘贴一个）
 
+- 国内镜像（推荐）：
+  `https://fastly.jsdelivr.net/gh/xiake910/gdk-@main/dist/gkd.json5`
 - 直连：
   `https://raw.githubusercontent.com/xiake910/gdk-/main/dist/gkd.json5`
-- 国内镜像（推荐，raw 不通时用它）：
-  `https://fastly.jsdelivr.net/gh/xiake910/gdk-@main/dist/gkd.json5`
 
-## 规则来源与授权 ⚠️
+## 规则来源（详见 SOURCES.md）
 
-- `src/apps/` 下绝大部分规则来自第三方订阅 **id667 的 GKD 订阅**（v631，镜像 `https://gkd667.vv.ax/gkd.json5`，
-  上游仓库 [Lin-arm/GKD_subscription](https://github.com/Lin-arm/GKD_subscription)），是原样导入的。
-- 那个订阅**没有声明开源许可证**，作者保留权利；这里仅作**个人自用/备份**，不是原创，请勿当作自有规则再分发或商用。
-  如果上游作者提出异议，请删除本仓库对应规则。
-- 上游 `author` 字段写着「源即将停用，建议更换」，所以这里等于做了一份离线快照；**以后上游更新不会自动同步**，
-  需要重新导入（见下面「重新导入上游规则」）。
-- 本项目自己写的规则（红果、B站的开屏/更新/通知权限等）保留了不同名的组；与上游同名的组以**上游版本**为准。
+| 来源 | 版本 | 许可证 | 取用 |
+|---|---|---|---|
+| id667 的 GKD 订阅（镜像 gkd667.vv.ax） | v631 | 未声明 | 主体规则 |
+| AIsouler 的 GKD 订阅 | v406（已停更） | 未声明 | **仅 72 个不重复的组** |
+| 甘霖的 GKD 订阅（ganlinte/GKD-subscription） | v72 | **MIT** | **53 个新 App + 926 个不重复的组** |
+| 本项目自写 | — | — | 红果短剧 / B站 的补充规则 |
+
+> ⚠️ 667 与 AIsouler 未声明许可证，本项目仅作个人自用/离线备份，请勿公开分发或商用；甘霖订阅为 MIT，保留其署名。
 
 ## 目录结构
 
 ```
 src/
-  subscription.ts   订阅详情（id / 名称 / 作者 / 链接）
-  apps/             规则（大部分为自动生成，来自 id667 订阅；少量为本项目手写）
-  categories.ts     规则分类（本项目 4 个 + 上游 7 个）
-  globalGroups.ts   全局规则组（3 个，来自上游）
+  subscription.ts   订阅详情（名称 GDK规则 / id / 作者 / 链接）
+  apps/             各 App 规则（自动生成，1056 个文件）
+  categories.ts     规则分类（11 个）
+  globalGroups.ts   全局规则组（3 个）
 scripts/            构建/校验脚本
-dist/               构建产物（gkd.json5 ≈ 1.38MB、版本文件、CHANGELOG、README）
+dist/               构建产物（gkd.json5 ≈ 1.8MB、版本文件、CHANGELOG、README）
 .github/workflows/  GitHub Actions（构建发布、提交检查）
+SOURCES.md          各来源的版本、许可证、取用范围
 ```
 
 ## 本地构建
@@ -47,30 +51,12 @@ pnpm install
 pnpm run build     # tsc 类型检查 + 选择器/正则校验 + 生成 dist/
 ```
 
-国内装依赖慢时：`pnpm install --registry=https://registry.npmmirror.com`
+- 1000+ 文件，`tsc` 会跑 1-3 分钟，属正常
+- 国内装依赖慢：`pnpm install --registry=https://registry.npmmirror.com`
 
-构建会做这些事：
-- `tsc --noEmit` 类型检查（现在有 1000+ 文件，会慢一些）
-- 用 Node 22+ 的 WasmGc 校验选择器里的 Java/Kotlin 正则
-- 合并 `src/` → `dist/gkd.json5`，版本号自动 +1，更新 `CHANGELOG.md`
+## 说明
 
-## 重新导入上游规则（上游更新后）
-
-1. 下载最新 `gkd.json5`（例如 `https://gkd667.vv.ax/gkd.json5`）
-2. 用 `scripts/gen-merge.ts`（需要时可重新生成该脚本）重新生成 `src/apps/`、`src/categories.ts`、`src/globalGroups.ts`
-3. `pnpm run build`
-4. 提交 `src/` 和 `dist/`
-
-## 改规则/加规则
-
-- 想改某条：直接编辑 `src/apps/<包名>.ts`（自动生成的文件顶部有注释，改完记得下次重新导入会被覆盖）
-- 想加自己的：新建 `src/apps/<包名>.ts`，用 `defineGkdApp` 写
-- 常用字段看 [gkd.li/api](https://gkd.li/api)，选择器语法看 [gkd.li/guide/selector](https://gkd.li/guide/selector)
-- 调试：GKD 里用「快照/审查工具」抓界面节点
-
-## 注意
-
-- `src/subscription.ts` 的 `id` 必须全局唯一（当前 `2026111101`），不要和别人的订阅撞车
-- `key` 一旦发布就不要改，否则 GKD 里的启用状态会错乱
-- 订阅变大后 GKD 加载/匹配会稍慢（1.38MB，和上游一样），属正常
+- 订阅的 `id` 全局唯一（`2026111101`），不会和上游订阅冲突
+- 组 `key` 一旦发布不要改，否则 GKD 里的启用状态会错乱
+- 合并结果**不会自动跟随上游更新**，上游更新后需重新做一次「下载 → 去重合并 → 构建 → 提交」
 - 本项目只含规则，不含 GKD App 本体：[gkd-kit/gkd](https://github.com/gkd-kit/gkd)

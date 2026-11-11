@@ -1,7 +1,7 @@
 {
-  "name": "gkd-subscription",
+  "name": "gdk-rules",
   "version": "0.0.0",
-  "description": "My personal GKD subscription rules",
+  "description": "GDK规则：个人 GKD 订阅（多来源去重合并）",
   "type": "module",
   "packageManager": "pnpm@11.20.0",
   "engines": {
