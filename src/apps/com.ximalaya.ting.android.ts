@@ -388,6 +388,34 @@ export default defineGkdApp({
         }
       ],
       "enable": true
+    },
+    {
+      "key": 3100,
+      "name": "局部广告-评论区广告-补充",
+      "desc": "评论区里带「广告/推广」标记的卡片，自动点右上角的关闭/不感兴趣（补充 key=8 只覆盖一个控件的情况；未在真机逐一验证，不合适可在 GKD 里关掉）",
+      "enable": true,
+      "fastQuery": true,
+      "actionCd": 3000,
+      "activityIds": "com.ximalaya.ting.android.host.activity.MainActivity",
+      "rules": [
+        {
+          "key": 1,
+          "name": "点关闭按钮",
+          "matches": [
+            "[text=\"广告\" || text=\"推广\"][visibleToUser=true] < * > [desc=\"关闭\"][clickable=true]",
+            "[text=\"广告\" || text=\"推广\"][visibleToUser=true] < * > [vid*=\"close\"][visibleToUser=true]"
+          ]
+        },
+        {
+          "key": 2,
+          "name": "广告标记 → 点「不感兴趣」",
+          "matches": [
+            "[text=\"广告\" || text=\"推广\"][visibleToUser=true] - [text=\"不感兴趣\"]",
+            "[text*=\"广告\"][text.length<6][visibleToUser=true] + [text=\"不感兴趣\"][visibleToUser=true]"
+          ],
+          "action": "clickCenter"
+        }
+      ]
     }
   ]
 } as any);
