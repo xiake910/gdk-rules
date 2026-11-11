@@ -391,7 +391,7 @@ export default defineGkdApp({
     },
     {
       "key": 3100,
-      "name": "局部广告-评论区广告-补充",
+      "name": "局部广告-评论区广告-补充（v12）",
       "desc": "评论区里带「广告/推广」标记的卡片，自动点右上角的关闭/不感兴趣（补充 key=8 只覆盖一个控件的情况；未在真机逐一验证，不合适可在 GKD 里关掉）",
       "enable": true,
       "fastQuery": true,

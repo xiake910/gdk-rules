@@ -9,6 +9,7 @@ export default defineGkdSubscription({
    * 提交前可以搜一下有没有撞车:
    * https://github.com/search?q=export+default+defineGkdSubscription%28%7B+++id%3A+&type=code
    */
+  // v12: 新增极简版订阅（dist/gkd-min.json5）
   id: 2026111101,
   name: 'GDK规则',
   version: 0,

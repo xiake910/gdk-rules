@@ -1,6 +1,6 @@
 # GDK 订阅规则
 
-合并多个公开订阅（去重）的 GKD 订阅：**1056 个 App / 3509 个规则组 / 5432 条规则**。
+合并多个公开订阅（去重）的 GKD 订阅：**1056 个 App / 3509 个规则组 / 5432 条规则**，提供三个版本。
 
 > 🤖 **本项目由 AI 辅助制作。** 规则合并、去重、默认启用策略、文档与提交均由 AI（DeepSeek Harness）协助完成；
 > 规则本体来自各上游订阅，**未逐条在真机上验证**，如有误触请自行在 GKD 里关闭对应规则组。
@@ -21,15 +21,18 @@
 
 ---
 
-## 订阅地址（选一个）
+## 订阅地址（三个版本，选一个）
 
-**精简版**（推荐，只去广告）
-`https://fastly.jsdelivr.net/gh/xiake910/gdk-rules@v11/dist/gkd.json5`
+**极简版** — 只屏蔽开屏 + 弹出广告（1367 组）
+`https://fastly.jsdelivr.net/gh/xiake910/gdk-rules@v12/dist/gkd-min.json5`
 
-**全量版**（所有规则全开）
-`https://fastly.jsdelivr.net/gh/xiake910/gdk-rules@v11/dist/gkd-full.json5`
+**精简版**（推荐）— 广告类全开（2146 组）
+`https://fastly.jsdelivr.net/gh/xiake910/gdk-rules@v12/dist/gkd.json5`
 
-> 用 `@v11` 而不用 `@main`：jsDelivr 对 `@main` 有最长 12 小时缓存，会出现地址没变但内容还是旧版。
+**全量版** — 所有规则全开（3509 组）
+`https://fastly.jsdelivr.net/gh/xiake910/gdk-rules@v12/dist/gkd-full.json5`
+
+> 用 `@v12` 而不用 `@main`：jsDelivr 对 `@main` 有最长 12 小时缓存，会出现地址没变但内容还是旧版。
 
 <details>
 <summary>备用镜像（fastly 打不开时）</summary>
@@ -37,14 +40,25 @@
 把域名 `fastly` 换成 `gcore` 或 `testingcf` 即可，路径不变。
 
 ```
-https://gcore.jsdelivr.net/gh/xiake910/gdk-rules@v11/dist/gkd.json5
-https://testingcf.jsdelivr.net/gh/xiake910/gdk-rules@v11/dist/gkd.json5
-https://raw.githubusercontent.com/xiake910/gdk-rules/v11/dist/gkd.json5
+https://gcore.jsdelivr.net/gh/xiake910/gdk-rules@v12/dist/gkd.json5
+https://testingcf.jsdelivr.net/gh/xiake910/gdk-rules@v12/dist/gkd.json5
+https://raw.githubusercontent.com/xiake910/gdk-rules/v12/dist/gkd-min.json5
 ```
 
 </details>
 
-## 精简版默认开什么
+## 三个版本开什么
+
+| 规则类 | 极简版 | 精简版 | 全量版 |
+|---|:-:|:-:|:-:|
+| 开屏广告（222） | ✅ | ✅ | ✅ |
+| 全屏广告 / 弹窗（1145） | ✅ | ✅ | ✅ |
+| 局部广告（621） | ❌ | ✅ | ✅ |
+| 分段广告（158） | ❌ | ✅ | ✅ |
+| 功能类 / 更新 / 权限 / 通知 / 评价 / 青少年 / 其他 | ❌ | ❌ | ✅ |
+| 全局规则组（3） | ❌ | ❌ | ✅ |
+| **默认开启合计** | **1367** | **2146** | **3509** |
+## 精简版默认开什么（明细）
 
 | 默认开（去广告） | 组数 | 默认关（自选） | 组数 |
 |---|---|---|---|
@@ -66,7 +80,7 @@ https://raw.githubusercontent.com/xiake910/gdk-rules/v11/dist/gkd.json5
 
 ## 注意
 
-- 两个版本订阅 id 不同，**不要同时添加**。
+- 三个版本订阅 id 不同（极简 / 精简 / 全量），**不要同时添加**。
 - 之前加过旧地址的，请**删除订阅后重新添加**（否则 GKD 保留旧的启用状态）。
 - 合并结果不会自动跟随上游更新，上游更新后需重新合并构建。
 
@@ -81,10 +95,11 @@ pnpm run build   # 生成 dist/gkd.json5(精简) + dist/gkd-full.json5(全量)
 
 ## 更新日志
 
-按重要节点分的四次大更新（2026-11-11）：
+按重要节点分的五次大更新（2026-11-11）：
 
 | 更新 | 内容 |
 |---|---|
+| **五次更新**（v12） | 新增**极简版**：只屏蔽开屏 + 弹出广告（1367 组），局部/分段都不动 |
 | **四次更新**（v10–v11） | 精简版默认改为**广告类全开 2146 组**，功能类/权限/更新提示等默认关；新增**喜马拉雅评论区广告**规则；加 AI 制作声明；改用版本标签地址 |
 | **三次更新**（v8–v9） | 仓库更名 `gdk-rules`、订阅名「GDK规则」；提供**精简版 + 全量版**两个订阅；补 SOURCES.md |
 | **二次更新**（v6–v7） | **规则大合并**：id667 全量 + AIsouler/甘霖去重导入 → 1056 App / 3508 组 / 5432 条 |
