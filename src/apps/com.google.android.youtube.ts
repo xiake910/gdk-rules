@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -23,7 +23,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/13705106"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 1,
@@ -50,7 +51,8 @@ export default defineGkdApp({
             "https://e.gkd.li/d024797b-88c5-4ab4-aa53-433b1889eaf1"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -80,7 +82,8 @@ export default defineGkdApp({
           ],
           "exampleUrls": "https://e.gkd.li/11cdf5b2-97a8-42f0-a2eb-dc1cb2c98ac1"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -97,7 +100,8 @@ export default defineGkdApp({
           ],
           "snapshotUrls": "https://i.gkd.li/i/14194155"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -128,7 +132,8 @@ export default defineGkdApp({
             "https://e.gkd.li/d2260fc4-0218-4d0b-9d37-e6366d397ae4"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 6,
@@ -145,7 +150,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/25461814"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 7,
@@ -164,7 +170,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/22757397"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 8,
@@ -177,7 +184,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/23787178",
           "excludeSnapshotUrls": "https://i.gkd.li/i/25461943"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 9,
@@ -205,7 +213,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/33272478"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 10,
@@ -221,7 +230,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/25466817"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 11,
@@ -248,7 +258,8 @@ export default defineGkdApp({
           ],
           "exampleUrls": "https://e.gkd.li/5f20a4f8-82ea-4520-b191-95782a45341c"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 12,
@@ -263,7 +274,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/27373872",
           "exampleUrls": "https://e.gkd.li/b72d41d0-94a1-4507-8e8c-530bd18269f0"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 13,
@@ -289,7 +301,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/27376863",
           "exampleUrls": "https://e.gkd.li/a144a709-4fa2-492a-9776-a78a1e45b1e4"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 14,
@@ -303,7 +316,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/28418922",
           "exampleUrls": "https://e.gkd.li/c21a846e-dbab-4d4e-b388-b96335414bae"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 15,
@@ -317,7 +331,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/29379447",
           "exampleUrls": "https://e.gkd.li/1b442e3c-0e50-4b3d-b12d-75b7e725ed1d"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 16,
@@ -336,7 +351,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/31118557",
           "exampleUrls": "https://e.gkd.li/5f07de6a-1e4d-4297-a516-ccc695df72fc"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,
@@ -350,7 +366,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/aa8f2617-fd6d-43a8-951d-1bd6efc504d3",
           "snapshotUrls": "https://i.gkd.li/i/19930694"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,

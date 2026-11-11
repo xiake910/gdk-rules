@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -17,7 +17,8 @@ export default defineGkdApp({
           "matches": "FrameLayout[id=\"android:id/content\"] >2 FrameLayout > ImageView + FrameLayout[id=null][desc=\"关闭\"][clickable=true]",
           "snapshotUrls": "https://i.gkd.li/i/12727011"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -31,7 +32,8 @@ export default defineGkdApp({
           "action": "clickCenter",
           "snapshotUrls": "https://i.gkd.li/i/12727070"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -41,7 +43,8 @@ export default defineGkdApp({
         ".NovaMainActivity"
       ],
       "rules": "[vid=\"float_image\"] + [vid=\"close\"][clickable=true]",
-      "snapshotUrls": "https://i.gkd.li/i/12727366"
+      "snapshotUrls": "https://i.gkd.li/i/12727366",
+      "enable": false
     },
     {
       "key": 4,
@@ -54,7 +57,8 @@ export default defineGkdApp({
           "matches": "[vid=\"operate_cross_icon\"]",
           "snapshotUrls": "https://i.gkd.li/i/13538340"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -93,7 +97,8 @@ export default defineGkdApp({
           "exampleUrls": "https://m.gkd.li/57941037/010c0314-e89b-468f-8143-691925a308a6",
           "snapshotUrls": "https://i.gkd.li/i/14393256"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 6,
@@ -109,7 +114,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/ce751918-dab2-4670-a608-9edbcb3bdc0e",
           "snapshotUrls": "https://i.gkd.li/i/23289239"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,

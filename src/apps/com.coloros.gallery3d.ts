@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -19,7 +19,8 @@ export default defineGkdApp({
           "exampleUrls": "https://m.gkd.li/47232102/0dae9f4b-8432-4cf4-b648-07ae17cdece2",
           "snapshotUrls": "https://i.gkd.li/i/13554797"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 6,
@@ -35,7 +36,8 @@ export default defineGkdApp({
           "matches": "[text=\"开启相册自动同步，保障相册数据安全\"] + [text=\"忽略\"]",
           "snapshotUrls": "https://i.gkd.li/i/13637185"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,

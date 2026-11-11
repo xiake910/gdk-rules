@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -34,7 +34,8 @@ export default defineGkdApp({
           ]
         }
       ],
-      "order": -10
+      "order": -10,
+      "enable": true
     },
     {
       "key": 2,
@@ -73,7 +74,8 @@ export default defineGkdApp({
           "matches": "@ViewGroup[clickable=true][visibleToUser=true] <2 ViewGroup < FrameLayout <2 FrameLayout < [vid=\"miniapp_content_container\"]",
           "snapshotUrls": "https://i.gkd.li/i/13401266"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -88,7 +90,8 @@ export default defineGkdApp({
           "matches": "@ImageView[vid=\"upgrade_cancel\"]",
           "snapshotUrls": "https://i.gkd.li/i/13440833"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -104,7 +107,8 @@ export default defineGkdApp({
           "matches": "[vid=\"animation_view\"] + [vid=\"v_close\"]",
           "snapshotUrls": "https://i.gkd.li/i/13625453"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -120,7 +124,8 @@ export default defineGkdApp({
           "matches": "[text^=\"您的设备已经被ROOT\"] + LinearLayout [text=\"确认\"]",
           "snapshotUrls": "https://i.gkd.li/i/13536744"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,

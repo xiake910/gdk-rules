@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -34,7 +34,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14609953"
         }
       ],
-      "order": -10
+      "order": -10,
+      "enable": true
     },
     {
       "key": 1,
@@ -98,7 +99,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/13b95c9a-1e6c-4d63-8372-1cff2261253c",
           "snapshotUrls": "https://i.gkd.li/i/23687213"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -123,7 +125,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/29639642"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -136,7 +139,8 @@ export default defineGkdApp({
           "exampleUrls": "https://m.gkd.li/57941037/dfd70c7c-3200-493e-9afa-404de5fcd2ff",
           "snapshotUrls": "https://i.gkd.li/i/14722104"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -162,7 +166,8 @@ export default defineGkdApp({
           "exampleUrls": "https://m.gkd.li/57941037/69f564e9-464a-488b-a181-f1085176b49f",
           "snapshotUrls": "https://i.gkd.li/i/14722457"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -182,7 +187,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/27167415"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 6,
@@ -202,7 +208,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/f2a44161-d0a2-421d-a5e7-26fcf005daf2",
           "snapshotUrls": "https://i.gkd.li/i/18071067"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 7,
@@ -227,7 +234,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/ffb25ec5-35b0-47ff-9387-54c757c90f29",
           "snapshotUrls": "https://i.gkd.li/i/18165065"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,

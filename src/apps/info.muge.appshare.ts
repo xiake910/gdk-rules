@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -48,7 +48,8 @@ export default defineGkdApp({
           ]
         }
       ],
-      "order": -10
+      "order": -10,
+      "enable": true
     },
     {
       "key": 1,
@@ -84,7 +85,8 @@ export default defineGkdApp({
           "matches": "@[name$=\"ImageView\" || clickable=true][width<90 && height<78] < FrameLayout[childCount=1] <3 FrameLayout[childCount>2] <<(9,11) ViewFactoryHolder <4 View[childCount>2] <<5 [id=\"android:id/content\"]",
           "snapshotUrls": "https://i.gkd.li/i/26870429"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -130,7 +132,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/25125005"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -200,7 +203,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/24612850"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -256,7 +260,8 @@ export default defineGkdApp({
           "matches": "@ImageView[text=null][clickable=true] + [text=\"应用详情\"][visibleToUser=true]",
           "snapshotUrls": "https://i.gkd.li/i/26277526"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -273,7 +278,8 @@ export default defineGkdApp({
           "exampleUrls": "https://m.gkd.li/57941037/8b782da0-1501-4839-a19b-92209b4d2723",
           "snapshotUrls": "https://i.gkd.li/i/14345476"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 6,
@@ -287,7 +293,8 @@ export default defineGkdApp({
           "exampleUrls": "https://m.gkd.li/57941037/aae3c59c-8eac-452c-984e-84ee9b97e986",
           "snapshotUrls": "https://i.gkd.li/i/14792822"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 7,
@@ -302,7 +309,8 @@ export default defineGkdApp({
           "matches": "@[vid=\"tvCancel\"] + [vid=\"tvUpdate\"][visibleToUser=true]",
           "snapshotUrls": "https://i.gkd.li/i/25123777"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 8,
@@ -319,7 +327,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/32435116",
           "exampleUrls": "https://e.gkd.li/362e7d1e-d4a4-4a27-90ca-b53af995d9f8"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,

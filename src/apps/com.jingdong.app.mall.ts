@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -30,7 +30,8 @@ export default defineGkdApp({
           "excludeSnapshotUrls": "https://i.gkd.li/i/16323115"
         }
       ],
-      "order": -10
+      "order": -10,
+      "enable": true
     },
     {
       "key": 1,
@@ -43,7 +44,8 @@ export default defineGkdApp({
           "matches": "[id=\"com.jd.lib.cart.feature:id/iv_egg_close\"]",
           "snapshotUrls": "https://i.gkd.li/i/14731003"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -75,7 +77,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/15077913"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -105,7 +108,8 @@ export default defineGkdApp({
           "matches": "@[clickable=true] + [text^=\"打开系统通知\"]",
           "snapshotUrls": "https://i.gkd.li/i/12839865"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -170,7 +174,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/580d3cb5-503e-47a9-ba88-056e91c2f084",
           "snapshotUrls": "https://i.gkd.li/i/17974166"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 6,
@@ -203,7 +208,8 @@ export default defineGkdApp({
           "matches": "[id=\"com.jd.lib.cart.feature:id/plus_close\"]",
           "snapshotUrls": "https://i.gkd.li/i/15229577"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 10,
@@ -211,7 +217,8 @@ export default defineGkdApp({
       "desc": "自动点击\"确认登录\"",
       "activityIds": ".WebActivity",
       "rules": "@[desc=\"确认登录\"][clickable=true] > [text=\"确认登录\"]",
-      "snapshotUrls": "https://i.gkd.li/i/12901734"
+      "snapshotUrls": "https://i.gkd.li/i/12901734",
+      "enable": false
     },
     {
       "key": 11,
@@ -219,7 +226,8 @@ export default defineGkdApp({
       "desc": "自动点击右上角\"x\"",
       "activityIds": "com.jd.lib.settlement.fillorder.activity.NewFillOrderActivity",
       "rules": "ImageView[clickable=true && desc=\"关闭\"]",
-      "snapshotUrls": "https://i.gkd.li/i/13191146"
+      "snapshotUrls": "https://i.gkd.li/i/13191146",
+      "enable": false
     },
     {
       "key": 12,
@@ -232,7 +240,8 @@ export default defineGkdApp({
           "matches": "@ImageView - ViewGroup >2 TextView[text=\"查看订单\"]",
           "snapshotUrls": "https://i.gkd.li/i/13446362"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 13,
@@ -245,7 +254,8 @@ export default defineGkdApp({
           "matches": "[text=\"继续逛\"][clickable=true]",
           "snapshotUrls": "https://i.gkd.li/i/15047243"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 14,
@@ -264,7 +274,8 @@ export default defineGkdApp({
             "https://e.gkd.li/6c5466d4-3238-43b7-8cf5-312f8c8606ef"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 15,
@@ -281,7 +292,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/bad5489e-0ec6-4039-8e4e-52b4b444f019",
           "snapshotUrls": "https://i.gkd.li/i/20709175"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 16,
@@ -305,7 +317,8 @@ export default defineGkdApp({
             "https://e.gkd.li/f1b6b284-ce65-48e6-83b8-1c6052fbbfa3"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 17,
@@ -318,7 +331,8 @@ export default defineGkdApp({
           "matches": "@[desc=\"返回\"][clickable=true] + * > [text=\"确认收货成功\"]",
           "snapshotUrls": "https://i.gkd.li/i/25181413"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,
@@ -331,7 +345,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/ab886df0-2b34-4804-be7d-742a06fadda9",
           "snapshotUrls": "https://i.gkd.li/i/17358003"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "enable": false,

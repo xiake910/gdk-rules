@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -18,7 +18,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/17375098"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -53,7 +54,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/18609168"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -69,7 +71,8 @@ export default defineGkdApp({
           ],
           "snapshotUrls": "https://i.gkd.li/i/23289407"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -84,7 +87,8 @@ export default defineGkdApp({
           ],
           "snapshotUrls": "https://i.gkd.li/i/24982226"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -110,7 +114,8 @@ export default defineGkdApp({
           "matches": "@LinearLayout[visibleToUser=true][childCount=0][width=getPrev(5).width] < ScrollView < LinearLayout < FrameLayout <2 ViewGroup < FrameLayout < [id=\"android:id/content\"]",
           "snapshotUrls": "https://i.gkd.li/i/28889464"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 6,
@@ -124,7 +129,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/28367489",
           "exampleUrls": "https://e.gkd.li/8a2ddf7c-f34f-4bc8-bc9d-bfbc79a8c145"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 7,
@@ -147,7 +153,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/28419120",
           "exampleUrls": "https://e.gkd.li/2b889996-c96e-455e-acc6-dc3bfa9cd380"
         }
-      ]
+      ],
+      "enable": false
     }
   ]
 } as any);

@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -20,7 +20,8 @@ export default defineGkdApp({
           "excludeSnapshotUrls": "https://i.gkd.li/i/17827264"
         }
       ],
-      "order": -10
+      "order": -10,
+      "enable": true
     },
     {
       "key": 1,
@@ -44,7 +45,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/23165455"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -116,7 +118,8 @@ export default defineGkdApp({
           "matches": "@ViewGroup[clickable=true][width <120 && width<120][childCount=0] <2 ViewGroup < ViewGroup < ViewGroup < FrameLayout < FrameLayout < [id=\"android:id/content\"]",
           "snapshotUrls": "https://i.gkd.li/i/24842488"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -141,7 +144,8 @@ export default defineGkdApp({
           "matches": "[vid=\"questionnaireTitle\"]",
           "snapshotUrls": "https://i.gkd.li/i/13682336"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -188,7 +192,8 @@ export default defineGkdApp({
           "matches": "[vid=\"live_float_view_container\"] > [vid=\"close_btn\"]",
           "snapshotUrls": "https://i.gkd.li/i/23165473"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 7,
@@ -220,7 +225,8 @@ export default defineGkdApp({
           "exampleUrls": "https://m.gkd.li/57941037/3bb08a42-5d88-4f9d-8cbe-cb913e136ec6",
           "snapshotUrls": "https://i.gkd.li/i/14472614"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 8,
@@ -239,7 +245,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/15047918"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 10,
@@ -253,7 +260,8 @@ export default defineGkdApp({
           "matches": "@TextView[text=\"\"][clickable=true][childCount=0] < View[id=\"shareNav\"] <2 View < View < WebView < WebView < [vid=\"mil_container\"]",
           "snapshotUrls": "https://i.gkd.li/i/13800691"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 11,
@@ -275,7 +283,8 @@ export default defineGkdApp({
           "matches": "@ImageView[visibleToUser=true] - ViewGroup[childCount=3] > [text^=\"签到成功\"]",
           "snapshotUrls": "https://i.gkd.li/i/14034073"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 12,
@@ -301,7 +310,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/26628762"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 13,
@@ -315,7 +325,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/42b1d2c5-ca75-4a89-adca-9e5c4f489165",
           "snapshotUrls": "https://i.gkd.li/i/17182888"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 14,
@@ -333,7 +344,8 @@ export default defineGkdApp({
           ],
           "exampleUrls": "https://e.gkd.li/9f1b0006-c4c2-4234-9cea-94ee97f48ae3"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,

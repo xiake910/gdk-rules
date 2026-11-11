@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -24,7 +24,8 @@ export default defineGkdApp({
           ]
         }
       ],
-      "order": -10
+      "order": -10,
+      "enable": true
     },
     {
       "key": 2,
@@ -91,7 +92,8 @@ export default defineGkdApp({
           "matches": "[vid=\"iv_itr_close\"]",
           "snapshotUrls": "https://i.gkd.li/i/15360368"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -117,7 +119,8 @@ export default defineGkdApp({
           "matches": "[id^=\"com.zmzx.college.search:id/ad_flag_source\"] - * > [vid=\"close\"]",
           "snapshotUrls": "https://i.gkd.li/i/13063381"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -138,7 +141,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/13623469"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 6,
@@ -153,7 +157,8 @@ export default defineGkdApp({
           "matches": "[text=\"开启推送通知\"] - [vid=\"siv_dialog_close\"]",
           "snapshotUrls": "https://i.gkd.li/i/13440939"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 7,
@@ -168,7 +173,8 @@ export default defineGkdApp({
           "matches": "[vid=\"iv_logo\"] + [vid=\"siv_close\"]",
           "snapshotUrls": "https://i.gkd.li/i/13476308"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 11,
@@ -185,7 +191,8 @@ export default defineGkdApp({
           "exampleUrls": "https://m.gkd.li/57941037/d625fcaa-4cf3-4c92-9b27-10542b0262bb",
           "snapshotUrls": "https://i.gkd.li/i/14555042"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 12,
@@ -207,7 +214,8 @@ export default defineGkdApp({
           "matches": "@[clickable=true] > [text=\"不感兴趣\"]",
           "snapshotUrls": "https://i.gkd.li/i/15902298"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "enable": false,

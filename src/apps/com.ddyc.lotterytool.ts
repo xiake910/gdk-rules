@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -17,7 +17,8 @@ export default defineGkdApp({
           "matches": "@ImageButton[clickable=true][childCount=0] < LinearLayout < FrameLayout < [parent=null]",
           "snapshotUrls": "https://i.gkd.li/i/13324555"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -30,7 +31,8 @@ export default defineGkdApp({
           "matches": "[text^=\"开启推送通知\"] +2 LinearLayout [text=\"以后再说\"]",
           "snapshotUrls": "https://i.gkd.li/i/13325888"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "enable": false,

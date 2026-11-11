@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -18,7 +18,8 @@ export default defineGkdApp({
           "matches": "[vid=\"closeView\"][desc=\"关闭弹层\"]",
           "snapshotUrls": "https://i.gkd.li/i/12701029"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -41,7 +42,8 @@ export default defineGkdApp({
           "exampleUrls": "https://m.gkd.li/57941037/42773084-a7db-4e70-878d-6a5eacd5ecb2",
           "snapshotUrls": "https://i.gkd.li/i/14321469"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -80,7 +82,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/8577d2e5-20a4-40e0-92f0-191bafeb55ed",
           "snapshotUrls": "https://i.gkd.li/i/16925042"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 6,
@@ -102,7 +105,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/be57974c-6656-4619-aed8-c61421f6a748",
           "snapshotUrls": "https://i.gkd.li/i/16977036"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "enable": false,

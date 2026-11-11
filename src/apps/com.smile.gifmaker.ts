@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -37,7 +37,8 @@ export default defineGkdApp({
           "matches": "ImageView[width<128] < [childCount=1] < @[clickable=true] - HorizontalScrollView >5 [text=\"恭喜你获得\"]",
           "snapshotUrls": "https://i.gkd.li/i/32433383"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 11,
@@ -52,7 +53,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/12708676"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 12,
@@ -80,7 +82,8 @@ export default defineGkdApp({
           "matches": "[text=\"朋友推荐\"] + [vid=\"close_btn\"]",
           "snapshotUrls": "https://i.gkd.li/i/14232217"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 13,
@@ -95,7 +98,8 @@ export default defineGkdApp({
           "exampleUrls": "https://m.gkd.li/57941037/da412e0f-47db-4cc0-8821-184c6ba42882",
           "snapshotUrls": "https://i.gkd.li/i/14343547"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 14,
@@ -109,7 +113,8 @@ export default defineGkdApp({
           "exampleUrls": "https://m.gkd.li/57941037/338df1c2-8789-435b-8970-c837b00fc0f5",
           "snapshotUrls": "https://i.gkd.li/i/15629334"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 15,
@@ -138,7 +143,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/24024011"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,
@@ -164,7 +170,8 @@ export default defineGkdApp({
           "matches": "@ImageView[id=null][clickable=true] < ViewGroup + ViewGroup >2 [text=\"立即领取\"]",
           "snapshotUrls": "https://i.gkd.li/i/12708681"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 0,

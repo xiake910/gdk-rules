@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -24,7 +24,8 @@ export default defineGkdApp({
           "matches": "[text=\"直接关闭\"]",
           "snapshotUrls": "https://i.gkd.li/i/17354753"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -40,7 +41,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/13362272"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -49,7 +51,8 @@ export default defineGkdApp({
       "rules": "@TextView[id=null] < View +(2) TextView[text^=\"已连签\"&&text*=\"天\"]",
       "snapshotUrls": [
         "https://i.gkd.li/i/12640320"
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 99,
@@ -61,7 +64,8 @@ export default defineGkdApp({
       },
       "snapshotUrls": [
         "https://i.gkd.li/i/12640287"
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -100,7 +104,8 @@ export default defineGkdApp({
           "matches": "@ImageView[visibleToUser=true][childCount=0] < FrameLayout[childCount=1] < FrameLayout[childCount=1] + FrameLayout >3 [text^=\"摇动或点击\"]",
           "snapshotUrls": "https://i.gkd.li/i/13472955"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 8,
@@ -121,7 +126,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/9217fd14-1ca6-49b8-8f8b-bff7a98745dd",
           "snapshotUrls": "https://i.gkd.li/i/17574170"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 9,
@@ -136,7 +142,8 @@ export default defineGkdApp({
           "matches": "[vid=\"close\"]",
           "snapshotUrls": "https://i.gkd.li/i/13941276"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 0,

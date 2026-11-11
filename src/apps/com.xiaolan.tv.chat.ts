@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -27,7 +27,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/fe0403ee-0ffb-4921-a06a-ccefa5c26bcc",
           "snapshotUrls": "https://i.gkd.li/i/16476930"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -49,7 +50,8 @@ export default defineGkdApp({
           "matches": "[text=\"放弃奖励离开\"]",
           "snapshotUrls": "https://i.gkd.li/i/15484521"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -63,7 +65,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/ff11b8f3-16d8-4613-a113-827f6389c30e",
           "snapshotUrls": "https://i.gkd.li/i/16476931"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -76,7 +79,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/bbb19188-567d-4e5c-8ffd-f9576b5e1188",
           "snapshotUrls": "https://i.gkd.li/i/16476933"
         }
-      ]
+      ],
+      "enable": false
     }
   ]
 } as any);

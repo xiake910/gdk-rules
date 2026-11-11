@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -24,7 +24,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/21979253"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -38,7 +39,8 @@ export default defineGkdApp({
           "matches": "[text=\"开启后台无限制\"] + [vid=\"close_icon\"]",
           "snapshotUrls": "https://i.gkd.li/i/13495035"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -62,7 +64,8 @@ export default defineGkdApp({
           "matches": "@[clickable=true] > [desc=\"Close\"]",
           "snapshotUrls": "https://i.gkd.li/i/23923968"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -82,7 +85,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/13626328"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -94,7 +98,8 @@ export default defineGkdApp({
           "matches": "[vid=\"bannerAnnouncementView\"] [vid=\"iv_close\"][clickable=true]",
           "snapshotUrls": "https://i.gkd.li/i/24099864"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 6,
@@ -106,7 +111,8 @@ export default defineGkdApp({
           "matches": "@[vid=\"close_instruction\"][clickable=true] - [text^=\"鼾声梦话监测开关因麦克风未授权而关闭\"]",
           "snapshotUrls": "https://i.gkd.li/i/24229351"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,

@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -20,14 +20,16 @@ export default defineGkdApp({
           "matches": "[vid=\"imgCloseHomePageDialog\"]",
           "snapshotUrls": "https://i.gkd.li/i/13761641"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
       "name": "局部广告-首页信息流广告",
       "activityIds": ".refactor.business.main.activity.MainActivity",
       "rules": "[vid=\"textAdTag\"] + [vid=\"imgClose\"]",
-      "snapshotUrls": "https://i.gkd.li/i/12706115"
+      "snapshotUrls": "https://i.gkd.li/i/12706115",
+      "enable": false
     },
     {
       "key": 4,
@@ -45,7 +47,8 @@ export default defineGkdApp({
           "matches": "[vid=\"contentContainer\"] + [vid=\"closeImageView\"]",
           "snapshotUrls": "https://i.gkd.li/i/13766358"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -54,7 +57,8 @@ export default defineGkdApp({
       "resetMatch": "app",
       "fastQuery": true,
       "rules": "@[text=\"暂不开启\"] +2 [text=\"开启通知权限\"]",
-      "snapshotUrls": "https://i.gkd.li/i/13761671"
+      "snapshotUrls": "https://i.gkd.li/i/13761671",
+      "enable": false
     },
     {
       "key": 6,
@@ -69,7 +73,8 @@ export default defineGkdApp({
           "exampleUrls": "https://m.gkd.li/57941037/6b0091e9-1bf1-49bd-be5c-e6997bc9accb",
           "snapshotUrls": "https://i.gkd.li/i/14126005"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 1,

@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -18,7 +18,8 @@ export default defineGkdApp({
           "matches": "@ImageView[desc=\"关闭\"][clickable=true][visibleToUser=true] <3 FrameLayout < FrameLayout < [id=\"android:id/content\"]",
           "snapshotUrls": "https://i.gkd.li/i/13218347"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -57,7 +58,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/065da3a4-b746-4ec7-a681-a6fd687c5f70",
           "snapshotUrls": "https://i.gkd.li/i/20921664"
         }
-      ]
+      ],
+      "enable": false
     }
   ]
 } as any);

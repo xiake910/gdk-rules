@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -24,7 +24,8 @@ export default defineGkdApp({
           "matches": "[text=\"关闭广告\"]",
           "snapshotUrls": "https://i.gkd.li/i/13070974"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 9,
@@ -40,7 +41,8 @@ export default defineGkdApp({
           ],
           "exampleUrls": "https://m.gkd.li/57941037/0f4f6a7f-55ce-4f87-a4cb-97e9c7107359"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 10,
@@ -74,7 +76,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/14209001"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 12,
@@ -90,7 +93,8 @@ export default defineGkdApp({
           "matches": "[text=\"开启消息通知\"] < * + [vid=\"view_alert_cancel\"][visibleToUser=true]",
           "snapshotUrls": "https://i.gkd.li/i/12695736"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 13,
@@ -104,7 +108,8 @@ export default defineGkdApp({
           "matches": "WebView[text=\"天天签到\"] TextView[text=\"炫耀一下\"] + TextView[clickable=true]",
           "snapshotUrls": "https://i.gkd.li/i/13440341"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 15,
@@ -117,7 +122,8 @@ export default defineGkdApp({
           "matches": "@View[clickable=true][text=\"关闭按钮\"] <<n [vid=\"view_content_container\"]",
           "snapshotUrls": "https://i.gkd.li/i/13848688"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 1,

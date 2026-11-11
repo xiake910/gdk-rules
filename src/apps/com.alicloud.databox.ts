@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -34,7 +34,8 @@ export default defineGkdApp({
           "matches": "[vid=\"ivCardBackBackground\"][visibleToUser=true]",
           "snapshotUrls": "https://i.gkd.li/i/15144565"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 1,
@@ -49,7 +50,8 @@ export default defineGkdApp({
           "matches": "@TextView[clickable=true][visibleToUser=true] - Image[text!=null] < View < View < View < WebView < WebView < [vid=\"webContainer\"]",
           "snapshotUrls": "https://i.gkd.li/i/14235204"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -64,7 +66,8 @@ export default defineGkdApp({
           "matches": "[text*=\"新版本\"] -n @[clickable=true][getChild(0).name$=\"Image\"] <<4 [id=\"root\"] <<3 [vid=\"webContainer\"]",
           "snapshotUrls": "https://i.gkd.li/i/13806865"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -77,7 +80,8 @@ export default defineGkdApp({
           "matches": "@TextView[childCount=0][clickable=true][visibleToUser=true] <4 View[childCount=4] < View < View < WebView < WebView < [vid=\"webContainer\"]",
           "snapshotUrls": "https://i.gkd.li/i/14414446"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -91,7 +95,8 @@ export default defineGkdApp({
           "matches": "[text=\"确认并登录\"][clickable=true]",
           "snapshotUrls": "https://i.gkd.li/i/14414503"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 6,
@@ -108,7 +113,8 @@ export default defineGkdApp({
           "exampleUrls": "https://m.gkd.li/57941037/a219a480-c0a3-4064-832d-533f66995fed",
           "snapshotUrls": "https://i.gkd.li/i/15158788"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 7,
@@ -124,7 +130,8 @@ export default defineGkdApp({
           "matches": "[vid=\"close\"]",
           "snapshotUrls": "https://i.gkd.li/i/15433289"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,

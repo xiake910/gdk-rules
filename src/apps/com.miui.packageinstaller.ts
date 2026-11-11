@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -27,7 +27,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/859dac99-62ca-4876-bdfb-c84795254111",
           "snapshotUrls": "https://i.gkd.li/i/16487142"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 13,
@@ -68,7 +69,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/16487274",
           "excludeSnapshotUrls": "https://i.gkd.li/i/20282424"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 14,
@@ -108,7 +110,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/20287160"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 15,
@@ -127,7 +130,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/e470baf2-56dc-4e3c-8da0-9747eeec602f",
           "snapshotUrls": "https://i.gkd.li/i/17898736"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 16,
@@ -151,7 +155,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/20642970"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 17,
@@ -196,7 +201,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/20746863"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 18,
@@ -208,7 +214,8 @@ export default defineGkdApp({
           "matches": "[text=\"已了解此应用存在风险\"][checked=false][visibleToUser=true]",
           "snapshotUrls": "https://i.gkd.li/i/25095995"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 19,
@@ -225,7 +232,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/34111857",
           "exampleUrls": "https://e.gkd.li/abecebb8-cfb1-4cd0-b035-eceda488e40e"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "enable": false,

@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -21,7 +21,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/23282793"
         }
       ],
-      "order": -10
+      "order": -10,
+      "enable": true
     },
     {
       "key": 1,
@@ -42,7 +43,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/18175292"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -79,7 +81,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/31410963"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -162,7 +165,8 @@ export default defineGkdApp({
           "matches": "TextureView < FrameLayout + FrameLayout > TextView[text=\"关闭\"][clickable=true][visibleToUser=true]",
           "snapshotUrls": "https://i.gkd.li/i/34167893"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -175,7 +179,8 @@ export default defineGkdApp({
           "matches": "@ImageView +2 FrameLayout >3 [text=\"关注\"]",
           "snapshotUrls": "https://i.gkd.li/i/13399505"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -283,7 +288,8 @@ export default defineGkdApp({
           ],
           "exampleUrls": "https://e.gkd.li/e04bcb90-ad61-43d9-97e9-b4f6e3873320"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 6,
@@ -297,7 +303,8 @@ export default defineGkdApp({
           "matches": "@ImageView[clickable=true] +3 * > [text=\"五星好评\"]",
           "snapshotUrls": "https://i.gkd.li/i/14395093"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 10,
@@ -339,7 +346,8 @@ export default defineGkdApp({
           "matches": "TextView[text=\"暂不开启\"] < @[clickable=true] <n View < View < ComposeView < * < * < [id=\"android:id/content\"]",
           "snapshotUrls": "https://i.gkd.li/i/33832486"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 15,
@@ -362,7 +370,8 @@ export default defineGkdApp({
           "matches": "[text=\"退出\"][clickable=true]",
           "snapshotUrls": "https://i.gkd.li/i/28906845"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 16,
@@ -425,7 +434,8 @@ export default defineGkdApp({
           "matches": "@[clickable=true][width<120 && height<120] + LinearLayout > [text=\"当前无新视频\"][visibleToUser=true]",
           "snapshotUrls": "https://i.gkd.li/i/24689246"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 17,
@@ -442,7 +452,8 @@ export default defineGkdApp({
           ],
           "snapshotUrls": "https://i.gkd.li/i/21589381"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 18,
@@ -484,7 +495,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/d8949efa-e2f7-49d2-a8d7-4837ed349aef",
           "snapshotUrls": "https://i.gkd.li/i/26528931"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 19,
@@ -498,7 +510,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/28784392",
           "exampleUrls": "https://e.gkd.li/b4cb96bd-0ced-4228-bd4a-a1be162bb75a"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 20,
@@ -524,7 +537,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/34419676",
           "exampleUrls": "https://e.gkd.li/77dca54c-86b8-40a6-b00a-44e4f8adedf8"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 0,
@@ -580,7 +594,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/f838939f-d42d-4bf8-9a68-59f4d4ec0d9b",
           "snapshotUrls": "https://i.gkd.li/i/24706223"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,
@@ -626,7 +641,8 @@ export default defineGkdApp({
           "matches": "@[clickable=true][width<120 && height<120] + LinearLayout > [text=\"当前无新视频\"][visibleToUser=true]",
           "snapshotUrls": "https://i.gkd.li/i/24689246"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3001,

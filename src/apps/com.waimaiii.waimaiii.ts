@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -17,7 +17,8 @@ export default defineGkdApp({
           "matches": "View > View[childCount=2] > ImageView[clickable=true] + ImageView[id=\"\"][clickable=true]",
           "snapshotUrls": "https://i.gkd.li/i/13346187"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -38,7 +39,8 @@ export default defineGkdApp({
           "matches": "ImageView[childCount=0] < @ViewGroup[clickable=true][childCount=1] <2 ViewGroup <2 ViewGroup <2 ViewGroup - ViewGroup >3 [text=\"广告\"]",
           "snapshotUrls": "https://i.gkd.li/i/24656915"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 0,
@@ -71,7 +73,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/import/13930573"
         }
       ],
-      "order": -10
+      "order": -10,
+      "enable": true
     },
     {
       "key": 3000,

@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -18,7 +18,8 @@ export default defineGkdApp({
           "matches": "[text=\"允许通知\"] + [text=\"不，谢谢\"]",
           "snapshotUrls": "https://i.gkd.li/i/13646187"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -32,7 +33,8 @@ export default defineGkdApp({
           "exampleUrls": "https://m.gkd.li/57941037/487f4236-676c-4fb3-bcac-17b4644edd46",
           "snapshotUrls": "https://i.gkd.li/i/14325653"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -45,7 +47,8 @@ export default defineGkdApp({
           "exampleUrls": "https://m.gkd.li/57941037/81f9a737-a111-4630-898b-4f2b5de0623b",
           "snapshotUrls": "https://i.gkd.li/i/14614992"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 6,
@@ -58,7 +61,8 @@ export default defineGkdApp({
           "exampleUrls": "https://m.gkd.li/57941037/fea75b5a-010d-4f67-8998-6cf794eda975",
           "snapshotUrls": "https://i.gkd.li/i/14610025"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 7,
@@ -77,7 +81,8 @@ export default defineGkdApp({
             "https://e.gkd.li/ef904338-6c7a-4939-9333-dde30089f409"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 8,
@@ -97,7 +102,8 @@ export default defineGkdApp({
             "https://e.gkd.li/07e82326-38a4-4742-bf54-ed24b7769f0c"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 9,
@@ -113,7 +119,8 @@ export default defineGkdApp({
           ],
           "exampleUrls": "https://e.gkd.li/df8b81cd-1bfa-402a-a317-610f9d713674"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,

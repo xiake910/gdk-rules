@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -33,7 +33,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/79b75132-9d6f-4e4c-a95b-56dbaca1965d",
           "snapshotUrls": "https://i.gkd.li/i/18194356"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -53,7 +54,8 @@ export default defineGkdApp({
           "matches": "FrameLayout > FrameLayout > FrameLayout[childCount=2] > ImageView + ImageView[clickable=true][visibleToUser=true]",
           "snapshotUrls": "https://i.gkd.li/i/13761236"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 10,
@@ -73,7 +75,8 @@ export default defineGkdApp({
           "matches": "[text^=\"开启通知\"] < LinearLayout +2 ImageView[desc=\"关闭\"]",
           "snapshotUrls": "https://i.gkd.li/i/12840217"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 11,
@@ -106,7 +109,8 @@ export default defineGkdApp({
           "matches": "@LinearLayout[clickable=true] > RelativeLayout + TextView[text=\"不感兴趣\"]",
           "snapshotUrls": "https://i.gkd.li/i/12679277"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 12,
@@ -143,7 +147,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/17893117"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 13,
@@ -155,7 +160,8 @@ export default defineGkdApp({
           "matches": "FlattenUIText[text=\"参与讨论\"] + FlattenUIImage[clickable=true]",
           "snapshotUrls": "https://i.gkd.li/i/12706699"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 14,
@@ -180,7 +186,8 @@ export default defineGkdApp({
           "matches": "UIText[text=\"广告\"] +n UIText[text=\"关闭\"]",
           "snapshotUrls": "https://i.gkd.li/i/13402480"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 15,
@@ -192,7 +199,8 @@ export default defineGkdApp({
           "matches": "FrameLayout[childCount=8] > FlattenUIImage[index=7]",
           "snapshotUrls": "https://i.gkd.li/i/13828331"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 16,
@@ -208,7 +216,8 @@ export default defineGkdApp({
           "exampleUrls": "https://m.gkd.li/57941037/c938001e-f39b-4ece-ad0e-2c93ba41aa94",
           "snapshotUrls": "https://i.gkd.li/i/14717889"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 17,
@@ -227,7 +236,8 @@ export default defineGkdApp({
           "exampleUrls": "https://m.gkd.li/57941037/6166519d-d38d-49c0-b54b-72c25670aa24",
           "snapshotUrls": "https://i.gkd.li/i/15102876"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 18,
@@ -255,7 +265,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/057d40f6-f94e-4b54-857f-b5b11de245a5",
           "snapshotUrls": "https://i.gkd.li/i/17681713"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,
@@ -271,7 +282,8 @@ export default defineGkdApp({
           "exampleUrls": "https://m.gkd.li/57941037/6166519d-d38d-49c0-b54b-72c25670aa24",
           "snapshotUrls": "https://i.gkd.li/i/15102876"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "enable": false,

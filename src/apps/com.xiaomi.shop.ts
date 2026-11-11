@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -33,7 +33,8 @@ export default defineGkdApp({
           "matches": "@ImageView[clickable=true][childCount=0][visibleToUser=true] <2 FrameLayout[childCount=2] < [id=\"android:id/content\"]",
           "snapshotUrls": "https://i.gkd.li/i/22550140"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -48,7 +49,8 @@ export default defineGkdApp({
           "matches": "[id=\"com.xiaomi.shop.plugin.homepage:id/home_bottom_float_close_btn\"]",
           "snapshotUrls": "https://i.gkd.li/i/15528092"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -66,7 +68,8 @@ export default defineGkdApp({
           "matches": "@LinearLayout[childCount=0] < [id=\"android:id/content\"][childCount=1] < [vid=\"action_bar_root\"]",
           "snapshotUrls": "https://i.gkd.li/i/19547338"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -78,7 +81,8 @@ export default defineGkdApp({
           "matches": "ImageView < @ViewGroup[clickable=true] - [text^=\"请对\"][text$=\"进行评价\"]",
           "snapshotUrls": "https://i.gkd.li/i/23206873"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,

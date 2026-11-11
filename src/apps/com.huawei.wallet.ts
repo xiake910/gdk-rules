@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -18,7 +18,8 @@ export default defineGkdApp({
           "matches": "[text=\"开启钱包扩展服务\"] +2 [vid=\"linear_close\"]",
           "snapshotUrls": "https://i.gkd.li/i/13441814"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -35,7 +36,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/7fcdf7d8-d9db-4b30-840d-3f656f645fe3",
           "snapshotUrls": "https://i.gkd.li/i/16397908"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -58,7 +60,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/f0d67fb4-ccdb-443b-8e4e-9dff2242a84f",
           "snapshotUrls": "https://i.gkd.li/i/16833452"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -71,7 +74,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/984fd805-ad50-4ffc-adce-fffe42109e98",
           "snapshotUrls": "https://i.gkd.li/i/18146717"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -88,7 +92,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/87466a06-2169-4808-971e-d347cd40ac66",
           "snapshotUrls": "https://i.gkd.li/i/20918311"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,

@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（全局规则来自 667 / AIsouler / 甘霖）
+// 自动生成, 请勿手改（全局规则默认全部关闭）
 import { defineGkdGlobalGroups } from '@gkd-kit/define';
 
 export default defineGkdGlobalGroups([
@@ -1578,7 +1578,8 @@ export default defineGkdGlobalGroups([
         "id": "com.huawei.hwireader",
         "enable": true
       }
-    ]
+    ],
+    "enable": false
   },
   {
     "key": 1,
@@ -3097,7 +3098,8 @@ export default defineGkdGlobalGroups([
         "id": "com.hihonor.phoneservice",
         "enable": true
       }
-    ]
+    ],
+    "enable": false
   },
   {
     "key": 2,
@@ -4672,6 +4674,7 @@ export default defineGkdGlobalGroups([
         "id": "com.coloros.weather2",
         "enable": false
       }
-    ]
+    ],
+    "enable": false
   }
 ] as any);

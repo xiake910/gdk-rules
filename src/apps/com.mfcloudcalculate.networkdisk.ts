@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -166,7 +166,8 @@ export default defineGkdApp({
           "matches": "[id=\"ad_area\"] > [id=\"close_btn\"]",
           "snapshotUrls": "https://i.gkd.li/i/25128394"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -181,7 +182,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/02cf5d37-8808-4abb-abf9-81f7ba8a8375",
           "snapshotUrls": "https://i.gkd.li/i/17456852"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -204,7 +206,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/b84f0579-952b-4c6c-9706-dc300eb4a555",
           "snapshotUrls": "https://i.gkd.li/i/20521452"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -220,7 +223,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/e86a59e7-9329-4931-9bdd-5f6b4f896294",
           "snapshotUrls": "https://i.gkd.li/i/21326468"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 6,
@@ -300,7 +304,8 @@ export default defineGkdApp({
           "matches": "@[clickable=true] >2 [text=\"不感兴趣\"][visibleToUser=true]",
           "snapshotUrls": "https://i.gkd.li/i/24590419"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 7,
@@ -317,7 +322,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/24675589"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,
@@ -480,7 +486,8 @@ export default defineGkdApp({
           "matches": "[id=\"ad_area\"] > [id=\"close_btn\"]",
           "snapshotUrls": "https://i.gkd.li/i/25128394"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3001,
@@ -544,7 +551,8 @@ export default defineGkdApp({
           ]
         }
       ],
-      "order": -10
+      "order": -10,
+      "enable": true
     }
   ]
 } as any);

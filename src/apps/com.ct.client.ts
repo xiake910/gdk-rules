@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -22,7 +22,8 @@ export default defineGkdApp({
           ]
         }
       ],
-      "order": -10
+      "order": -10,
+      "enable": true
     },
     {
       "key": 1,
@@ -37,7 +38,8 @@ export default defineGkdApp({
           "matches": "[vid=\"tvSkip\"]",
           "snapshotUrls": "https://i.gkd.li/i/12508971"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -60,7 +62,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/13695096"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -81,14 +84,16 @@ export default defineGkdApp({
             "https://i.gkd.li/i/15104434"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
       "name": "全屏广告-弹窗广告",
       "activityIds": ".common.webview.OnlineBusinessWebkitActivity",
       "rules": "Image[text=\"tishi-close\"]",
-      "snapshotUrls": "https://i.gkd.li/i/12913804"
+      "snapshotUrls": "https://i.gkd.li/i/12913804",
+      "enable": false
     },
     {
       "key": 5,
@@ -110,7 +115,8 @@ export default defineGkdApp({
           "matches": "[text^=\"开启消息通知\"] - [vid=\"ivClose\"]",
           "snapshotUrls": "https://i.gkd.li/i/15209597"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 6,
@@ -130,7 +136,8 @@ export default defineGkdApp({
           "exampleUrls": "https://m.gkd.li/57941037/a97bf7a2-6e35-4922-ad0d-8677fca79f7c",
           "snapshotUrls": "https://i.gkd.li/i/13043345"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 7,
@@ -146,7 +153,8 @@ export default defineGkdApp({
           "exampleUrls": "https://m.gkd.li/57941037/5dd9c9e3-f290-4b73-abdd-dc5e97a99772",
           "snapshotUrls": "https://i.gkd.li/i/15137220"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 8,
@@ -187,7 +195,8 @@ export default defineGkdApp({
           "matches": "[text=\"Login with Current Number\"]",
           "snapshotUrls": "https://i.gkd.li/i/22843896"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,

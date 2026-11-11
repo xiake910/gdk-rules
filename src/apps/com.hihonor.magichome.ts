@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -10,7 +10,8 @@ export default defineGkdApp({
       "name": "局部广告-首页顶部广告",
       "activityIds": ".business.MainActivity",
       "rules": "[vid=\"item_close_image\"]",
-      "snapshotUrls": "https://i.gkd.li/i/12843930"
+      "snapshotUrls": "https://i.gkd.li/i/12843930",
+      "enable": false
     },
     {
       "key": 11,
@@ -18,7 +19,8 @@ export default defineGkdApp({
       "desc": "推荐服务声明弹窗。默认点击\"取消\"按钮",
       "activityIds": ".business.MainActivity",
       "rules": "[text$=\"推荐服务声明\"] < LinearLayout < LinearLayout + LinearLayout > [vid=\"negative_btn\"]",
-      "snapshotUrls": "https://i.gkd.li/i/12843976"
+      "snapshotUrls": "https://i.gkd.li/i/12843976",
+      "enable": false
     },
     {
       "key": 12,
@@ -34,7 +36,8 @@ export default defineGkdApp({
           "matches": "TextView[text=\"立即更新\"] -2 [vid=\"negative_btn\"][text=\"以后再说\"]",
           "snapshotUrls": "https://i.gkd.li/i/12916700"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,

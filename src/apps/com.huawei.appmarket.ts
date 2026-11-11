@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -19,7 +19,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/15523957"
         }
       ],
-      "order": -10
+      "order": -10,
+      "enable": true
     },
     {
       "key": 1,
@@ -34,7 +35,8 @@ export default defineGkdApp({
           "matches": "@[text=\"以后再说\"] + [text=\"立即更新\"]",
           "snapshotUrls": "https://i.gkd.li/i/13228520"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -49,7 +51,8 @@ export default defineGkdApp({
           "exampleUrls": "https://m.gkd.li/57941037/e2283b1d-3041-49c5-aca2-7c165c83ce37",
           "snapshotUrls": "https://i.gkd.li/i/14738587"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -69,7 +72,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/24640204"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -83,7 +87,8 @@ export default defineGkdApp({
           "exampleUrls": "https://m.gkd.li/57941037/13a31ae0-10c8-49bc-9154-363498237eff",
           "snapshotUrls": "https://i.gkd.li/i/15523964"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 6,
@@ -97,7 +102,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/1a0531ef-a18c-483d-8ac9-b50c96c6431d",
           "snapshotUrls": "https://i.gkd.li/i/18328929"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 7,
@@ -129,7 +135,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/445fc7d4-8ee3-4f29-a79b-cd4c0d4fd11f",
           "snapshotUrls": "https://i.gkd.li/i/18492760"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 8,
@@ -144,7 +151,8 @@ export default defineGkdApp({
           ],
           "snapshotUrls": "https://i.gkd.li/i/25933091"
         }
-      ]
+      ],
+      "enable": false
     }
   ]
 } as any);

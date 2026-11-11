@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -81,7 +81,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/17158050"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -98,7 +99,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/6ad6e4c6-3cb7-41b2-a37b-bcaa3c06de34",
           "snapshotUrls": "https://i.gkd.li/i/24465121"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -121,7 +123,8 @@ export default defineGkdApp({
             "https://e.gkd.li/f23d301b-22d0-4c9f-b208-c1d9b6425b9d"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -149,7 +152,8 @@ export default defineGkdApp({
             "https://e.gkd.li/d197b6ad-a931-498f-b817-fb90c911d67b"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -166,7 +170,8 @@ export default defineGkdApp({
           ],
           "activityIds": ".PackageInstallerActivity"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 6,
@@ -183,7 +188,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/34431696",
           "activityIds": ".PackageInstallerActivity"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 7,
@@ -202,7 +208,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/34540653",
           "exampleUrls": "https://e.gkd.li/0f96ada2-22a5-4220-9e8a-54a5d43df254"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,
@@ -218,7 +225,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/2961e749-6aac-4f74-b7f7-268ecc0e14f4",
           "snapshotUrls": "https://i.gkd.li/i/24540505"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3001,
@@ -244,7 +252,8 @@ export default defineGkdApp({
           "matches": "@LinearLayout[clickable=true][id=null] > [text=\"继续安装\"]",
           "snapshotUrls": "https://i.gkd.li/i/22870985"
         }
-      ]
+      ],
+      "enable": false
     }
   ]
 } as any);

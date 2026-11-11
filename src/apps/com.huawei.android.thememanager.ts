@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -24,7 +24,8 @@ export default defineGkdApp({
           ]
         }
       ],
-      "order": -10
+      "order": -10,
+      "enable": true
     },
     {
       "key": 1,
@@ -45,7 +46,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/5e5afbbf-b891-47f3-9543-48ceb3fd0104",
           "snapshotUrls": "https://i.gkd.li/i/16993276"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -99,7 +101,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/16993186"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 7,
@@ -119,7 +122,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/12667815"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 9,
@@ -128,7 +132,8 @@ export default defineGkdApp({
       "actionMaximum": 1,
       "resetMatch": "app",
       "rules": "@[text=\"取消\"] < * - * >n [text=\"开启消息通知\"]",
-      "snapshotUrls": "https://i.gkd.li/i/12918192"
+      "snapshotUrls": "https://i.gkd.li/i/12918192",
+      "enable": false
     },
     {
       "key": 3000,

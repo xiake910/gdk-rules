@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -18,7 +18,8 @@ export default defineGkdApp({
           "matches": "[vid=\"iv_close\"]",
           "snapshotUrls": "https://i.gkd.li/i/13405130"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -45,7 +46,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/bd53a023-f83a-45ae-b58e-c7369f29bb2e",
           "snapshotUrls": "https://i.gkd.li/i/16965108"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -66,7 +68,8 @@ export default defineGkdApp({
           "matches": "[vid=\"ll_uninterested\"]",
           "snapshotUrls": "https://i.gkd.li/i/13690830"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -85,7 +88,8 @@ export default defineGkdApp({
           "matches": "@FrameLayout[visibleToUser=true] +2 * > [text=\"广告\"][visibleToUser=true]",
           "snapshotUrls": "https://i.gkd.li/i/14814348"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -101,7 +105,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/14814412"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,

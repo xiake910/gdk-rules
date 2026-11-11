@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -22,7 +22,8 @@ export default defineGkdApp({
           ]
         }
       ],
-      "order": -10
+      "order": -10,
+      "enable": true
     },
     {
       "key": 1,
@@ -106,7 +107,8 @@ export default defineGkdApp({
           "matches": "Image[text*=\".jpg\"][width<150 && height<150] < [visibleToUser=true] < @View[clickable=true][childCount=1] <<n FrameLayout[id=null] - [vid=\"layermanager_penetrate_webview_container_id\"]",
           "snapshotUrls": "https://i.gkd.li/i/30710740"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -151,7 +153,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/25658605",
           "exampleUrls": "https://e.gkd.li/97345886-418c-4a43-a5e2-014ee822b6a2"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -177,7 +180,8 @@ export default defineGkdApp({
           "matches": "@FrameLayout[desc=\"关闭\"][clickable=true] <<n [vid=\"ll_dinamicx_container\"]",
           "snapshotUrls": "https://i.gkd.li/i/23289445"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 8,
@@ -204,7 +208,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/30726795"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 9,
@@ -223,7 +228,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/13197546"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 12,
@@ -248,7 +254,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/24999523"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 13,
@@ -277,7 +284,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/14471858"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 14,
@@ -290,7 +298,8 @@ export default defineGkdApp({
           "matches": "View[text=\"立即添加\"] + View[text=\"取消\"]",
           "snapshotUrls": "https://i.gkd.li/i/13598578"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 15,
@@ -314,7 +323,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/23146078"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 16,
@@ -335,7 +345,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/13898735"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 19,
@@ -350,7 +361,8 @@ export default defineGkdApp({
           "matches": "[vid=\"view_close\"]",
           "snapshotUrls": "https://i.gkd.li/i/15124094"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 20,
@@ -369,7 +381,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/28432106"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 21,
@@ -397,7 +410,8 @@ export default defineGkdApp({
           "matches": "@ImageView[clickable=true][width<150 && height<155] < FrameLayout <2 FrameLayout < FrameLayout < FrameLayout < FrameLayout <2 [vid=\"weex_render_view\"]",
           "snapshotUrls": "https://i.gkd.li/i/23923991"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 22,
@@ -426,7 +440,8 @@ export default defineGkdApp({
           ],
           "exampleUrls": "https://e.gkd.li/1c06ab8e-178b-469e-8288-6e1b73e4c1e9"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 23,
@@ -443,7 +458,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/26426385",
           "exampleUrls": "https://e.gkd.li/535839e5-4912-4c7e-96a4-d9b39a420a32"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,
@@ -461,7 +477,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/23140899"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3001,
@@ -490,7 +507,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/23165427"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "enable": false,

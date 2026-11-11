@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -63,7 +63,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/26c77ba0-8be5-4966-b806-3a566fee8413",
           "snapshotUrls": "https://i.gkd.li/i/16987313"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -78,7 +79,8 @@ export default defineGkdApp({
           "exampleUrls": "https://m.gkd.li/57941037/31613a9d-202a-4359-bc99-274dddb180ce",
           "snapshotUrls": "https://i.gkd.li/i/14325666"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -119,7 +121,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/1f1c3315-d245-404b-ad16-554583b16283",
           "snapshotUrls": "https://i.gkd.li/i/21120146"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -142,7 +145,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/29600413"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -175,7 +179,8 @@ export default defineGkdApp({
           "matches": "[vid=\"cll_cover\"][visibleToUser=true][clickable=true]",
           "snapshotUrls": "https://i.gkd.li/i/25091375"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 6,
@@ -188,7 +193,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/26838549",
           "exampleUrls": "https://e.gkd.li/1afd52fe-9d69-489f-9a79-68eb2d8ed82d"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,
@@ -203,7 +209,8 @@ export default defineGkdApp({
           "matches": "@FrameLayout[clickable=true][getChild(0).vid=\"fav_line_layout\"] - LinearLayout >2 [text=\"我的收藏\"][visibleToUser=true]",
           "snapshotUrls": "https://i.gkd.li/i/25091170"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3001,
@@ -228,7 +235,8 @@ export default defineGkdApp({
           "matches": "[vid=\"cll_cover\"][visibleToUser=true][clickable=true]",
           "snapshotUrls": "https://i.gkd.li/i/25091375"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3002,

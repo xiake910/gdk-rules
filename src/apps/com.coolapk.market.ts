@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -66,7 +66,8 @@ export default defineGkdApp({
           ]
         }
       ],
-      "order": -10
+      "order": -10,
+      "enable": true
     },
     {
       "key": 0,
@@ -127,7 +128,8 @@ export default defineGkdApp({
           "matches": "[text=\"不感兴趣\"][clickable=true][visibleToUser=true]",
           "snapshotUrls": "https://i.gkd.li/i/21036817"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 1,
@@ -152,7 +154,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/19b5d743-3632-4c64-8e51-b55c85070512",
           "snapshotUrls": "https://i.gkd.li/i/23096630"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -173,7 +176,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/20708984"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -193,7 +197,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/16448385"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -207,7 +212,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/efd366d9-1c66-4c35-b164-6f91a623e2f2",
           "snapshotUrls": "https://i.gkd.li/i/19643150"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 6,
@@ -234,7 +240,8 @@ export default defineGkdApp({
           "matches": "[text=\"保存原图\"] < @[clickable=true] <n View[childCount>2] < View < View < View < ViewGroup < [id=\"android:id/content\"]",
           "snapshotUrls": "https://i.gkd.li/i/28377623"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 7,
@@ -248,7 +255,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/30532352",
           "exampleUrls": "https://e.gkd.li/dbf91283-a342-416e-a009-5b7e67301c77"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,

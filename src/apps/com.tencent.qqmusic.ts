@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -30,7 +30,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/17068758"
         }
       ],
-      "order": -10
+      "order": -10,
+      "enable": true
     },
     {
       "key": 1,
@@ -110,7 +111,8 @@ export default defineGkdApp({
           "matches": "RecyclerView > LinearLayout[childCount=3] >5 ViewGroup[childCount=3] > @ViewGroup[clickable=true] >2 ImageView[text=null][desc=null][visibleToUser=true]",
           "snapshotUrls": "https://i.gkd.li/i/15756931"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -200,7 +202,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/e3d904e1-dfe5-4d12-b8c8-b1eead8459c9",
           "snapshotUrls": "https://i.gkd.li/i/18428240"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -215,7 +218,8 @@ export default defineGkdApp({
           "matches": "[text=\"抢先体验\"] -2 [text=\"不再提醒\"]",
           "snapshotUrls": "https://i.gkd.li/i/13178485"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 8,
@@ -230,7 +234,8 @@ export default defineGkdApp({
           "matches": "@[vid=\"close_btn\"] - * > [text*=\"好评\"]",
           "snapshotUrls": "https://i.gkd.li/i/14881903"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 9,
@@ -252,7 +257,8 @@ export default defineGkdApp({
           "matches": "@[clickable=true] > [text=\"不感兴趣\"]",
           "snapshotUrls": "https://i.gkd.li/i/15010226"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 11,
@@ -266,7 +272,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/40846baf-4638-4740-970a-30924cbd9414",
           "snapshotUrls": "https://i.gkd.li/i/18410610"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,

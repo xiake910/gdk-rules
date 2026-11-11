@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -15,7 +15,8 @@ export default defineGkdApp({
           "matches": "[text=\"继续安装\"]",
           "snapshotUrls": "https://i.gkd.li/i/13269875"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 11,
@@ -37,7 +38,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/13476592"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 12,
@@ -58,7 +60,8 @@ export default defineGkdApp({
           ],
           "excludeSnapshotUrls": "https://i.gkd.li/i/18126157"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 13,
@@ -70,7 +73,8 @@ export default defineGkdApp({
           "matches": "@[text=\"知道了\"] + [text=\"省电模式\"]",
           "snapshotUrls": "https://i.gkd.li/i/14468423"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 14,
@@ -106,7 +110,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/15242825"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 15,
@@ -129,7 +134,8 @@ export default defineGkdApp({
           ],
           "snapshotUrls": "https://i.gkd.li/i/15531343"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 16,
@@ -146,7 +152,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/02c752e7-3dd9-47dc-819b-e8246de29b6a",
           "snapshotUrls": "https://i.gkd.li/i/17174152"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 17,
@@ -169,7 +176,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/17276586"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 18,
@@ -185,7 +193,8 @@ export default defineGkdApp({
           ],
           "snapshotUrls": "https://i.gkd.li/i/23096094"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 19,
@@ -197,7 +206,8 @@ export default defineGkdApp({
           "matches": "[text=\"仍然支付\"][clickable=true]",
           "snapshotUrls": "https://i.gkd.li/i/24717617"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "enable": false,

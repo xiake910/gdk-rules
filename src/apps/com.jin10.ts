@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -17,7 +17,8 @@ export default defineGkdApp({
           "matches": "@[vid=\"update_cancel\"] + [vid=\"iv_pic\"]",
           "snapshotUrls": "https://i.gkd.li/i/12706043"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -34,7 +35,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/31375320"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 10,
@@ -45,7 +47,8 @@ export default defineGkdApp({
           "matches": "[vid=\"iv_header\"] + [vid=\"iv_close\"]",
           "snapshotUrls": "https://i.gkd.li/i/12706051"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,
@@ -59,7 +62,8 @@ export default defineGkdApp({
           "matches": "[id=\"com.jin10:id/iv_body\"] + [id=\"com.jin10:id/iv_close\"]",
           "snapshotUrls": "https://i.gkd.li/i/12706045"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -70,7 +74,8 @@ export default defineGkdApp({
           "matches": "@[id=\"com.jin10:id/iv_close\"] + [id=\"com.jin10:id/iv_pic\"]",
           "snapshotUrls": "https://i.gkd.li/i/12706047"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3001,

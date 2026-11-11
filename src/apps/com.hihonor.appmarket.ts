@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -23,7 +23,8 @@ export default defineGkdApp({
           ]
         }
       ],
-      "order": -10
+      "order": -10,
+      "enable": true
     },
     {
       "key": 1,
@@ -44,7 +45,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/13168440"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -56,7 +58,8 @@ export default defineGkdApp({
           "matches": "[vid=\"iv_floating_close\"]",
           "snapshotUrls": "https://i.gkd.li/i/13063928"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -71,7 +74,8 @@ export default defineGkdApp({
           "matches": "TextView[text=\"接收通知\"] < LinearLayout < LinearLayout +n [id=\"android:id/buttonPanel\"] Button[text=\"否\"]",
           "snapshotUrls": "https://i.gkd.li/i/13073319"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -91,7 +95,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/12825cd1-cd11-40eb-80e3-45d93c9ad058",
           "snapshotUrls": "https://i.gkd.li/i/21884571"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -107,7 +112,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/34304183",
           "exampleUrls": "https://e.gkd.li/f7626132-4702-4cd4-b036-88935f45734d"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,

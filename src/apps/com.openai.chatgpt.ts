@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -25,7 +25,8 @@ export default defineGkdApp({
           ],
           "exampleUrls": "https://e.gkd.li/db0ecc3d-9401-4c2d-bdc0-32262ce443a4"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -101,7 +102,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/26233818",
           "exampleUrls": "https://e.gkd.li/9b6643fa-6791-481c-8f9f-bb24c65678af"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -116,7 +118,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/26234095",
           "exampleUrls": "https://e.gkd.li/dd8a2887-ea64-466d-b270-de7568b55af4"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -130,7 +133,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/26647576",
           "exampleUrls": "https://e.gkd.li/a53e015f-2b08-4177-80aa-b516d213b333"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -155,7 +159,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/28842245",
           "exampleUrls": "https://e.gkd.li/efa206f7-d18e-4968-8121-fc199dfa12c7"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 6,
@@ -178,7 +183,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/28841916",
           "exampleUrls": "https://e.gkd.li/e08da5f8-fcbc-4448-82df-4e86d457ef1c"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 7,
@@ -201,7 +207,8 @@ export default defineGkdApp({
           "matches": "[desc=\"保存\"] < @View[childCount=2][clickable=true] <<3 View <3 View[childCount>=3] <<(18-n) [id=\"android:id/content\"]",
           "snapshotUrls": "https://i.gkd.li/i/30373379"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,
@@ -213,7 +220,8 @@ export default defineGkdApp({
           "matches": "[text*=\"套餐限额\"] + @View[clickable=true] > [desc=\"关闭\"][visibleToUser=true]",
           "snapshotUrls": "https://i.gkd.li/i/24996012"
         }
-      ]
+      ],
+      "enable": false
     }
   ]
 } as any);

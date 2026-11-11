@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -43,7 +43,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/13959613"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -57,7 +58,8 @@ export default defineGkdApp({
           "matches": "@TextView[text=\"以后再说\"] - FrameLayout >2 TextView[text$=\"升级\"]",
           "snapshotUrls": "https://i.gkd.li/i/13534445"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -78,7 +80,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/13535932"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -90,7 +93,8 @@ export default defineGkdApp({
           "matches": "FrameLayout > RelativeLayout > @ImageView[clickable=true] + [text=\"广告\"]",
           "snapshotUrls": "https://i.gkd.li/i/12811597"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -112,7 +116,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/14321293"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 6,
@@ -134,7 +139,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/14546563"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 7,
@@ -146,7 +152,8 @@ export default defineGkdApp({
           "matches": "@FrameLayout[clickable=true][id!=null] -2 [text=\"广告\"]",
           "snapshotUrls": "https://i.gkd.li/i/13686928"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 8,
@@ -159,7 +166,8 @@ export default defineGkdApp({
           "matches": "FrameLayout[childCount=8] > TextView[text=\"\"]",
           "snapshotUrls": "https://i.gkd.li/i/14034740"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 9,
@@ -174,7 +182,8 @@ export default defineGkdApp({
           "matches": "[text=\"去评价\"]",
           "snapshotUrls": "https://i.gkd.li/i/14810042"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "enable": false,

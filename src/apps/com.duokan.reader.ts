@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -18,7 +18,8 @@ export default defineGkdApp({
           "matches": "[vid=\"store_feed_layer_close\"]",
           "snapshotUrls": "https://i.gkd.li/i/13248773"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -32,7 +33,8 @@ export default defineGkdApp({
           "matches": "[vid=\"reading_stop_read_recommend_stop\"]",
           "snapshotUrls": "https://i.gkd.li/i/13413412"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -45,7 +47,8 @@ export default defineGkdApp({
           "matches": "@ImageView < FrameLayout[vid=\"reading__app_ad_view__close\"]",
           "snapshotUrls": "https://i.gkd.li/i/13497902"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -67,7 +70,8 @@ export default defineGkdApp({
           "matches": "@TextView[vid=\"ad__feedback_close_dialog_button\"][text=\"知道了\"]",
           "snapshotUrls": "https://i.gkd.li/i/13497990"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 6,
@@ -83,7 +87,8 @@ export default defineGkdApp({
           "matches": "[vid=\"general__common_dialog_view__button_frame\"] >2 [text=\"以后再说\"]",
           "snapshotUrls": "https://i.gkd.li/i/14007573"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,

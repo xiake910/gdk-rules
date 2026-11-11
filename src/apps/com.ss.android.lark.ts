@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -15,7 +15,8 @@ export default defineGkdApp({
           "matches": "[text=\"飞书 桌面端登录确认\"] +2 [vid=\"login_button\"]",
           "snapshotUrls": "https://i.gkd.li/i/13494960"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 10,
@@ -28,7 +29,8 @@ export default defineGkdApp({
           "matches": "[vid=\"look_origin_icon\"]",
           "snapshotUrls": "https://i.gkd.li/i/12840528"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 11,
@@ -43,7 +45,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/c985a1e9-ea40-4911-a73f-8ef098909bce",
           "snapshotUrls": "https://i.gkd.li/i/17711351"
         }
-      ]
+      ],
+      "enable": false
     }
   ]
 } as any);

@@ -1,22 +1,26 @@
-// 自动生成, 请勿手改（分类来自 667 / AIsouler / 甘霖）
+// 自动生成, 请勿手改（分类默认值：只有「开屏广告」默认启用）
 import { defineGkdCategories } from '@gkd-kit/define';
 
 export default defineGkdCategories([
   {
     "key": 1,
-    "name": "开屏广告"
+    "name": "开屏广告",
+    "enable": true
   },
   {
     "key": 2,
-    "name": "更新提示"
+    "name": "更新提示",
+    "enable": false
   },
   {
     "key": 3,
-    "name": "权限提示"
+    "name": "权限提示",
+    "enable": false
   },
   {
     "key": 4,
-    "name": "功能类"
+    "name": "功能类",
+    "enable": false
   },
   {
     "key": 104,

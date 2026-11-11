@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -20,7 +20,8 @@ export default defineGkdApp({
           ],
           "snapshotUrls": "https://i.gkd.li/i/13847837"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -33,7 +34,8 @@ export default defineGkdApp({
           "matches": "@ImageView[clickable=true] - * >2 [text^=\"添加您的生日\" || text^=\"Add your birthday\"]",
           "snapshotUrls": "https://i.gkd.li/i/26601844"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -49,7 +51,8 @@ export default defineGkdApp({
           "matches": "@[text=\"Not now\" || text^=\"稍后\"] < [childCount=2] - ScrollView >2 [text*=\"contacts\" || text*=\"联系人\"][text.length>20]",
           "snapshotUrls": "https://i.gkd.li/i/28680747"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -62,7 +65,8 @@ export default defineGkdApp({
           "matches": "@[clickable=true][left>350] > [text=\"保存到相册\" || text=\"儲存到相簿\" || text=\"Save to Gallery\"]",
           "exampleUrls": "https://e.gkd.li/f164341a-32fa-4054-9ae1-85d5e686bd64"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -75,7 +79,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/322731e7-f595-4775-9986-a9cff001e861",
           "activityIds": "org.telegram.ui.LaunchActivity"
         }
-      ]
+      ],
+      "enable": false
     }
   ]
 } as any);

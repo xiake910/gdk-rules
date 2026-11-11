@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -33,7 +33,8 @@ export default defineGkdApp({
           ]
         }
       ],
-      "order": -10
+      "order": -10,
+      "enable": true
     },
     {
       "key": 1,
@@ -90,7 +91,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/23771645"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -116,7 +118,8 @@ export default defineGkdApp({
           "matches": "[vid=\"v_close\"][visibleToUser=true]",
           "snapshotUrls": "https://i.gkd.li/i/23982125"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -157,7 +160,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/24157914"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -199,7 +203,8 @@ export default defineGkdApp({
           "matches": "[text=\"忍痛离开\"] < @ViewGroup[clickable=true] -n * > [text$=\"VIP可畅享千万曲库\"]",
           "snapshotUrls": "https://i.gkd.li/i/24548104"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 6,
@@ -228,7 +233,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/8827aa5a-a105-4910-981c-d9ecc036a87d",
           "snapshotUrls": "https://i.gkd.li/i/18492805"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 14,
@@ -240,7 +246,8 @@ export default defineGkdApp({
           "matches": "[text=\"授权登录\"][clickable=true]",
           "snapshotUrls": "https://i.gkd.li/i/14830218"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 16,
@@ -267,7 +274,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/1e2b2822-01dd-455f-8991-1b746c61c07c",
           "snapshotUrls": "https://i.gkd.li/i/16357210"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 17,
@@ -283,7 +291,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/33880660",
           "exampleUrls": "https://e.gkd.li/61178688-ca5c-4d21-96a2-8d8382665433"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "enable": false,

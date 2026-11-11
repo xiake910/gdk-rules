@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -18,7 +18,8 @@ export default defineGkdApp({
           "matches": "@[vid=\"iv_close\"][clickable=true][visibleToUser=true] -2 [text=\"立即更新\"]",
           "snapshotUrls": "https://i.gkd.li/i/25459821"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -38,7 +39,8 @@ export default defineGkdApp({
             "https://e.gkd.li/27bf621f-41cd-49e1-8923-54ce66d5d4a9"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -51,7 +53,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/26181264",
           "exampleUrls": "https://e.gkd.li/3bc23861-5be3-4efe-a7c0-386d91ef7de7"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -77,7 +80,8 @@ export default defineGkdApp({
             "https://e.gkd.li/5e21f21d-aeb9-4184-a65d-77f3eb47e408"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -91,7 +95,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/28419747",
           "exampleUrls": "https://e.gkd.li/0a1288df-370f-4d98-9a18-f859e82f2c60"
         }
-      ]
+      ],
+      "enable": false
     }
   ]
 } as any);

@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -44,7 +44,8 @@ export default defineGkdApp({
           "matches": "@Image[width<90] - [text=\"花呗服务升级\"] <<3 Dialog <2 View < View[index=parent.childCount.minus(1)] <n WebView <<4 [id=\"com.alipay.multiplatform.phone.xriver_integration:id/h5_pc_container\"]",
           "snapshotUrls": "https://i.gkd.li/i/25000603"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 1,
@@ -90,7 +91,8 @@ export default defineGkdApp({
           "matches": "@[clickable=true][id$=\"iv_close\"] -2 [text*=\"权限\"][text*=\"定位\" || text*=\"位置\"][visibleToUser=true]",
           "snapshotUrls": "https://i.gkd.li/i/32203447"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -123,7 +125,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/14944514"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -171,7 +174,8 @@ export default defineGkdApp({
           "matches": "[text=\"立即升级最新版支付宝客户端\"] < LinearLayout + [id=\"com.alipay.mobile.advertisement:id/announcementview_righticon\"]",
           "snapshotUrls": "https://i.gkd.li/i/13490797"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -212,7 +216,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/24981728"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 11,
@@ -224,7 +229,8 @@ export default defineGkdApp({
           "matches": "[text=\"同意协议并刷脸验证\"] < * -4 * >2 Image[visibleToUser=true]",
           "snapshotUrls": "https://i.gkd.li/i/13915022"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 12,
@@ -247,7 +253,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/17686972"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 13,
@@ -314,7 +321,8 @@ export default defineGkdApp({
           "matches": "View[width=getPrev(2).width][height=getPrev(2).height] < ViewGroup - * ->2 @ImageView < [visibleToUser=true] < FrameLayout - View < ViewGroup[childCount=3] < * < * < * < FrameLayout - [vid=\"alipaylogin_layout\"]",
           "snapshotUrls": "https://i.gkd.li/i/26526026"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 14,
@@ -349,7 +357,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/31612291"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 16,
@@ -378,7 +387,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/15209602"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 17,
@@ -411,7 +421,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/30699230"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 19,
@@ -444,7 +455,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/23935930"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 21,
@@ -495,7 +507,8 @@ export default defineGkdApp({
           "matches": "@TextView[text=\"15天内不再询问\"][clickable=true] -n [visibleToUser=true][text$=\"转出原因\"]",
           "snapshotUrls": "https://i.gkd.li/i/24229300"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 22,
@@ -509,7 +522,8 @@ export default defineGkdApp({
           "exampleUrls": "https://m.gkd.li/57941037/e6332999-1c2b-49f0-84e1-780424a5cf2a",
           "snapshotUrls": "https://i.gkd.li/i/15289022"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 23,
@@ -523,7 +537,8 @@ export default defineGkdApp({
           "exampleUrls": "https://m.gkd.li/57941037/1b788a34-68f6-43c0-8be4-e13cb8221852",
           "snapshotUrls": "https://i.gkd.li/i/16106615"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 24,
@@ -560,7 +575,8 @@ export default defineGkdApp({
           ]
         }
       ],
-      "order": -10
+      "order": -10,
+      "enable": true
     },
     {
       "key": 25,
@@ -575,7 +591,8 @@ export default defineGkdApp({
           "matches": "[text=\"支付宝授权\"] >3 @[childCount=0][text=\"同意\"] <<n [id=\"com.alipay.mobile.nebula:id/h5_pc_container\"]",
           "snapshotUrls": "https://i.gkd.li/i/17376764"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 26,
@@ -605,7 +622,8 @@ export default defineGkdApp({
           "matches": "@TextView[clickable=true][width<110 && height<110] +n [text=\"产品动态\"]",
           "snapshotUrls": "https://i.gkd.li/i/24548034"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 27,
@@ -625,7 +643,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/24230171"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 28,
@@ -643,7 +662,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/23577538"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 29,
@@ -670,7 +690,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/25485052"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 30,
@@ -684,7 +705,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/f2571f51-3a8c-4e47-a7c5-3363375c1b78",
           "snapshotUrls": "https://i.gkd.li/i/23158302"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 31,
@@ -700,7 +722,8 @@ export default defineGkdApp({
           ],
           "snapshotUrls": "https://i.gkd.li/i/23455533"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 32,
@@ -716,7 +739,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/4dfc8429-e633-4cab-8f0e-7cf1f86f98ce",
           "snapshotUrls": "https://i.gkd.li/i/23619464"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 33,
@@ -736,7 +760,8 @@ export default defineGkdApp({
           "matches": "@ImageView[clickable=true][width<68] <2 [desc=\"底部广告\"] - [vid=\"alipaylogin_layout\"]",
           "snapshotUrls": "https://i.gkd.li/i/26330637"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 34,
@@ -773,7 +798,8 @@ export default defineGkdApp({
           "matches": "[text=\"发送以下消息\"] +n * > [text$=\"不再询问\"][clickable=true]",
           "snapshotUrls": "https://i.gkd.li/i/25199524"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,
@@ -789,7 +815,8 @@ export default defineGkdApp({
           ],
           "snapshotUrls": "https://i.gkd.li/i/24992663"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "enable": false,

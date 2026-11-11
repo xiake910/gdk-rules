@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -18,7 +18,8 @@ export default defineGkdApp({
           "matches": "FrameLayout > View > View > View[index=0] > View > ImageView[childCount=1] + View[clickable=true && desc=null]",
           "snapshotUrls": "https://i.gkd.li/i/12836891"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -32,10 +33,11 @@ export default defineGkdApp({
           "matches": "[desc=\"公告\"] +2 [desc=\"取消\"][clickable=true]",
           "snapshotUrls": "https://i.gkd.li/i/12836854"
         }
-      ]
+      ],
+      "enable": false
     },
     {
-      "enable": false,
+      "enable": true,
       "key": 0,
       "name": "开屏广告",
       "desc": "虚假按钮，实际点击无法跳过，规则暂时保留",

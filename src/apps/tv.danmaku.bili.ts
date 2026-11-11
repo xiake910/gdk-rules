@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -23,7 +23,8 @@ export default defineGkdApp({
           ]
         }
       ],
-      "order": -10
+      "order": -10,
+      "enable": true
     },
     {
       "key": 0,
@@ -41,7 +42,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/12775156"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -62,7 +64,8 @@ export default defineGkdApp({
           "matches": "[text=\"不感兴趣\"][id^=\"tv.danmaku.bili:id/reason\"]",
           "snapshotUrls": "https://i.gkd.li/i/12700243"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -81,7 +84,8 @@ export default defineGkdApp({
           ],
           "exampleUrls": "https://e.gkd.li/977a9ad8-63d6-4b7d-a5f8-78ba5632b91a"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -101,7 +105,8 @@ export default defineGkdApp({
           "excludeSnapshotUrls": "https://i.gkd.li/i/33745620",
           "exampleUrls": "https://e.gkd.li/abf8fe28-1d92-4603-9463-291f8ef66b92"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 6,
@@ -135,7 +140,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/13228977"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 7,
@@ -171,7 +177,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/31067294",
           "exampleUrls": "https://e.gkd.li/696de68a-489f-4d42-b652-afbdf7351145"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 8,
@@ -213,7 +220,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/25569011"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 9,
@@ -236,7 +244,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/21578494"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 10,
@@ -305,7 +314,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/20720187"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 11,
@@ -320,7 +330,8 @@ export default defineGkdApp({
           "matches": "[text=\"开启个性化内容推荐\"] +3 [vid=\"close_button\"]",
           "snapshotUrls": "https://i.gkd.li/i/13448905"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 12,
@@ -368,7 +379,8 @@ export default defineGkdApp({
           "matches": "@TextView[width<130 && height<130] - TextView[childCount=0][id=\"dialog-canvas\"] <<n [vid=\"webview\"]",
           "snapshotUrls": "https://i.gkd.li/i/23385023"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 13,
@@ -385,7 +397,8 @@ export default defineGkdApp({
           "exampleUrls": "https://m.gkd.li/57941037/80e5730d-6634-4a0a-9c58-c57f7ad5e58c",
           "snapshotUrls": "https://i.gkd.li/i/15858057"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 14,
@@ -418,7 +431,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/22657666"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 15,
@@ -494,7 +508,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/25739074"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 16,
@@ -516,7 +531,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/23325994"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 17,
@@ -539,7 +555,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/23786106"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 18,
@@ -555,7 +572,8 @@ export default defineGkdApp({
           ],
           "excludeSnapshotUrls": "https://i.gkd.li/i/23385023"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 19,
@@ -584,7 +602,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/23305275"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 20,
@@ -602,7 +621,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/28225187"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 21,
@@ -615,7 +635,8 @@ export default defineGkdApp({
           "matches": "@[vid=\"live_combo_action_button\"] > [text=\"点赞\"]",
           "snapshotUrls": "https://i.gkd.li/i/25238947"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 22,
@@ -630,7 +651,8 @@ export default defineGkdApp({
           "matches": "@[vid=\"live_combo_action_button\"] > [text=\"投喂\"]",
           "snapshotUrls": "https://i.gkd.li/i/25238945"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 23,
@@ -687,7 +709,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/30979294"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 24,
@@ -737,7 +760,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/30979294"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 25,
@@ -787,7 +811,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/30979294"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 26,
@@ -804,7 +829,8 @@ export default defineGkdApp({
           "matches": "[vid=\"comment_message\"][text$=\"展开\"][clickable=true][visibleToUser=true]",
           "snapshotUrls": "https://i.gkd.li/i/25314489"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 27,
@@ -816,7 +842,8 @@ export default defineGkdApp({
           "matches": "[vid=\"animation_close\"][clickable=true]",
           "snapshotUrls": "https://i.gkd.li/i/25357810"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 28,
@@ -838,7 +865,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/27551046"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 29,
@@ -851,7 +879,8 @@ export default defineGkdApp({
           "matches": "@Image[text^=\"yellow-tip-close\"] <3 [childCount=3] <2 [id=\"app\"] < WebView < WebView < [vid=\"webview\"]",
           "snapshotUrls": "https://i.gkd.li/i/25563755"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 30,
@@ -872,7 +901,8 @@ export default defineGkdApp({
           "matches": "Image - @TextView[text=\"展开更多\"] < View[childCount=2][visibleToUser=true] <n [id=\"app\"] < WebView < WebView < [vid=\"webview\"]",
           "snapshotUrls": "https://i.gkd.li/i/25564200"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 31,
@@ -886,7 +916,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/26240948",
           "exampleUrls": "https://e.gkd.li/027bbea9-3479-4c8c-a0b2-88fee8f03a85"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 32,
@@ -905,7 +936,8 @@ export default defineGkdApp({
           ],
           "exampleUrls": "https://e.gkd.li/2fed6260-9cd4-4546-a8ea-de89fce88b5d"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 33,
@@ -920,7 +952,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/31165755",
           "exampleUrls": "https://e.gkd.li/d7565e98-d424-49e1-a137-6b7b46c48cc7"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 34,
@@ -934,7 +967,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/34363614",
           "exampleUrls": "https://e.gkd.li/6559f724-c2e9-4f29-b13e-474ff78ead5d"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,

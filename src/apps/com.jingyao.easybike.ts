@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -18,7 +18,8 @@ export default defineGkdApp({
           "matches": "@ImageView + [vid=\"contentContainer\"] >2 [text*=\"新版本\"]",
           "snapshotUrls": "https://i.gkd.li/i/16108173"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 7,
@@ -37,7 +38,8 @@ export default defineGkdApp({
           ],
           "snapshotUrls": "https://i.gkd.li/i/29299377"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 8,
@@ -61,7 +63,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/13402675"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 9,
@@ -79,7 +82,8 @@ export default defineGkdApp({
           ],
           "snapshotUrls": "https://i.gkd.li/i/13228677"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 10,
@@ -132,7 +136,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/c6364646-6d3c-4b2e-80b9-0b356d4cd8b7",
           "snapshotUrls": "https://i.gkd.li/i/23415363"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 11,
@@ -145,7 +150,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/30827751",
           "exampleUrls": "https://e.gkd.li/84f6f033-7686-439a-b50e-87a2c8409ddf"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 12,
@@ -153,7 +159,8 @@ export default defineGkdApp({
       "fastQuery": true,
       "activityIds": "com.hellobike.atlas.business.portal.PortalActivity",
       "rules": "@[vid=\"closeFloatArea\"] + [vid=\"floatADContainer\"]",
-      "snapshotUrls": "https://i.gkd.li/i/12650071"
+      "snapshotUrls": "https://i.gkd.li/i/12650071",
+      "enable": false
     },
     {
       "key": 15,
@@ -166,7 +173,8 @@ export default defineGkdApp({
           "matches": "@View[text=\"跳过\"] <2 View <2 View <<n FrameLayout[vid=\"h5_pc_container\"]",
           "snapshotUrls": "https://i.gkd.li/i/13837543"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "enable": false,

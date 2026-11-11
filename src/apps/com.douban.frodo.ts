@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -127,7 +127,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/16054268"
         }
       ],
-      "order": -10
+      "order": -10,
+      "enable": true
     },
     {
       "key": 3,
@@ -241,7 +242,8 @@ export default defineGkdApp({
             ".search.activity.NewSearchActivity"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -259,7 +261,8 @@ export default defineGkdApp({
           ],
           "snapshotUrls": "https://i.gkd.li/i/18424257"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 6,
@@ -280,7 +283,8 @@ export default defineGkdApp({
           ],
           "exampleUrls": "https://e.gkd.li/f6c2dab4-e87e-4ae5-a778-b97d6cc2b760"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 8,
@@ -315,7 +319,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/86f2589d-87eb-4b9a-83aa-4248b905f7b2",
           "snapshotUrls": "https://i.gkd.li/i/18717693"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 10,
@@ -364,7 +369,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/ca74a922-fb47-4fc8-8111-b6a66c2465ff",
           "snapshotUrls": "https://i.gkd.li/i/18717771"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 11,
@@ -389,7 +395,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/13659160"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 13,
@@ -406,7 +413,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/8067419c-a902-4750-9e1e-655bfc5c7342",
           "snapshotUrls": "https://i.gkd.li/i/18717798"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,
@@ -486,7 +494,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/19621163"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 1,

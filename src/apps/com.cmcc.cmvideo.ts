@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -65,7 +65,8 @@ export default defineGkdApp({
           "matches": "[vid=\"gift_pop_close\"][desc*=\"关闭\"]",
           "snapshotUrls": "https://i.gkd.li/i/27368007"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -79,7 +80,8 @@ export default defineGkdApp({
           "matches": "[vid=\"btn_update_close\"]",
           "snapshotUrls": "https://i.gkd.li/i/13276116"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -93,7 +95,8 @@ export default defineGkdApp({
           "matches": "[text=\"以后再说\"]",
           "snapshotUrls": "https://i.gkd.li/i/13276127"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 5,
@@ -116,7 +119,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/27368845"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 6,
@@ -132,7 +136,8 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/27368603",
           "exampleUrls": "https://e.gkd.li/aff1fce9-4295-406f-9a56-c26090b57abb"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,
@@ -140,7 +145,8 @@ export default defineGkdApp({
       "fastQuery": true,
       "activityIds": "com.cmcc.cmvideo.main.application.CompatibleMainActivity",
       "rules": "[id=\"com.cmcc.cmvideo:id/iv_right_bottom_close\"]",
-      "snapshotUrls": "https://i.gkd.li/i/12498315"
+      "snapshotUrls": "https://i.gkd.li/i/12498315",
+      "enable": false
     },
     {
       "key": 3001,
@@ -157,7 +163,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/ece7eb54-9b9b-40e2-9402-fc350f4734bb",
           "snapshotUrls": "https://i.gkd.li/i/16503612"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 1,

@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
+// 自动生成, 请勿手改（默认只启用「开屏广告」类规则组，其余默认关闭；规则来源见 SOURCES.md）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -40,7 +40,8 @@ export default defineGkdApp({
           ]
         }
       ],
-      "order": -10
+      "order": -10,
+      "enable": true
     },
     {
       "key": 0,
@@ -60,7 +61,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/13197454"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 1,
@@ -75,7 +77,8 @@ export default defineGkdApp({
           "matches": "[text=\"立即更新\"] <2 * > [vid=\"button_cancel\"][text=\"以后再说\"]",
           "snapshotUrls": "https://i.gkd.li/i/13195560"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 2,
@@ -107,7 +110,8 @@ export default defineGkdApp({
             "https://i.gkd.li/i/22941348"
           ]
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3,
@@ -118,7 +122,8 @@ export default defineGkdApp({
           "matches": "[text=\"是否确认退出向日葵？\"] + LinearLayout > [vid=\"button_ok\"]",
           "snapshotUrls": "https://i.gkd.li/i/13927148"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 4,
@@ -132,7 +137,8 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/104ba188-b4cd-4922-b27e-f654085eb163",
           "snapshotUrls": "https://i.gkd.li/i/17782893"
         }
-      ]
+      ],
+      "enable": false
     },
     {
       "key": 3000,
