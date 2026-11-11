@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -38,6 +38,28 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/12715719"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-首页广告弹窗",
+      "activityIds": [
+        "com.huatu.handheld_huatu.view.MainPopDialog",
+        "com.huatu.handheld_huatu.business.main.MainTabActivity"
+      ],
+      "rules": "[id=\"com.huatu.handheld_huatu:id/main_img_adv_bg\"] + [id=\"com.huatu.handheld_huatu:id/main_img_close\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12715702",
+        "https://i.gkd.li/import/12744973"
+      ],
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 3001,
+      "name": "全屏广告-请求通知权限弹窗",
+      "activityIds": "com.huatu.handheld_huatu.business.main.MainTabActivity",
+      "rules": "[text*=\"开启通知提示\"] +2 LinearLayout > [text=\"取消\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12715719"
     }
   ]
 } as any);

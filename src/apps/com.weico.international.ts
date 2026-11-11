@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -84,6 +84,40 @@ export default defineGkdApp({
           ]
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-推荐流广告",
+      "desc": "主页,搜索页",
+      "activityIds": [
+        "com.weico.international.activity.MainFragmentActivity",
+        "com.weico.international.ui.search.SearchActivity"
+      ],
+      "exampleUrls": "https://github.com/gkd-kit/subscription/assets/38517192/e713a2ca-5048-486a-874f-dd876d53c49b",
+      "rules": [
+        {
+          "preKeys": [
+            1
+          ],
+          "name": "点击不感兴趣",
+          "matches": "@View > [text=\"不感兴趣\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12505755",
+            "https://i.gkd.li/import/12505764"
+          ]
+        },
+        {
+          "key": 0,
+          "name": "点击广告卡片右上角[x]",
+          "matches": "[id=\"com.weico.international:id/item_timeline_ad_action\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12505753",
+            "https://i.gkd.li/import/12505763",
+            "https://i.gkd.li/import/12857202"
+          ]
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

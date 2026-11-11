@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -25,6 +25,28 @@ export default defineGkdApp({
           ]
         }
       ]
+    },
+    {
+      "key": 1,
+      "name": "全屏广告-通知权限授权弹窗",
+      "activityIds": [
+        "com.hpbr.bosszhipin.module.main.activity.MainActivity",
+        "com.hpbr.bosszhipin.module.launcher.WelcomeActivity"
+      ],
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "activity",
+      "rules": [
+        {
+          "matches": "@ImageView[id=\"com.hpbr.bosszhipin:id/iv_cancle\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13440781",
+            "https://i.gkd.li/import/13623476"
+          ]
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

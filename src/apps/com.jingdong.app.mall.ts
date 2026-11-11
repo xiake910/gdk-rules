@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -317,6 +317,175 @@ export default defineGkdApp({
           "activityIds": "com.jd.lib.ordercenter.confirmreceive.ConfirmReceiveActivity",
           "matches": "@[desc=\"返回\"][clickable=true] + * > [text=\"确认收货成功\"]",
           "snapshotUrls": "https://i.gkd.li/i/25181413"
+        }
+      ]
+    },
+    {
+      "key": 3000,
+      "name": "功能类-支付订单后点击[完成]",
+      "rules": [
+        {
+          "fastQuery": true,
+          "activityIds": ".bundle.cashierfinish.view.CashierUserContentCompleteActivity",
+          "matches": "[vid=\"lib_cashier_finish_back_page_text\"]",
+          "exampleUrls": "https://e.gkd.li/ab886df0-2b34-4804-be7d-742a06fadda9",
+          "snapshotUrls": "https://i.gkd.li/i/17358003"
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3001,
+      "name": "全屏广告-购物车界面-砸金蛋",
+      "activityIds": "com.jingdong.app.mall.MainFrameActivity",
+      "rules": "[id=\"com.jd.lib.cart.feature:id/iv_egg_close\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12642266"
+    },
+    {
+      "enable": false,
+      "key": 3002,
+      "name": "局部广告-我的界面-悬浮广告",
+      "activityIds": "com.jingdong.app.mall.MainFrameActivity",
+      "rules": [
+        {
+          "key": 0,
+          "name": "参与调研",
+          "matches": "FrameLayout + RelativeLayout > RelativeLayout > ImageView + ImageView[desc!=\"返回\"][visibleToUser=true]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12642270",
+            "https://i.gkd.li/import/12774910"
+          ]
+        },
+        {
+          "key": 1,
+          "name": "邀好友得红包",
+          "matches": "@ImageView[id!=null] + FrameLayout[childCount=3] > ImageView + LinearLayout + TextView",
+          "snapshotUrls": "https://i.gkd.li/import/13242002"
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3,
+      "name": "局部广告-首页-右侧浮层广告",
+      "activityIds": "com.jingdong.app.mall.MainFrameActivity",
+      "rules": "RelativeLayout >n * > [desc^=\"关闭浮层\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/13165659",
+        "https://i.gkd.li/import/12837870",
+        "https://i.gkd.li/import/13072091",
+        "https://i.gkd.li/import/12837870"
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3003,
+      "name": "全屏广告-通知提示-请求打开通知",
+      "activityIds": [
+        "com.jd.lib.message.messagecenter.view.activity.MessageCenterMainActivityNew",
+        "com.jd.lib.ordercenter.mygoodsorderlist.view.activity.MyOrderListActivity",
+        "com.jingdong.app.mall.MainFrameActivity"
+      ],
+      "rules": [
+        {
+          "matches": "TextView[text=\"开启消息通知\"] +n ImageView[clickable=true]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12839864",
+            "https://i.gkd.li/import/13772299",
+            "https://i.gkd.li/import/13917163"
+          ]
+        },
+        {
+          "matches": "TextView[text ^=\"打开系统通知\"] - FrameLayout[clickable=true]",
+          "snapshotUrls": "https://i.gkd.li/import/12839865"
+        }
+      ]
+    },
+    {
+      "key": 3004,
+      "name": "全屏广告-广告弹窗",
+      "rules": [
+        {
+          "key": 0,
+          "activityIds": "com.jingdong.app.mall.MainFrameActivity",
+          "matches": "FrameLayout > [desc=\"关闭\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13165721"
+        },
+        {
+          "key": 1,
+          "activityIds": "com.jd.lib.cashier.complete.view.CashierCompleteActivity",
+          "matches": "[id=\"com.jingdong.app.mall:id/webview\"] + [id=\"com.jingdong.app.mall:id/close\"][desc=\"关闭页面\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13218034"
+        },
+        {
+          "key": 2,
+          "activityIds": "com.jingdong.app.mall.MainFrameActivity",
+          "matches": "@[desc=\"关闭按钮\"] <n * >n *[desc=\"弹窗\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13241883",
+            "https://i.gkd.li/import/132599029"
+          ]
+        },
+        {
+          "key": 3,
+          "fastQuery": true,
+          "activityIds": "com.jingdong.app.mall.MainFrameActivity",
+          "matches": "RelativeLayout > ImageView[desc=\"关闭页面\"]",
+          "excludeMatches": "ImageView[desc=\"关闭页面\"] - [text=\"优惠券\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13258996",
+            "https://i.gkd.li/import/13336847"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 3005,
+      "name": "局部广告-首页-底部横幅广告",
+      "activityIds": "com.jingdong.app.mall.MainFrameActivity",
+      "rules": "ImageView < FrameLayout - FrameLayout > ImageView[desc=\"关闭\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/13258973",
+        "https://i.gkd.li/import/13258980",
+        "https://i.gkd.li/import/13258981"
+      ]
+    },
+    {
+      "enable": false,
+      "key": 7,
+      "name": "全屏广告-首页弹窗-打开通知",
+      "desc": "自动点击正下方的【x】",
+      "fastQuery": true,
+      "rules": [
+        {
+          "activityIds": "com.jingdong.app.mall.MainFrameActivity",
+          "matches": "[id=\"com.jingdong.app.mall:id/btn_close\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13463618"
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3006,
+      "name": "全屏广告-支付界面-产品推荐",
+      "desc": "自动点击右上角【x】",
+      "activityIds": "com.jd.lib.settlement.fillorder.activity.NewFillOrderActivity",
+      "rules": "ImageView[clickable=true && desc=\"关闭\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13191146"
+    },
+    {
+      "enable": false,
+      "key": 3007,
+      "name": "全屏广告-购物车界面-支付成功广告弹窗",
+      "desc": "自动点击正下方的【x】",
+      "fastQuery": true,
+      "rules": [
+        {
+          "activityIds": "com.jd.lib.cart.ShoppingCartNewActivity",
+          "matches": "@ImageView - ViewGroup >2 TextView[text=\"查看订单\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13446362"
         }
       ]
     }

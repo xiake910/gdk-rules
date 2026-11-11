@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -86,6 +86,39 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13433981"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-文件即将过期提示",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "rules": [
+        {
+          "key": 0,
+          "matches": "@FrameLayout[id=\"com.alibaba.android.rimet:id/layout_close\"] -2 TextView[text=\"文件即将过期请备份\"]",
+          "action": "clickCenter",
+          "snapshotUrls": "https://i.gkd.li/import/13325125"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-钉钉新功能",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "activityIds": "com.alibaba.lightapp.runtime.activity.WebViewDialogActivity",
+      "rules": [
+        {
+          "matches": "TextView[id=\"com.alibaba.android.rimet:id/dialog_close_button\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13772151"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

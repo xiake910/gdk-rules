@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -70,6 +70,51 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14126005"
         }
       ]
+    },
+    {
+      "key": 1,
+      "name": "青少年模式",
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "fastQuery": true,
+      "rules": "[text$=\"未成年人模式\"] +2 @[clickable=true] > [text=\"我知道了\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12706097",
+      "enable": false
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-首页广告弹窗",
+      "rules": [
+        {
+          "key": 0,
+          "activityIds": "com.gotokeep.keep.refactor.business.main.activity.MainActivity",
+          "matches": "[id=\"com.gotokeep.keep:id/layoutLottie\"] +(1,2) [id=\"com.gotokeep.keep:id/imgCloseHomePageDialog\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12706102",
+            "https://i.gkd.li/import/13761641"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-运动购页面-广告弹窗",
+      "rules": [
+        {
+          "key": 0,
+          "activityIds": "com.gotokeep.keep.refactor.business.main.activity.MainActivity",
+          "matches": "ImageView + LinearLayout > ImageView[id=null][clickable=true]",
+          "snapshotUrls": "https://i.gkd.li/import/12706111"
+        },
+        {
+          "key": 1,
+          "activityIds": "com.gotokeep.keep.refactor.business.main.activity.MainActivity",
+          "matches": "[id=\"com.gotokeep.keep:id/contentContainer\"] + [id=\"com.gotokeep.keep:id/closeImageView\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13766358"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

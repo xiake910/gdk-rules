@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -1240,6 +1240,420 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/c3ca6901-9b7d-47d3-b879-69b615f8d09b"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "功能类-电脑微信快捷自动登录",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "rules": [
+        {
+          "activityIds": [
+            ".plugin.webwx.ui.ExtDeviceWXLoginUI",
+            ".ui.LauncherUI"
+          ],
+          "matches": [
+            "[text=\"登录 Windows 微信\" || text^=\"Log in to Weixin for\"][visibleToUser=true]",
+            "[text=\"登录\" || text=\"Log In\"][visibleToUser=true]"
+          ],
+          "snapshotUrls": [
+            "https://i.gkd.li/i/13522625",
+            "https://i.gkd.li/i/13522577",
+            "https://i.gkd.li/i/22356438"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 3001,
+      "name": "功能类-自动领取微信红包",
+      "desc": "自动领取私聊红包,群聊红包",
+      "fastQuery": true,
+      "rules": [
+        {
+          "key": 1,
+          "name": "点击别人发的红包",
+          "activityIds": [
+            ".ui.LauncherUI",
+            ".ui.chatting.variants.ChattingMainUI"
+          ],
+          "matches": "LinearLayout[childCount=1] >2 @FrameLayout[clickable=true] >2 LinearLayout[getChild(1).childCount=1] +2 RelativeLayout > [text=\"微信红包\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/i/18134826",
+            "https://i.gkd.li/i/24347101"
+          ],
+          "excludeSnapshotUrls": [
+            "https://i.gkd.li/i/18134823",
+            "https://i.gkd.li/i/18134833"
+          ]
+        },
+        {
+          "preKeys": [
+            1
+          ],
+          "key": 2,
+          "name": "点击红包-开",
+          "matchRoot": true,
+          "activityIds": ".plugin.luckymoney.ui.LuckyMoney",
+          "matches": "@Button[desc=\"开\"] -3 LinearLayout >2 [text$=\"红包\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/i/18134828",
+            "https://i.gkd.li/i/21177180"
+          ],
+          "excludeSnapshotUrls": "https://i.gkd.li/i/12567698"
+        },
+        {
+          "preKeys": [
+            1,
+            2
+          ],
+          "name": "从红包结算界面返回",
+          "activityIds": ".plugin.luckymoney.ui.LuckyMoney",
+          "matches": "@ImageView[desc=\"返回\"] +n LinearLayout >8 [text$=\"红包\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/i/18134829",
+            "https://i.gkd.li/i/18135031",
+            "https://i.gkd.li/i/23825631",
+            "https://i.gkd.li/i/24414957"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 3002,
+      "name": "功能类-自动选中发送原图",
+      "desc": "自动选中底部中间的发送原图，可手动取消勾选",
+      "actionMaximum": 1,
+      "activityIds": [
+        ".plugin.gallery.ui.AlbumPreviewUI",
+        ".plugin.gallery.ui.ImagePreviewUI"
+      ],
+      "rules": [
+        {
+          "key": 1,
+          "fastQuery": true,
+          "anyMatches": [
+            "@[desc=\"未选中,原图,复选框\"][visibleToUser=true] + [text=\"原图\"]",
+            "@[desc=\"未选中,原图,复选框\"][visibleToUser=true]"
+          ],
+          "exampleUrls": [
+            "https://e.gkd.li/32dc0943-e85f-416d-bb01-6ed610d4bdd8",
+            "https://e.gkd.li/93d41161-ab69-4c2d-83bb-637d7292f5e6"
+          ],
+          "snapshotUrls": [
+            "https://i.gkd.li/i/16987145",
+            "https://i.gkd.li/i/16987144",
+            "https://i.gkd.li/i/19625049"
+          ],
+          "excludeSnapshotUrls": [
+            "https://i.gkd.li/i/16987141",
+            "https://i.gkd.li/i/16987147"
+          ]
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 12,
+      "name": "分段广告-朋友圈广告[英文]",
+      "desc": "点击广告卡片右上角[Sponsored],直接关闭/出现菜单点击[Close the ad],确认关闭",
+      "activityIds": "com.tencent.mm.plugin.sns.ui.SnsTimeLineUI",
+      "fastQuery": true,
+      "rules": [
+        {
+          "key": 0,
+          "name": "点击广告卡片右上角[Sponsored]",
+          "matches": "ImageView - TextView[text=\"Sponsored\"][clickable=true][id!=null]",
+          "snapshotUrls": "https://i.gkd.li/import/12905837"
+        },
+        {
+          "preKeys": 0,
+          "key": 1,
+          "name": "Sponsored story-点击[Close the ad]",
+          "matches": "@LinearLayout[clickable=true][childCount=2] > TextView[text=\"Close the ad\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12905838"
+        },
+        {
+          "preKeys": 1,
+          "key": 2,
+          "name": "Reason for closing the ad - 点击[Close]",
+          "matches": "[text=\"Reason for closing the ad\"] +(2) [text=\"Close\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12905846"
+        }
+      ]
+    },
+    {
+      "key": 20,
+      "name": "分段广告-朋友圈广告[繁体]",
+      "desc": "点击广告卡片右上角[廣告],出现菜单点击[關閉此廣告],确认关闭",
+      "activityIds": "com.tencent.mm.plugin.sns.ui.SnsTimeLineUI",
+      "fastQuery": true,
+      "rules": [
+        {
+          "key": 0,
+          "name": "点击广告卡片右上角[廣告]",
+          "matches": "ImageView - TextView[text=\"廣告\"][clickable=true][id!=null]",
+          "snapshotUrls": "https://i.gkd.li/import/13791200"
+        },
+        {
+          "preKeys": 0,
+          "key": 1,
+          "name": "点击[關閉此廣告]",
+          "matches": "RelativeLayout[childCount=6] > TextView[text=\"關閉此廣告\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13791202"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 3003,
+      "name": "功能类-浏览器扫码微信登录自动授权",
+      "desc": "自动允许使用头像昵称等",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "activity",
+      "activityIds": [
+        "com.tencent.mm.plugin.webview.ui.tools.SDKOAuthUI",
+        "com.tencent.mm.ui.LauncherUI"
+      ],
+      "rules": "Button[text=\"拒绝\"] - Button[text=\"允许\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13065462"
+    },
+    {
+      "enable": false,
+      "key": 3,
+      "name": "功能类-第三方APP申请使用授权弹窗",
+      "desc": "自动点击允许,但由于此界面可以额外新建昵称头像,默认不启用",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "activity",
+      "activityIds": [
+        "com.tencent.mm.plugin.base.stub.UIEntryStub"
+      ],
+      "rules": "Button[text=\"拒绝\"] - Button[text=\"允许\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12663602"
+    },
+    {
+      "enable": false,
+      "key": 3004,
+      "name": "功能类-微信红包自动领取",
+      "desc": "自动领取私聊红包,群聊红包",
+      "exampleUrls": "https://github.com/gkd-kit/subscription/assets/38517192/32cfda78-b2e1-456c-8d85-bfb2bc4683aa",
+      "rules": [
+        {
+          "name": "从红包结算界面返回",
+          "preKeys": [
+            1,
+            2
+          ],
+          "activityIds": "com.tencent.mm.plugin.luckymoney.ui.LuckyMoneyBeforeDetailUI",
+          "matches": "ImageView[desc=\"返回\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12567696"
+        },
+        {
+          "key": 1,
+          "name": "点击红包-开",
+          "activityIds": "com.tencent.mm.plugin.luckymoney.ui.LuckyMoneyNotHookReceiveUI",
+          "matches": "ImageButton[desc=\"开\"] + Button[desc=\"开\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12567697",
+            "https://i.gkd.li/import/12567698"
+          ]
+        },
+        {
+          "key": 2,
+          "name": "点击别人发的红包",
+          "activityIds": "com.tencent.mm.ui.LauncherUI",
+          "matches": "LinearLayout[childCount=1] >5 LinearLayout[childCount=1] - ImageView < LinearLayout + View + RelativeLayout > TextView[text=\"微信红包\"][id!=null]",
+          "snapshotUrls": "https://i.gkd.li/import/12567637"
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3005,
+      "name": "分段广告-订阅号文章广告",
+      "desc": "⚠ 此规则有概率误触。自动点击关闭按钮，必须同时启用【订阅号文章广告反馈】规则",
+      "activityIds": [
+        "com.tencent.mm.plugin.brandservice.ui.timeline.preload.ui.TmplWebView"
+      ],
+      "rules": [
+        {
+          "key": 1,
+          "name": "广告类型1",
+          "matches": [
+            "View[id=\"ad_container\"] > View[childCount=1] >n @View > [id=null][text^=\"广告\"][visibleToUser=true]"
+          ],
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12642232",
+            "https://i.gkd.li/import/13199281",
+            "https://i.gkd.li/import/12646837",
+            "https://i.gkd.li/import/12678937",
+            "https://i.gkd.li/import/12714427"
+          ]
+        },
+        {
+          "key": 2,
+          "name": "广告类型2",
+          "matches": "View[childCount=1] > @[id=\"feedbackTagContainer\"][visibleToUser=true] > [id=\"feedbackTag\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12700183",
+            "https://i.gkd.li/import/12701503",
+            "https://i.gkd.li/import/12714424"
+          ]
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 8,
+      "name": "分段广告-订阅号文章广告反馈",
+      "desc": "⚠ 此规则有概率误触。自动点击反馈理由，配合【订阅号文章广告】规则使用",
+      "activityIds": "com.tencent.mm.plugin.brandservice.ui.timeline.preload.ui.TmplWebView",
+      "rules": [
+        {
+          "key": 1,
+          "name": "点击不感兴趣",
+          "matches": "View > [id=\"feedbackTagContainer\"][visibleToUser=true] + [id^=\"menu\"] > [id=\"dislike\"][text=\"不感兴趣\"][visibleToUser=true]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12642234",
+            "https://i.gkd.li/import/12722301",
+            "https://i.gkd.li/import/12722331"
+          ],
+          "action": "clickCenter"
+        },
+        {
+          "key": 2,
+          "name": "点击与我无关",
+          "matches": "View > [id^=\"menu\"] > [id=\"isdismatch\"][text=\"与我无关\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12642238"
+          ]
+        },
+        {
+          "key": 3,
+          "name": "点击关闭此广告",
+          "matches": "TextView[id=\"closeBtn\"][text=\"关闭此广告\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12700191"
+        }
+      ]
+    },
+    {
+      "key": 3006,
+      "name": "全屏广告-微信小程序-开屏广告",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "activityIds": [
+        "com.tencent.mm.plugin.appbrand.ui.AppBrandUI",
+        "com.tencent.mm.plugin.appbrand.launching.AppBrandLaunchProxyUI"
+      ],
+      "rules": [
+        {
+          "actionDelay": 800,
+          "matches": [
+            "FrameLayout > TextView + FrameLayout > TextView[text=\"广告\"]",
+            "FrameLayout > TextView + FrameLayout > TextView[text=\"跳过\"]"
+          ],
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12701979",
+            "https://i.gkd.li/import/12777076",
+            "https://i.gkd.li/import/12785012",
+            "https://i.gkd.li/import/12785183",
+            "https://i.gkd.li/import/13306883",
+            "https://i.gkd.li/import/12785246",
+            "https://i.gkd.li/import/13407275"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 13,
+      "name": "全屏广告-提瓦特助手小程序-弹窗广告",
+      "activityIds": "com.tencent.mm.plugin.appbrand.ui.AppBrandUI",
+      "rules": [
+        {
+          "key": 0,
+          "matches": [
+            "RelativeLayout[childCount=1][clickable=true] > [text=\"提瓦特小助手\"]",
+            "FrameLayout[childCount=5] + FrameLayout[childCount=2] >2 FrameLayout[childCount=1]"
+          ],
+          "snapshotUrls": "https://i.gkd.li/import/12926021"
+        },
+        {
+          "key": 1,
+          "matches": [
+            "FrameLayout > FrameLayout > FrameLayout > TextView[text=\"广告\"]",
+            "FrameLayout[childCount=6] + FrameLayout[childCount=2] > FrameLayout > FrameLayout > ImageView"
+          ],
+          "snapshotUrls": "https://i.gkd.li/import/13459614"
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 14,
+      "name": "分段广告-小程序-内部广告",
+      "activityIds": [
+        "com.tencent.mm.plugin.appbrand.ui.AppBrandUI"
+      ],
+      "fastQuery": true,
+      "rules": [
+        {
+          "key": 0,
+          "name": "【广告】0",
+          "matches": "FrameLayout[childCount=3] >n FrameLayout > FrameLayout > [text=\"广告\"][visibleToUser=true]",
+          "excludeMatches": "FrameLayout > TextView + FrameLayout > TextView[text=\"跳过\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13199282",
+            "https://i.gkd.li/import/13407275"
+          ]
+        },
+        {
+          "key": 1,
+          "name": "【广告】1",
+          "matches": "Image[text=\"feedback_icon\"] - [text=\"广告\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13378208"
+        },
+        {
+          "preKeys": [
+            0,
+            1
+          ],
+          "key": 11,
+          "name": "点击原因【不感兴趣】",
+          "matches": "[text=\"不感兴趣\"][visibleToUser=true]",
+          "snapshotUrls": "https://i.gkd.li/import/13200044"
+        },
+        {
+          "preKeys": 11,
+          "key": 12,
+          "name": "点击原因【与我无关】",
+          "matches": "[text=\"与我无关\"][visibleToUser=true]",
+          "snapshotUrls": "https://i.gkd.li/import/13200048"
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 16,
+      "name": "全屏广告-小程序-京东购物",
+      "desc": "低价包邮广告",
+      "actionDelay": 500,
+      "actionMaximum": 1,
+      "activityIds": "com.tencent.mm.plugin.appbrand.ui.AppBrandUI",
+      "rules": {
+        "matches": "@Image -n * > View[text=\"可横向滚动\"]",
+        "action": "clickCenter",
+        "snapshotUrls": [
+          "https://i.gkd.li/import/13298294"
+        ]
+      }
     }
   ]
 } as any);

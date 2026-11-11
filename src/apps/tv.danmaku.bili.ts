@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -935,6 +935,190 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/6559f724-c2e9-4f29-b13e-474ff78ead5d"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-动态推荐广告卡片",
+      "desc": "点击卡片右上角[广告]按钮-点击不感兴趣",
+      "fastQuery": true,
+      "matchDelay": 5000,
+      "activityIds": "tv.danmaku.bili.MainActivityV2",
+      "rules": [
+        {
+          "key": 1,
+          "matches": "[id=`tv.danmaku.bili:id/ad_goods_mark_big`]",
+          "snapshotUrls": "https://i.gkd.li/import/12700222"
+        },
+        {
+          "preKeys": 1,
+          "matches": "[text=\"不感兴趣\"][id^=\"tv.danmaku.bili:id/reason\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12700243"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "局部广告-视频底部与评论区中间卡片式广告",
+      "desc": "需点击二次弹窗 屏蔽原因",
+      "fastQuery": true,
+      "activityIds": [
+        "com.bilibili.video.videodetail.VideoDetailsActivity",
+        "com.bilibili.ship.theseus.all.UnitedBizDetailsActivity",
+        "com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity"
+      ],
+      "rules": [
+        {
+          "key": 0,
+          "name": "点击广告卡片右侧菜单图标",
+          "anyMatches": [
+            "@ImageView < FrameLayout[id=\"tv.danmaku.bili:id/more\" || id=\"tv.danmaku.bili:id/more_layout\"] <n * < FrameLayout[id=\"tv.danmaku.bili:id/ad_tint_frame\"]",
+            "@ImageView < FrameLayout[id=\"tv.danmaku.bili:id/more\"] <n RelativeLayout < FrameLayout < FrameLayout[id=\"tv.danmaku.bili:id/ad_tint_frame\"]"
+          ],
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12642260",
+            "https://i.gkd.li/import/12705266",
+            "https://i.gkd.li/import/12776568"
+          ],
+          "excludeSnapshotUrls": [
+            "https://i.gkd.li/import/12707070"
+          ]
+        },
+        {
+          "preKeys": 0,
+          "key": 1,
+          "name": "点击屏蔽广告",
+          "matches": "TextView[text=\"不感兴趣\"||text=\"与视频内容不相关\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12642261",
+            "https://i.gkd.li/import/13495649"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 5,
+      "name": "其他-悬浮窗功能",
+      "desc": "暂不开启",
+      "fastQuery": true,
+      "resetMatch": "app",
+      "actionMaximum": 1,
+      "activityIds": [
+        "com.bilibili.video.story.StoryVideoActivity",
+        "com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity"
+      ],
+      "rules": [
+        {
+          "matches": [
+            "TextView[id=\"tv.danmaku.bili:id/common_dialog_title\"][text^=\"开启悬浮窗功能\"]",
+            "TextView[id=\"tv.danmaku.bili:id/common_dialog_nagetive_btn\"][text=\"暂不开启\"]"
+          ],
+          "snapshotUrls": [
+            "https://i.gkd.li/i/19260138",
+            "https://i.gkd.li/i/19402551"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3002,
+      "name": "局部广告-视频悬浮广告",
+      "desc": "领取大会员月卡,B站免流星卡",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "activityIds": [
+        "com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity",
+        "com.bilibili.video.videodetail.VideoDetailsActivity"
+      ],
+      "rules": [
+        "[id=\"tv.danmaku.bili:id/toast_x\"]"
+      ],
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12892611",
+        "https://i.gkd.li/import/13308344",
+        "https://i.gkd.li/import/13538048"
+      ],
+      "exampleUrls": [
+        "https://github.com/gkd-kit/inspect/assets/38517192/110db806-3f8b-4cd2-a445-06c5f5eb21eb"
+      ],
+      "enable": false
+    },
+    {
+      "key": 3003,
+      "name": "局部广告-直播间卡片广告",
+      "desc": "直播间底部售卖卡片-点击右上角x",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "activityIds": "com.bilibili.bililive.room.ui.roomv3.LiveRoomActivityV3",
+      "rules": "[id=\"tv.danmaku.bili:id/shopping_close\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13200549",
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 3004,
+      "name": "权限提示-请求通知权限弹窗",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "activityIds": [
+        "tv.danmaku.bili.MainActivityV2",
+        "com.bilibili.video.story.StoryTransparentActivity"
+      ],
+      "rules": "[text$=\"通知\"] +2 * > [id=\"tv.danmaku.bili:id/close\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/13229159",
+        "https://i.gkd.li/import/13614090"
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3005,
+      "name": "局部广告-首页-推荐视频卡片广告",
+      "fastQuery": true,
+      "activityIds": "tv.danmaku.bili.MainActivityV2",
+      "rules": [
+        {
+          "key": 0,
+          "name": "点击广告卡片右下角菜单按钮",
+          "matches": "[id=\"tv.danmaku.bili:id/ad_tint_frame\"] [id=\"tv.danmaku.bili:id/more\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13256570"
+        },
+        {
+          "preKeys": 0,
+          "key": 1,
+          "name": "点击[不感兴趣]",
+          "matches": "@RelativeLayout > [text$=\"不感兴趣\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13256605",
+            "https://i.gkd.li/import/13625309",
+            "https://i.gkd.li/import/13742257"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 3006,
+      "name": "通知提示-订阅感兴趣的通知",
+      "fastQuery": true,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "rules": [
+        {
+          "activityIds": "kntr.common.compose.launcher.ComposeContainerActivity",
+          "matches": [
+            "TextView[id=\"tv.danmaku.bili:id/title\"][text=\"订阅感兴趣的通知\"]",
+            "TextView[id=\"tv.danmaku.bili:id/close\"][text=\"暂不开启\"]"
+          ],
+          "snapshotUrls": "https://i.gkd.li/i/19402549"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

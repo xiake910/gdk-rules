@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -82,6 +82,25 @@ export default defineGkdApp({
           "activityIds": ".course.course.studycourse.activity.StudyCourseVideoActivity",
           "matches": "@[vid=\"im_close\"][clickable=true] - [text$=\"同学\"]",
           "snapshotUrls": "https://i.gkd.li/i/24230330"
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3000,
+      "name": "通知提示-消息推送通知",
+      "desc": "[暂不开启]",
+      "fastQuery": true,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "rules": [
+        {
+          "matches": "@TextView[id=\"com.able.wisdomtree:id/negativeButton\"][text=\"暂不开启\"] + View + [id=\"com.able.wisdomtree:id/positiveButton\"][text=\"马上开启\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13458779",
+            "https://i.gkd.li/import/13623441",
+            "https://i.gkd.li/import/13695447"
+          ]
         }
       ]
     }

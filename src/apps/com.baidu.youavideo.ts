@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -180,6 +180,103 @@ export default defineGkdApp({
           ]
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "更新提示",
+      "activityIds": [
+        "com.baidu.youavideo.home.view.HomeActivity"
+      ],
+      "fastQuery": true,
+      "rules": [
+        {
+          "matches": "[id=\"com.baidu.youavideo:id/tv_upgrade\"] < LinearLayout +2 [id=\"com.baidu.youavideo:id/img_close\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12597916"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "局部广告-悬浮窗",
+      "desc": "关闭广告悬浮窗",
+      "activityIds": [
+        "com.baidu.youavideo.home.view.HomeActivity"
+      ],
+      "fastQuery": true,
+      "rules": [
+        {
+          "matches": "[id=\"com.baidu.youavideo:id/img_operation_close\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12970088"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3002,
+      "name": "全屏广告-评价",
+      "desc": "点击下次再说",
+      "activityIds": [
+        "com.baidu.youavideo.home.view.HomeActivity"
+      ],
+      "fastQuery": true,
+      "rules": [
+        {
+          "matches": "[id=\"com.baidu.youavideo:id/tv_next_time\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12970094"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3003,
+      "name": "全屏广告-会员充值提示",
+      "desc": "点击x关闭充值提示",
+      "activityIds": [
+        "com.baidu.youavideo.home.view.HomeActivity"
+      ],
+      "fastQuery": true,
+      "rules": [
+        {
+          "matches": "[id=\"com.baidu.youavideo:id/tv_confirm_pay\"] -5 [id=\"com.baidu.youavideo:id/img_close_dialog\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12970094"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3004,
+      "name": "权限提示-请求开启通知权限弹窗",
+      "activityIds": "com.baidu.youavideo.app.ui.HomeActivity",
+      "fastQuery": true,
+      "rules": "[id=\"com.baidu.youavideo:id/dialog_open_guide_notification_root\"] > [id=\"com.baidu.youavideo:id/img_close\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13413819",
+      "enable": false
+    },
+    {
+      "key": 3005,
+      "name": "局部广告-照片-底部浮窗广告",
+      "activityIds": "com.baidu.youavideo.home.view.HomeActivity",
+      "fastQuery": true,
+      "rules": "[id=\"com.baidu.youavideo:id/cl_root\"] + [id=\"com.baidu.youavideo:id/img_close\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13711475",
+      "enable": false
+    },
+    {
+      "key": 3006,
+      "name": "局部广告-广告卡片",
+      "fastQuery": true,
+      "rules": "[vid=\"iv_close\"][visibleToUser=true]",
+      "snapshotUrls": "https://i.gkd.li/import/13874124",
+      "enable": false
     }
   ]
 } as any);

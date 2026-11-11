@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -45,6 +45,23 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/27383310"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-广告卡片",
+      "desc": "设备列表和连接界面中的广告卡片",
+      "activityIds": [
+        "youqu.android.todesk.activity.WelcomeActivity",
+        "youqu.android.todesk.activity.MainActivity"
+      ],
+      "fastQuery": true,
+      "rules": "[id=\"youqu.android.todesk:id/sivDeviceBanner\"] + [id=\"youqu.android.todesk:id/llClose\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/13228546",
+        "https://i.gkd.li/import/13256552",
+        "https://i.gkd.li/import/13296380"
+      ],
+      "enable": false
     }
   ]
 } as any);

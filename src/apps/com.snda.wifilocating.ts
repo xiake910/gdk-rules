@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -94,6 +94,34 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/15284730"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-“我的”界面广告卡片",
+      "rules": [
+        {
+          "key": 0,
+          "fastQuery": true,
+          "activityIds": "com.wifitutu.ui.main.MainActivity",
+          "matches": "[vid=\"native_express_ad_close\"]",
+          "snapshotUrls": "https://i.gkd.li/i/15284730"
+        }
+      ]
+    },
+    {
+      "key": 0,
+      "name": "全屏广告-内部广告",
+      "activityIds": "com.lantern.launcher.ui.MainActivityICS",
+      "rules": [
+        {
+          "matches": [
+            "[id=`com.snda.wifilocating:id/outer_ad_dislike_item_title`][text=`为什么看到此广告`]",
+            "@[id=`com.snda.wifilocating:id/outer_ad_dislike_item_one`] [id=`com.snda.wifilocating:id/outer_ad_dislike_item_title`][text=`不感兴趣`]"
+          ]
+        },
+        "ImageView[id=`com.snda.wifilocating:id/feed_item_sdk_logo`] < LinearLayout + [id=`com.snda.wifilocating:id/feed_item_dislike`]"
+      ],
+      "enable": false
     }
   ]
 } as any);

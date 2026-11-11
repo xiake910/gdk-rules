@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -67,6 +67,27 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13387155"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-信息流广告",
+      "fastQuery": true,
+      "activityIds": "cn.xiaochuankeji.zuiyouLite.ui.slide.ActivitySlideDetail",
+      "rules": [
+        {
+          "key": 0,
+          "name": "点击【x】",
+          "matches": "@ImageView[id=\"cn.xiaochuankeji.zuiyouLite:id/ad_remove\"] - [id=\"cn.xiaochuankeji.zuiyouLite:id/post_review_ad_logo\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13387116"
+        },
+        {
+          "preKeys": 0,
+          "name": "点击【不喜欢广告主】",
+          "matches": "@TextView[text=\"不喜欢广告主\"] - [id=\"cn.xiaochuankeji.zuiyouLite:id/feedback_general_icon\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13387155"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

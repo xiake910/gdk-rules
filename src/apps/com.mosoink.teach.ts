@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -39,6 +39,36 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13778123"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-首页-班课列表广告",
+      "activityIds": [
+        "com.mosoink.teach.MainMenuActivity"
+      ],
+      "rules": [
+        {
+          "matches": "[text=\"广告\"] <2 ViewGroup -2 ViewGroup > ViewGroup",
+          "exampleUrls": "https://m.gkd.li/64072399/4f7366d4-77eb-4a11-8e08-26afc29f29ed",
+          "snapshotUrls": "https://i.gkd.li/import/13778179"
+        },
+        {
+          "matches": "[text=\"广告\"] <2 ViewGroup < ViewGroup < ViewGroup - ViewGroup > FrameLayout + ViewGroup > ViewGroup",
+          "exampleUrls": "https://m.gkd.li/64072399/ab4a196f-725d-4e03-aabf-fb0eb6018f51",
+          "snapshotUrls": "https://i.gkd.li/import/13786802"
+        },
+        {
+          "matches": "TextView - View <1 FrameLayout - FrameLayout >1 FrameLayout > ImageView < FrameLayout",
+          "exampleUrls": "https://m.gkd.li/64072399/69bb91ee-5367-4819-94d7-90e357dd9d3c",
+          "snapshotUrls": "https://i.gkd.li/import/13784406"
+        },
+        {
+          "matches": "[id$=\"/iv_close\"]",
+          "exampleUrls": "https://m.gkd.li/64072399/695871fb-9c73-4c93-a6d1-18d90786604a",
+          "snapshotUrls": "https://i.gkd.li/import/13778123"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

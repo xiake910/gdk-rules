@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -127,6 +127,86 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13852447"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-卡片式广告",
+      "rules": [
+        {
+          "key": 0,
+          "name": "腾讯广告",
+          "activityIds": "com.androlua.LuaActivity",
+          "matches": "ImageView < FrameLayout -2 FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]",
+          "snapshotUrls": "https://i.gkd.li/import/13635499"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3,
+      "fastQuery": true,
+      "name": "全屏广告-首页推广",
+      "desc": "点击我已知晓",
+      "rules": [
+        {
+          "activityIds": "com.androlua.LuaActivity",
+          "matches": "[id=\"com.chunqiu.ah:id/buttonPanel\"] [text=\"我已知晓\"][id=\"android:id/button2\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13852430"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "fastQuery": true,
+      "name": "全屏广告-公告",
+      "desc": "点击不再提示",
+      "rules": [
+        {
+          "activityIds": "com.androlua.LuaActivity",
+          "matches": "[id=\"com.chunqiu.ah:id/buttonPanel\"] [text=\"不再提示\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13852447"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 5,
+      "fastQuery": true,
+      "name": "全屏广告-首页广告弹窗",
+      "desc": "点击X",
+      "rules": [
+        {
+          "activityIds": "com.androlua.LuaActivity",
+          "matches": "@ImageView[visibleToUser=true] < * +3 * > [text=\"查看详情\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13852448"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 6,
+      "name": "局部广告-播放界面广告",
+      "desc": "点击X",
+      "rules": [
+        {
+          "key": 0,
+          "activityIds": "com.androlua.LuaActivity",
+          "matches": "[id=\"com.chunqiu.ah:id/ksad_container\"] >n View[id=\"logoBox\"] > TextView[clickable=true]",
+          "snapshotUrls": "https://i.gkd.li/import/13852535"
+        },
+        {
+          "key": 1,
+          "activityIds": "com.androlua.LuaActivity",
+          "matches": "[id=\"android:id/content\"] FrameLayout[childCount<=5] > FrameLayout[childCount=1] > ImageView[visibleToUser=true][index=0]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13852695",
+            "https://i.gkd.li/import/13852670",
+            "https://i.gkd.li/import/13852669"
+          ]
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -34,6 +34,29 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/12783134"
         }
       ]
+    },
+    {
+      "key": 0,
+      "name": "开屏广告",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "rules": [
+        {
+          "activityIds": "com.hihonor.phoneservice.OpenScreenAdActivity",
+          "matches": "TextView[id=\"com.hihonor.phoneservice:id/start_skip_count_down\"]",
+          "snapshotUrls": "https://i.gkd.li/import/14896804"
+        }
+      ],
+      "order": -10
+    },
+    {
+      "enable": false,
+      "key": 3000,
+      "name": "全屏广告-请求位置权限提示信息",
+      "activityIds": "com.hihonor.phoneservice.main.MainActivity",
+      "rules": "[text^=\"开启定位权限\"] + [id=\"com.hihonor.phoneservice:id/iv_close\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12783134"
     }
   ]
 } as any);

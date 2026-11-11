@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -84,6 +84,37 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14007573"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-首页-广告弹窗",
+      "fastQuery": true,
+      "activityIds": "com.duokan.reader.DkMainActivity",
+      "rules": "[id=\"com.duokan.reader:id/store_feed_layer_close\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13248773",
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-小说页全屏卡片广告",
+      "desc": "点击关闭和确定按钮",
+      "fastQuery": true,
+      "rules": [
+        {
+          "key": 0,
+          "activityIds": "com.duokan.reader.DkMainActivity",
+          "matches": "@TextView[id=\"com.duokan.reader:id/reading__app_ad_view__close\"][text=\"广告\"]"
+        },
+        {
+          "key": 1,
+          "matches": "@TextView[id=\"com.duokan.reader:id/ad__feedback_close_dialog_button\"][text=\"知道了\"]"
+        }
+      ],
+      "snapshotUrls": [
+        "https://i.gkd.li/import/13498048",
+        "https://i.gkd.li/import/13497990"
+      ],
+      "enable": false
     }
   ]
 } as any);

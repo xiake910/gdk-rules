@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -307,6 +307,179 @@ export default defineGkdApp({
           "matches": "[vid=\"toolbar\"]",
           "action": "back",
           "snapshotUrls": "https://i.gkd.li/i/25459975"
+        }
+      ]
+    },
+    {
+      "key": 3000,
+      "name": "功能类-丁香园安全中心-自动点击继续访问",
+      "rules": [
+        {
+          "key": 0,
+          "action": "clickCenter",
+          "activityIds": ".common.OuterWebViewActivity",
+          "matches": "@Button[text=\"继续访问\"][clickable=true]",
+          "snapshotUrls": "https://i.gkd.li/i/24845324"
+        }
+      ]
+    },
+    {
+      "key": 3001,
+      "name": "功能类-药品说明书-表格全屏自动横屏观看",
+      "rules": [
+        {
+          "key": 0,
+          "activityIds": "cn.dxy.drugscomm.business.ebm.EbmContentComposeActivity",
+          "matches": "@TextView[text=\"横屏\"]",
+          "snapshotUrls": "https://i.gkd.li/i/24860315"
+        }
+      ]
+    },
+    {
+      "key": 3002,
+      "name": "功能类-📋病例视频自动慢速x0.5_选你想要的但不要多选!",
+      "desc": "适合CT,MRI影像学深入分析",
+      "actionMaximum": 1,
+      "activityIds": ".biz.post.PostDetailActivity",
+      "rules": [
+        {
+          "key": 0,
+          "name": "调出倍速栏",
+          "action": "clickCenter",
+          "matches": "[text=\"Playback Rate\"][clickable=true][visibleToUser=true]",
+          "snapshotUrls": "https://i.gkd.li/i/24865795"
+        },
+        {
+          "preKeys": [
+            0
+          ],
+          "key": 1,
+          "name": "使用x0.5",
+          "action": "clickCenter",
+          "matches": "@MenuItem[text=\"0.5x\"][clickable=true]",
+          "snapshotUrls": "https://i.gkd.li/i/24865795"
+        }
+      ]
+    },
+    {
+      "key": 3003,
+      "name": "功能类-📋病例视频自动慢速x0.8_选你想要的但不要多选!",
+      "desc": "适合CT,MRI影像学深入分析",
+      "actionMaximum": 1,
+      "activityIds": ".biz.post.PostDetailActivity",
+      "rules": [
+        {
+          "key": 0,
+          "name": "调出倍速栏",
+          "action": "clickCenter",
+          "matches": "[text=\"Playback Rate\"][clickable=true][visibleToUser=true]",
+          "snapshotUrls": "https://i.gkd.li/i/24865795"
+        },
+        {
+          "preKeys": [
+            0
+          ],
+          "key": 1,
+          "name": "使用x0.8",
+          "action": "clickCenter",
+          "matches": "@MenuItem[text=\"0.8x\"][clickable=true]",
+          "snapshotUrls": "https://i.gkd.li/i/24865795"
+        }
+      ]
+    },
+    {
+      "key": 3004,
+      "name": "功能类-📋病例视频自动倍速x1.5_选你想要的但不要多选!",
+      "desc": "提高观看效率",
+      "actionMaximum": 1,
+      "activityIds": ".biz.post.PostDetailActivity",
+      "rules": [
+        {
+          "key": 0,
+          "name": "调出倍速栏",
+          "action": "clickCenter",
+          "matches": "[text=\"Playback Rate\"][clickable=true][visibleToUser=true]",
+          "snapshotUrls": "https://i.gkd.li/i/24865795"
+        },
+        {
+          "preKeys": [
+            0
+          ],
+          "key": 1,
+          "name": "使用x1.5",
+          "action": "clickCenter",
+          "matches": "@MenuItem[text=\"1.5x\"][clickable=true]",
+          "snapshotUrls": "https://i.gkd.li/i/24865795"
+        }
+      ]
+    },
+    {
+      "key": 3005,
+      "name": "功能类-📋病例视频自动倍速x2.0_选你想要的但不要多选!",
+      "desc": "极限观看效率",
+      "actionMaximum": 1,
+      "activityIds": ".biz.post.PostDetailActivity",
+      "rules": [
+        {
+          "key": 0,
+          "name": "调出倍速栏",
+          "action": "clickCenter",
+          "matches": "[text=\"Playback Rate\"][clickable=true][visibleToUser=true]",
+          "snapshotUrls": "https://i.gkd.li/i/24865795"
+        },
+        {
+          "preKeys": [
+            0
+          ],
+          "key": 1,
+          "name": "使用x2.0",
+          "action": "clickCenter",
+          "matches": "@MenuItem[text=\"2x\"][clickable=true]",
+          "snapshotUrls": "https://i.gkd.li/i/24865795"
+        }
+      ]
+    },
+    {
+      "key": 3006,
+      "name": "功能类-📖课程视频自动倍速x1.2⚠️选你想要的但不要多选!",
+      "desc": "我们导师再也不卡壳啦",
+      "rules": [
+        {
+          "fastQuery": true,
+          "actionMaximum": 1,
+          "activityIds": ".openclass.biz.video.detail.VideoDetailActivity",
+          "matches": "[vid=\"play_speed\"][visibleToUser=true]",
+          "snapshotUrls": "https://i.gkd.li/i/24866929"
+        }
+      ]
+    },
+    {
+      "key": 3007,
+      "name": "功能类-📖课程视频自动倍速x1.5⚠️选你想要的但不要多选",
+      "desc": "显著提高讲师效率",
+      "rules": [
+        {
+          "fastQuery": true,
+          "actionCd": 300,
+          "actionMaximum": 2,
+          "activityIds": ".openclass.biz.video.detail.VideoDetailActivity",
+          "matches": "[vid=\"play_speed\"][visibleToUser=true]",
+          "snapshotUrls": "https://i.gkd.li/i/24866929"
+        }
+      ]
+    },
+    {
+      "key": 3008,
+      "name": "功能类-📖课程视频自动倍速x2.0⚠️选你想要的但不要多选",
+      "desc": "导师讲到冒烟不带停",
+      "rules": [
+        {
+          "fastQuery": true,
+          "actionCd": 300,
+          "actionMaximum": 3,
+          "activityIds": ".openclass.biz.video.detail.VideoDetailActivity",
+          "matches": "[vid=\"play_speed\"][visibleToUser=true]",
+          "snapshotUrls": "https://i.gkd.li/i/24866758"
         }
       ]
     }

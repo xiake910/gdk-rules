@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -39,6 +39,25 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/20921292"
         }
       ]
+    },
+    {
+      "key": 1,
+      "name": "局部广告-应用内卡片广告",
+      "activityIds": "com.tongcheng.android.TongchengMainActivity",
+      "rules": [
+        {
+          "key": 0,
+          "matches": "ViewGroup[childCount=2] > ImageView + ViewGroup[childCount=1] > ImageView",
+          "snapshotUrls": "https://i.gkd.li/import/13167070"
+        },
+        {
+          "preKeys": 0,
+          "key": 1,
+          "matches": "@* > * > [id=\"com.tongcheng.android:id/tv_home_banner_pop_up\"][text=\"关闭\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13167149"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

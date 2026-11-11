@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -110,6 +110,33 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/23289239"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-消息页上方开启系统通知提醒",
+      "activityIds": [
+        "com.dianping.main.guide.SplashActivity"
+      ],
+      "rules": {
+        "matches": "[text=\"去开启\"][clickable=true] +2 @FrameLayout[clickable=true] > ImageView",
+        "action": "clickCenter"
+      },
+      "snapshotUrls": "https://i.gkd.li/import/12727070",
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "局部广告-卡片式广告",
+      "rules": [
+        {
+          "key": 0,
+          "name": "推荐页卡片广告",
+          "activityIds": "com.dianping.v1.NovaMainActivity",
+          "matches": "[desc=\"reculike_delete\"][clickable=true][visibleToUser=true]",
+          "snapshotUrls": "https://i.gkd.li/import/13759369"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -50,6 +50,22 @@ export default defineGkdApp({
       "rules": [
         {
           "activityIds": ".activities.homepage.MainActivity",
+          "matches": "@View[clickable=true] > [desc=\"好的\"]",
+          "exampleUrls": "https://m.gkd.li/57941037/22ba335b-c225-41f0-97be-a91377ebc121",
+          "snapshotUrls": "https://i.gkd.li/i/14229554"
+        }
+      ]
+    },
+    {
+      "key": 3000,
+      "name": "功能类-\"签到成功\"弹窗",
+      "desc": "点击\"好的\"",
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "rules": [
+        {
+          "activityIds": "com.tencent.djcity.activities.homepage.MainActivity",
           "matches": "@View[clickable=true] > [desc=\"好的\"]",
           "exampleUrls": "https://m.gkd.li/57941037/22ba335b-c225-41f0-97be-a91377ebc121",
           "snapshotUrls": "https://i.gkd.li/i/14229554"

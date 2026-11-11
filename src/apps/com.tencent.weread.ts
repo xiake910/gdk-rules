@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -32,6 +32,41 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14190089"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-系统推送弹窗",
+      "desc": "系统推送弹窗-点击取消",
+      "fastQuery": true,
+      "actionMaximum": 1,
+      "matchTime": 30000,
+      "resetMatch": "app",
+      "activityIds": [
+        "com.tencent.weread.module.bottomSheet.BottomSheetForFragment",
+        "com.tencent.weread.WeReadFragmentActivity"
+      ],
+      "rules": [
+        {
+          "matches": "[id=\"com.tencent.weread:id/open_notification_close\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12642247",
+            "https://i.gkd.li/import/13233735"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 2,
+      "name": "青少年模式",
+      "fastQuery": true,
+      "actionMaximum": 1,
+      "matchTime": 30000,
+      "resetMatch": "app",
+      "activityIds": "com.tencent.weread.WeReadFragmentActivity",
+      "rules": "[text=\"设置青少年模式\"] - LinearLayout >2 [text=\"我知道了\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13233668",
+      "enable": false
     }
   ]
 } as any);

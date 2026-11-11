@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -101,6 +101,101 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/20745789"
         }
       ]
+    },
+    {
+      "key": 2,
+      "name": "全屏广告-广告反馈下拉窗",
+      "fastQuery": true,
+      "activityIds": [
+        "com.huawei.openalliance.ad.activity.FeedbackActivity"
+      ],
+      "rules": [
+        {
+          "matches": "TextView[id=\"com.huawei.music:id/label_title\"][text=\"直接关闭\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13067574",
+            "https://i.gkd.li/import/13067572",
+            "https://i.gkd.li/import/13067571",
+            "https://i.gkd.li/import/13067659",
+            "https://i.gkd.li/import/13067665",
+            "https://i.gkd.li/import/13067820"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 4,
+      "name": "局部广告-播放（音乐、视频）页面广告",
+      "fastQuery": true,
+      "activityIds": [
+        "com.android.mediacenter.MainActivity"
+      ],
+      "rules": [
+        {
+          "matches": "TextView[id=\"com.huawei.music:id/ad_icon\"&&visibleToUser=true]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13067956",
+            "https://i.gkd.li/import/13067978",
+            "https://i.gkd.li/import/13067387"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 5,
+      "name": "局部广告-评论区广告",
+      "fastQuery": true,
+      "activityIds": [
+        "com.android.mediacenter.comment.ui.CommentListMainActivity"
+      ],
+      "rules": [
+        {
+          "matches": "[id=\"com.huawei.music:id/ad_icon\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13067937"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 6,
+      "name": "局部广告-视频播放页广告反馈",
+      "fastQuery": true,
+      "activityIds": [
+        "com.android.mediacenter.MainActivity"
+      ],
+      "rules": [
+        {
+          "matches": "TextView[text=\"不感兴趣\"][id$=\"title\"][visibleToUser=true]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13067986",
+            "https://i.gkd.li/import/13067981"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 7,
+      "name": "局部广告-播放器上滑广告",
+      "fastQuery": true,
+      "activityIds": [
+        "com.android.mediacenter.MainActivity"
+      ],
+      "rules": [
+        {
+          "matches": "ViewGroup > TextView[text=\"广告\"][id$=\"ad_icon\"][visibleToUser=true]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13068935",
+            "https://i.gkd.li/import/13194163",
+            "https://i.gkd.li/import/13263590"
+          ]
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

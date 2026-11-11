@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -255,6 +255,71 @@ export default defineGkdApp({
           "name": "[设为铃声]Toast",
           "matches": "@[desc=\"关闭\"] - [text^=\"喜欢就设为铃声\"][visibleToUser=true]",
           "snapshotUrls": "https://i.gkd.li/i/27210121"
+        }
+      ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-VIP弹窗",
+      "rules": [
+        {
+          "key": 0,
+          "fastQuery": true,
+          "activityIds": "com.kugou.android.app.setting.YoungModeTipsActivity",
+          "matches": "[text^=\"新人限时开通\"] +3 [text=\"放弃优惠\"]",
+          "snapshotUrls": "https://i.gkd.li/i/14321698"
+        },
+        {
+          "key": 1,
+          "fastQuery": true,
+          "activityIds": [
+            "com.kugou.android.app.setting.YoungModeTipsActivity",
+            "com.kugou.common.useraccount.app.KgUserLoginAndRegActivity"
+          ],
+          "matches": "@ImageView[clickable=true][visibleToUser=true][childCount=0] <3 ViewGroup[childCount=3] < [id=\"android:id/content\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/i/14321700",
+            "https://i.gkd.li/i/25018524"
+          ]
+        },
+        {
+          "key": 2,
+          "fastQuery": true,
+          "activityIds": "com.kugou.common.useraccount.app.KgUserLoginAndRegActivity",
+          "matches": [
+            "[text*=\"已过期\"][visibleToUser=true]",
+            "[text=\"狠心拒绝\"][visibleToUser=true]"
+          ],
+          "snapshotUrls": "https://i.gkd.li/i/25020137"
+        },
+        {
+          "key": 3,
+          "activityIds": "com.kugou.framework.musicfees.ui.feeintercept.FeeInterceptWebActivity",
+          "matches": "WebView > [id=\"body\"] > [id=\"root\"] >2 View > Image[index=0][clickable=true][visibleToUser=true][width<70 && width<70]",
+          "snapshotUrls": "https://i.gkd.li/i/25022292"
+        }
+      ]
+    },
+    {
+      "key": 5,
+      "name": "全屏广告-弹窗广告",
+      "desc": "点击关闭",
+      "rules": [
+        {
+          "key": 0,
+          "fastQuery": true,
+          "activityIds": "com.kugou.android.app.MediaActivity",
+          "matches": "@[text*=\"跳过\"] + [text*=\"广告\"]",
+          "exampleUrls": "https://e.gkd.li/64dd159b-bff5-4dff-a4b9-d63f5b34acb7",
+          "snapshotUrls": "https://i.gkd.li/i/16407631"
+        },
+        {
+          "key": 1,
+          "fastQuery": true,
+          "activityIds": "com.kugou.android.app.MediaActivity",
+          "matches": "@ImageView[childCount=0][clickable=true][visibleToUser=true][width<160 && height<160] <2 ViewGroup[childCount=3] < FrameLayout < LinearLayout < LinearLayout <2 LinearLayout < FrameLayout < FrameLayout <2 FrameLayout < [id=\"android:id/content\"]",
+          "exampleUrls": "https://e.gkd.li/0776da1e-3ff6-4fba-a7e9-de8fa1fe5344",
+          "snapshotUrls": "https://i.gkd.li/i/23619626"
         }
       ]
     }

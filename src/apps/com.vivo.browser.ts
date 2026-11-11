@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -27,6 +27,14 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14392332"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-免流提示",
+      "activityIds": "com.vivo.browser.pendant.PendantActivity",
+      "rules": "[id=\"com.vivo.browser:id/dialog_button_right\"][text=\"继续浏览\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12847431",
+      "enable": false
     }
   ]
 } as any);

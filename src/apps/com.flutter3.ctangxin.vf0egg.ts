@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -33,6 +33,51 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/12836854"
         }
       ]
+    },
+    {
+      "enable": false,
+      "key": 0,
+      "name": "开屏广告",
+      "desc": "虚假按钮，实际点击无法跳过，规则暂时保留",
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "rules": [
+        {
+          "matches": "FrameLayout > View > View > View > View > @View[clickable=true && desc.length=2] + ImageView[childCount=1]",
+          "snapshotUrls": "https://i.gkd.li/import/12836857"
+        }
+      ],
+      "order": -10
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-广告弹窗",
+      "matchTime": 10000,
+      "actionCd": 100,
+      "resetMatch": "app",
+      "activityIds": [
+        "com.example.flutter3_frame.MainActivity"
+      ],
+      "rules": [
+        {
+          "action": "back",
+          "matches": "FrameLayout > View > View > View[index=0] > View > ImageView[childCount=1] + View[clickable=true && desc=null]",
+          "snapshotUrls": "https://i.gkd.li/import/12836891"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3,
+      "name": "全屏广告-延迟工具(协助key1、2)",
+      "desc": "5s开屏广告后主动触发匹配",
+      "matchDelay": 6500,
+      "matchTime": 10000,
+      "resetMatch": "app",
+      "fastQuery": true,
+      "rules": "TextView[text=\"xxxxx\"]",
+      "enable": false
     }
   ]
 } as any);

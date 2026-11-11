@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -357,6 +357,57 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/34421280"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "青少年模式",
+      "desc": "点击【我知道了】（旧版本）【关闭】（新版本）",
+      "fastQuery": true,
+      "activityIds": "com.ss.android.ugc.aweme.main.MainActivity",
+      "actionMaximum": 1,
+      "rules": [
+        {
+          "key": 0,
+          "matches": "Button[desc=\"开启青少年模式\"] + Button[text=\"我知道了\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13111607"
+        },
+        {
+          "actionMaximumKey": 0,
+          "matches": "Button[text=\"开启青少年模式\"] + LinearLayout > Button[text=\"关闭\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13542867"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-功能体验邀请弹窗",
+      "rules": [
+        {
+          "key": 0,
+          "name": "【首页商城】体验邀请弹窗",
+          "activityIds": "com.ss.android.ugc.aweme.commerce.sdk.MallContainerActivity",
+          "matches": "[text=\"不再提示\"] + @ECCustomUiImage[clickable=true] +n LynxFlattenUI[text^=\"立即体验\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13684791"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3002,
+      "fastQuery": true,
+      "name": "权限提示-消息提醒弹窗",
+      "desc": "点击暂不开启",
+      "rules": [
+        {
+          "activityIds": "com.ss.android.ugc.aweme.main.MainActivity",
+          "matches": "[id=\"com.ss.android.ugc.aweme.lite:id/gl7\"] > [id=\"com.ss.android.ugc.aweme.lite:id/h5q\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13888485"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

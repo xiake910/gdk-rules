@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -44,6 +44,65 @@ export default defineGkdApp({
           "name": "穿山甲广告-反馈理由",
           "matches": "[id=\"com.byted.pangle:id/tt_item_tv\"][text=\"不感兴趣\"]",
           "snapshotUrls": "https://i.gkd.li/i/12640358"
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3000,
+      "name": "局部广告-底部穿山甲广告",
+      "desc": "点击广告卡片x关闭按钮-关闭反馈理由弹窗",
+      "activityIds": [
+        "com.cccgame.android.MainActivity",
+        "com.bytedance.sdk.openadsdk.core.dislike.ui.c"
+      ],
+      "rules": [
+        {
+          "preKeys": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "name": "穿山甲广告-反馈理由",
+          "matches": "[id=\"com.byted.pangle:id/tt_item_tv\"][text=\"不感兴趣\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12640358"
+        },
+        {
+          "key": 1,
+          "matches": [
+            "[text=\"广告\"] < * - View < * - View > Image[id=null]"
+          ],
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12640359"
+          ]
+        },
+        {
+          "key": 2,
+          "matches": [
+            "@Image[id=null] < View -(2) View > View > View > TextView[text=\"广告\"]"
+          ],
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12640362"
+          ]
+        },
+        {
+          "key": 3,
+          "matches": [
+            "@View[id=null] < FrameLayout[desc^=\"dislike\"] + FrameLayout >(2) TextView[text=\"广告\"]"
+          ],
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12640374"
+          ]
+        },
+        {
+          "key": 4,
+          "matches": [
+            "@Image[id=null] < View - View > View + View > TextView[text=\"广告\"]"
+          ],
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12640406"
+          ]
         }
       ]
     }

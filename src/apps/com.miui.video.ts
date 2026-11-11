@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -63,6 +63,19 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/af353485-0109-4247-9e04-642492b3df16"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-视频列表广告",
+      "fastQuery": true,
+      "activityIds": ".feature.detail.NewShortVideoDetailActivity",
+      "rules": [
+        {
+          "matches": "@ImageView[id=\"com.miui.video:id/iv_close\"][visibleToUser=true] - [text=\"立即下载\"] - ImageView[id=\"com.miui.video:id/download_icon\"] < [id=\"com.miui.video:id/v_download\"]",
+          "snapshotUrls": "https://i.gkd.li/i/25323739"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

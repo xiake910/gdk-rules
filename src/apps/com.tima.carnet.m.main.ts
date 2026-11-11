@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -77,6 +77,53 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13508072"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-设备界面顶部广告",
+      "activityIds": [
+        "com.tima.carnet.m.main.app.main.MainActivity"
+      ],
+      "rules": [
+        {
+          "key": 1,
+          "matches": "[id=\"com.tima.carnet.m.main:id/fl_ad_banner\"] >n Image[text!=null&&text!=\"\"] < View +n View > Image",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13508030"
+          ]
+        },
+        {
+          "key": 2,
+          "matches": "[id=\"com.tima.carnet.m.main:id/fl_ad_banner\"] >n Image[text!=null&&text!=\"\"] + View > Image",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13508115"
+          ]
+        },
+        {
+          "key": 3,
+          "preKeys": [
+            1,
+            2
+          ],
+          "matches": "[text=\"不感兴趣\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13508102"
+          ]
+        },
+        {
+          "key": 4,
+          "preKeys": [
+            1,
+            2
+          ],
+          "action": "back",
+          "matches": "ListView[childCount=0]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13508072"
+          ]
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

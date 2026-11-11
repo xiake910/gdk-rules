@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -262,6 +262,121 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14586448"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-卡片广告",
+      "desc": "点击关闭",
+      "fastQuery": true,
+      "rules": [
+        {
+          "key": 0,
+          "activityIds": [
+            ".activity.MainActivity",
+            ".activity.DictQueryActivity"
+          ],
+          "matches": "[vid=\"aivClose\" || vid=\"course_one_course_close\" || vid=\"home_ad_close\" || vid=\"course_four_course_close\" || vid=\"promotion_close_zone\"][visibleToUser=true]",
+          "exampleUrls": "https://e.gkd.li/df92c524-c732-4c16-9266-326056c9acf8",
+          "snapshotUrls": [
+            "https://i.gkd.li/i/14468564",
+            "https://i.gkd.li/i/14567234",
+            "https://i.gkd.li/i/14895765",
+            "https://i.gkd.li/i/14009705",
+            "https://i.gkd.li/i/14559287",
+            "https://i.gkd.li/i/17082441",
+            "https://i.gkd.li/i/17115693"
+          ],
+          "excludeSnapshotUrls": "https://i.gkd.li/i/14468628"
+        }
+      ]
+    },
+    {
+      "key": 3001,
+      "name": "局部广告-卡片式广告",
+      "rules": [
+        {
+          "key": 0,
+          "activityIds": "com.youdao.dict.activity.MainActivity",
+          "fastQuery": true,
+          "matches": "[text=\"广告\"] - [vid=\"close\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12668574",
+            "https://i.gkd.li/import/13800055"
+          ]
+        },
+        {
+          "key": 1,
+          "activityIds": "com.youdao.dict.activity.MainActivity",
+          "fastQuery": true,
+          "matches": "[vid=\"close_pop\"][text=\"收起广告\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12668583",
+            "https://i.gkd.li/import/13800056"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3002,
+      "name": "全屏广告",
+      "rules": [
+        {
+          "key": 0,
+          "name": "首页-弹窗广告",
+          "activityIds": [
+            "com.youdao.dict.activity.MainActivity",
+            "com.youdao.dict.activity.DictSplashActivity"
+          ],
+          "fastQuery": true,
+          "matches": "@ImageView[id=\"com.youdao.dict:id/iv_close_bt\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12893419",
+            "https://i.gkd.li/import/13263801"
+          ]
+        },
+        {
+          "key": 1,
+          "name": "学习页面-弹窗广告",
+          "activityIds": [
+            "com.youdao.dict.edu.main.MainPopDialog",
+            "com.youdao.dict.activity.MainActivity"
+          ],
+          "fastQuery": true,
+          "matches": "@ImageView[id=\"com.youdao.dict:id/iv_close\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12893450"
+        },
+        {
+          "key": 2,
+          "name": "抽奖机会-弹窗广告",
+          "activityIds": "com.youdao.dict.activity.DictSplashActivity",
+          "fastQuery": true,
+          "matches": "[vid=\"skip_bottom_view\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13931202"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3003,
+      "name": "全屏广告-VIP-弹窗",
+      "activityIds": "com.youdao.dict.vip.activity.RecallSevenDayVipActivity",
+      "rules": "@ImageView[id=\"com.youdao.dict:id/iv_close\"]",
+      "fastQuery": true,
+      "snapshotUrls": "https://i.gkd.li/import/13263706",
+      "enable": false
+    },
+    {
+      "key": 3004,
+      "name": "全屏广告-评价弹窗",
+      "activityIds": "com.youdao.dict.activity.MainActivity",
+      "fastQuery": true,
+      "resetMatch": "app",
+      "actionMaximum": 1,
+      "matchDelay": 10000,
+      "rules": "[id=\"com.youdao.dict:id/btn_never\"][text*=\"不再提醒\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13540941",
+      "enable": false
     }
   ]
 } as any);

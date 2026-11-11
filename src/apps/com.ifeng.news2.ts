@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -58,6 +58,60 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/12705531"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-信息流广告",
+      "activityIds": "com.ifeng.news2.activity.IfengTabMainActivity",
+      "rules": [
+        {
+          "key": 1,
+          "matches": "[id=\"com.ifeng.news2:id/adv_label\"] + [id=\"com.ifeng.news2:id/normal_item_delete_wrap\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12705500"
+        },
+        {
+          "key": 2,
+          "matches": "@[id=\"com.ifeng.news2:id/img_feedback_left_of_image\"] - LinearLayout >(2) [id=\"com.ifeng.news2:id/adv_label\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12705508"
+        },
+        {
+          "key": 3,
+          "matches": "[id=\"com.ifeng.news2:id/adv_icon\"] + LinearLayout[id=\"com.ifeng.news2:id/normal_item_delete_wrap\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12705511"
+        },
+        {
+          "key": 4,
+          "matches": "[id=\"com.ifeng.news2:id/adv_icon\"] + TextView + [id=\"com.ifeng.news2:id/normal_item_delete_wrap\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12705518"
+        },
+        {
+          "key": 5,
+          "matches": "[id=\"com.ifeng.news2:id/adv_label\"] + [id=\"com.ifeng.news2:id/iv_item_del\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12705520"
+        },
+        {
+          "preKeys": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "key": 9,
+          "matches": "@[id=\"com.ifeng.news2:id/dialog_dislike_feedback_normal_item_linearlayout\"] > [text=\"不感兴趣\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12705505"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 3001,
+      "name": "全屏广告-请求位置权限弹窗",
+      "desc": "自动点击取消",
+      "activityIds": "com.ifeng.news2.activity.IfengTabMainActivity",
+      "rules": "[text*=\"请求您的位置\"] + [id=\"com.ifeng.news2:id/permission_cancel\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12705531"
     }
   ]
 } as any);

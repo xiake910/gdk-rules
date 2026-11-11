@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -711,6 +711,102 @@ export default defineGkdApp({
             "https://i.gkd.li/i/30159254",
             "https://i.gkd.li/i/30266403"
           ]
+        }
+      ]
+    },
+    {
+      "key": 3000,
+      "name": "功能类-全自动看广告获取听歌时长",
+      "rules": [
+        {
+          "key": 0,
+          "fastQuery": true,
+          "actionDelay": 12000,
+          "position": {
+            "left": "width * 7.45",
+            "top": "height * 0.5"
+          },
+          "activityIds": "com.ss.android.excitingvideo.ExcitingVideoActivity",
+          "matches": "@FlattenUIText[text=\"广告\"] + [text$=\"声音\"] + [text=\"反馈\"][visibleToUser=true]",
+          "snapshotUrls": [
+            "https://i.gkd.li/i/24521423",
+            "https://i.gkd.li/i/24521440"
+          ]
+        },
+        {
+          "key": 1,
+          "activityIds": "com.bytedance.sdk.openadsdk.core.component.reward.activity.TTRewardVideoActivity",
+          "matches": "[visibleToUser=true][text=\"奖励已领取\"]",
+          "snapshotUrls": "https://i.gkd.li/i/24522627"
+        },
+        {
+          "preKeys": [
+            0,
+            1
+          ],
+          "fastQuery": true,
+          "actionDelay": 500,
+          "activityIds": [
+            "com.bytedance.sdk.openadsdk.core.component.reward.activity.TTRewardVideoActivity",
+            "com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity",
+            "com.ss.android.excitingvideo.ExcitingVideoActivity"
+          ],
+          "matches": "[text=\"领取奖励\" || text^=\"再看一个\" || text=\"继续观看\"][visibleToUser=true]",
+          "snapshotUrls": [
+            "https://i.gkd.li/i/15140816",
+            "https://i.gkd.li/i/24521416",
+            "https://i.gkd.li/i/24521446",
+            "https://i.gkd.li/i/24521516"
+          ]
+        },
+        {
+          "key": 99,
+          "fastQuery": true,
+          "activityIds": "com.ss.android.excitingvideo.ExcitingVideoActivity",
+          "matches": "@[clickable=true][width<120 && height<120] + LinearLayout > [text=\"当前无新视频\"][visibleToUser=true]",
+          "snapshotUrls": "https://i.gkd.li/i/24522244"
+        }
+      ]
+    },
+    {
+      "key": 3001,
+      "name": "功能类-关闭广告的声音",
+      "rules": [
+        {
+          "fastQuery": true,
+          "activityIds": "com.ss.android.excitingvideo.ExcitingVideoActivity",
+          "matches": "[text=\"开启声音\"][visibleToUser=true]",
+          "snapshotUrls": "https://i.gkd.li/i/24522999",
+          "excludeSnapshotUrls": "https://i.gkd.li/i/24521440"
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 7,
+      "name": "全屏广告-看广告视频拿VIP",
+      "desc": "30s广告后点击【跳过】",
+      "activityIds": [
+        "com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity",
+        "com.luna.biz.ad.AdActivity"
+      ],
+      "rules": [
+        {
+          "key": 0,
+          "name": "等待30s点击【跳过】",
+          "actionDelay": 30000,
+          "matches": "WebView > WebView > View TextView[text=\"| 跳过\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13611006",
+            "https://i.gkd.li/import/13613085"
+          ]
+        },
+        {
+          "preKeys": 0,
+          "name": "点击【坚持退出】",
+          "fastQuery": true,
+          "matches": "[id=\"com.byted.pangle:id/tt_negtive\"][text=\"坚持退出\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13613184"
         }
       ]
     }

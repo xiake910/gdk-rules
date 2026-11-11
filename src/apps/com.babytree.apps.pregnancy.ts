@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -49,6 +49,30 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/12614838"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-弹出广告(偶发)",
+      "activityIds": "com.babytree.apps.pregnancy.activity.SailfishActivity",
+      "rules": [
+        {
+          "matches": "ImageView[id=\"com.babytree.apps.pregnancy:id/bb_referenced_active_dialog_img_2\"] + ImageView[id!=null][clickable=true]",
+          "snapshotUrls": "https://i.gkd.li/import/12614834"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "局部广告-首页右侧悬浮广告(偶发)",
+      "activityIds": "com.babytree.apps.pregnancy.activity.SailfishActivity",
+      "rules": [
+        {
+          "matches": "ImageView[id!=null][clickable=false] + @ImageView[id!=null][clickable=true] + FrameLayout[id=null] > TextView[text=null][id!=null]",
+          "snapshotUrls": "https://i.gkd.li/import/12614838"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

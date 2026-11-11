@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -46,6 +46,22 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/12715250"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "更新提示",
+      "activityIds": "com.maidu.gkld.ui.main.MainActivity",
+      "rules": "[id=\"com.maidu.gkld:id/tv_update_next\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12715215",
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 3001,
+      "name": "全屏广告-请求通知权限弹窗",
+      "activityIds": "com.maidu.gkld.ui.main.MainActivity",
+      "rules": "[id=\"com.maidu.gkld:id/ll_open_app_notice\"] + [id=\"com.maidu.gkld:id/iv_cancel\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12715250"
     }
   ]
 } as any);

@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -80,6 +80,48 @@ export default defineGkdApp({
           ],
           "excludeSnapshotUrls": "https://i.gkd.li/i/16776676",
           "exampleUrls": "https://m.gkd.li/57941037/7d6da15b-1c3f-4160-a2d3-d8223bc55132"
+        }
+      ]
+    },
+    {
+      "key": 3000,
+      "enable": false,
+      "name": "局部广告-信息流广告",
+      "desc": "但是步骤较多, 影响app使用",
+      "fastQuery": true,
+      "activityIds": "com.instagram.mainactivity.InstagramMainActivity",
+      "rules": [
+        {
+          "key": 0,
+          "name": "点击【更多】按钮",
+          "actionCd": 4000,
+          "matches": "[text=\"赞助内容\"] + [id=\"com.instagram.android:id/feed_more_button_stub\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12798562"
+        },
+        {
+          "key": 1,
+          "name": "点击【隐藏广告】按钮",
+          "matches": "@ViewGroup >n [text=\"隐藏广告\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12798571",
+            "https://i.gkd.li/import/12829448"
+          ]
+        },
+        {
+          "key": 2,
+          "name": "点击【广告不相关】按钮",
+          "matches": "@ViewGroup > [text=\"广告不相关\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12798590",
+            "https://i.gkd.li/import/12829464"
+          ]
+        },
+        {
+          "key": 3,
+          "name": "关闭[你不会再看到这条广告]",
+          "action": "back",
+          "matches": "[text=\"你不会再看到这条广告\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12829492"
         }
       ]
     }

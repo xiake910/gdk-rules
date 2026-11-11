@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -35,6 +35,35 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13759025"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-右下角弹窗",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "rules": [
+        {
+          "activityIds": "cn.com.langeasy.LangEasyLexis.activity.MainActivity",
+          "matches": "[id=\"cn.com.langeasy.LangEasyLexis:id/close_float_button\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13759025"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3,
+      "name": "全屏广告-新功能上线",
+      "fastQuery": true,
+      "actionMaximum": 1,
+      "matchTime": 200000,
+      "activityIds": ".activity.MainActivity",
+      "rules": [
+        {
+          "matches": "ImageView[id=\"cn.com.langeasy.LangEasyLexis:id/close_btn\"]",
+          "snapshotUrls": "https://i.gkd.li/i/18867092"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

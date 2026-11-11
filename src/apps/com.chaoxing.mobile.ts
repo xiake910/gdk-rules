@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -150,6 +150,57 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/3705832f-59e5-44f2-b39a-cf4878be6f4f"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "功能类-提示没有网络时点击[重试/确定]",
+      "rules": [
+        {
+          "fastQuery": true,
+          "activityIds": ".player.course.CoursePlayerWithNoteActivity",
+          "matches": [
+            "[text^=\"请在有网络时进行学习\"][visibleToUser=true]",
+            "[text=\"重试\" || text=\"确定\"][visibleToUser=true]"
+          ],
+          "exampleUrls": "https://e.gkd.li/17573fa6-2143-4b41-9d61-e922117c9bc7",
+          "snapshotUrls": [
+            "https://i.gkd.li/i/23046734",
+            "https://i.gkd.li/i/23046852"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 3001,
+      "name": "功能类-提示非WIFI环境时点击[继续]，使用流量播放",
+      "rules": [
+        {
+          "fastQuery": true,
+          "activityIds": [
+            ".player.course.CoursePlayerWithNoteActivity",
+            "com.chaoxing.fanya.aphone.ui.chapter.detail.ui.ChapterDetailActivity"
+          ],
+          "matches": [
+            "[text^=\"正在使用非WiFi环境\"][visibleToUser=true]",
+            "[text=\"继续\"][visibleToUser=true]"
+          ],
+          "exampleUrls": "https://e.gkd.li/d4a8ec6d-031f-4030-b111-51a2f37bd39d",
+          "snapshotUrls": [
+            "https://i.gkd.li/i/23046887",
+            "https://i.gkd.li/i/23046892"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 3002,
+      "name": "权限提示-开启消息通知",
+      "desc": "自动点击关闭",
+      "enable": false,
+      "fastQuery": true,
+      "activityIds": "com.chaoxing.mobile.main.ui.MainTabActivity",
+      "rules": "[id=\"com.chaoxing.mobile:id/vNotificationItemClose\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13197374"
     }
   ]
 } as any);

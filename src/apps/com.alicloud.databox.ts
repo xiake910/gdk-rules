@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -125,6 +125,33 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/15433289"
         }
       ]
+    },
+    {
+      "key": 2,
+      "name": "功能类-时光设备间-自动点击“开心收下”",
+      "activityIds": "com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Main",
+      "actionMaximum": 1,
+      "resetMatch": "activity",
+      "matchTime": 10000,
+      "rules": "View[childCount=9] > @Image -2 View[childCount=5]",
+      "snapshotUrls": "https://i.gkd.li/import/13596924",
+      "enable": false
+    },
+    {
+      "key": 3000,
+      "name": "更新提示-版本更新",
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "fastQuery": true,
+      "activityIds": "com.alicloud.databox.MainActivity",
+      "rules": [
+        {
+          "matches": "[text^=\"立即了解\"] -3 View[clickable=true]",
+          "snapshotUrls": "https://i.gkd.li/import/13806865"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

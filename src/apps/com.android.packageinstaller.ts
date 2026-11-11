@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -201,6 +201,48 @@ export default defineGkdApp({
           ],
           "snapshotUrls": "https://i.gkd.li/i/34540653",
           "exampleUrls": "https://e.gkd.li/0f96ada2-22a5-4220-9e8a-54a5d43df254"
+        }
+      ]
+    },
+    {
+      "key": 3000,
+      "name": "功能类-自动继续安装高危风险应用",
+      "rules": [
+        {
+          "fastQuery": true,
+          "activityIds": ".PackageInterceptActivity",
+          "matches": [
+            "[text=\"该应用存在高危风险\"][visibleToUser=true]",
+            "@[clickable=true] >2 [text=\"仍要继续\"][visibleToUser=true]"
+          ],
+          "exampleUrls": "https://e.gkd.li/2961e749-6aac-4f74-b7f7-268ecc0e14f4",
+          "snapshotUrls": "https://i.gkd.li/i/24540505"
+        }
+      ]
+    },
+    {
+      "key": 3001,
+      "name": "功能类-勾选[已了解此应用未经检测，可能存在风险]",
+      "fastQuery": true,
+      "activityIds": [
+        ".PackageInterceptActivity",
+        ".PackageInstallerActivity"
+      ],
+      "rules": [
+        {
+          "key": 0,
+          "matches": "[vid=\"checkbox\" || vid=\"deleted_file_state_cb\"][checked=false]",
+          "snapshotUrls": [
+            "https://i.gkd.li/i/14595443",
+            "https://i.gkd.li/i/22870985"
+          ]
+        },
+        {
+          "preKeys": [
+            0
+          ],
+          "matches": "@LinearLayout[clickable=true][id=null] > [text=\"继续安装\"]",
+          "snapshotUrls": "https://i.gkd.li/i/22870985"
         }
       ]
     }

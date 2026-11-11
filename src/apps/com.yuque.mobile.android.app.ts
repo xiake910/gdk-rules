@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -28,6 +28,31 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/12911013"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-\"用语雀公众号\"横幅提示",
+      "desc": "点x取消提示",
+      "rules": [
+        {
+          "activityIds": "com.yuque.mobile.android.app.rn.activity.ReactNativeMainActivity",
+          "matches": "TextView[text=\"了解更多\"] + ViewGroup[clickable=true]",
+          "snapshotUrls": "https://i.gkd.li/i/12911014"
+        }
+      ]
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-横幅提示",
+      "desc": "点x取消提示",
+      "activityIds": "com.yuque.mobile.android.app.rn.activity.ReactNativeMainActivity",
+      "rules": [
+        {
+          "matches": "TextView[text=\"了解更多\"] + ViewGroup[clickable=true]",
+          "snapshotUrls": "https://i.gkd.li/import/12911014"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

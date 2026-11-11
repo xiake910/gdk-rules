@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -80,6 +80,40 @@ export default defineGkdApp({
           ]
         }
       ]
+    },
+    {
+      "key": 3000,
+      "fastQuery": true,
+      "name": "全屏广告-APP内弹窗广告",
+      "activityIds": "com.smzdm.client.android.app.HomeActivity",
+      "rules": "[id=\"com.smzdm.client.android:id/dialog_home_close\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12695751",
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-请求读取剪贴板权限弹窗",
+      "fastQuery": true,
+      "activityIds": "com.smzdm.client.android.app.HomeActivity",
+      "rules": "@[text=\"暂不允许\"] + [text=\"允许\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13198020",
+      "enable": false
+    },
+    {
+      "key": 3002,
+      "name": "全屏广告-通知弹窗",
+      "fastQuery": true,
+      "actionMaximum": 1,
+      "activityIds": [
+        "com.smzdm.client.android.module.community.module.bask.BaskDetailActivity",
+        "com.smzdm.client.android.module.haojia.detail.HaojiaDetailActivity"
+      ],
+      "rules": "ImageView[id=\"com.smzdm.client.android:id/ib_close\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/13438810",
+        "https://i.gkd.li/import/13626746"
+      ],
+      "enable": false
     }
   ]
 } as any);

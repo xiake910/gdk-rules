@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -32,6 +32,23 @@ export default defineGkdApp({
           "matches": "[text=\"登录\"]",
           "snapshotUrls": "https://i.gkd.li/i/14830682"
         }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3000,
+      "name": "功能类-CAS安全认证-自动登录",
+      "desc": "自动点击【登录】按钮",
+      "activityIds": [
+        "com.sfexpress.sfim.scan.view.SfScanActivity",
+        "com.sfexpress.sfim.microservice.commonservice.ui.MicroAppContainerActivity",
+        "com.sfexpress.sfim.sdkuikit.widget.dialog.NoticeDialog"
+      ],
+      "rules": "[text=\"CAS安全认证\"] >n [text=\"登录\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12745239",
+        "https://i.gkd.li/import/12745240",
+        "https://i.gkd.li/import/12745241"
       ]
     }
   ]

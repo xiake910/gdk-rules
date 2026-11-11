@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -54,6 +54,51 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/12706226"
         }
       ]
+    },
+    {
+      "key": 1,
+      "name": "更新提示",
+      "activityIds": "io.iftech.android.box.main.HomeActivity",
+      "rules": "[text*=\"新版本\"] +(2) [text=\"取消\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12706195",
+      "enable": false
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-第三方 SDK 广告",
+      "rules": [
+        {
+          "name": "穿山甲",
+          "activityIds": "com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity",
+          "matches": "@Image[text=\"\"] < View +(n) View >(2) TextView[text=\"广告\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12706209"
+        },
+        {
+          "name": "优量汇",
+          "activityIds": "io.iftech.android.box.main.HomeActivity",
+          "matches": "ImageView - FrameLayout > ImageView[id=null]",
+          "snapshotUrls": "https://i.gkd.li/import/12706209"
+        },
+        {
+          "name": "百青藤",
+          "activityIds": "com.anythink.basead.ui.ATPortraitTranslucentActivity",
+          "matches": "[id=\"io.iftech.android.box:id/anythink_myoffer_btn_close_id\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12706228"
+        },
+        {
+          "name": "百青藤2",
+          "activityIds": "com.baidu.mobads.sdk.api.MobRewardVideoActivity",
+          "matches": "@ImageView[id=null][clickable=true] + RelativeLayout + ImageView + ImageView",
+          "snapshotUrls": "https://i.gkd.li/import/12706236"
+        },
+        {
+          "name": "百青藤3",
+          "activityIds": "com.baidu.mobads.sdk.api.MobRewardVideoActivity",
+          "matches": "@ImageView[id=null][clickable=true] + RelativeLayout > RelativeLayout > ImageView + ImageView",
+          "snapshotUrls": "https://i.gkd.li/import/12706240"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

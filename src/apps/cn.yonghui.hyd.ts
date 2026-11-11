@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -24,6 +24,25 @@ export default defineGkdApp({
           ]
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-优惠卷弹窗",
+      "fastQuery": true,
+      "activityIds": ".coupon.couponfactory.CouponFactoryActivity",
+      "rules": [
+        {
+          "anyMatches": [
+            "@TextView[id=\"cn.yonghui.hyd:id/close\"] -n [id=\"cn.yonghui.hyd:id/title\"][text=\"天降红包\"]",
+            "@ImageView[id=\"cn.yonghui.hyd:id/close\"] -n [id=\"cn.yonghui.hyd:id/couponsWillGoneHeaderIv\"]"
+          ],
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13414401",
+            "https://i.gkd.li/import/13414444"
+          ]
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

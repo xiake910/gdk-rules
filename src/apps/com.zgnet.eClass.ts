@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -27,6 +27,19 @@ export default defineGkdApp({
         {
           "matches": "[text*=\"确定要退出\"] < LinearLayout +n LinearLayout > TextView[id$=\"tv_exit_sure\"]",
           "snapshotUrls": "https://i.gkd.li/i/12645513"
+        }
+      ]
+    },
+    {
+      "key": 3000,
+      "enable": false,
+      "name": "全屏广告-退出确认弹窗（默认关闭）",
+      "rules": [
+        {
+          "matches": "[text*=\"确定要退出\"] < LinearLayout +n LinearLayout > TextView[id$=\"tv_exit_sure\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12645513"
+          ]
         }
       ]
     }

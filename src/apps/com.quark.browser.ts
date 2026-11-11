@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -81,6 +81,27 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/21967126"
         }
       ]
+    },
+    {
+      "key": 0,
+      "name": "局部广告-小说阅读页面底部广告",
+      "activityIds": "com.ucpro.BrowserActivity",
+      "rules": [
+        "[id=`com.quark.browser:id/tv_close_ad`][text=`关闭广告`]",
+        "[id=`com.quark.browser:id/ad_close_layout_container`]"
+      ],
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 3000,
+      "name": "全屏广告-设置默认浏览器提示",
+      "desc": "点击取消",
+      "fastQuery": true,
+      "actionMaximum": 1,
+      "activityIds": "com.ucpro.BrowserActivity",
+      "rules": "@Button[text=\"取消\"] + Button[text=\"去设置\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13249469"
     }
   ]
 } as any);

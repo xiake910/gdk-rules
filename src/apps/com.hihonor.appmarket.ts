@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -108,6 +108,98 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/f7626132-4702-4cd4-b036-88935f45734d"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-广告提示",
+      "fastQuery": true,
+      "activityIds": [
+        "com.hihonor.android.launcher.unihome.UniHomeLauncher",
+        "com.hihonor.appmarket.module.main.MainActivity"
+      ],
+      "rules": "[id=\"com.hihonor.appmarket:id/iv_dialog_operation_close\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/13063815",
+        "https://i.gkd.li/import/13168440"
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-推送通知",
+      "fastQuery": true,
+      "activityIds": "com.hihonor.appmarket.module.main.MainActivity",
+      "rules": "TextView[text=\"接收通知\"] < LinearLayout < LinearLayout +n [id=\"android:id/buttonPanel\"] Button[text=\"否\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13073319",
+      "enable": false
+    },
+    {
+      "key": 3002,
+      "name": "全屏广告-为您专属推荐",
+      "desc": "【取消】",
+      "fastQuery": true,
+      "resetMatch": "app",
+      "actionMaximum": 1,
+      "matchTime": 10000,
+      "activityIds": ".module.main.MainActivity",
+      "rules": [
+        {
+          "matches": "Button[id=\"com.hihonor.appmarket:id/app_recommendation_cancel_btn\"][text=\"取消\"]",
+          "snapshotUrls": "https://i.gkd.li/i/19222443"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3003,
+      "name": "全屏广告-应用推荐卡片添加至桌面",
+      "desc": "【我再想想】",
+      "fastQuery": true,
+      "resetMatch": "app",
+      "actionMaximum": 1,
+      "matchTime": 10000,
+      "activityIds": ".module.main.MainActivity",
+      "rules": [
+        {
+          "matches": "Button[id=\"com.hihonor.appmarket:id/app_cancel_btn\"][text=\"我再想想\"]",
+          "snapshotUrls": "https://i.gkd.li/i/19222473"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 6,
+      "name": "全屏广告-个性化内容推荐",
+      "desc": "【取消】",
+      "fastQuery": true,
+      "resetMatch": "app",
+      "actionMaximum": 1,
+      "matchTime": 10000,
+      "activityIds": ".module.main.MainActivity",
+      "rules": [
+        {
+          "matches": "Button[id=\"android:id/button2\"][text=\"取消\"] + Button[id=\"android:id/button1\"][text=\"同意\"]",
+          "snapshotUrls": "https://i.gkd.li/i/19222508"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 7,
+      "name": "通知提示",
+      "desc": "【取消】",
+      "fastQuery": true,
+      "resetMatch": "app",
+      "actionMaximum": 1,
+      "matchTime": 10000,
+      "activityIds": ".module.main.MainActivity",
+      "rules": [
+        {
+          "matches": "@Button[id=\"android:id/button2\"][text=\"取消\"] + Button[id=\"android:id/button1\"][text=\"立即开启\"]",
+          "snapshotUrls": "https://i.gkd.li/i/19222532"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

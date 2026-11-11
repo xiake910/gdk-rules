@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -17,6 +17,20 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13808757"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "功能类-动画疯年龄限制",
+      "desc": "点击同意",
+      "activityIds": "tw.com.gamer.android.animad.VideoActivity",
+      "fastQuery": true,
+      "rules": [
+        {
+          "matches": "[id=\"tw.com.gamer.android.animad:id/agree_button\"][text=\"同意\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13808757"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

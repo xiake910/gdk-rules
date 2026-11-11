@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（分类来自 id667 订阅 + 本项目）
+// 自动生成, 请勿手改（分类来自 667 / AIsouler / 甘霖）
 import { defineGkdCategories } from '@gkd-kit/define';
 
 export default defineGkdCategories([

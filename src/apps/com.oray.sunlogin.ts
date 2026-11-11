@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -133,6 +133,16 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/17782893"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "功能类-设备列表-卡片广告",
+      "activityIds": "com.oray.sunlogin.application.Main",
+      "fastQuery": true,
+      "rules": "[id=\"com.oray.sunlogin:id/fl_close_advertise\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13207785",
+      "exampleUrls": "https://github.com/gkd-kit/inspect/assets/38517192/071e5512-e1aa-4a8c-8440-009d6f0f35ff",
+      "enable": false
     }
   ]
 } as any);

@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -92,6 +92,67 @@ export default defineGkdApp({
           ]
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-谷歌广告-视频广告",
+      "desc": "点击跳过视频-点击关闭按钮",
+      "activityIds": [
+        "com.google.android.gms.ads.AdActivity"
+      ],
+      "rules": [
+        {
+          "key": 1,
+          "matches": "[id=null][text=\"跳过视频\"] < View +(2) @View > Button[clickable=true]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12668269",
+            "https://i.gkd.li/import/12642913",
+            "https://i.gkd.li/import/12642932"
+          ]
+        },
+        {
+          "key": 3,
+          "matches": [
+            "Button[id=null][clickable=true] < @View - * < View - View >(n) View[desc=\"安装\"]"
+          ],
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12642952",
+            "https://i.gkd.li/import/12668298"
+          ]
+        },
+        {
+          "key": 4,
+          "actionCd": 2500,
+          "matches": [
+            "[desc=\"了解详情\"] - View > [text=\"关闭\"]"
+          ],
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12642983"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "局部广告-谷歌广告-页面底部广告",
+      "activityIds": "com.daysko.safp.MainActivity",
+      "rules": [
+        {
+          "matches": "[id!=\"why_this_ad_btn\"] -2 View[id=\"mys-wrapper\"] + View >2 Button[clickable=true]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12642993",
+            "https://i.gkd.li/import/12643229"
+          ]
+        },
+        {
+          "matches": "View[desc=\"Advertisement\"] + View >(2) Button",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12643001"
+          ]
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

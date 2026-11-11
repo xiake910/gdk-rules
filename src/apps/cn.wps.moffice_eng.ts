@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -245,6 +245,109 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/c033f70a-c2a9-43a5-83fd-519d7894d8c7"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-首页-文档列表广告",
+      "exampleUrls": [
+        "https://github.com/gkd-kit/subscription/assets/38517192/57787554-0443-4bc0-9f29-1759aae07b9b"
+      ],
+      "fastQuery": true,
+      "activityIds": [
+        "cn.wps.moffice.main.StartPublicActivity",
+        "cn.wps.moffice.documentmanager.PreStartActivity",
+        "cn.wps.moffice.main.local.HomeRootActivity"
+      ],
+      "rules": [
+        {
+          "key": 0,
+          "matches": "[id=\"cn.wps.moffice_eng:id/nativeclose\"||id=\"com.mopub.ad.xiaomi:id/nativeclose\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12505350",
+            "https://i.gkd.li/import/12505286"
+          ]
+        },
+        {
+          "preKeys": 0,
+          "matches": "[text=\"关闭当前广告\"||text=\"不喜欢此广告\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12505365",
+            "https://i.gkd.li/import/13259090"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-首页-弹窗广告",
+      "fastQuery": true,
+      "activityIds": [
+        "cn.wps.moffice.main.AfterLoginActivity",
+        "com.android.packageinstaller.permission.ui.GrantPermissionsActivity"
+      ],
+      "rules": "[id=\"cn.wps.moffice_eng:id/afterlogin_cancel\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/13259097",
+        "https://i.gkd.li/import/12882712"
+      ],
+      "enable": false
+    },
+    {
+      "key": 3002,
+      "name": "全屏广告-开启WPS云服务",
+      "desc": "自动点击不开启",
+      "activityIds": [
+        "cn.wps.moffice.main.cloud.roaming.login.core.QingLoginActivity",
+        "com.tencent.mm.plugin.webview.ui.tools.SDKOAuthUI",
+        "com.tencent.mm.ui.base.w"
+      ],
+      "rules": [
+        {
+          "matches": "[id=\"cn.wps.moffice_eng:id/cloud_protocol_dialog_not_start_btn\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12882536",
+            "https://i.gkd.li/import/12882610",
+            "https://i.gkd.li/import/12882678"
+          ]
+        },
+        {
+          "matches": "[id=\"cn.wps.moffice_eng:id/dialog_button_positive\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12882554"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3003,
+      "name": "局部广告-文档末尾广告",
+      "fastQuery": true,
+      "activityIds": [
+        "cn.wps.moffice.writer.multiactivity.Writer"
+      ],
+      "rules": [
+        {
+          "key": 1,
+          "matches": "[id=\"cn.wps.moffice_eng:id/doc_end_ad_container_main\"] >2 [id=\"cn.wps.moffice_eng:id/btn_close\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13513911"
+        },
+        {
+          "preKeys": 1,
+          "key": 2,
+          "matches": "[text=\"关闭当前广告\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13513914"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3004,
+      "name": "局部广告-首页-底部广告",
+      "fastQuery": true,
+      "activityIds": "cn.wps.moffice.main.local.HomeRootActivity",
+      "rules": "[id=\"cn.wps.moffice_eng:id/home_banner_ad_spread_close\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13804525",
+      "enable": false
     }
   ]
 } as any);

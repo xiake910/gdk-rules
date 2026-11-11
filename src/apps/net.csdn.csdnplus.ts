@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -129,6 +129,89 @@ export default defineGkdApp({
           ]
         }
       ]
+    },
+    {
+      "key": 0,
+      "name": "开屏广告",
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "fastQuery": true,
+      "rules": [
+        {
+          "matches": "[text*=\"跳过\"][text.length<=10]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12673680"
+          ]
+        },
+        {
+          "matches": "@View + TextView <(3,4,5) FrameLayout <(1,2) FrameLayout <<(1,2) [id=\"net.csdn.csdnplus:id/fl_third_ad\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13826577",
+            "https://i.gkd.li/import/13224627",
+            "https://i.gkd.li/i/17405187"
+          ]
+        }
+      ],
+      "order": -10
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-信息流广告",
+      "fastQuery": true,
+      "activityIds": [
+        "net.csdn.csdnplus.activity.MainActivity"
+      ],
+      "rules": [
+        {
+          "key": 1,
+          "matches": "[text=\"广告\"] + [id=\"net.csdn.csdnplus:id/iv_more\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12673738",
+            "https://i.gkd.li/import/13224538"
+          ]
+        },
+        {
+          "preKeys": 1,
+          "key": 2,
+          "matches": "@[clickable=true] > [id=\"net.csdn.csdnplus:id/img_feedback_title\"][text=\"重复推荐该广告\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12673787",
+            "https://i.gkd.li/import/13224551"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-关闭好评弹窗",
+      "resetMatch": "app",
+      "actionMaximum": 1,
+      "fastQuery": true,
+      "activityIds": "net.csdn.csdnplus.activity.MainActivity",
+      "rules": "[id=\"net.csdn.csdnplus:id/tv_cancel\"][text=\"残忍拒绝\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13251085",
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 3002,
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "name": "全屏广告-请求推送通知弹窗",
+      "activityIds": "net.csdn.csdnplus.activity.MainActivity",
+      "rules": {
+        "matches": [
+          "[text=\"开启推送通知\"]",
+          "[id=\"net.csdn.csdnplus:id/iv_close\"]"
+        ],
+        "snapshotUrls": [
+          "https://i.gkd.li/import/12673638"
+        ]
+      }
     }
   ]
 } as any);

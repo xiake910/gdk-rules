@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -62,6 +62,28 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14208637"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-广告弹窗",
+      "activityIds": [
+        "com.ecitic.bank.mobile.ui.MainActivity",
+        "com.ecitic.bank.mobile.ui.webview.CordovaWebViewActivity"
+      ],
+      "rules": "[id=\"com.ecitic.bank.mobile:id/id_cordova_view\"] + [id=\"com.ecitic.bank.mobile:id/close_product_send\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/13402746",
+        "https://i.gkd.li/import/12701230"
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-请求开通知权限弹窗",
+      "activityIds": "com.ecitic.bank.mobile.ui.MainActivity",
+      "rules": "@[text=\"取消\"] + [text=\"立即开启\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13399102",
+      "enable": false
     }
   ]
 } as any);

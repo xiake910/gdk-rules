@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -40,6 +40,22 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13262844"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-浮窗广告",
+      "desc": "二步确认",
+      "fastQuery": true,
+      "activityIds": "com.gkid.crazyrope.ui.drillcommon.DrillActivity",
+      "rules": [
+        "[id=\"com.gkid.crazyrope:id/iv_close\"]",
+        "[id=\"com.gkid.crazyrope:id/tv_close\"][text=\"关闭广告\"]"
+      ],
+      "snapshotUrls": [
+        "https://i.gkd.li/import/13262845",
+        "https://i.gkd.li/import/13262844"
+      ],
+      "enable": false
     }
   ]
 } as any);

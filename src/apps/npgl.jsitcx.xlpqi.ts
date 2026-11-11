@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -58,6 +58,64 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/12799995"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-应用内第三方 SDK 广告弹窗",
+      "rules": [
+        {
+          "key": 0,
+          "activityIds": "com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity",
+          "matches": "[text$=\"跳过\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12799926"
+        },
+        {
+          "key": 1,
+          "activityIds": "com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity",
+          "matches": "@Image[id=null][text=\"\"] < View + View +n [text=\"反馈\"] +n View > View > TextView[text=\"广告\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12799942",
+            "https://i.gkd.li/import/12800095"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "局部广告-应用内第三方 SDK 广告卡片",
+      "activityIds": [
+        "flc.ast.HomeActivity",
+        "com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity"
+      ],
+      "rules": [
+        {
+          "key": 0,
+          "matches": "@Image < View + View >2 Image",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12799977",
+            "https://i.gkd.li/import/12800107"
+          ]
+        },
+        {
+          "key": 1,
+          "matches": "Image < View < View +n View > Image[visibleToUser=true]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12800034",
+            "https://i.gkd.li/import/12800162"
+          ]
+        },
+        {
+          "preKeys": [
+            0,
+            1
+          ],
+          "key": 2,
+          "matches": "@LinearLayout > [text=\"不感兴趣\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12799995"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

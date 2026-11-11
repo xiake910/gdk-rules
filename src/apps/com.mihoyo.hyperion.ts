@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -181,6 +181,29 @@ export default defineGkdApp({
           "excludeSnapshotUrls": "https://i.gkd.li/i/25608302"
         }
       ]
+    },
+    {
+      "key": 1,
+      "name": "青少年模式",
+      "desc": "关闭青少年模式提醒弹窗",
+      "activityIds": [
+        "com.mihoyo.hyperion.main.HyperionMainActivity",
+        "com.mihoyo.hyperion.splash.SplashActivity"
+      ],
+      "rules": "TextView[id=\"com.mihoyo.hyperion:id/tv_dialog_go_to_teenage_mode\"] + TextView[id=\"com.mihoyo.hyperion:id/tv_dialog_i_know\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12675547",
+        "https://i.gkd.li/import/12775850"
+      ],
+      "enable": false
+    },
+    {
+      "key": 2,
+      "name": "更新提示",
+      "desc": "关闭版本更新提示弹窗",
+      "rules": "TextView[id=\"com.mihoyo.hyperion:id/mUpgradeDialogCancel\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12675513",
+      "enable": false
     }
   ]
 } as any);

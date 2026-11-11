@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -45,6 +45,67 @@ export default defineGkdApp({
           "matches": "[vid=\"iv_header\"] + [vid=\"iv_close\"]",
           "snapshotUrls": "https://i.gkd.li/i/12706051"
         }
+      ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-首页弹窗广告",
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "rules": [
+        {
+          "activityIds": "com.jin10.lgd.biz.MainActivity",
+          "matches": "[id=\"com.jin10:id/iv_body\"] + [id=\"com.jin10:id/iv_close\"]",
+          "snapshotUrls": "https://i.gkd.li/i/12706045"
+        }
+      ]
+    },
+    {
+      "key": 3,
+      "name": "全屏广告-快讯页面弹窗广告",
+      "rules": [
+        {
+          "activityIds": "com.jin10.lgd.biz.MainActivity",
+          "matches": "@[id=\"com.jin10:id/iv_close\"] + [id=\"com.jin10:id/iv_pic\"]",
+          "snapshotUrls": "https://i.gkd.li/i/12706047"
+        }
+      ]
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-首页广告弹窗",
+      "activityIds": [
+        "com.jin10.lgd.biz.MainActivity"
+      ],
+      "rules": "[id=\"com.jin10:id/iv_body\"] + [id=\"com.jin10:id/iv_close\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12706045"
+      ],
+      "enable": false
+    },
+    {
+      "key": 3002,
+      "name": "全屏广告-快讯页面-广告弹窗",
+      "activityIds": [
+        "com.jin10.lgd.biz.MainActivity"
+      ],
+      "rules": "@[id=\"com.jin10:id/iv_close\"] + [id=\"com.jin10:id/iv_pic\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12706047"
+      ],
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 3003,
+      "name": "局部广告-会员页面-顶部广告",
+      "activityIds": [
+        "com.jin10.lgd.biz.MainActivity"
+      ],
+      "rules": "[id=\"com.jin10:id/iv_header\"] + [id=\"com.jin10:id/iv_close\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12706051"
       ]
     }
   ]

@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -167,6 +167,96 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13837543"
         }
       ]
+    },
+    {
+      "enable": false,
+      "key": 3000,
+      "name": "全屏广告-请求通知权限弹窗",
+      "fastQuery": true,
+      "activityIds": [
+        "com.yanzhenjie.permission.PermissionActivity",
+        "com.hellobike.atlas.business.portal.PortalActivity"
+      ],
+      "rules": "[text*=\"开启通知\"] < FrameLayout + FrameLayout >2 [text=\"取消\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/13228735",
+        "https://i.gkd.li/import/13402675"
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3001,
+      "name": "全屏广告-请求定位权限弹窗",
+      "fastQuery": true,
+      "activityIds": "com.hellobike.atlas.business.portal.PortalActivity",
+      "rules": "[text=\"系统定位服务已关闭\"] < FrameLayout +n FrameLayout >2 [text=\"取消\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13228677"
+    },
+    {
+      "key": 3002,
+      "name": "全屏广告-应用内活动、广告弹窗（大部分）",
+      "activityIds": [
+        "com.hellobike.ads.widget.insert.dialog.HBAdvertDialog",
+        "com.hellobike.atlas.business.portal.PortalActivity"
+      ],
+      "rules": "FrameLayout[id=\"com.jingyao.easybike:id/hbDialogLayout\"] + ImageView[id=\"com.jingyao.easybike:id/actionDialogClose\"][clickable=true]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12650028",
+        "https://i.gkd.li/import/12650090",
+        "https://i.gkd.li/import/13331231"
+      ],
+      "enable": false
+    },
+    {
+      "key": 3003,
+      "name": "全屏广告-哈啰智能电动车-广告弹窗",
+      "fastQuery": true,
+      "activityIds": [
+        "com.hellobike.evehicle.business.main.EVehicleHomeManagerActivity"
+      ],
+      "rules": "[id=\"com.jingyao.easybike:id/lottie_view\"] < ViewGroup + [id=\"com.jingyao.easybike:id/btn_close\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12650163"
+      ],
+      "enable": false
+    },
+    {
+      "key": 13,
+      "name": "全屏广告-骑行订单完成-广告弹窗",
+      "activityIds": [
+        "com.alipay.mobile.nebulacore.ui.H5Activity"
+      ],
+      "rules": "[text=\"订单完成\"] >(2) View[childCount=2] > Image[id=null][clickable=true]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12684673"
+      ],
+      "enable": false
+    },
+    {
+      "key": 14,
+      "name": "全屏广告-骑行卡-优惠券弹窗",
+      "activityIds": [
+        "com.hellobike.atlas.business.portal.PortalActivity"
+      ],
+      "rules": "[desc=\"去使用\"] + Button[text=null][visibleToUser=true]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12739316"
+      ],
+      "enable": false
+    },
+    {
+      "key": 3004,
+      "fastQuery": true,
+      "name": "功能类-新人教学弹窗",
+      "desc": "点击跳过",
+      "activityIds": [
+        "com.alipay.mobile.nebulacore.ui.H5Activity"
+      ],
+      "rules": "@View[text=\"跳过\"] <2 View <2 View <<n FrameLayout[id=\"com.jingyao.easybike:id/h5_pc_container\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/13837543"
+      ],
+      "enable": false
     }
   ]
 } as any);

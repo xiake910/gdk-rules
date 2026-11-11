@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -62,6 +62,46 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13256505"
         }
       ]
+    },
+    {
+      "key": 0,
+      "name": "局部广告-首页-推荐-卡片广告",
+      "fastQuery": true,
+      "activityIds": "com.ximalaya.ting.android.host.activity.MainActivity",
+      "rules": "[id=\"com.ximalaya.ting.lite:id/main_ad_top_home_iv_close\"]",
+      "enable": false
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-广告弹窗",
+      "rules": [
+        {
+          "key": 0,
+          "activityIds": "com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity",
+          "matches": "@Image < View + View + View > View > View > TextView[text=\"广告\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13218286"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-支付宝提现广告弹窗",
+      "desc": "点击右上角圆形x",
+      "fastQuery": true,
+      "activityIds": "com.ximalaya.ting.android.host.activity.MainActivity",
+      "rules": "[id=\"com.ximalaya.ting.lite:id/main_login_guide_close\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13256447",
+      "enable": false
+    },
+    {
+      "key": 3002,
+      "name": "全屏广告-关闭开启通知弹窗",
+      "fastQuery": true,
+      "activityIds": "com.ximalaya.ting.android.host.activity.WelComeActivity",
+      "rules": "[text=\"立即开启\"] + [id=\"com.ximalaya.ting.lite:id/host_dialog_cancel_iv\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13256505",
+      "enable": false
     }
   ]
 } as any);

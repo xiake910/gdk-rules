@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -50,6 +50,20 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13476579"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-卡片式广告",
+      "rules": [
+        {
+          "key": 0,
+          "name": "卡片式广告-1",
+          "activityIds": "io.github.trojan_gfw.igniter.MainActivity",
+          "matches": "View[childCount=2] > @Button[clickable=true] - View > View > View > Image",
+          "snapshotUrls": "https://i.gkd.li/import/13413556"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

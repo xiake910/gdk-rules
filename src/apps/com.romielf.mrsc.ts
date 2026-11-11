@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -23,6 +23,23 @@ export default defineGkdApp({
           "key": 2,
           "matches": "[id=\"com.byted.pangle:id/tt_item_tv\"][text=\"不感兴趣\"]",
           "snapshotUrls": "https://i.gkd.li/i/12667549"
+        }
+      ]
+    },
+    {
+      "name": "全屏广告-新闻页面摇一摇广告",
+      "key": 3000,
+      "enable": false,
+      "activityIds": "com.romielf.mrsc.MainActivity",
+      "desc": "点击准确率灵敏度不太高",
+      "rules": [
+        {
+          "matches": "@Image < View -n View >2 View[text=\"广告\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12667539"
+        },
+        {
+          "matches": "[id=\"com.byted.pangle:id/tt_item_tv\"][text=\"不感兴趣\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12667549"
         }
       ]
     }

@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -167,6 +167,219 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/8b93b8fb-1d31-42d2-95a1-c76dc0186e96"
         }
       ]
+    },
+    {
+      "key": 10,
+      "name": "全屏广告-首页-专辑订阅推荐弹窗",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "rules": [
+        {
+          "activityIds": "com.ximalaya.ting.android.host.activity.MainActivity",
+          "matches": "[text=\"你可能感兴趣的专辑\"] + [id=\"com.ximalaya.ting.android:id/main_iv_close\"]",
+          "snapshotUrls": "https://i.gkd.li/i/13251713"
+        }
+      ]
+    },
+    {
+      "key": 0,
+      "name": "局部广告-首页右侧浮动广告",
+      "fastQuery": true,
+      "activityIds": "com.ximalaya.ting.android.host.activity.MainActivity",
+      "rules": "[id=\"com.ximalaya.ting.android:id/main_ad_broadside_close_real\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12472620"
+      ],
+      "enable": false
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-播放页面-播放控制区域的广告",
+      "fastQuery": true,
+      "activityIds": "com.ximalaya.ting.android.host.activity.MainActivity",
+      "rules": [
+        {
+          "key": 0,
+          "name": "暂停按钮下方的广告",
+          "matches": "[id=\"com.ximalaya.ting.android:id/x_play_ad_banner_close_real\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12506218"
+        },
+        {
+          "key": 1,
+          "name": "喜马小游戏广告",
+          "matches": "[id=\"com.ximalaya.ting.android:id/host_game_close_tv\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12927110"
+        },
+        {
+          "key": 2,
+          "name": "体验会员广告",
+          "matches": "[id=\"com.ximalaya.ting.android:id/main_iv_close\"]",
+          "exampleUrls": "https://m.gkd.li/6328439/ea870e6f-07c9-4167-ab62-03e52838110b",
+          "snapshotUrls": "https://i.gkd.li/import/13546642"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 2,
+      "name": "局部广告-播放页面-底部推荐列表-夹杂广告",
+      "desc": "点击关闭-点击屏蔽",
+      "fastQuery": true,
+      "rules": [
+        {
+          "activityIds": [
+            "com.ximalaya.ting.android.main.dialog",
+            "com.ximalaya.ting.android.host.activity.MainActivity"
+          ],
+          "matches": "@[clickable=true] > [text=\"屏蔽\"] + [text=\"关闭当前广告\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12506269",
+            "https://i.gkd.li/import/13296565"
+          ]
+        },
+        {
+          "activityIds": "com.ximalaya.ting.android.host.activity.MainActivity",
+          "matches": "@[id=\"com.ximalaya.ting.android:id/main_close_layout\"][visibleToUser=true] > [id=\"com.ximalaya.ting.android:id/main_mark_text\"][text=\"广告\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12506225",
+            "https://i.gkd.li/import/12701414",
+            "https://i.gkd.li/import/13314183"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3,
+      "name": "全屏广告-播放页面-播放前广告",
+      "fastQuery": true,
+      "activityIds": [
+        "com.ximalaya.ting.android.host.activity.MainActivity",
+        "com.ximalaya.ting.android.framework.view.dialog"
+      ],
+      "rules": "[id=\"com.ximalaya.ting.android:id/main_play_ad_close_real\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12506250",
+        "https://i.gkd.li/import/12520626"
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "局部广告-首页-推荐列表广告",
+      "desc": "点击关闭-点击屏蔽",
+      "activityIds": [
+        "com.ximalaya.ting.android.host.activity.MainActivity",
+        "com.ximalaya.ting.android.adsdk.view.DislikeDialog.DislikeBottomDialog"
+      ],
+      "rules": [
+        {
+          "key": 0,
+          "fastQuery": true,
+          "matches": "[id=\"com.ximalaya.ting.android:id/xm_ad_close_real\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12506253"
+        },
+        {
+          "key": 1,
+          "matches": "[id=\"com.ximalaya.ting.android:id/main_ad_dynamic_lay\"] >(4) ImageView + ImageView",
+          "snapshotUrls": "https://i.gkd.li/import/12701374"
+        },
+        {
+          "preKeys": [
+            0,
+            1
+          ],
+          "name": "点击关闭原因【屏蔽】",
+          "fastQuery": true,
+          "matches": "@[name=\"android.widget.RelativeLayout\" || name=\"android.widget.LinearLayout\"] > [text=\"屏蔽\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12506258",
+            "https://i.gkd.li/import/13260487",
+            "https://i.gkd.li/import/13275928"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 5,
+      "name": "局部广告-关闭热播推荐广告",
+      "activityIds": "com.ximalaya.ting.android.host.activity.MainActivity",
+      "rules": [
+        {
+          "matches": "[text=\"热播推荐\"] + ImageView + ImageView",
+          "snapshotUrls": "https://i.gkd.li/import/12506270"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 6,
+      "name": "全屏广告-关闭更新弹窗",
+      "fastQuery": true,
+      "rules": "[id=\"com.ximalaya.ting.android:id/host_tv_update_later\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12506287",
+      "enable": false
+    },
+    {
+      "key": 8,
+      "name": "局部广告-评论区广告",
+      "activityIds": "com.ximalaya.ting.android.host.activity.MainActivity",
+      "fastQuery": true,
+      "rules": "[id=\"com.ximalaya.ting.android:id/main_ad_close_real\"][visibleToUser=true]",
+      "snapshotUrls": "https://i.gkd.li/import/12869426",
+      "enable": false
+    },
+    {
+      "key": 9,
+      "enable": false,
+      "name": "局部广告-卡片式广告",
+      "fastQuery": true,
+      "rules": [
+        {
+          "key": 0,
+          "name": "我的页面-点击卡片右上角关闭按钮",
+          "activityIds": "com.ximalaya.ting.android.host.activity.MainActivity",
+          "matches": "[id=\"com.ximalaya.ting.android:id/main_close_layout\"][visibleToUser=true]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13194838",
+            "https://i.gkd.li/import/13296565"
+          ]
+        },
+        {
+          "preKeys": 0,
+          "key": 1,
+          "name": "我的页面-点击不感兴趣",
+          "activityIds": "com.ximalaya.ting.android.adsdk.view.DislikeDialog.DislikeBottomDialog",
+          "matches": "[id=\"com.ximalaya.ting.android:id/xm_ad_main_ad_dislike_un_interest\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13194839"
+        },
+        {
+          "key": 2,
+          "name": "有声书分类页面-点击卡片右上角关闭按钮",
+          "activityIds": "com.ximalaya.ting.android.host.activity.SplashAdActivity",
+          "matches": "[id=\"com.ximalaya.ting.android:id/main_iv_dislike\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13334685"
+        }
+      ]
+    },
+    {
+      "key": 3002,
+      "name": "全屏广告-推送通知",
+      "desc": "取消推送通知",
+      "rules": [
+        {
+          "actionMaximum": 1,
+          "fastQuery": true,
+          "activityIds": "com.ximalaya.ting.android.host.activity.MainActivity",
+          "matches": "[id=`com.ximalaya.ting.android:id/cancel_btn`]",
+          "exampleUrls": "https://m.gkd.li/33366298/f6ac028a-509b-49d8-959a-7da90fb4d9df",
+          "snapshotUrls": "https://i.gkd.li/import/13389145"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

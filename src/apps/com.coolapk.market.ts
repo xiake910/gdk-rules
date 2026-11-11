@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -249,6 +249,74 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/dbf91283-a342-416e-a009-5b7e67301c77"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-卡片广告",
+      "desc": "点击卡片右上角按钮->免广告-点击不感兴趣->选择关闭原因-点击不感兴趣",
+      "fastQuery": true,
+      "activityIds": [
+        "com.coolapk.market.view.main.MainActivity",
+        "com.coolapk.market.view.base.SimpleAlphaActivity",
+        "com.coolapk.market.view.node.DynamicNodePageActivity",
+        "com.coolapk.market.view.feed.FeedDetailActivityV8"
+      ],
+      "rules": [
+        {
+          "key": 1,
+          "name": "点击右上角x按钮",
+          "matches": "[id=\"com.coolapk.market:id/ad_time_view\"||id=\"com.coolapk.market:id/top_text_view\"||id=\"com.coolapk.market:id/ad_text_view\"] +n [id=\"com.coolapk.market:id/close_view\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12707506",
+            "https://i.gkd.li/import/12642094",
+            "https://i.gkd.li/import/12642148",
+            "https://i.gkd.li/import/12774771",
+            "https://i.gkd.li/import/13257987"
+          ]
+        },
+        {
+          "preKeys": [
+            1
+          ],
+          "key": 2,
+          "name": "去广告/免广告-点击不感兴趣",
+          "matches": "Button[text$=\"广告\"] <n LinearLayout[childCount=2] > Button[text=\"不感兴趣\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12707509",
+            "https://i.gkd.li/import/12642132",
+            "https://i.gkd.li/import/12642155",
+            "https://i.gkd.li/import/12774753"
+          ]
+        },
+        {
+          "preKeys": [
+            1,
+            2
+          ],
+          "key": 3,
+          "name": "选择关闭原因-点击不感兴趣",
+          "matches": [
+            "@LinearLayout > TextView[text=\"不感兴趣\"]"
+          ],
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12472633",
+            "https://i.gkd.li/import/12655713",
+            "https://i.gkd.li/import/12660759",
+            "https://i.gkd.li/import/12706437",
+            "https://i.gkd.li/import/13786886"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "fastQuery": true,
+      "name": "权限提示-关闭推送通知",
+      "activityIds": "com.coolapk.market.view.main.MainActivity",
+      "rules": "[text=\"去开启\"] - [text=\"以后再说\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13296465",
+      "enable": false
     }
   ]
 } as any);

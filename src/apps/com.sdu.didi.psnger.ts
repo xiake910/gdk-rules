@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -85,6 +85,32 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/24560279"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-打车页面右上角红包广告",
+      "desc": "点击卡片广告左上角x",
+      "rules": [
+        {
+          "fastQuery": true,
+          "activityIds": "com.didi.sdk.app.MainActivity",
+          "matches": "ImageView[id=\"com.sdu.didi.psnger:id/second_entrance_img\"] + @ImageView[id=\"com.sdu.didi.psnger:id/left_close_img\"]",
+          "snapshotUrls": "https://i.gkd.li/i/13760846"
+        }
+      ]
+    },
+    {
+      "key": 3001,
+      "name": "局部广告-打车页面广告",
+      "desc": "点击广告卡片左上角x",
+      "rules": [
+        {
+          "activityIds": "com.didi.sdk.app.MainActivity",
+          "matches": "ImageView[id=`com.sdu.didi.psnger:id/second_entrance_img`] + @ImageView[id=`com.sdu.didi.psnger:id/left_close_img`]",
+          "snapshotUrls": "https://i.gkd.li/import/13760846"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

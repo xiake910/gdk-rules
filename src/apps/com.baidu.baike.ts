@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -19,6 +19,17 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/12755717"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "权限提示-请求通知权限弹窗",
+      "desc": "自动点击【不允许】",
+      "activityIds": ".component.push.NotificationEnableDialog",
+      "fastQuery": true,
+      "resetMatch": "app",
+      "rules": "@TextView[text=\"不允许\"] -n TextView[text*=\"发送通知\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12755717",
+      "enable": false
     }
   ]
 } as any);

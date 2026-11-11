@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -34,6 +34,26 @@ export default defineGkdApp({
           "matches": "LinearLayout[childCount=3] >2 *[childCount=2] > [text=\"取消\"][clickable=true][visibleToUser=true]",
           "snapshotUrls": "https://i.gkd.li/i/26143603",
           "exampleUrls": "https://e.gkd.li/9a61e111-6285-41bd-b5fd-ec64a0e2675e"
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3000,
+      "name": "全屏广告-权限不足弹窗",
+      "desc": "点击取消",
+      "activityIds": [
+        "me.piebridge.brevent.ui.BreventActivity"
+      ],
+      "actionMaximum": 1,
+      "fastQuery": true,
+      "rules": [
+        {
+          "matches": [
+            "[id=\"android:id/message\"][text^=`黑阈服务权限不足`]",
+            "[text=`取消`][id^=`android:id/button`]"
+          ],
+          "snapshotUrls": "https://i.gkd.li/import/13218439"
         }
       ]
     }

@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -65,6 +65,52 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14209309"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-游戏浏览界面-推荐广告",
+      "desc": "自动点击【对此内容不感兴趣】",
+      "rules": [
+        {
+          "key": 0,
+          "activityIds": "com.taptap.other.basic.impl.TapMainActivity",
+          "matches": "[id=\"com.taptap.app.middle:id/decision_layout_mask\"] + @[id=\"com.taptap.app.game:id/app_menu\"][visibleToUser=true]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12840903",
+            "https://i.gkd.li/import/12842279",
+            "https://i.gkd.li/import/12864810"
+          ]
+        },
+        {
+          "key": 1,
+          "activityIds": [
+            "com.taptap.game.discovery.impl.findgame.allgame.dialog.FindGameMenuDialog",
+            "com.taptap.other.basic.impl.TapMainActivity"
+          ],
+          "matches": "@LinearLayout > [text=\"对此内容不感兴趣\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12840904",
+            "https://i.gkd.li/import/13258679"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-版本更新",
+      "fastQuery": true,
+      "activityIds": "com.taptap.upgrade.library.dialog.UpgradeDialogAct",
+      "rules": [
+        {
+          "matches": "@[id=\"com.taptap.app.game:id/btn_dismiss\"] <3 LinearLayout [text=\"发现新版本\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13387479",
+            "https://i.gkd.li/import/13488702"
+          ]
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

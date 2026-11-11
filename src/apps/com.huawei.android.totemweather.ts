@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -78,6 +78,52 @@ export default defineGkdApp({
           ]
         }
       ]
+    },
+    {
+      "enable": false,
+      "key": 1,
+      "name": "局部广告-卡片式广告",
+      "fastQuery": true,
+      "rules": [
+        {
+          "key": 0,
+          "activityIds": "com.huawei.android.totemweather.composite.MarketCompositeActivity",
+          "matches": "[id=\"com.huawei.android.totemweather:id/promote_ad_cancel\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13218197"
+        },
+        {
+          "preKeys": 0,
+          "key": 1,
+          "activityIds": "com.huawei.openalliance.ad.activity.FeedbackActivity",
+          "matches": "[id=\"com.huawei.android.totemweather:id/feedback_negative_flv\"] > [text=\"直接关闭\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13259434"
+        },
+        {
+          "key": 2,
+          "activityIds": "com.huawei.android.totemweather.WeatherMainActivity",
+          "matches": "[id=\"com.huawei.android.totemweather:id/ad_cancel\"][visibleToUser=true]",
+          "snapshotUrls": "https://i.gkd.li/import/13521221"
+        },
+        {
+          "key": 3,
+          "activityIds": "com.huawei.android.totemweather.WeatherHome",
+          "matches": "[id=\"com.huawei.android.totemweather:id/ad_cancel\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13787501"
+        }
+      ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-顶部广告条",
+      "rules": [
+        {
+          "key": 0,
+          "activityIds": "com.huawei.android.totemweather.WeatherMainActivity",
+          "matches": "[vid=\"rl_close_pps\"] > ImageView",
+          "snapshotUrls": "https://i.gkd.li/import/13800100"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

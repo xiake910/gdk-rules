@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -232,6 +232,58 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14630370"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-付款后广告弹窗",
+      "fastQuery": true,
+      "activityIds": "me.ele.component.pops2.TransparentAppWebActivity",
+      "rules": "bb Button[text=\"关闭\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13205301",
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "局部广告-首页-底部浮窗广告",
+      "activityIds": "me.ele.application.ui.Launcher.LauncherActivity",
+      "rules": "LinearLayout >n FrameLayout >n ViewGroup[childCount=3] + ViewGroup[clickable=true]",
+      "snapshotUrls": "https://i.gkd.li/import/13710588",
+      "enable": false
+    },
+    {
+      "key": 3002,
+      "name": "全屏广告-开启定位提醒",
+      "desc": "自动点击X",
+      "enable": false,
+      "fastQuery": true,
+      "rules": [
+        {
+          "key": 0,
+          "activityIds": "me.ele.application.ui.Launcher.LauncherActivity",
+          "matches": "[text=\"去开启\"] + [id=\"me.ele:id/close\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13710588"
+        },
+        {
+          "key": 1,
+          "activityIds": "me.ele.application.ui.Launcher.LauncherActivity",
+          "matches": "[text=\"去开启\"] + [id=\"me.ele:id/close_tips\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13710585"
+        }
+      ]
+    },
+    {
+      "key": 3003,
+      "fastQuery": true,
+      "name": "全屏广告-通知提示-获取订单信息通知",
+      "desc": "点击X",
+      "rules": [
+        {
+          "activityIds": "me.ele.message.ui.PushMessageGuideActivity",
+          "matches": "@View[visibleToUser=true] < * <2 [id=\"me.ele:id/frame_bottom_bg\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13931205"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

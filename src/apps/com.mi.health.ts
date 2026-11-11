@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -107,6 +107,42 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/24229351"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-好评弹窗",
+      "activityIds": "com.xiaomi.fitness.baseui.common.CommonBaseActivity",
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "fastQuery": true,
+      "rules": "[id=\"com.mi.health:id/nextView\"][text=\"下次再说\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13258813",
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-权限提醒",
+      "activityIds": "com.xiaomi.fitness.main.MainActivity",
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "fastQuery": true,
+      "rules": "[text=\"开启后台无限制\"] + [id=\"com.mi.health:id/close_icon\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13495035",
+      "enable": false
+    },
+    {
+      "key": 3002,
+      "name": "全屏广告-活动弹窗",
+      "rules": [
+        {
+          "key": 0,
+          "activityIds": "com.xiaomi.fitness.main.MainActivity",
+          "fastQuery": true,
+          "matches": "[id=\"com.mi.health:id/cardview\"] + [id=\"com.mi.health:id/dialog_close\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13537836"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

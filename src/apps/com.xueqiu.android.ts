@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -47,6 +47,20 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/22995479"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-首页广告",
+      "rules": [
+        {
+          "fastQuery": true,
+          "activityIds": "com.xueqiu.android.mainnesting.view.MainNestingActivity",
+          "matches": "[id=`com.xueqiu.android:id/ad_close`]",
+          "exampleUrls": "https://m.gkd.li/33366298/d05d1eec-cda5-4d37-a494-8eef7b7871dd",
+          "snapshotUrls": "https://i.gkd.li/import/13388227"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

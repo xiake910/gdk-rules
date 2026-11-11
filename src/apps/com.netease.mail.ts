@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -85,6 +85,26 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13876817"
         }
       ]
+    },
+    {
+      "key": 1,
+      "name": "更新提示",
+      "activityIds": [
+        "com.netease.mobimail.module.flutter.CustomFlutterActivity"
+      ],
+      "rules": "[id=\"com.netease.mail:id/tv_ignore_this_version\"][text=\"暂不更新\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12664070",
+      "enable": false
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-查看成就",
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "rules": "TextView[text=\"恭喜您获得以下成就\"] - TextView[text=\"\"][clickable=true]",
+      "snapshotUrls": "https://i.gkd.li/import/13876817",
+      "enable": false
     }
   ]
 } as any);

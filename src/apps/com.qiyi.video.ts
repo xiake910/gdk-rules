@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -110,6 +110,76 @@ export default defineGkdApp({
           "matches": "[vid=\"btn_ads_img_pause_close\"][visibleToUser=true]",
           "exampleUrls": "https://e.gkd.li/2cc7688b-f802-4ebe-9eb6-6b9bc6ed5633",
           "snapshotUrls": "https://i.gkd.li/i/18135562"
+        }
+      ]
+    },
+    {
+      "key": 1,
+      "name": "青少年模式",
+      "fastQuery": true,
+      "activityIds": "org.qiyi.android.video.MainActivity",
+      "rules": [
+        {
+          "matches": "[id=\"com.qiyi.video:id/confirm_btn\"][text=\"我知道了\"]",
+          "exampleUrls": "https://m.gkd.li/6328439/d69e92f8-8304-4296-909a-11730e408a16",
+          "snapshotUrls": "https://i.gkd.li/import/13546555"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-我的-顶部广告",
+      "fastQuery": true,
+      "activityIds": "org.qiyi.android.video.MainActivity",
+      "snapshotUrls": "https://i.gkd.li/import/12495050",
+      "rules": [
+        "@[id=\"com.qiyi.video:id/unused_res_a\"][clickable=true] > [id=\"com.qiyi.video:id/close\"]"
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "权限提示-开启推送通知弹窗",
+      "fastQuery": true,
+      "activityIds": "org.qiyi.android.video.MainActivity",
+      "snapshotUrls": "https://i.gkd.li/import/12838152",
+      "rules": [
+        "[id=\"com.qiyi.video:id/cancel_btn\"][text=\"暂时不要\"]"
+      ],
+      "enable": false
+    },
+    {
+      "key": 3002,
+      "name": "更新提示-版本更新",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "activityIds": [
+        "org.qiyi.android.video.MainActivity",
+        "org.qiyi.android.search.view.PhoneSearchActivity"
+      ],
+      "rules": "[id=\"com.qiyi.video:id/cancel_btn\"][text=\"暂不升级\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12838158",
+        "https://i.gkd.li/import/13684912"
+      ],
+      "enable": false
+    },
+    {
+      "key": 3003,
+      "enable": false,
+      "name": "局部广告-播放页-插入广告",
+      "desc": "视频播放前或播放中途插入的广告。默认关闭。",
+      "activityIds": "org.iqiyi.video.activity.PlayerActivity",
+      "rules": [
+        {
+          "matches": "@RelativeLayout[id=\"com.qiyi.video:id/unused_res_a\"] > TextView[text=\"关闭广告\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13536669",
+            "https://i.gkd.li/import/13536703"
+          ]
         }
       ]
     }

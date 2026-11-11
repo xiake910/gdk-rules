@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -21,6 +21,16 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/24012859"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "更新提示",
+      "activityIds": "com.ruili.android.taierspeed.main.MainActivity",
+      "rules": [
+        "[id=\"com.cnspeedtest.globalspeed:id/vision_btn_ok\"][text=\"更新\"] +2 [id=\"com.cnspeedtest.globalspeed:id/vision_btn_cancel\"]"
+      ],
+      "snapshotUrls": "https://i.gkd.li/import/12642345",
+      "enable": false
     }
   ]
 } as any);

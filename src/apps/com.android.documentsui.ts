@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -37,6 +37,19 @@ export default defineGkdApp({
       "key": 3,
       "name": "功能类-自动选择排序方式",
       "desc": "选择[修改日期(从新到旧)]",
+      "rules": [
+        {
+          "fastQuery": true,
+          "activityIds": ".picker.PickActivity",
+          "matches": "[text=\"修改日期（从新到旧）\"][checked=false][visibleToUser=true]",
+          "exampleUrls": "https://e.gkd.li/bf621eae-8268-4381-aa46-4161c7811cbe",
+          "snapshotUrls": "https://i.gkd.li/i/23096908"
+        }
+      ]
+    },
+    {
+      "key": 3000,
+      "name": "功能类-自动选择排序方式[修改日期（从新到旧）]",
       "rules": [
         {
           "fastQuery": true,

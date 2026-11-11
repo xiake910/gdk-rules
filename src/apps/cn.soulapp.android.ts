@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -158,6 +158,52 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/21900487"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-广场-卡片广告",
+      "fastQuery": true,
+      "activityIds": [
+        "cn.soulapp.android.component.startup.main.MainActivity"
+      ],
+      "rules": [
+        {
+          "matches": "@ImageView - [text=\"广告\"] < LinearLayout < [id=\"cn.soulapp.android:id/fl_tag_container\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12838000"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-app评分",
+      "fastQuery": true,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "activityIds": ".component.chat.ConversationActivity",
+      "rules": [
+        {
+          "matches": "@[id=\"cn.soulapp.android:id/cancel\"][text=\"取消\"] - [id=\"cn.soulapp.android:id/score_rate\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13425057"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3002,
+      "name": "更新提示-升级到最新版本",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "activityIds": ".component.startup.main.MainActivity",
+      "rules": [
+        {
+          "matches": "@[id=\"cn.soulapp.android:id/img_close\"] -2 RelativeLayout > [text=\"升级到最新版本\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13693361"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

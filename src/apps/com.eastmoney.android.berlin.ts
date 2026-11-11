@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -47,6 +47,18 @@ export default defineGkdApp({
           "matches": "[vid=\"push_on_notify_delete\"]",
           "snapshotUrls": "https://i.gkd.li/i/12706065"
         }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3000,
+      "name": "权限提示-请求通知权限提示信息",
+      "activityIds": [
+        "com.eastmoney.android.module.launcher.internal.home.HomeActivity"
+      ],
+      "rules": "[id=\"com.eastmoney.android.berlin:id/push_on_notify_on\"] + [id=\"com.eastmoney.android.berlin:id/push_on_notify_delete\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12706065"
       ]
     }
   ]

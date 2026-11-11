@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -105,6 +105,31 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14893285"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-关闭购买套餐卡片广告",
+      "activityIds": "com.baidu.netdisk.ui.MainActivity",
+      "rules": "[id=\"com.baidu.netdisk.samsung:id/buy_product_root\"] > [id=\"com.baidu.netdisk.samsung:id/iv_close\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12738388",
+      "enable": false
+    },
+    {
+      "key": 3,
+      "name": "局部广告-关闭[专属福利]卡片广告",
+      "activityIds": "com.baidu.netdisk.ui.MainActivity",
+      "rules": "View[childCount=2] > @TextView[text=\"\"][clickable=true] + TextView[text=\"专属福利\"][clickable=false]",
+      "snapshotUrls": "https://i.gkd.li/import/12738404",
+      "enable": false
+    },
+    {
+      "key": 4,
+      "name": "局部广告-关闭[今日福利]卡片广告",
+      "desc": "会员-我的会员-底部卡片广告,点击[去使用]右侧的x关闭图标",
+      "activityIds": "com.baidu.netdisk.ui.MainActivity",
+      "rules": "@TextView[text=\"\"][clickable=true] - TextView[text=\"去使用\"][clickable=true]",
+      "snapshotUrls": "https://i.gkd.li/import/12738449",
+      "enable": false
     }
   ]
 } as any);

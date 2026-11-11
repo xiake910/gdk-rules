@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -138,6 +138,99 @@ export default defineGkdApp({
             "https://i.gkd.li/i/24024011"
           ]
         }
+      ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-首页红包弹窗",
+      "desc": "点击关闭",
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "activityIds": "com.yxcorp.gifshow.HomeActivity",
+      "rules": [
+        {
+          "key": 1,
+          "name": "老友回归红包弹窗",
+          "matches": "@ImageView[id=null][clickable=true] + ViewGroup > [text!=null] + [text!=null]",
+          "snapshotUrls": [
+            "https://i.gkd.li/i/12708649",
+            "https://i.gkd.li/i/12708660"
+          ]
+        },
+        {
+          "key": 2,
+          "name": "限时高额奖励弹窗",
+          "matches": "@ImageView[id=null][clickable=true] < ViewGroup + ViewGroup >2 [text=\"立即领取\"]",
+          "snapshotUrls": "https://i.gkd.li/i/12708681"
+        }
+      ]
+    },
+    {
+      "key": 0,
+      "name": "青少年模式",
+      "activityIds": "com.yxcorp.gifshow.HomeActivity",
+      "rules": [
+        {
+          "matches": "@[id=`com.smile.gifmaker:id/positive`] + [id=`com.smile.gifmaker:id/set_teenage_mode`]"
+        },
+        {
+          "matches": "[id=\"com.smile.gifmaker:id/set_teenage_mode\"] + [id=\"com.smile.gifmaker:id/positive\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12708609"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 3001,
+      "name": "全屏广告-首页-红包弹窗",
+      "desc": "自动点击x按钮",
+      "activityIds": "com.yxcorp.gifshow.HomeActivity",
+      "rules": [
+        {
+          "name": "老友回归红包弹窗",
+          "matches": "@ImageView[id=null][clickable=true] + ViewGroup > [text!=null] + [text!=null]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12708649",
+            "https://i.gkd.li/import/12708660"
+          ]
+        },
+        {
+          "name": "限时高额奖励弹窗",
+          "matches": "@ImageView[id=null][clickable=true] < ViewGroup + ViewGroup >2 [text=\"立即领取\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12708681"
+          ]
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3002,
+      "name": "局部广告-首页-左侧红包悬浮控件",
+      "desc": "自动点击x按钮",
+      "activityIds": "com.yxcorp.gifshow.HomeActivity",
+      "rules": [
+        {
+          "matches": "[id=\"com.smile.gifmaker:id/pendant_mask_bg\"] + [id=\"com.smile.gifmaker:id/pendant_close\"][visibleToUser=true]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12708671",
+            "https://i.gkd.li/import/12708676"
+          ]
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3003,
+      "name": "全屏广告-你可能感兴趣的人",
+      "desc": "自动点击【关闭】",
+      "activityIds": "com.yxcorp.gifshow.HomeActivity",
+      "rules": "[id=\"com.smile.gifmaker:id/close_pymk\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12708620",
+        "https://i.gkd.li/import/12708707"
       ]
     }
   ]

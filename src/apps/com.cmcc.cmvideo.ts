@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -133,6 +133,51 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/aff1fce9-4295-406f-9a56-c26090b57abb"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-右下角小广告",
+      "fastQuery": true,
+      "activityIds": "com.cmcc.cmvideo.main.application.CompatibleMainActivity",
+      "rules": "[id=\"com.cmcc.cmvideo:id/iv_right_bottom_close\"]",
+      "snapshotUrls": "https://i.gkd.li/i/12498315"
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-弹窗广告",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "rules": [
+        {
+          "matchRoot": true,
+          "activityIds": "com.cmcc.cmvideo.main.application.CompatibleMainActivity",
+          "matches": "[vid=\"iv_big_close\"]",
+          "exampleUrls": "https://e.gkd.li/ece7eb54-9b9b-40e2-9402-fc350f4734bb",
+          "snapshotUrls": "https://i.gkd.li/i/16503612"
+        }
+      ]
+    },
+    {
+      "key": 1,
+      "name": "青少年模式",
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "fastQuery": true,
+      "rules": "[id=\"com.cmcc.cmvideo:id/btn_cancle\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12498307",
+      "enable": false
+    },
+    {
+      "key": 3002,
+      "name": "权限提示-推送通知权限弹窗",
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "fastQuery": true,
+      "rules": "[id=\"com.cmcc.cmvideo:id/base_dialog_left_btn\"][text=\"以后再说\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13276127",
+      "enable": false
     }
   ]
 } as any);

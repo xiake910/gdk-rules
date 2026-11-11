@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -82,6 +82,36 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14322017"
         }
       ]
+    },
+    {
+      "key": 0,
+      "name": "青少年模式",
+      "activityIds": [
+        "com.hunantv.imgo.activity.MainActivity",
+        "miuix.appcompat.app.m"
+      ],
+      "rules": "[id=\"com.hunantv.imgo.activity:id/llSetAgeMode\"] + [id=\"com.hunantv.imgo.activity:id/btnIknow\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12832447",
+      "enable": false
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-首页推荐流-卡片广告",
+      "activityIds": "com.hunantv.imgo.activity.MainActivity",
+      "rules": [
+        {
+          "key": 0,
+          "matches": "@[id=\"com.hunantv.imgo.activity:id/layout_logo\"] > [id=\"com.hunantv.imgo.activity:id/tv_ad_logo\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12472616"
+        },
+        {
+          "preKeys": 0,
+          "key": 1,
+          "matches": "[id=\"com.hunantv.imgo.activity:id/close_ad\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12472615"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -40,6 +40,32 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13223642"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-关闭开启通知弹窗",
+      "fastQuery": true,
+      "actionMaximum": 1,
+      "activityIds": [
+        "com.hd.smartVillage.modules.main.MainActivity",
+        "com.hd.smartVillage.modules.h5service.H5WebActivity"
+      ],
+      "rules": "View[id=\"com.hd.smartVillage:id/notificationSettingCloseBtn\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/13223669",
+        "https://i.gkd.li/import/13293000"
+      ],
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 3001,
+      "name": "全屏广告-更新弹窗",
+      "fastQuery": true,
+      "actionMaximum": 1,
+      "activityIds": "com.hd.smartVillage.modules.main.MainActivity",
+      "rules": "TextView[id=\"com.hd.smartVillage:id/tv_upgrade_cancel\"][text=\"取消\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13223642"
     }
   ]
 } as any);

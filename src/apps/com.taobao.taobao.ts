@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -444,6 +444,241 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/535839e5-4912-4c7e-96a4-d9b39a420a32"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-消息页面热门活动卡片",
+      "rules": [
+        {
+          "fastQuery": true,
+          "activityIds": [
+            "com.taobao.tao.welcome.Welcome",
+            "com.taobao.tao.TBMainActivity"
+          ],
+          "matches": "[desc.length>0 || text.length>0] + @LinearLayout[clickable=true] + FrameLayout > TextView[text=\"퀺\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/i/13197877",
+            "https://i.gkd.li/i/23140899"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 3001,
+      "name": "局部广告-搜索页广告",
+      "desc": "自动隐藏猜你想搜、热榜",
+      "rules": [
+        {
+          "key": 0,
+          "name": "猜你想搜",
+          "fastQuery": true,
+          "activityIds": "com.taobao.search.uniform.SearchActivity",
+          "matches": "[vid=\"hideBtn\"][desc=\"隐藏\"][clickable=true]",
+          "snapshotUrls": [
+            "https://i.gkd.li/i/23165368",
+            "https://i.gkd.li/i/23165384"
+          ]
+        },
+        {
+          "key": 1,
+          "name": "热榜",
+          "fastQuery": true,
+          "activityIds": "com.taobao.search.uniform.SearchActivity",
+          "matches": "@[desc=\"隐藏榜单\"][clickable=true] <<n [vid=\"dynamic_container\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/i/23165418",
+            "https://i.gkd.li/i/23165427"
+          ]
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3002,
+      "name": "全屏广告-限时福利弹窗",
+      "rules": [
+        {
+          "key": 0,
+          "activityIds": [
+            "com.taobao.tao.welcome.Welcome",
+            "com.taobao.tao.TBMainActivity",
+            "com.taobao.android.tbabilitykit.pop.StdPopContainerActivity",
+            "com.taobao.android.detail.wrapper.activity.DetailActivity",
+            "com.alibaba.triver.container.TriverMainActivity"
+          ],
+          "matches": "[desc^=\"限时福利\"] < FrameLayout + [desc=\"关闭按钮\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12642792",
+            "https://i.gkd.li/import/13180826",
+            "https://i.gkd.li/import/12648734",
+            "https://i.gkd.li/import/12648746",
+            "https://i.gkd.li/import/13198239"
+          ]
+        },
+        {
+          "key": 1,
+          "name": "全屏广告-88VIP开通优惠弹窗",
+          "activityIds": [
+            "com.taobao.tao.welcome.Welcome",
+            "com.taobao.tao.TBMainActivity"
+          ],
+          "matches": "[desc=\"淘气值冲刺成功\"] < FrameLayout + [desc=\"关闭按钮\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13198052",
+            "https://i.gkd.li/import/13249418"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 3003,
+      "name": "局部广告-消息页面-热门活动卡片",
+      "activityIds": "com.taobao.tao.welcome.Welcome",
+      "rules": "View[desc.length>0] +2n FrameLayout > TextView[text=\"퀺\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12642795",
+        "https://i.gkd.li/import/13197877"
+      ],
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 3004,
+      "name": "全屏广告-开启系统通知提示",
+      "desc": "自动点击关闭",
+      "actionMaximum": 1,
+      "activityIds": [
+        "com.taobao.tao.welcome.Welcome",
+        "com.taobao.android.order.bundle.TBOrderDetailActivity",
+        "com.taobao.android.tbabilitykit.pop.StdPopContainerActivity",
+        "com.taobao.tao.TBMainActivity"
+      ],
+      "rules": "[text^=\"开启系统通知\"] + Image[clickable=true]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/13197594",
+        "https://i.gkd.li/import/13222946",
+        "https://i.gkd.li/import/13438404",
+        "https://i.gkd.li/import/13446901",
+        "https://i.gkd.li/import/13455424"
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3005,
+      "name": "全屏广告-各级页面-添加到首页弹窗",
+      "desc": "自动点击退出",
+      "fastQuery": true,
+      "activityIds": [
+        "com.taobao.themis.container.app.TMSActivity",
+        "com.alibaba.triver.container.TriverMainActivity"
+      ],
+      "rules": "TextView[text=\"去首页\"] + TextView[text=\"退出\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/13197553",
+        "https://i.gkd.li/import/13197546"
+      ]
+    },
+    {
+      "key": 10,
+      "name": "全屏广告-视频页面-活动弹窗",
+      "activityIds": "com.taobao.tao.welcome.Welcome",
+      "rules": "View[id=null] > [text=\"立即参加\"] + TextView[id=null][clickable=true]",
+      "snapshotUrls": "https://i.gkd.li/import/12642813",
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 11,
+      "name": "功能类-视频页面-签到弹窗",
+      "activityIds": "com.taobao.tao.welcome.Welcome",
+      "rules": "@View[clickable=true] - View > View > TextView[text=\"立即签到\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12642798"
+    },
+    {
+      "enable": false,
+      "key": 3006,
+      "name": "全屏广告-小额免密支付弹窗",
+      "desc": "点击关闭",
+      "fastQuery": true,
+      "activityIds": "com.alipay.android.msp.ui.views.MspContainerActivity",
+      "rules": "@[text=\"关闭\"] < * <3 * < * + * >3 [text$=\"小额免密支付\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13438414"
+    },
+    {
+      "enable": false,
+      "key": 3007,
+      "name": "全屏广告-将小组件添加到手机桌面",
+      "desc": "点击取消",
+      "activityIds": "com.alibaba.triver.container.TriverMainActivity",
+      "rules": [
+        {
+          "action": "clickCenter",
+          "matches": "View[text=\"立即添加\"] + View[text=\"取消\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13598578"
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3008,
+      "name": "全屏广告-开启悬浮窗权限",
+      "desc": "点击“否”",
+      "activityIds": "com.taobao.android.detail2.core.framework.floatwindow.permission.PermissionActivity",
+      "fastQuery": true,
+      "actionMaximum": 1,
+      "resetMatch": "activity",
+      "matchTime": 10000,
+      "rules": {
+        "matches": [
+          "[id=\"android:id/message\"][text*=\"悬浮窗权限\"]",
+          "[id=\"android:id/button2\"][text=\"否\"]"
+        ]
+      },
+      "snapshotUrls": "https://i.gkd.li/import/13588165"
+    },
+    {
+      "key": 3009,
+      "name": "全屏广告-花呗升级报送征信",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "rules": [
+        {
+          "key": 0,
+          "activityIds": "com.alipay.android.msp.ui.views.MspContainerActivity",
+          "matches": "[text=\"花呗服务未升级，将影响后续使用\"] <<n FrameLayout @FrameLayout[clickable=true] [text=\"暂不升级，继续付款\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13628020"
+        },
+        {
+          "key": 1,
+          "activityIds": "com.alipay.android.msp.ui.views.MspContainerActivity",
+          "matches": "[text=\"根据相关法律法规要求，请尽快完成花呗升级\"] <<n FrameLayout FrameLayout @[text=\"关闭\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13691864"
+        },
+        {
+          "key": 2,
+          "activityIds": "com.alipay.android.msp.ui.views.MspContainerActivity",
+          "matches": "[id=\"com.taobao.taobao:id/flybird_userinfo\"] + * [text=\"暂不升级，继续付款\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13898735"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3010,
+      "name": "全屏广告-首页-签到奖励",
+      "desc": "点击 X",
+      "fastQuery": true,
+      "matchTime": 20000,
+      "actionMaximum": 1,
+      "rules": [
+        {
+          "matches": "ImageView[desc=\"关闭按钮\"]",
+          "snapshotUrls": "https://i.gkd.li/import/15212029"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -52,6 +52,26 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13620299"
         }
       ]
+    },
+    {
+      "key": 0,
+      "name": "青少年模式",
+      "fastQuery": true,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "rules": "[text$=\"青少年模式\"] +n [text=\"我知道了\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12472628",
+      "enable": false
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-通知弹窗",
+      "fastQuery": true,
+      "actionMaximum": 1,
+      "resetMatch": "activity",
+      "rules": "@TextView[id=\"com.ss.android.article.video:id/sj\"][text=\"暂不开启\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13456568",
+      "enable": false
     }
   ]
 } as any);

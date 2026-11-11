@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -109,6 +109,63 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/20259691"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-搜索-卡片式广告",
+      "fastQuery": true,
+      "forcedTime": 1000,
+      "rules": [
+        {
+          "activityIds": [
+            ".search.searchActivity",
+            ".main.fragments.square.section.searchPostActivity"
+          ],
+          "matches": "@ImageView[visibleToUser=true] < FrameLayout <n [childCount=5] < * < * < * < * < * < [id=\"com.magicalstory.AppStore:id/banner2\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/i/17618529",
+            "https://i.gkd.li/i/17618518"
+          ]
+        },
+        {
+          "activityIds": ".main.MainActivity",
+          "matches": "@[id=\"com.magicalstory.AppStore:id/button_close_ad\"] - [id=\"com.magicalstory.AppStore:id/banner_ad2\"]",
+          "snapshotUrls": "https://i.gkd.li/i/17618820"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-公告",
+      "activityIds": "com.magicalstory.AppStore.main.MainActivity",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "rules": [
+        {
+          "matches": [
+            "[id=\"com.magicalstory.AppStore:id/txt_dialog_title\"][text=\"公告\"]",
+            "[id=\"com.magicalstory.AppStore:id/btn_selectNegative\"][text=\"隐藏\"]"
+          ],
+          "snapshotUrls": "https://i.gkd.li/import/13437553"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3002,
+      "name": "局部广告-广场-流式广告",
+      "fastQuery": true,
+      "activityIds": ".main.fragments.square.section.sectionActivity",
+      "rules": [
+        {
+          "matches": "@ImageView[visibleToUser=true] < FrameLayout[index=3] <4 FrameLayout <3 LinearLayout < FrameLayout < FrameLayout < FrameLayout < FrameLayout <2 [vid=\"recyclerView\"]",
+          "snapshotUrls": "https://i.gkd.li/i/20585709"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

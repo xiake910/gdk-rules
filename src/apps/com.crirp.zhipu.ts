@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -34,6 +34,34 @@ export default defineGkdApp({
           "activityIds": "com.ruipeng.zipu.ui.main.uniauto.UniautoHomeActivity",
           "matches": "[text=\"今日不再提示\"]",
           "snapshotUrls": "https://i.gkd.li/i/13725337"
+        }
+      ]
+    },
+    {
+      "name": "全屏广告-首页-今日要闻-不再提示",
+      "key": 3000,
+      "desc": "【首页-今日要闻-不再提示】和【首页-今日要闻-关闭】只开启一个即可",
+      "enable": false,
+      "fastQuery": true,
+      "activityIds": "com.ruipeng.zipu.ui.main.uniauto.UniautoHomeActivity",
+      "rules": [
+        {
+          "matches": "[id$=\"/cancel_tv\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13725337"
+        }
+      ]
+    },
+    {
+      "name": "全屏广告-首页-今日要闻-关闭",
+      "key": 3,
+      "desc": "【首页-今日要闻-不再提示】和【首页-今日要闻-关闭】只开启一个即可",
+      "enable": false,
+      "fastQuery": true,
+      "activityIds": "com.ruipeng.zipu.ui.main.uniauto.UniautoHomeActivity",
+      "rules": [
+        {
+          "matches": "[id$=\"/tv_close\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13725337"
         }
       ]
     }

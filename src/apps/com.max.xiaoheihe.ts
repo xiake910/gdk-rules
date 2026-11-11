@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -83,6 +83,43 @@ export default defineGkdApp({
           ]
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "功能类-自动点击查看原图",
+      "rules": [
+        {
+          "fastQuery": true,
+          "activityIds": [
+            ".module.bbs.post.ui.activitys.WebNewsPostPageActivity",
+            ".module.bbs.post.ui.activitys.PicturePostPageActivity"
+          ],
+          "matches": "[vid=\"tv_original\"][visibleToUser=true]",
+          "exampleUrls": "https://e.gkd.li/f7222b21-7037-4614-95ab-cff19ee15d38",
+          "snapshotUrls": [
+            "https://i.gkd.li/i/16646832",
+            "https://i.gkd.li/i/17574462"
+          ],
+          "excludeSnapshotUrls": "https://i.gkd.li/i/22377026"
+        }
+      ]
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-弹窗_签到成功",
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "fastQuery": true,
+      "rules": [
+        {
+          "matches": [
+            "[text=\"签到成功!\"]",
+            "[id=\"com.max.xiaoheihe:id/tv_confirm\"]"
+          ],
+          "snapshotUrls": "https://i.gkd.li/import/13421535"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

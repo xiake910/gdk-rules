@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -318,6 +318,233 @@ export default defineGkdApp({
           ]
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-弹窗广告",
+      "rules": [
+        {
+          "key": 0,
+          "fastQuery": true,
+          "activityIds": [
+            "com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity",
+            "com.mfcloudcalculate.networkdisk.activity.AdFreeActivity",
+            ".activity.LauncherActivity",
+            "com.adgain.sdk.base.activity.AdActivity"
+          ],
+          "matches": "[vid=\"tv_ad_free_close\" || vid=\"tv_ad_free_colse\" || vid=\"adgain_interstitial_skip_ll\" || vid=\"adgain_interstitial_close_ll\"][visibleToUser=true]",
+          "exampleUrls": "https://m.gkd.li/57941037/4cafd5fd-b5ed-4df1-b9f2-f443f53a7166",
+          "snapshotUrls": [
+            "https://i.gkd.li/i/13546173",
+            "https://i.gkd.li/i/14696860",
+            "https://i.gkd.li/i/18121213",
+            "https://i.gkd.li/i/24675097",
+            "https://i.gkd.li/i/24927790"
+          ]
+        },
+        {
+          "key": 1,
+          "fastQuery": true,
+          "activityIds": "com.mfcloudcalculate.networkdisk.activity.EmptyActivity",
+          "matches": "ImageView < @ViewGroup[clickable=true] < ViewGroup <7 ViewGroup + ViewGroup [text=\"广告\"]",
+          "exampleUrls": "https://m.gkd.li/57941037/cf43eaec-45f8-4e1a-bd3b-6a88fd055d29",
+          "snapshotUrls": "https://i.gkd.li/i/16154340"
+        },
+        {
+          "key": 2,
+          "activityIds": "com.bytedance.sdk.openadsdk.core.component.reward.activity.TTFullScreenVideoActivity",
+          "matches": "[text=\"反馈\"] -4 View[childCount=1] > Image[childCount=0][text=\"\"]",
+          "exampleUrls": "https://e.gkd.li/2ec6e71f-93b4-4ac4-a464-26d2a859445f",
+          "snapshotUrls": "https://i.gkd.li/i/17247801"
+        },
+        {
+          "key": 3,
+          "fastQuery": true,
+          "matchTime": 10000,
+          "actionMaximum": 1,
+          "resetMatch": "app",
+          "activityIds": ".MainActivity",
+          "matches": "@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] <n FrameLayout >(2,3) [text^=\"立即\" || text$=\"详情\" || text^=\"了解\" || text=\"去微信看看\" || text$=\"应用\" || text=\"进入小程序\" || text=\"领取优惠\" || text=\"跳转微信\"]",
+          "exampleUrls": "https://e.gkd.li/49cef679-3efb-4719-9af9-8f3a4c311191",
+          "snapshotUrls": [
+            "https://i.gkd.li/i/17306992",
+            "https://i.gkd.li/i/24472832"
+          ]
+        },
+        {
+          "key": 4,
+          "fastQuery": true,
+          "activityIds": "com.baidu.mobads.sdk.api.MobRewardVideoActivity",
+          "matches": "@ImageView[clickable=true] - [text=\"反馈\"]",
+          "exampleUrls": "https://e.gkd.li/af430910-56e0-4b19-b23f-b120ce19fdc0",
+          "snapshotUrls": "https://i.gkd.li/i/17456625"
+        },
+        {
+          "key": 5,
+          "fastQuery": true,
+          "activityIds": ".MainActivity",
+          "matches": "@ImageView[childCount=0][text=null][visibleToUser=true] < FrameLayout[childCount=1] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] <2 FrameLayout[childCount=2] - FrameLayout > [text^=\"扭动或点击\"]",
+          "exampleUrls": "https://e.gkd.li/069fb571-ab57-42a7-a360-79b44efc2790",
+          "snapshotUrls": "https://i.gkd.li/i/18032004"
+        },
+        {
+          "key": 6,
+          "fastQuery": true,
+          "activityIds": "com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity",
+          "matches": [
+            "[text=\"反馈\"][visibleToUser=true]",
+            "[text=\"跳过\"][visibleToUser=true]"
+          ],
+          "exampleUrls": "https://e.gkd.li/1326c88b-81e0-4f78-b301-778d29e10433",
+          "snapshotUrls": "https://i.gkd.li/i/18121205"
+        },
+        {
+          "key": 7,
+          "fastQuery": true,
+          "activityIds": "com.meishu.sdk.activity.SdkInterstitialActivity",
+          "matches": "[vid=\"ms_activity_sdk_interstitial_cacel\"][visibleToUser=true]",
+          "exampleUrls": "https://e.gkd.li/e2e7b175-20f6-4e12-a24a-504364a8b765",
+          "snapshotUrls": "https://i.gkd.li/i/18095705"
+        },
+        {
+          "key": 8,
+          "fastQuery": true,
+          "action": "back",
+          "activityIds": ".MainActivity",
+          "matches": "[desc=\"开通前请阅读\"] -8 @ImageView[clickable=true][childCount=0][visibleToUser=true] < View < View < View < View < FrameLayout < FrameLayout < [id=\"android:id/content\"]",
+          "snapshotUrls": "https://i.gkd.li/i/21820334"
+        },
+        {
+          "key": 9,
+          "fastQuery": true,
+          "activityIds": ".MainActivity",
+          "matches": "@[id=\"cj.mobile.wm.allmodules:id/wm_pop_pic_close\"] +n * > [text=\"广告\"]",
+          "snapshotUrls": "https://i.gkd.li/i/23253580"
+        },
+        {
+          "key": 10,
+          "activityIds": "com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity",
+          "matches": "@Image[childCount=0][width<60 && height<60] < View[childCount=1] < View[childCount=1] < View[childCount=1] < View[childCount=1] + View >2 [text=\"广告\"]",
+          "exampleUrls": "https://e.gkd.li/34c7741f-0f03-4b0d-b8d2-917ed297e304",
+          "snapshotUrls": "https://i.gkd.li/i/24119772"
+        },
+        {
+          "key": 11,
+          "fastQuery": true,
+          "action": "back",
+          "activityIds": ".MainActivity",
+          "matches": "[desc=\"开通前请阅读\"] -n @ImageView[childCount=0][width>800] <(1,2) View < View < View < View < FrameLayout < [id=\"android:id/content\"]",
+          "exampleUrls": "https://e.gkd.li/ee504d60-ca93-40de-bb0f-292ef1df8c70",
+          "snapshotUrls": [
+            "https://i.gkd.li/i/24119773",
+            "https://i.gkd.li/i/25128678"
+          ]
+        },
+        {
+          "key": 12,
+          "fastQuery": true,
+          "activityIds": ".MainActivity",
+          "matches": "@ImageView[vid=\"channel_insert_close_iv\"][clickable=true] - ImageView[vid=\"iv_ad_icon\"]",
+          "exampleUrls": "https://e.gkd.li/fa0391fe-54d4-4db0-930d-2cb9002b3786",
+          "snapshotUrls": "https://i.gkd.li/i/24325263"
+        },
+        {
+          "key": 13,
+          "fastQuery": true,
+          "activityIds": ".MainActivity",
+          "matches": "@TextView[clickable=true][childCount=0] <2 FrameLayout[childCount=2] - LinearLayout >4 [text$=\"第三方应用\"][visibleToUser=true]",
+          "exampleUrls": "https://e.gkd.li/e6486e20-e908-48da-b84a-f3ea5519346b",
+          "snapshotUrls": "https://i.gkd.li/i/24404354"
+        },
+        {
+          "key": 14,
+          "activityIds": "com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity",
+          "matches": "@Image[childCount=0][width<60 && height<60] < View[childCount=1] < View[childCount=1] - View[childCount=1] > [text=\"反馈\"][visibleToUser=true]",
+          "snapshotUrls": "https://i.gkd.li/i/24473530"
+        },
+        {
+          "key": 15,
+          "activityIds": "com.byazt.sr.Stub_Standard_Portrait_Activity",
+          "matches": "View[childCount=5] > [text^=\"svg\"][index=0][childCount=0]",
+          "snapshotUrls": "https://i.gkd.li/i/25128382"
+        },
+        {
+          "key": 16,
+          "activityIds": ".MainActivity",
+          "matches": "View[childCount=0] < FrameLayout[childCount=2] - LinearLayout >4 [text$=\"第三方应用\"][visibleToUser=true]",
+          "snapshotUrls": "https://i.gkd.li/i/25128313"
+        },
+        {
+          "key": 17,
+          "activityIds": "com.sigmob.sdk.base.common.PortraitTransparentAdActivity",
+          "matches": "[id=\"ad_area\"] > [id=\"close_btn\"]",
+          "snapshotUrls": "https://i.gkd.li/i/25128394"
+        }
+      ]
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-应用内广告弹窗",
+      "desc": "点击 X 或 关闭",
+      "fastQuery": true,
+      "rules": [
+        {
+          "activityIds": "com.mfcloudcalculate.networkdisk.activity.AdFreeActivity",
+          "matches": "[text=\"关闭\"][id=\"com.mfcloudcalculate.networkdisk:id/tv_ad_free_colse\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13546173"
+        },
+        {
+          "activityIds": [
+            "com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity",
+            "com.meishu.sdk.activity.SdkInterstitialActivity"
+          ],
+          "matches": "[text=\"关闭\"][id=\"com.mfcloudcalculate.networkdisk:id/tv_ad_free_close\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/15087252",
+            "https://i.gkd.li/import/16611758"
+          ]
+        },
+        {
+          "activityIds": "com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity",
+          "matches": "@View +4 TextView[text=\"反馈\"]",
+          "snapshotUrls": "https://i.gkd.li/import/15087275"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 2,
+      "name": "开屏广告",
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "rules": [
+        {
+          "key": 0,
+          "fastQuery": true,
+          "matches": "FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id=\"com.mfcloudcalculate.networkdisk:id/frame_ad_splash_container\"]",
+          "snapshotUrls": "https://i.gkd.li/import/14018247"
+        },
+        {
+          "key": 1,
+          "fastQuery": true,
+          "matches": "[id=\"com.mfcloudcalculate.networkdisk:id/frame_ad_splash_container\"] >n [text^=\"跳过\"][text.length<=4]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12846434",
+            "https://i.gkd.li/import/13059834"
+          ]
+        },
+        {
+          "key": 2,
+          "fastQuery": true,
+          "matches": "[id$=\"tt_splash_skip_btn\"] <<n [id=\"com.mfcloudcalculate.networkdisk:id/frame_ad_splash_container\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13259303",
+            "https://i.gkd.li/import/13695497"
+          ]
+        }
+      ],
+      "order": -10
     }
   ]
 } as any);

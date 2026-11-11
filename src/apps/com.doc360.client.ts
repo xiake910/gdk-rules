@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -17,6 +17,15 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13485051"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-阅读-推荐-信息流广告",
+      "fastQuery": true,
+      "activityIds": "com.doc360.client.activity.ReadRoomActivity",
+      "rules": "@FrameLayout[desc^=\"dislike\"] <<n [id=\"com.doc360.client:id/fl_ad_container\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13485051",
+      "enable": false
     }
   ]
 } as any);

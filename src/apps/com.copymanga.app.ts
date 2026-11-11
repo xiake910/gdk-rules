@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -191,6 +191,52 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13233180"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-卡片式广告",
+      "rules": [
+        {
+          "key": 0,
+          "name": "快手广告-1",
+          "activityIds": "com.copymanga.app.MainActivity",
+          "matches": "[id^=\"com.copymanga.app:id/ad_flag_source\"] - * > [id=\"com.copymanga.app:id/close\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12504525"
+        },
+        {
+          "key": 1,
+          "name": "快手广告-2",
+          "activityIds": "com.copymanga.app.MainActivity",
+          "fastQuery": true,
+          "matches": "[id=\"com.copymanga.app:id/close_m_image_left_text_right_no_compliance\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13761154"
+        },
+        {
+          "key": 2,
+          "name": "腾讯广告",
+          "activityIds": "com.copymanga.app.MainActivity",
+          "matches": "FrameLayout[childCount=3] > LinearLayout + FrameLayout[childCount=1] > ImageView[id=null]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12851671",
+            "https://i.gkd.li/import/12909005"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "权限提示-关闭提示",
+      "matchTime": 30000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "rules": [
+        {
+          "matches": "[desc=\"系统提示\"] +n [desc=\"确定\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13233180"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

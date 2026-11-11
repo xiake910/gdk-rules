@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -97,6 +97,90 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/15371800"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告",
+      "rules": [
+        {
+          "key": 0,
+          "name": "快手广告-1",
+          "activityIds": "com.zhiyin.qingdan.dashixiong.MainActivity",
+          "fastQuery": true,
+          "matches": "@ImageView <n ViewGroup -2 ViewGroup > ViewGroup > [text=\"广告\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12843281"
+        },
+        {
+          "key": 1,
+          "name": "快手广告-2",
+          "activityIds": "com.zhiyin.qingdan.dashixiong.MainActivity",
+          "matches": [
+            "ViewGroup[childCount=2] > ImageView + [text=\"广告\"]",
+            "ViewGroup[childCount=1] > @ViewGroup[childCount=1][clickable=true] > ImageView"
+          ],
+          "snapshotUrls": "https://i.gkd.li/import/13521143"
+        },
+        {
+          "key": 2,
+          "name": "快手广告-3",
+          "activityIds": "com.zhiyin.qingdan.dashixiong.MainActivity",
+          "matches": "[text=\"广告\"] <2 ViewGroup -3 ViewGroup >2 [text=\"跳过\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13521140"
+        },
+        {
+          "key": 3,
+          "name": "腾讯广告-1",
+          "activityIds": "com.zhiyin.qingdan.dashixiong.MainActivity",
+          "matches": "ImageView - LinearLayout - FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]",
+          "snapshotUrls": "https://i.gkd.li/import/12843282"
+        },
+        {
+          "key": 4,
+          "name": "腾讯广告-2",
+          "activityIds": [
+            "com.zhiyin.qingdan.dashixiong.MainActivity",
+            "com.qq.e.ads.ADActivity"
+          ],
+          "matches": "ImageView - FrameLayout > FrameLayout[childCount=1] > ImageView[childCount=0]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12843345",
+            "https://i.gkd.li/import/12843333",
+            "https://i.gkd.li/import/13400656"
+          ]
+        },
+        {
+          "key": 5,
+          "name": "字节广告",
+          "activityIds": "com.zhiyin.qingdan.dashixiong.MainActivity",
+          "fastQuery": true,
+          "matches": "@Image < View +n View > View > View > [text=\"广告\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12843323"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 3001,
+      "name": "全屏广告-公告弹窗",
+      "desc": "自动点击【我知道了】",
+      "activityIds": "com.zhiyin.qingdan.dashixiong.MainActivity",
+      "fastQuery": true,
+      "rules": "[desc^=\"必读通告\"] +n [desc=\"我知道了\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12843280"
+    },
+    {
+      "key": 3002,
+      "name": "全屏广告-首页广告弹窗",
+      "desc": "点击X",
+      "rules": [
+        {
+          "activityIds": "com.sigmob.sdk.base.common.TransparentAdActivity",
+          "matches": "[id=\"close_btn\"][clickable=true]",
+          "snapshotUrls": "https://i.gkd.li/import/13887500"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

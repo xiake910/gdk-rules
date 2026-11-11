@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -118,6 +118,98 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13848688"
         }
       ]
+    },
+    {
+      "key": 1,
+      "name": "更新提示",
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "fastQuery": true,
+      "activityIds": [
+        "com.unionpay.base.UPDialog"
+      ],
+      "rules": [
+        {
+          "matches": "@[text=\"稍候再说\"] + [text=\"立即更新\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12727278"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-支付完成界面广告卡片",
+      "fastQuery": true,
+      "activityIds": "com.unionpay.activity.react.UPActivityReactNative",
+      "rules": [
+        {
+          "key": 0,
+          "matches": "[id=\"bannerBox\"] > @View[clickable=true] > [text=\"广告\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13070564"
+        },
+        {
+          "preKeys": 0,
+          "key": 1,
+          "matches": "[text=\"关闭广告\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13070974"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-定位权限悬浮弹窗",
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "fastQuery": true,
+      "activityIds": "com.unionpay.activity.UPActivityMain",
+      "rules": "[id=\"com.unionpay:id/view_locate_close\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13634882",
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 11,
+      "name": "全屏广告-访问位置请求弹窗",
+      "desc": "自动点击【不允许】。默认关闭，请手动开启",
+      "fastQuery": true,
+      "activityIds": [
+        "com.unionpay.base.UPDialog"
+      ],
+      "rules": [
+        {
+          "matches": "[text$=\"想访问您的位置信息\"] < * +2 LinearLayout > [id=\"com.unionpay:id/btn_cancel\"][visibleToUser=true]",
+          "snapshotUrls": "https://i.gkd.li/import/12695773"
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3002,
+      "name": "全屏广告-开启消息通知弹窗",
+      "desc": "默认关闭，请手动开启",
+      "fastQuery": true,
+      "activityIds": [
+        "com.unionpay.base.UPDialog"
+      ],
+      "rules": [
+        {
+          "matches": "[text=\"开启消息通知\"] < * + [id=\"com.unionpay:id/view_alert_cancel\"][visibleToUser=true]",
+          "snapshotUrls": "https://i.gkd.li/import/12695736"
+        }
+      ]
+    },
+    {
+      "key": 14,
+      "name": "全屏广告-我的页面-广告弹窗",
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "activityIds": "com.unionpay.activity.UPActivityMain",
+      "rules": "[id=\"com.unionpay:id/container\"] + [id=\"com.unionpay:id/image\"][clickable=true]",
+      "snapshotUrls": "https://i.gkd.li/import/13440341",
+      "enable": false
     }
   ]
 } as any);

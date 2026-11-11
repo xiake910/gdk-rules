@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -72,6 +72,20 @@ export default defineGkdApp({
           "matches": "@[clickable=true] > [vid=\"do_not_show_again_area_text\"][visibleToUser=true]",
           "snapshotUrls": "https://i.gkd.li/i/22320803",
           "exampleUrls": "https://e.gkd.li/37b29a88-d564-4ef6-9ab3-ff88954c87fc"
+        }
+      ]
+    },
+    {
+      "key": 3000,
+      "name": "其他-[您是否年满 18 岁？]弹窗",
+      "desc": "点击[是]",
+      "rules": [
+        {
+          "fastQuery": true,
+          "activityIds": "com.sec.android.app.samsungapps.SearchResultActivity",
+          "matches": "[text=\"您是否年满 18 岁？\"] +4 @[clickable=true] > [text=\"是\"]",
+          "exampleUrls": "https://m.gkd.li/57941037/cee78493-fbe1-46a0-8dcf-a8b1f1f61f19",
+          "snapshotUrls": "https://i.gkd.li/i/14473690"
         }
       ]
     }

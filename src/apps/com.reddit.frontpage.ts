@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -99,6 +99,33 @@ export default defineGkdApp({
             "https://i.gkd.li/i/28876636",
             "https://i.gkd.li/i/29087235"
           ]
+        }
+      ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-社区消息-更新提示",
+      "fastQuery": true,
+      "enable": false,
+      "rules": [
+        {
+          "activityIds": "com.reddit.launch.main.MainActivity",
+          "matches": "[id=\"com.reddit.frontpage:id/cancel_button\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13649914"
+        }
+      ]
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-NSFW 内容提示",
+      "desc": "自动点击 continue",
+      "fastQuery": true,
+      "enable": false,
+      "rules": [
+        {
+          "activityIds": "com.reddit.launch.main.MainActivity",
+          "matches": "Button[text=\"Cancel\"] + Button[text=\"Continue\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13649992"
         }
       ]
     }

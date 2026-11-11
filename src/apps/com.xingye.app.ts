@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -19,6 +19,16 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14137987"
         }
       ]
+    },
+    {
+      "key": 1,
+      "name": "青少年模式",
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "fastQuery": true,
+      "rules": "[id=\"com.xingye.app:id/teenagerDialogConfirmTv\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13766001",
+      "enable": false
     }
   ]
 } as any);

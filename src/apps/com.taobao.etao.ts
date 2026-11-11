@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -53,6 +53,45 @@ export default defineGkdApp({
             "https://i.gkd.li/i/12684278",
             "https://i.gkd.li/i/12684351",
             "https://i.gkd.li/i/30634250"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 1,
+      "name": "更新提示",
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "rules": "[text=\"更新提示\"] <<2 * +2 * >2 [text=\"取消\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12684250",
+        "https://i.gkd.li/import/12727457",
+        "https://i.gkd.li/import/12684244"
+      ],
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 3000,
+      "name": "全屏广告-请求打开系统通知提示信息",
+      "desc": "自动点击提示信息的x按钮",
+      "rules": [
+        {
+          "activityIds": [
+            "com.taobao.sns.app.message.MessageActivity"
+          ],
+          "matches": "[text^=\"打开消息通知\"] + [text=\"去开启\"] + ImageView[clickable=true]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12684278"
+          ]
+        },
+        {
+          "activityIds": [
+            "com.taobao.etao.mine.MetaXMineActivity"
+          ],
+          "matches": "[text^=\"打开消息通知\"] + FrameLayout > [text=\"去开启\"] < FrameLayout + ImageView[clickable=true]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12684351"
           ]
         }
       ]

@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -135,6 +135,98 @@ export default defineGkdApp({
           "fastQuery": true,
           "matches": "[vid=\"close\"]",
           "snapshotUrls": "https://i.gkd.li/i/13941276"
+        }
+      ]
+    },
+    {
+      "key": 0,
+      "name": "青少年模式",
+      "activityIds": "com.kmxs.reader.home.ui.HomeActivity",
+      "rules": "[id=\"com.kmxs.reader:id/young_dialog_close\"]",
+      "enable": false
+    },
+    {
+      "key": -2,
+      "name": "更新提示",
+      "activityIds": "com.km.app.update.UpdateVersionV2Activity",
+      "rules": "[id=\"com.kmxs.reader:id/tv_update_cancel\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12641338",
+      "enable": false
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-阅读页面底部广告",
+      "activityIds": "org.geometerplus.android.fbreader.FBReader",
+      "rules": "[id=\"com.kmxs.reader:id/ll_ad_native_banner\"] > [id=\"com.kmxs.reader:id/iv_ad_direct_close\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12640296"
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "局部广告-书架顶部广告",
+      "fastQuery": true,
+      "activityIds": "com.kmxs.reader.home.ui.HomeActivity",
+      "rules": "[id=\"com.kmxs.reader:id/bookshelf_book_item_direct_close\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/13489942"
+      ],
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 3002,
+      "name": "全屏广告-【字节】视频广告",
+      "desc": "此规则有概率误触或失效，请谨慎选择开启。",
+      "activityIds": "com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity",
+      "rules": [
+        {
+          "key": 0,
+          "name": "点击跳过",
+          "matches": "[text*=\"跳过\"][text.length<=10]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13459157",
+            "https://i.gkd.li/import/13459172",
+            "https://i.gkd.li/import/13459174"
+          ]
+        },
+        {
+          "key": 1,
+          "name": "点击【x】",
+          "fastQuery": true,
+          "matches": "[id=\"com.byted.pangle:id/tt_reward_full_count_down_after_close\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13459182"
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 6,
+      "name": "全屏广告-【百度】全屏广告",
+      "desc": "此规则有概率误触或失效，请谨慎选择开启。",
+      "activityIds": "com.baidu.mobads.sdk.api.MobRewardVideoActivity",
+      "rules": [
+        {
+          "key": 0,
+          "name": "点击【x】",
+          "matches": "RelativeLayout > RelativeLayout + ImageView + ImageView[clickable=true]",
+          "snapshotUrls": "https://i.gkd.li/import/13472957"
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 7,
+      "name": "全屏广告-【腾讯】全屏广告",
+      "desc": "此规则有概率误触或失效，请谨慎选择开启。",
+      "activityIds": "com.qq.e.ads.PortraitADActivity",
+      "rules": [
+        {
+          "key": 0,
+          "name": "点击【x】",
+          "matches": "FrameLayout[childCount=10] > FrameLayout[index=3] > FrameLayout > ImageView",
+          "snapshotUrls": "https://i.gkd.li/import/13472955"
         }
       ]
     }

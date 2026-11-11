@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -189,6 +189,72 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/1afd52fe-9d69-489f-9a79-68eb2d8ed82d"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "功能类-打开app自动点击收藏列表第一个车🚗(不要同时开启哦~)",
+      "desc": "启动app-收藏列表第一个车线-进入车线详情",
+      "fastQuery": true,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "rules": [
+        {
+          "activityIds": "dev.xesam.chelaile.app.module.PanelHostActivity",
+          "matches": "@FrameLayout[clickable=true][getChild(0).vid=\"fav_line_layout\"] - LinearLayout >2 [text=\"我的收藏\"][visibleToUser=true]",
+          "snapshotUrls": "https://i.gkd.li/i/25091170"
+        }
+      ]
+    },
+    {
+      "key": 3001,
+      "name": "功能类-打开app自动点击第一个车🚗后打开地图🗺️(不要同时开启哦~)",
+      "desc": "启动app-收藏列表第一个车线-进入车线详情-点击地图查看所有车次位置",
+      "fastQuery": true,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "rules": [
+        {
+          "key": 0,
+          "activityIds": "dev.xesam.chelaile.app.module.PanelHostActivity",
+          "matches": "@FrameLayout[clickable=true][getChild(0).vid=\"fav_line_layout\"] - LinearLayout >2 [text=\"我的收藏\"][visibleToUser=true]",
+          "snapshotUrls": "https://i.gkd.li/i/25091170"
+        },
+        {
+          "preKeys": [
+            0
+          ],
+          "key": 1,
+          "activityIds": "dev.xesam.chelaile.app.module.line.gray.LineDetailActivity",
+          "matches": "[vid=\"cll_cover\"][visibleToUser=true][clickable=true]",
+          "snapshotUrls": "https://i.gkd.li/i/25091375"
+        }
+      ]
+    },
+    {
+      "key": 3002,
+      "name": "局部广告-卡片式广告",
+      "rules": [
+        {
+          "key": 0,
+          "activityIds": [
+            "dev.xesam.chelaile.app.module.func.SplashActivity",
+            "dev.xesam.chelaile.app.module.PanelHostActivity"
+          ],
+          "matches": "ImageView[id^=\"com.ygkj.chelaile.standard:id/cll_all_pic_close\"][visibleToUser=true]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13062991",
+            "https://i.gkd.li/import/13062984",
+            "https://i.gkd.li/import/13464325"
+          ]
+        },
+        {
+          "key": 1,
+          "activityIds": "dev.xesam.chelaile.app.module.PanelHostActivity",
+          "matches": "[id=\"com.ygkj.chelaile.standard:id/cll_line_single_ad_close\"][visibleToUser=true]",
+          "snapshotUrls": "https://i.gkd.li/import/13625374"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

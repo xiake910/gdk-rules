@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -200,6 +200,18 @@ export default defineGkdApp({
           "actionMaximum": 1,
           "matches": "[desc=\"保存\"] < @View[childCount=2][clickable=true] <<3 View <3 View[childCount>=3] <<(18-n) [id=\"android:id/content\"]",
           "snapshotUrls": "https://i.gkd.li/i/30373379"
+        }
+      ]
+    },
+    {
+      "key": 3000,
+      "name": "通知提示-套餐限额提示",
+      "rules": [
+        {
+          "key": 0,
+          "activityIds": ".MainActivity",
+          "matches": "[text*=\"套餐限额\"] + @View[clickable=true] > [desc=\"关闭\"][visibleToUser=true]",
+          "snapshotUrls": "https://i.gkd.li/i/24996012"
         }
       ]
     }

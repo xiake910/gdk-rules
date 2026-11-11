@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -11,6 +11,22 @@ export default defineGkdApp({
       "activityIds": ".infinitecomic.view.ComicInfiniteActivity",
       "rules": "[vid=\"adBannerClose\"]",
       "snapshotUrls": "https://i.gkd.li/i/12910268"
+    },
+    {
+      "key": 1,
+      "name": "青少年模式",
+      "activityIds": "com.kuaikan.main.MainActivity",
+      "rules": "[text*=\"青少年模式\"] +2 [id=\"com.kuaikan.comic:id/cancel\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12565678",
+      "enable": false
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-漫画界面-底部广告弹窗",
+      "activityIds": "com.kuaikan.comic.infinitecomic.view.ComicInfiniteActivity",
+      "rules": "[id=\"com.kuaikan.comic:id/adBannerClose\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12910268",
+      "enable": false
     }
   ]
 } as any);

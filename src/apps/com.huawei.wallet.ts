@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -87,6 +87,21 @@ export default defineGkdApp({
           ],
           "exampleUrls": "https://e.gkd.li/87466a06-2169-4808-971e-d347cd40ac66",
           "snapshotUrls": "https://i.gkd.li/i/20918311"
+        }
+      ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-服务提示",
+      "enable": false,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "fastQuery": true,
+      "rules": [
+        {
+          "matches": "[text=\"开启钱包扩展服务\"] +2 [id=\"com.huawei.wallet:id/linear_close\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13441814"
         }
       ]
     }

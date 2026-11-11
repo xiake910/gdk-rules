@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -105,6 +105,49 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/521e50a7-1756-4572-b06a-a42d9ec700c4"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-弹窗广告",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "rules": [
+        {
+          "key": 0,
+          "forcedTime": 10000,
+          "activityIds": "com.sinovatech.unicom.basic.ui.activity.MainActivity",
+          "matches": "[text=\"首页弹窗\"] >2 View > @Image[clickable=true][text!=null] <<n [vid=\"main_fragment_layout\"]",
+          "snapshotUrls": "https://i.gkd.li/i/14504242"
+        },
+        {
+          "key": 1,
+          "activityIds": "com.sinovatech.unicom.basic.ui.activity.MainActivity",
+          "matches": "WebView[text!=null] > View[id=\"app\"] >2 View[childCount>3] > View[childCount=1] > @TextView[childCount=0][visibleToUser=true][text=\"\"][width<150&&height<150] <<n [vid=\"main_fragment_layout\" || vid=\"main_fragment_layout_haoka\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/i/15971964",
+            "https://i.gkd.li/i/18290899"
+          ]
+        },
+        {
+          "key": 2,
+          "activityIds": "com.sinovatech.unicom.basic.ui.activity.MainActivity",
+          "matches": "@Image[text^=\"close\"][childCount=0][width<150 && height<150] <2 View < View <2 View < View < View <2 View < View < WebView < WebView < [vid=\"homeweb_rootview\"]",
+          "snapshotUrls": "https://i.gkd.li/i/23764750"
+        }
+      ]
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-权限申请",
+      "fastQuery": true,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "activityIds": "com.sinovatech.unicom.basic.ui.activity.MainActivity",
+      "rules": "[text=\"去开启\"] - [id=\"com.sinovatech.unicom.ui:id/custom_dialog_cancel_button\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13331268",
+      "enable": false
     }
   ]
 } as any);

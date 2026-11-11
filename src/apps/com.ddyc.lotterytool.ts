@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -31,6 +31,28 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13325888"
         }
       ]
+    },
+    {
+      "enable": false,
+      "key": 3000,
+      "name": "全屏广告-广告弹窗",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "activityIds": "com.ddyc.lotterytool.module.main.MainActivity",
+      "rules": "ImageView - ImageButton[id=\"com.ddyc.lotterytool:id/arg\"][text=null]",
+      "snapshotUrls": "https://i.gkd.li/import/13324555"
+    },
+    {
+      "enable": false,
+      "key": 3001,
+      "name": "权限提示-请求推送通知弹窗",
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "rules": "[text^=\"开启推送通知\"] +2 LinearLayout [text=\"以后再说\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13325888"
     }
   ]
 } as any);

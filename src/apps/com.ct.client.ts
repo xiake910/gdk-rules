@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -188,6 +188,68 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/22843896"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-用户引导",
+      "fastQuery": true,
+      "activityIds": "com.ct.client.activity.UserGuideActivity",
+      "rules": "[id=\"com.ct.client:id/tvSkip\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12508971"
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "局部广告-浮窗广告",
+      "desc": "会出现在首页、查询办理页面",
+      "fastQuery": true,
+      "activityIds": [
+        "com.ct.client.common.ConfirmDialogActivity",
+        "com.ct.client.activity.MainActivity"
+      ],
+      "rules": [
+        {
+          "matches": "ImageView[id=\"com.ct.client:id/close\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12819676",
+            "https://i.gkd.li/import/12913735"
+          ]
+        },
+        {
+          "matches": "ImageView[id=\"com.ct.client:id/ivFloatClose\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13043345"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3002,
+      "name": "全屏广告-业务办理-弹窗广告",
+      "activityIds": [
+        "com.ct.client.common.webview.OnlineBusinessWebkitActivity"
+      ],
+      "rules": "Image[text=\"tishi-close\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12913804"
+      ],
+      "enable": false
+    },
+    {
+      "key": 3003,
+      "name": "权限提示-消息-开启消息通知",
+      "desc": "自动点击关闭",
+      "activityIds": [
+        "com.ct.client.activity.MainActivity"
+      ],
+      "rules": "ImageView[id=\"com.ct.client:id/msg_close\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/13043522"
+      ],
+      "enable": false
     }
   ]
 } as any);

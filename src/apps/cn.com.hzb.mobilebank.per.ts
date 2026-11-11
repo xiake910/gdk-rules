@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -34,6 +34,21 @@ export default defineGkdApp({
           "activityIds": ".MainActivity",
           "matches": "@TextView[text*=\"登录\"][clickable=true] <<5 [vid=\"h5_pc_container\"]",
           "snapshotUrls": "https://i.gkd.li/i/31796888"
+        }
+      ]
+    },
+    {
+      "key": 3000,
+      "name": "功能类-未登录时自动点击登录",
+      "desc": "仅限财富版",
+      "rules": [
+        {
+          "matchTime": 10000,
+          "actionMaximum": 1,
+          "resetMatch": "app",
+          "activityIds": "cn.com.hzb.mobilebank.per.MainActivity",
+          "matches": "@[clickable=true] > [text=\"立即登录>\"]",
+          "snapshotUrls": "https://i.gkd.li/i/25150391"
         }
       ]
     }

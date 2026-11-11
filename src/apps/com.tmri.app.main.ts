@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -76,6 +76,27 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/15751656"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-消息通知",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "rules": [
+        {
+          "activityIds": [
+            "com.tmri.app.ui.activity.main.MainTabHostNewActivity",
+            "com.tmri.app.ui.activity.main.TmriNewActivity"
+          ],
+          "matches": "ImageButton[id=\"com.tmri.app.main:id/btn_cancel\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13315944",
+            "https://i.gkd.li/import/13779215"
+          ]
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

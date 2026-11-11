@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -61,6 +61,47 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13501638"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-首页弹窗广告",
+      "activityIds": [
+        "com.sgcc.wsgw.mainbundle.NewsSyRemind2Activity",
+        "com.sgcc.wsgw.rnbundle.activity.HomeReactActivity"
+      ],
+      "rules": [
+        {
+          "key": 1,
+          "actionCd": 2000,
+          "fastQuery": true,
+          "matches": "@[focusable=true] + [text=\"今日不再出现\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12745042",
+            "https://i.gkd.li/import/13247655"
+          ]
+        },
+        {
+          "preKeys": 1,
+          "key": 2,
+          "actionDelay": 300,
+          "matches": "ViewGroup[childCount=1] > @ViewGroup[childCount=1] > ImageView",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13247655",
+            "https://i.gkd.li/import/13247655"
+          ]
+        },
+        {
+          "preKeys": 1,
+          "key": 3,
+          "actionDelay": 300,
+          "fastQuery": true,
+          "matches": "[id=\"com.sgcc.wsgw.cn:id/news_remind_laytout\"] >n [id=\"com.sgcc.wsgw.cn:id/btn_remind_close\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12745042"
+          ]
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

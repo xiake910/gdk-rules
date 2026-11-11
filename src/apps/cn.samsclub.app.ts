@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -58,6 +58,50 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13609113"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-关闭「您有一张亲友卡待赠送」通知条",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "rules": [
+        {
+          "activityIds": "cn.samsclub.app.ui.MainActivity",
+          "matches": "[id=\"cn.samsclub.app:id/fragment_home_window_delete_iv\"]",
+          "snapshotUrls": "https://i.gkd.li/i/13609113"
+        }
+      ]
+    },
+    {
+      "key": 3001,
+      "name": "权限提示-系统位置服务未打开",
+      "fastQuery": true,
+      "activityIds": "cn.samsclub.app.ui.MainActivity",
+      "rules": [
+        {
+          "matches": [
+            "[text=\"系统位置服务未打开\"]",
+            "[id=\"cn.samsclub.app:id/tips_close\"]"
+          ],
+          "snapshotUrls": "https://i.gkd.li/import/13609113"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3002,
+      "name": "局部广告-底部[您有一张亲友卡待赠送]通知条",
+      "fastQuery": true,
+      "activityIds": ".ui.MainActivity",
+      "rules": [
+        {
+          "matches": "@[id=\"cn.samsclub.app:id/fragment_home_window_delete_iv\"] - [text=\"赠送亲友卡\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13609113"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

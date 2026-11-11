@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -208,6 +208,73 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/29924327"
         }
       ]
+    },
+    {
+      "key": 0,
+      "name": "开屏广告",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "rules": [
+        {
+          "anyMatches": [
+            "@View + TextView[index=parent.childCount.minus(1)] <n FrameLayout <n FrameLayout < FrameLayout[id=\"com.cainiao.wireless:id/fl_third_splash_container\"]",
+            "TextView[text^=\"跳过\"]"
+          ],
+          "snapshotUrls": [
+            "https://i.gkd.li/i/19222366",
+            "https://i.gkd.li/i/21750819",
+            "https://i.gkd.li/i/19477428",
+            "https://i.gkd.li/i/21913724"
+          ]
+        }
+      ],
+      "order": -10
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-包裹页面-地图底部横条广告",
+      "activityIds": [
+        "com.taobao.cainiao.logistic.ui.view.LogisticDetailActivity"
+      ],
+      "rules": "View[desc=\"立即查看\"] +2 ImageView[id=null]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12914450"
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "权限提示-开启消息弹窗",
+      "desc": "自动点击关闭。",
+      "enable": false,
+      "fastQuery": true,
+      "activityIds": [
+        "com.cainiao.wireless.homepage.view.activity.HomePageActivity"
+      ],
+      "rules": "[id=\"com.cainiao.wireless:id/gg_dialog_base_close\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/13068573"
+      ]
+    },
+    {
+      "key": 3002,
+      "name": "全屏广告-请求好评弹窗",
+      "activityIds": "com.taobao.cainiao.logistic.ui.view.LogisticDetailActivity",
+      "rules": "@[text=\"取消\"] + [text=\"好评\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13692761",
+      "enable": false
+    },
+    {
+      "key": 7,
+      "name": "全屏广告-今日手气红包",
+      "desc": "点击右上角X",
+      "fastQuery": true,
+      "activityIds": "com.cainiao.wireless.homepage.view.activity.HomePageActivity",
+      "rules": "[vid=\"dialog_full_image_close\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13842492",
+      "enable": false
     }
   ]
 } as any);

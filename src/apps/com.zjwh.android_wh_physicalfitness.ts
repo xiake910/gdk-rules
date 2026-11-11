@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -357,6 +357,96 @@ export default defineGkdApp({
           "excludeSnapshotUrls": "https://i.gkd.li/i/28789633"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-优量汇广告",
+      "activityIds": [
+        "com.zjwh.android_wh_physicalfitness.activity.HomeActivity",
+        "com.zjwh.android_wh_physicalfitness.ui.AdActivity"
+      ],
+      "rules": [
+        {
+          "matches": "ImageView - RelativeLayout >(3-n) [id=\"com.zjwh.android_wh_physicalfitness:id/iv_close\"][clickable=true]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12673231",
+            "https://i.gkd.li/import/12673523",
+            "https://i.gkd.li/import/13166472"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 2,
+      "name": "全屏广告-百青藤广告",
+      "activityIds": "com.zjwh.android_wh_physicalfitness.activity.SplashActivity",
+      "rules": [
+        {
+          "matches": "@[text=\"跳过\"][clickable=true] +(3) RelativeLayout >(2) [text=\"点击跳转至第三方页面\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12673349"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3,
+      "name": "全屏广告-快手广告",
+      "activityIds": [
+        "com.zjwh.android_wh_physicalfitness.activity.SplashActivity",
+        "com.zjwh.android_wh_physicalfitness.ui.AdActivity"
+      ],
+      "rules": [
+        {
+          "key": 0,
+          "matches": "[id=\"com.kwad.dy.sdk:id/ksad_splash_root_container\"] >n ViewGroup > [text=\"跳过\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12673495"
+        },
+        {
+          "key": 1,
+          "matches": "[id=\"com.kwad.dy.sdk:id/ksad_tk_view\"] >n ViewGroup > @ViewGroup[clickable=true] > ImageView",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12826112",
+            "https://i.gkd.li/import/12826124"
+          ]
+        },
+        {
+          "key": 2,
+          "matches": "[id=\"com.zjwh.android_wh_physicalfitness:id/ksad_tk_view\"] >n ViewGroup > @ViewGroup[childCount=1] > ImageView",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13228216",
+            "https://i.gkd.li/import/13601132"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 4,
+      "name": "全屏广告-百度广告",
+      "activityIds": "com.baidu.mobads.sdk.api.MobRewardVideoActivity",
+      "actionMaximum": 1,
+      "resetMatch": "activity",
+      "matchTime": 10000,
+      "rules": "@ImageView - RelativeLayout[childCount=9]",
+      "snapshotUrls": "https://i.gkd.li/import/13554229",
+      "enable": false
+    },
+    {
+      "key": 9,
+      "name": "全屏广告-第三方SDK广告",
+      "activityIds": "com.zjwh.android_wh_physicalfitness.activity.HomeActivity",
+      "rules": [
+        {
+          "matches": "[id=\"com.zjwh.android_wh_physicalfitness:id/ad_flag_source_layout\"] + [id=\"com.zjwh.android_wh_physicalfitness:id/iv_close\"][clickable=true]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12673476"
+          ]
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

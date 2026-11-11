@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -774,6 +774,132 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/25199524"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "青少年模式",
+      "rules": [
+        {
+          "key": 0,
+          "name": "底部悬浮卡片-启用未成年人保护模式\"",
+          "fastQuery": true,
+          "activityIds": ".AlipayLogin",
+          "matches": [
+            "@[id=\"com.alipay.android.phone.wallet.manufacturebiz:id/teenager_cancel\"] - RelativeLayout[childCount=4] > [text=\"启用未成年人保护模式\"]"
+          ],
+          "snapshotUrls": "https://i.gkd.li/i/24992663"
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3001,
+      "name": "更新提示-关闭花呗升级弹窗",
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "activityIds": [
+        "com.alipay.mobile.nebulax.integration.mpaas.activity.NebulaActivity$Main",
+        "com.alipay.android.msp.ui.views",
+        "com.alipay.android.msp.ui.views.MspContainerActivity"
+      ],
+      "rules": [
+        {
+          "key": 0,
+          "matches": "View[childCount=3] > @Image - View[text=\"花呗服务升级\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12737055"
+        },
+        {
+          "fastQuery": true,
+          "matches": [
+            "[text=\"根据相关法律法规要求，请尽快完成花呗升级\"]",
+            "FrameLayout > FrameLayout  > FrameLayout > [text=\"关闭\"]"
+          ],
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13183946",
+            "https://i.gkd.li/import/12826077",
+            "https://i.gkd.li/import/12915864"
+          ]
+        },
+        {
+          "fastQuery": true,
+          "matches": "[text=\"花呗服务未升级，将影响后续使用\"] <<n FrameLayout @FrameLayout[clickable=true] [text=\"暂不升级，继续付款\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13631362"
+        },
+        {
+          "matches": "[id=\"com.alipay.android.app:id/flybird_userinfo\"] + * >8 FrameLayout[clickable=true][index=1]",
+          "snapshotUrls": "https://i.gkd.li/import/13857535"
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3002,
+      "name": "全屏广告-定位提示-请求定位权限弹窗",
+      "fastQuery": true,
+      "activityIds": "com.eg.android.AlipayGphone.AlipayLogin",
+      "rules": "@[id=\"com.alipay.mobile.antui:id/closeButton\"] - [id=\"com.alipay.mobile.antui:id/textAndButtonLayout\"] [id=\"com.alipay.mobile.antui:id/tipTextView\"][text^=\"开启定位权限\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12792688"
+    },
+    {
+      "key": 3003,
+      "name": "全屏广告-通知提示-请求通知弹窗",
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "fastQuery": true,
+      "rules": [
+        {
+          "key": 0,
+          "name": "首页底部提示",
+          "activityIds": "com.eg.android.AlipayGphone.AlipayLogin",
+          "matches": "@[desc=\"关闭\"] - * >n [id=\"com.alipay.mobile.antui:id/tipTextView\"][text^=\"开启通知权限\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13194955"
+        },
+        {
+          "key": 1,
+          "name": "消息页弹窗提示",
+          "activityIds": "com.alipay.mobile.rome.pushservice.integration.PushOpenGuideActivity",
+          "matches": "[text=\"选择通知接收范围\"] <2 RelativeLayout [text=\"暂时不用\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13669620"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 3004,
+      "name": "全屏广告-设置支付宝小组件",
+      "desc": "点击关闭",
+      "fastQuery": true,
+      "activityIds": "com.alipay.android.msp.ui.views.MspContainerActivity",
+      "rules": [
+        {
+          "matches": "@TextView[text=\"关闭\"] < * <3 * < * + * >3 TextView[text=\"设置支付宝小组件\"]",
+          "action": "clickCenter",
+          "snapshotUrls": "https://i.gkd.li/import/13327349"
+        }
+      ]
+    },
+    {
+      "key": 10,
+      "name": "全屏广告-小程序-12306",
+      "activityIds": "com.alipay.mobile.nebulax.xriver.activity.XRiverActivity",
+      "rules": [
+        {
+          "key": 0,
+          "matches": "[desc=\"推荐广告\"] > [desc=\"展开更多选项\"][visibleToUser=true]",
+          "action": "clickCenter",
+          "snapshotUrls": "https://i.gkd.li/import/13763314"
+        },
+        {
+          "preKeys": 0,
+          "key": 1,
+          "fastQuery": true,
+          "matches": "[text=\"对该内容不感兴趣\"]",
+          "action": "clickCenter",
+          "snapshotUrls": "https://i.gkd.li/import/13763315"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

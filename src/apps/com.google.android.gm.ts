@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -44,6 +44,58 @@ export default defineGkdApp({
           "matches": "Button - View[desc=\"\"] < @View[childCount=2][clickable=true][width=102 && height=102][visibleToUser=true] - TextView <n View[childCount>5 && childCount<10] <<3 ComposeView - LinearLayout <<2 [vid=\"thread_list_view\"]",
           "snapshotUrls": "https://i.gkd.li/i/30378474",
           "exampleUrls": "https://e.gkd.li/357dc3c9-cf98-40b3-a01d-35bb8219dae8"
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3000,
+      "name": "局部广告-信息流广告",
+      "rules": [
+        {
+          "fastQuery": true,
+          "key": -1,
+          "name": "点击广告扩展-1",
+          "matches": "[id=\"com.google.android.gm:id/button_chip_ad_teaser_info_icon\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13255698"
+        },
+        {
+          "fastQuery": true,
+          "key": 0,
+          "name": "点击广告扩展-2",
+          "matches": "[id=\"com.google.android.gm:id/basic_ad_teaser_info_icon\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13255698"
+        },
+        {
+          "preKeys": [
+            -1,
+            0
+          ],
+          "key": 1,
+          "name": "广告中心-点击屏蔽",
+          "matches": "Button[text=\"屏蔽此广告\"||text^=\"Block\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13255700",
+            "https://i.gkd.li/import/13724271"
+          ]
+        },
+        {
+          "preKeys": 1,
+          "key": 2,
+          "name": "点击继续确认屏蔽",
+          "matches": "Button[text=\"继续\"||text=\"Continue\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13255701",
+            "https://i.gkd.li/import/13724287"
+          ]
+        },
+        {
+          "preKeys": 2,
+          "key": 3,
+          "fastQuery": true,
+          "name": "关闭弹窗",
+          "matches": "[id=\"com.google.android.gm:id/my_ad_center_close_icon\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13263279"
         }
       ]
     }

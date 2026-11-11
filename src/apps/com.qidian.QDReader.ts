@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -434,6 +434,82 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/f969ad39-da92-458f-95f6-e2939857c808"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告",
+      "fastQuery": true,
+      "rules": [
+        {
+          "activityIds": [
+            "com.qidian.QDReader.ui.activity.MainGroupActivity",
+            "com.tencent.mm.plugin.webview.ui.tools.SDKOAuthUI",
+            "com.qidian.QDReader.framework.widget.dialog.judian",
+            "com.qidian.QDReader.ui.activity.BookLastPageNewActivity"
+          ],
+          "matches": "[vid=\"imgClose\" || vid=\"btnClose\"][visibleToUser=true]",
+          "snapshotUrls": [
+            "https://i.gkd.li/i/12640195",
+            "https://i.gkd.li/i/12640158",
+            "https://i.gkd.li/i/12818198",
+            "https://i.gkd.li/i/13469004",
+            "https://i.gkd.li/i/23210736",
+            "https://i.gkd.li/i/23249358"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 3001,
+      "name": "功能类-起点中文网登录自动确认",
+      "desc": "自动点击\"登录\"",
+      "rules": [
+        {
+          "activityIds": "com.qidian.QDReader.ui.activity.QDBrowserActivity",
+          "matches": "[id=\"scanLogin\"]",
+          "snapshotUrls": "https://i.gkd.li/i/12903081"
+        }
+      ]
+    },
+    {
+      "key": 3002,
+      "name": "全屏广告-活动弹窗",
+      "activityIds": [
+        "com.qidian.QDReader.ui.activity.MainGroupActivity",
+        "com.tencent.mm.plugin.webview.ui.tools.SDKOAuthUI",
+        "com.qidian.QDReader.framework.widget.dialog.judian",
+        "com.qidian.QDReader.ui.activity.BookLastPageNewActivity"
+      ],
+      "rules": "[id=\"com.qidian.QDReader:id/imgBKT\"] + [id=\"com.qidian.QDReader:id/imgClose\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12640195",
+        "https://i.gkd.li/import/12640158",
+        "https://i.gkd.li/import/12818198",
+        "https://i.gkd.li/import/13469004"
+      ],
+      "enable": false
+    },
+    {
+      "key": 3003,
+      "name": "全屏广告-请求通知权限提示信息",
+      "desc": "点击顶部提醒左侧x按钮",
+      "fastQuery": true,
+      "activityIds": "com.afollestad.materialdialogs.MaterialDialog",
+      "rules": "@[id=\"com.qidian.QDReader:id/ivClose\"] + [text^=\"开启推送\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12640242",
+      "enable": false
+    },
+    {
+      "key": 3004,
+      "name": "全屏广告-福利中心-我知道了",
+      "desc": "福利中心看视频后获得奖励，自动点击“我知道了”",
+      "activityIds": "com.qidian.QDReader.ui.activity.QDBrowserActivity",
+      "actionMaximum": 1,
+      "resetMatch": "activity",
+      "matchTime": 10000,
+      "rules": "View[desc=\"我知道了\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13606901",
+      "enable": false
     }
   ]
 } as any);

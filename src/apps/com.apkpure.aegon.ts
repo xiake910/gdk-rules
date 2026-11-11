@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -178,6 +178,63 @@ export default defineGkdApp({
           ]
         }
       ]
+    },
+    {
+      "enable": false,
+      "key": 3000,
+      "name": "全屏广告-更新与已安装界面-查看更多",
+      "desc": "在更新界面自动点击查看更多按钮，展开所有应用",
+      "rules": [
+        {
+          "activityIds": [
+            "com.apkpure.aegon.main.activity.MainTabActivity",
+            "com.apkpure.aegon.main.activity.AppManagerActivity",
+            "com.apkpure.aegon.cms.activity.CommonActivity",
+            "com.apkpure.aegon.main.activity.AppMoreActivity"
+          ],
+          "matches": "ViewGroup > [text=\"查看更多\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13466329"
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3001,
+      "name": "全屏广告-更新界面-软件推荐",
+      "activityIds": [
+        "com.apkpure.aegon.main.activity.MainTabActivity",
+        "com.apkpure.aegon.main.activity.AppManagerActivity",
+        "com.apkpure.aegon.cms.activity.CommonActivity",
+        "com.apkpure.aegon.main.activity.AppMoreActivity"
+      ],
+      "fastQuery": true,
+      "rules": [
+        {
+          "name": "点击三点图标",
+          "key": 0,
+          "matches": "@ImageView - RelativeLayout >3 [text=\"AD\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13466329"
+        },
+        {
+          "name": "点击关闭",
+          "preKeys": 0,
+          "matches": "TextView[text=\"关闭\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13466610"
+        }
+      ]
+    },
+    {
+      "key": 3002,
+      "name": "全屏广告-添加桌面快捷方式",
+      "desc": "下次添加",
+      "rules": [
+        {
+          "activityIds": "com.apkpure.aegon.main.activity.MainTabActivity",
+          "matches": "[id=\"com.apkpure.aegon:id/arg\"][text=\"下次添加\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13416401"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

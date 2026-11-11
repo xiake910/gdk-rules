@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -45,6 +45,43 @@ export default defineGkdApp({
             "[text=\"取消\"]"
           ],
           "snapshotUrls": "https://i.gkd.li/i/13650528"
+        }
+      ]
+    },
+    {
+      "name": "全屏广告-跳过安全使用协议",
+      "key": 3000,
+      "desc": "自动点击略过并关闭反恶意软件协议",
+      "enable": false,
+      "rules": [
+        {
+          "key": 1,
+          "matches": [
+            "[text *=\"略过\"]"
+          ],
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13255641"
+          ]
+        },
+        {
+          "key": 0,
+          "matches": [
+            "[text^=\"是否打开反恶意软件\"]",
+            "[text=\"取消\"]"
+          ],
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13233686"
+          ]
+        },
+        {
+          "key": 2,
+          "matches": [
+            "[text^=\"打开应用程序保护?\"]",
+            "[text=\"取消\"]"
+          ],
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13650528"
+          ]
         }
       ]
     }

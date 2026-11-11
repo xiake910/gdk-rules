@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -53,6 +53,34 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/16359035"
         }
       ]
+    },
+    {
+      "key": 2,
+      "name": "全屏广告-关闭美食广告弹窗",
+      "activityIds": "com.sankuai.waimai.platform.mach.dialog.DynamicDialog",
+      "rules": [
+        "@[desc=\"关闭\"][clickable=true] > ImageView"
+      ],
+      "enable": false
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-付款后广告弹窗",
+      "activityIds": "com.sankuai.waimai.bussiness.order.detail.WMOrderDetailActivity",
+      "rules": [
+        {
+          "key": 0,
+          "name": "美团买药弹窗-点击[暂时放弃]",
+          "matches": "[text=\"送亲友\"] <2 FrameLayout[childCount=2] > [text=\"暂时放弃\"][clickable=true]"
+        },
+        {
+          "key": 1,
+          "name": "领取外卖神卷-点击底部【x】",
+          "matches": "@ImageView[clickable=true] - FrameLayout > FrameLayout > FrameLayout TextView[text=\"点我领取\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13175526"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

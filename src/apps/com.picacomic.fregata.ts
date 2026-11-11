@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -92,6 +92,98 @@ export default defineGkdApp({
           "activityIds": ".activities.ComicViewerActivity",
           "matches": "RelativeLayout > Button[text=\"確定\"][vid=\"button_dialog_custom_positive\"]",
           "snapshotUrls": "https://i.gkd.li/i/13466492"
+        }
+      ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-公告",
+      "desc": "点击主页面的公告和广告",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "activity",
+      "activityIds": "com.picacomic.fregata.activities.MainActivity",
+      "rules": [
+        {
+          "matches": "[id=\"com.picacomic.fregata:id/button_dialog_announcement_negative\"][text=\"確定\"]",
+          "exampleUrls": [
+            "https://m.gkd.li/83610194/a5cbd7ce-79b4-49da-ba01-2b7db907d1f1"
+          ],
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13422767"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "局部广告-漫画页广告",
+      "desc": "点击卡片广告",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "activity",
+      "activityIds": "com.picacomic.fregata.activities.MainActivity",
+      "rules": [
+        {
+          "matches": "[id=\"com.picacomic.fregata:id/imageButton_banner_close\"]",
+          "exampleUrls": [
+            "https://m.gkd.li/83610194/92feb979-d75a-4ee5-a880-da2e4250d1e3"
+          ],
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13423009"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 3002,
+      "name": "功能类-签到",
+      "desc": "切换到个人页面时自动签到，并确定",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "activity",
+      "activityIds": "com.picacomic.fregata.activities.MainActivity",
+      "rules": [
+        {
+          "matches": "[id=\"com.picacomic.fregata:id/textView_profile_punch_in\"][text=\"打嗶卡\"]",
+          "exampleUrls": [
+            "https://m.gkd.li/83610194/d53cc0cb-2a3e-4398-a415-3b8083edd328"
+          ],
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13422844"
+          ]
+        },
+        {
+          "matches": "[id=\"com.picacomic.fregata:id/button_dialog_custom_positive\"][text=\"確定\"]",
+          "exampleUrls": [
+            "https://m.gkd.li/83610194/90048fce-fe89-4ac7-9ae6-fe3d7b99aeaf"
+          ],
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13422874"
+          ]
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3003,
+      "name": "全屏广告-流量提醒弹窗",
+      "desc": "弹出流量提醒弹窗时自动点击“确定”",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "activity",
+      "activityIds": "com.picacomic.fregata.activities.ComicViewerActivity",
+      "rules": [
+        {
+          "matches": "RelativeLayout > Button[text=\"確定\"][id=\"com.picacomic.fregata:id/button_dialog_custom_positive\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13466492"
         }
       ]
     }

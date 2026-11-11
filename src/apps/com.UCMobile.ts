@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -85,6 +85,52 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/12880983"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-信息流广告",
+      "activityIds": "com.uc.browser.InnerUCMobile",
+      "rules": [
+        {
+          "key": 0,
+          "matches": "TextView[text=\"广告\"] +n ImageView[desc=\"不感兴趣\"][visibleToUser=true]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12880737",
+            "https://i.gkd.li/import/12881751"
+          ]
+        },
+        {
+          "preKeys": [
+            0
+          ],
+          "key": 1,
+          "matches": "[text^=\"屏蔽\"][text$=\"广告\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12880772",
+            "https://i.gkd.li/import/12881307"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-请求通知权限弹窗",
+      "activityIds": "com.uc.browser.InnerUCMobile",
+      "rules": "@ImageView - LinearLayout >n [text=\"开启消息通知\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12880812",
+        "https://i.gkd.li/import/12880802"
+      ],
+      "enable": false
+    },
+    {
+      "key": 3002,
+      "name": "全屏广告-请求添加桌面快捷方式权限弹窗",
+      "activityIds": "com.uc.browser.InnerUCMobile",
+      "rules": "@ImageView + [text^=\"添加\"][text$=\"到桌面\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12880983",
+      "enable": false
     }
   ]
 } as any);

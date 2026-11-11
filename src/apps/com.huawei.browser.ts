@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -56,6 +56,20 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/20852584"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-开启资讯通知弹窗",
+      "desc": "关闭资讯通知后，总是弹窗让打开",
+      "rules": [
+        {
+          "activityIds": "com.huawei.browser.BrowserMainActivity",
+          "matches": "[id=\"com.huawei.browser:id/close_push_guide_window\"]",
+          "exampleUrls": "https://m.gkd.li/87047583/3982b64a-15a7-4c0c-b179-2ed82d6ea18e",
+          "snapshotUrls": "https://i.gkd.li/import/13692404"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

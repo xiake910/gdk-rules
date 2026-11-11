@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -50,6 +50,55 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13213661"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-应用内通知",
+      "activityIds": [
+        "com.baidu.mobads.sdk.api.MobRewardVideoActivity",
+        "com.maoyun.guoguo.MainActivity"
+      ],
+      "rules": [
+        {
+          "matches": "View[desc^=\"APP最新版本\"] > Button[desc=\"关闭\"][clickable=true]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12888361",
+            "https://i.gkd.li/import/12888389"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-应用内弹窗",
+      "activityIds": [
+        "com.sigmob.sdk.base.common.TransparentAdActivity",
+        "com.baidu.mobads.sdk.api.MobRewardVideoActivity"
+      ],
+      "rules": [
+        {
+          "matches": "[id=\"ad_area\"] [id=\"close_btn\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12888388",
+            "https://i.gkd.li/import/12888419",
+            "https://i.gkd.li/import/12888578",
+            "https://i.gkd.li/import/12888647"
+          ]
+        },
+        {
+          "matches": "TextView[text=\"反馈\"] + @ImageView[clickable=true] + TextView",
+          "snapshotUrls": "https://i.gkd.li/import/12888945"
+        },
+        {
+          "matches": [
+            "[text=\"查看详情\"]",
+            "ImageView < FrameLayout[childCount=1]"
+          ],
+          "snapshotUrls": "https://i.gkd.li/import/13213661"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

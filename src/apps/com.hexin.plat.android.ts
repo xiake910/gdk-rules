@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -81,6 +81,50 @@ export default defineGkdApp({
           ]
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-信息流广告",
+      "desc": "信息流广告-点击x按钮-点击内容质量差",
+      "activityIds": [
+        "com.hexin.plat.android.Hexin"
+      ],
+      "rules": [
+        {
+          "key": 1,
+          "matches": "@[id=\"com.hexin.plat.android:id/iv_feed_bottom_bar_dislike\"] < LinearLayout -(2) LinearLayout >(2) [text=\"广告\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12662754"
+          ]
+        },
+        {
+          "preKeys": [
+            1
+          ],
+          "key": 2,
+          "matches": "[id=\"com.hexin.plat.android:id/tv_negative_feedback_option\"][text=\"内容质量差\"] - ImageView < LinearLayout[clickable=true]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12662781"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "局部广告-指数页面-底部产品广告",
+      "activityIds": [
+        "com.hexin.plat.android"
+      ],
+      "rules": [
+        {
+          "matches": "[id=\"com.hexin.plat.android:id/prod_ad\"] + [id=\"com.hexin.plat.android:id/prod_close_image\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12662656"
+          ]
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

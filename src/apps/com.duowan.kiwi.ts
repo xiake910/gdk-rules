@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -121,6 +121,30 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13536744"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "青少年模式",
+      "activityIds": [
+        "com.duowan.kiwi.homepage.Homepage",
+        "com.duowan.kiwi.immersepage.impl.ImmersePageActivity"
+      ],
+      "fastQuery": true,
+      "rules": "[id=\"com.duowan.kiwi:id/hyui_dialog_button_positive\"][text=\"我知道了\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12908790",
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 3001,
+      "name": "全屏广告-root提示",
+      "desc": "您的设备已经被ROOT",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "rules": "[text^=\"您的设备已经被ROOT\"] + LinearLayout [text=\"确认\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13536744"
     }
   ]
 } as any);

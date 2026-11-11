@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -471,6 +471,86 @@ export default defineGkdApp({
             "https://i.gkd.li/i/30751625"
           ],
           "exampleUrls": "https://e.gkd.li/c4bb2699-8e78-412c-92bd-47d35bb05616"
+        }
+      ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-关闭首页信息流中推荐博主",
+      "rules": [
+        {
+          "fastQuery": true,
+          "activityIds": "com.xingin.xhs.index.v2.IndexActivityV2",
+          "matches": "[vid=\"recommend_close\"][clickable=true][visibleToUser=true]",
+          "snapshotUrls": "https://i.gkd.li/i/25245325"
+        }
+      ]
+    },
+    {
+      "key": 3001,
+      "name": "局部广告-直播间各种卡片",
+      "activityIds": "com.xingin.alpha.audience.v2.AlphaAudienceActivityV2",
+      "rules": [
+        {
+          "key": 1,
+          "fastQuery": true,
+          "matches": "@ViewGroup[clickable=true][visibleToUser=true] - ViewGroup <<n [vid=\"canvasLayout\"]",
+          "snapshotUrls": "https://i.gkd.li/i/25245250"
+        }
+      ]
+    },
+    {
+      "key": 3002,
+      "name": "全屏广告-通知权限弹窗",
+      "fastQuery": true,
+      "actionMaximum": 1,
+      "matchTime": 30000,
+      "resetMatch": "app",
+      "activityIds": [
+        "com.xingin.xhs.index.v2.IndexActivityV2",
+        "com.xingin.xhs.notification.NotificationAuthorizationTranslucentActivity",
+        "com.xingin.matrix.notedetail.r10.comment.r10.NoteCommentActivity"
+      ],
+      "rules": [
+        {
+          "matches": "@ImageView <2 FrameLayout >2 [text^=\"打开通知\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13195753",
+            "https://i.gkd.li/import/13222356",
+            "https://i.gkd.li/import/13256145",
+            "https://i.gkd.li/import/13255627"
+          ]
+        },
+        {
+          "matches": "@ImageView <2 FrameLayout - [text^=\"打开通知\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13250418"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 3003,
+      "name": "局部广告-信息流广告",
+      "desc": "长按【赞助】/【广告】标识的卡片-点【不感兴趣】",
+      "fastQuery": true,
+      "activityIds": "com.xingin.xhs.index.v2.IndexActivityV2",
+      "rules": [
+        {
+          "key": 0,
+          "action": "longClick",
+          "name": "长按【赞助】/【广告】卡片",
+          "matches": "@FrameLayout[clickable=true] > LinearLayout TextView[text=\"赞助\"||text=\"广告\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13455503",
+            "https://i.gkd.li/import/13470690"
+          ]
+        },
+        {
+          "preKeys": 0,
+          "name": "点【不感兴趣】",
+          "matches": "RecyclerView > @LinearLayout > TextView[text=\"不喜欢该内容\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13455500"
         }
       ]
     }

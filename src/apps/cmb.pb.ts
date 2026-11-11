@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -60,6 +60,31 @@ export default defineGkdApp({
           ]
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-朝朝宝弹窗",
+      "fastQuery": true,
+      "activityIds": ".app.h5container.webviewcontainer.PBWebContainerActivity",
+      "rules": "[id=\"cover-img\"] + [text=\"关闭推荐\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12706022",
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "权限提示-定位提示-请求定位权限弹窗",
+      "fastQuery": true,
+      "activityIds": [
+        "cmb.pb.app.h5container.webviewcontainer.PBWebContainerActivity",
+        "cmb.pb.app.search.PBSearchWebActivity"
+      ],
+      "rules": "@[id=\"cmb.pb:id/ivDelete\"][desc=\"关闭\"] - FrameLayout > [id=\"cmb.pb:id/tvDescription\"][text*=\"获取您的位置\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12706029",
+        "https://i.gkd.li/import/13248893",
+        "https://i.gkd.li/import/13897345"
+      ],
+      "enable": false
     }
   ]
 } as any);

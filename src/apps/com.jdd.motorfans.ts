@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -102,6 +102,52 @@ export default defineGkdApp({
           ]
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-信息流广告",
+      "activityIds": [
+        "com.jdd.motorfans.MTMainActivity"
+      ],
+      "rules": [
+        {
+          "name": "点x按钮",
+          "key": 0,
+          "matches": "[id=\"com.jdd.motorfans:id/recyclerView\"] > FrameLayout[id=\"com.jdd.motorfans:id/container\"] > FrameLayout[childCount=3] > ImageView[clickable=true][id=null] + ImageView[clickable=true][id=null]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12826382"
+          ]
+        },
+        {
+          "name": "点击不感兴趣",
+          "preKeys": 0,
+          "matches": [
+            "TextView[id=\"com.jdd.motorfans:id/beizi_dislike_item_multi_one_title\"][text*=\"不感兴趣\"]"
+          ],
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12829069"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-文章内容弹窗",
+      "activityIds": [
+        "com.jdd.motorfans.modules.zone.search.ZoneInsideSearchActivity"
+      ],
+      "rules": [
+        {
+          "name": "点x按钮",
+          "key": 0,
+          "matches": "[id=\"com.jdd.motorfans:id/iv_close\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12888087"
+          ]
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

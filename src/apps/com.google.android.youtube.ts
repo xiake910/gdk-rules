@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -337,6 +337,36 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/5f07de6a-1e4d-4297-a516-ccc695df72fc"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "其他-关闭播放器辅助功能弹窗",
+      "desc": "点击[Dismiss]",
+      "rules": [
+        {
+          "fastQuery": true,
+          "activityIds": "com.google.android.apps.youtube.app.watchwhile.MainActivity",
+          "matches": "[text=\"Dismiss\"][visibleToUser=true]",
+          "exampleUrls": "https://e.gkd.li/aa8f2617-fd6d-43a8-951d-1bd6efc504d3",
+          "snapshotUrls": "https://i.gkd.li/i/19930694"
+        }
+      ]
+    },
+    {
+      "key": 2,
+      "name": "全屏广告-首页-会员广告",
+      "activityIds": "com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity",
+      "rules": "ImageView < @Button < ViewGroup +3 Button[desc*=\"YouTube Premium\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12877357",
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-订阅浮窗广告",
+      "activityIds": "com.google.android.apps.youtube.app.watchwhile.MainActivity",
+      "rules": "ViewGroup[desc=\"免费试用 1 个月\"] < * - * > ViewGroup[text=\"不用了，谢谢\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13797512",
+      "enable": false
     }
   ]
 } as any);

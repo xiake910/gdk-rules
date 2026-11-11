@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -83,6 +83,28 @@ export default defineGkdApp({
           "matches": "[text$=\"获取您的设备信息\"] + * > [text=\"不允许\"]",
           "exampleUrls": "https://m.gkd.li/101449500/121c7e65-780e-41aa-acf8-34c491d4be41",
           "snapshotUrls": "https://i.gkd.li/i/15944357"
+        }
+      ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-开启通知服务",
+      "desc": "选择[取消]",
+      "activityIds": "com.mcdonalds.gma.cn.activity.MainActivity",
+      "rules": "[id=\"com.mcdonalds.gma.cn:id/tv_cancel\"][text=\"取消\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13259242",
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 3001,
+      "name": "全屏广告-优惠券弹窗",
+      "desc": "自动关闭",
+      "rules": [
+        {
+          "activityIds": "com.mcdonalds.gma.cn.activity.MainActivity",
+          "matches": "[id=\"com.mcdonalds.gma.cn:id/iv_ad_close\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13465873"
         }
       ]
     }

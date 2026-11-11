@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -85,6 +85,49 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/19718162"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-关闭[个性推荐开启提示]",
+      "activityIds": [
+        "com.android.browser.BrowserActivity"
+      ],
+      "rules": [
+        {
+          "matches": "@ImageView[id!=null][clickable=true] -2 [text=\"个性推荐获得更丰富内容\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12829403"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "局部广告-主页信息流广告",
+      "fastQuery": true,
+      "activityIds": [
+        "com.android.browser.BrowserActivity",
+        "com.android.browser.flow.view.FeedbackDialog"
+      ],
+      "rules": [
+        {
+          "key": 0,
+          "matches": "@[id!=null][desc=\"负反馈\"][visibleToUser=true] -n * > * > [text=\"广告\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12894221",
+            "https://i.gkd.li/import/12893649"
+          ]
+        },
+        {
+          "preKeys": 0,
+          "key": 1,
+          "matches": "@FrameLayout > ViewGroup > [text=\"不感兴趣\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12894234",
+            "https://i.gkd.li/import/13196059"
+          ]
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

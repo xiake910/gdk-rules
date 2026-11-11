@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -538,6 +538,162 @@ export default defineGkdApp({
             "https://i.gkd.li/i/18218517"
           ]
         }
+      ]
+    },
+    {
+      "key": 15,
+      "name": "局部广告-信息流广告",
+      "desc": "点击关闭",
+      "fastQuery": true,
+      "forcedTime": 10000,
+      "rules": [
+        {
+          "key": 0,
+          "activityIds": ".pb.pb.main.PbActivity",
+          "matches": "@[clickable=true][visibleToUser=true] <(1,2) RelativeLayout <(1,4) RelativeLayout[childCount>1] >(3,4) [text=\"广告\"]",
+          "exampleUrls": "https://e.gkd.li/337a7e8b-500f-4a0b-ae08-018c5222d4da",
+          "snapshotUrls": [
+            "https://i.gkd.li/i/16595124",
+            "https://i.gkd.li/i/16596297",
+            "https://i.gkd.li/i/16632851"
+          ]
+        },
+        {
+          "key": 1,
+          "activityIds": [
+            ".tblauncher.MainTabActivity",
+            ".pb.pb.main.PbActivity",
+            ".forum.ForumActivity"
+          ],
+          "matches": "@FrameLayout[clickable=true][visibleToUser=true] <4 RelativeLayout + FrameLayout >7 [text=\"广告\"]",
+          "exampleUrls": "https://e.gkd.li/5b53c3be-4972-44aa-a62e-3ca780ae7098",
+          "snapshotUrls": [
+            "https://i.gkd.li/i/16595301",
+            "https://i.gkd.li/i/16596195",
+            "https://i.gkd.li/i/16596775"
+          ]
+        },
+        {
+          "key": 2,
+          "activityIds": ".tblauncher.MainTabActivity",
+          "matches": "@ImageView[childCount=0][clickable=true][visibleToUser=true] < LinearLayout[childCount=1] <4 RelativeLayout +3 LinearLayout >4 [text=\"小游戏\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/i/17943902",
+            "https://i.gkd.li/i/18217417"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-申请消息提醒弹窗",
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "rules": [
+        {
+          "key": 0,
+          "activityIds": "com.baidu.tieba.pb.pb.main.PbActivity",
+          "matches": "@ImageView[clickable=true] -2 LinearLayout > [text^=\"打开通知\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13536170"
+        },
+        {
+          "key": 1,
+          "activityIds": "com.baidu.tieba.immessagecenter.mention.reply.ReplyMeActivity",
+          "matches": "TextView[text=\"开启消息推送\"] +2 TextView[text=\"不开启\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13675694"
+        },
+        {
+          "key": 2,
+          "activityIds": "com.baidu.tbadk.browser.TBWebContainerActivity",
+          "matches": "[text=\"开启通知\"] - [text=\"暂不开启\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13804455"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "局部广告-首页-推荐-列表顶部卡片式广告",
+      "activityIds": [
+        "com.baidu.tieba.tblauncher.MainTabActivity",
+        "com.baidu.tieba.frs.FrsActivity"
+      ],
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "rules": [
+        {
+          "key": 1,
+          "matches": "RelativeLayout[childCount=2] > @RelativeLayout[childCount=1][clickable=true] > ImageView",
+          "snapshotUrls": "https://i.gkd.li/import/13060892"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 8,
+      "name": "局部广告-帖子底部内容推荐卡片",
+      "desc": "关闭时弹窗选原因",
+      "activityIds": "com.baidu.tieba.pb.pb.main.PbActivity",
+      "rules": [
+        {
+          "key": 0,
+          "matches": "LinearLayout > RelativeLayout[id!=null][clickable=false] > ImageView[id=null][clickable=true]",
+          "snapshotUrls": "https://i.gkd.li/import/12775882"
+        },
+        {
+          "preKeys": 0,
+          "name": "关闭原因-不感兴趣",
+          "matches": "@View[text=null] - TextView[text=\"选择不喜欢理由\"][index=0]",
+          "snapshotUrls": "https://i.gkd.li/import/12775914"
+        }
+      ]
+    },
+    {
+      "key": 3002,
+      "name": "全屏广告-广告弹窗",
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "activity",
+      "rules": [
+        {
+          "key": 0,
+          "name": "点击右上角x关闭",
+          "activityIds": "com.baidu.tbadk.browser.TBWebContainerActivity",
+          "matches": "View[childCount=3] > @View[clickable=true][childCount=1] > Image",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13060891",
+            "https://i.gkd.li/import/13222361"
+          ]
+        },
+        {
+          "key": 1,
+          "name": "点击正下方x关闭",
+          "activityIds": [
+            "com.baidu.tieba.frs.FrsActivity",
+            "com.baidu.tieba.tblauncher.MainTabActivity",
+            "com.baidu.tieba.LogoActivity"
+          ],
+          "matches": "@TextView[clickable=true && text=null] - FrameLayout TextView[text=\"广告\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13168383",
+            "https://i.gkd.li/import/13322120",
+            "https://i.gkd.li/import/13328246"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 3003,
+      "name": "局部广告-吧内-悬浮卡通-进吧逛逛",
+      "actionMaximum": 1,
+      "resetMatch": "activity",
+      "rules": "TextView[text!=null] < LinearLayout + LinearLayout > View + ImageView[clickable=true]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/13322337",
+        "https://i.gkd.li/import/13328738"
       ]
     }
   ]

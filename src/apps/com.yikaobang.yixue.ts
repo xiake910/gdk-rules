@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -48,6 +48,37 @@ export default defineGkdApp({
           "excludeSnapshotUrls": "https://i.gkd.li/i/28434273"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-会员活动弹窗",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "rules": [
+        {
+          "activityIds": "com.psychiatrygarden.activity.HomePageNewActivity",
+          "matches": "@ImageView[id=\"com.yikaobang.yixue:id/close\"]",
+          "snapshotUrls": "https://i.gkd.li/i/13425853"
+        }
+      ]
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-应用内会员活动弹窗",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "activityIds": "com.psychiatrygarden.activity.HomePageNewActivity",
+      "rules": [
+        {
+          "matches": "@ImageView[id=\"com.yikaobang.yixue:id/close\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13425853"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

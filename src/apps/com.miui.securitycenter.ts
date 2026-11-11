@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -196,6 +196,63 @@ export default defineGkdApp({
           "activityIds": "com.nantian.iBank.ui.activity.container.ProgramSingleWindowActivity",
           "matches": "[text=\"仍然支付\"][clickable=true]",
           "snapshotUrls": "https://i.gkd.li/i/24717617"
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3000,
+      "name": "功能类-自动继续安装",
+      "desc": "USB安装应用,点击继续安装",
+      "fastQuery": true,
+      "activityIds": "com.miui.permcenter.install.AdbInstallActivity",
+      "rules": [
+        {
+          "matches": "[text=\"继续安装\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13269875"
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3001,
+      "name": "全屏广告-禁止获取定位",
+      "desc": "关闭【允许联网及定位】后，每次打开手机管家都会出现",
+      "fastQuery": true,
+      "activityIds": [
+        "com.miui.securityscan.MainActivity",
+        "com.miui.permcenter.permissions.SystemAppPermissionDialogActivity"
+      ],
+      "rules": [
+        {
+          "matches": [
+            "[id=\"com.miui.securitycenter:id/title\"][text=\"获取位置信息\"]",
+            "[text=\"不同意\"]"
+          ],
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13474517",
+            "https://i.gkd.li/import/13476592"
+          ]
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3002,
+      "name": "全屏广告-忽略体检分数",
+      "desc": "退出时忽略体检优化分数",
+      "fastQuery": true,
+      "activityIds": "com.miui.securityscan.MainActivity",
+      "rules": [
+        {
+          "matches": [
+            "[text=\"手机体检分数不足75分，是否立即优化？\"][id$=\"id/message\"]",
+            "[text=\"退出\"]"
+          ],
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13474504",
+            "https://i.gkd.li/import/13476770"
+          ]
         }
       ]
     }

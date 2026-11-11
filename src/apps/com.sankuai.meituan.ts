@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -334,6 +334,137 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/9f1b0006-c4c2-4234-9cea-94ee97f48ae3"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-广告弹窗",
+      "rules": [
+        {
+          "key": 0,
+          "name": "美团买菜-折扣弹窗",
+          "activityIds": "com.meituan.retail.c.android.mrn.mrn.MallMrnModal",
+          "matches": "ViewGroup > ViewGroup[childCount=6] > ViewGroup[childCount=1] > ImageView[childCount=0][visibleToUser=true]",
+          "snapshotUrls": "https://i.gkd.li/import/12639717"
+        },
+        {
+          "key": 1,
+          "name": "美团买菜-红包弹窗",
+          "activityIds": "com.meituan.retail.c.android.mrn.mrn.MallMrnModal",
+          "matches": "@ImageView < ViewGroup +3 ViewGroup > ViewGroup > TextView[text^=\"红包已到账\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12892626"
+        },
+        {
+          "key": 2,
+          "name": "美团买菜-支付成功后-红包弹窗",
+          "activityIds": "com.meituan.retail.c.android.mrn.mrn.MallMrnModal",
+          "matches": "TextView[text=\"恭喜你获得以下权益\"] + ViewGroup > ImageView",
+          "snapshotUrls": "https://i.gkd.li/import/12646768"
+        },
+        {
+          "key": 3,
+          "name": "超市便利-广告弹窗",
+          "activityIds": "com.sankuai.waimai.store.poi.list.newp.PoiVerticalityHomeActivity",
+          "matches": "FrameLayout[childCount=2] > FrameLayout + FrameLayout[childCount=1] > ImageView[childCount=0][clickable=true]",
+          "snapshotUrls": "https://i.gkd.li/import/13694877"
+        },
+        {
+          "key": 4,
+          "name": "骑行卡-红包弹窗",
+          "activityIds": "com.meituan.mmp.lib.HeraActivity",
+          "matches": "View[childCount=3] > View + TextView + TextView[text=\"\"][visibleToUser=true]",
+          "snapshotUrls": "https://i.gkd.li/import/12739204"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-订单调查弹窗",
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "fastQuery": true,
+      "rules": [
+        {
+          "name": "我的页面-小调查",
+          "action": "back",
+          "activityIds": "com.meituan.retail.c.android.mrn.mrn.MallMrnModal",
+          "matches": "TextView[text=\"小调查\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12639723"
+        },
+        {
+          "name": "订单详情页匿名调查",
+          "action": "back",
+          "activityIds": "com.sankuai.waimai.bussiness.order.detail.WMOrderDetailActivity",
+          "matches": "[id=\"com.sankuai.meituan:id/questionnaireTitle\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13682336"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3002,
+      "name": "局部广告-首页右侧抽奖小广告",
+      "activityIds": [
+        "com.meituan.android.pt.homepage.activity.MainActivity",
+        "com.miui.home.launcher.Launcher"
+      ],
+      "rules": "FrameLayout > @ImageView + ImageView[desc=\"资质与规则\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12639815",
+        "https://i.gkd.li/import/12639734"
+      ],
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 3003,
+      "name": "全屏广告-请求定位弹窗",
+      "desc": "首页/外卖界面-【打开位置开关弹窗】-点击右侧x关闭",
+      "activityIds": [
+        "com.meituan.android.pt.homepage.activity.MainActivity",
+        "com.sankuai.waimai.business.page.homepage.TakeoutActivity"
+      ],
+      "rules": [
+        "[id =\"com.sankuai.meituan:id/location_close\"]",
+        "[id =\"com.sankuai.meituan:id/location_layer_close\"]"
+      ],
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12874657",
+        "https://i.gkd.li/import/12910210",
+        "https://i.gkd.li/import/12910211"
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3004,
+      "name": "全屏广告-请求开启通知权限弹窗",
+      "desc": "点击跳过",
+      "fastQuery": true,
+      "actionMaximum": 1,
+      "rules": [
+        {
+          "activityIds": "com.meituan.android.pt.homepage.activity.MainActivity",
+          "matches": "[id=\"com.sankuai.meituan:id/notify_open_hint_title\"] +n [id=\"com.sankuai.meituan:id/later\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13439134"
+        }
+      ]
+    },
+    {
+      "key": 9,
+      "name": "全屏广告-订单完成后的红包弹窗",
+      "desc": "直接关闭整个模块",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "rules": [
+        {
+          "action": "back",
+          "activityIds": "com.sankuai.waimai.bussiness.order.detail.WMOrderDetailActivity",
+          "matches": "[id=\"com.sankuai.meituan:id/module_container\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13695703"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

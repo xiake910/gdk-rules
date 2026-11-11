@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -33,6 +33,34 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14338307"
         }
       ]
+    },
+    {
+      "key": 1,
+      "name": "更新提示",
+      "activityIds": [
+        "com.zhengnengliang.precepts.ui.activity.MainActivity",
+        "com.zhengnengliang.precepts.ui.dialog.DialogTwoButton"
+      ],
+      "rules": "@[text=\"取消\"] +2 [text=\"升级\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12727650",
+        "https://i.gkd.li/import/12715352"
+      ],
+      "enable": false
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-第三方 SDK 广告",
+      "activityIds": [
+        "com.zhengnengliang.precepts.ui.activity.MainActivity",
+        "com.zhengnengliang.precepts.ui.dialog.DialogTwoButton"
+      ],
+      "rules": "[text=\"点此去广告\"] + ImageButton[clickable=true]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12739767",
+        "https://i.gkd.li/import/12727705"
+      ],
+      "enable": false
     }
   ]
 } as any);

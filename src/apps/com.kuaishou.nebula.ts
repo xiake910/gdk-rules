@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -255,6 +255,30 @@ export default defineGkdApp({
           ]
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-悬浮广告",
+      "desc": "点击关闭",
+      "rules": [
+        {
+          "fastQuery": true,
+          "activityIds": "com.yxcorp.gifshow.HomeActivity",
+          "matches": "[vid=\"close_icon\"][visibleToUser=true]",
+          "exampleUrls": "https://m.gkd.li/57941037/12059549-21c2-47b7-9acf-ec221cc14f25",
+          "snapshotUrls": "https://i.gkd.li/i/15747381"
+        }
+      ]
+    },
+    {
+      "key": 1,
+      "name": "青少年模式",
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "activityIds": "com.yxcorp.gifshow.HomeActivity",
+      "rules": "[id=\"com.kuaishou.nebula:id/positive\"][text=\"我知道了\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13196316",
+      "enable": false
     }
   ]
 } as any);

@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -712,6 +712,413 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/20737675"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "功能类-登录授权",
+      "desc": "自动点击登录",
+      "rules": [
+        {
+          "key": 1,
+          "fastQuery": true,
+          "matchRoot": true,
+          "actionMaximum": 3,
+          "actionCd": 500,
+          "activityIds": [
+            "com.tencent.biz.qrcode.activity.QRLoginAuthActivity",
+            "com.tencent.open.agent.PublicFragmentActivityForOpenSDK",
+            "com.tencent.open.agent.QuickLoginAuthorityActivity"
+          ],
+          "matches": [
+            "[text=\"登录确认\" || text$=\"申请使用\"][visibleToUser=true]",
+            "Button[text=\"登录\" || text=\"同意\" || text=\"确认\"][clickable=true][visibleToUser=true]"
+          ],
+          "snapshotUrls": [
+            "https://i.gkd.li/i/20737721",
+            "https://i.gkd.li/i/20737651",
+            "https://i.gkd.li/i/20737675",
+            "https://i.gkd.li/i/20737673",
+            "https://i.gkd.li/i/22631619"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 3001,
+      "name": "功能类-自动勾选原图",
+      "desc": "发送图片时自动勾选原图，可手动取消勾选",
+      "actionMaximum": 1,
+      "rules": [
+        {
+          "fastQuery": true,
+          "activityIds": [
+            ".activity.SplashActivity",
+            "com.tencent.qqnt.qbasealbum.WinkHomeActivity",
+            ".activity.photo.album.NewPhotoListActivity"
+          ],
+          "matches": "@CheckBox[checked=false] + [text=\"原图\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/i/12705556",
+            "https://i.gkd.li/i/12705559",
+            "https://i.gkd.li/i/13295142",
+            "https://i.gkd.li/i/13476247"
+          ]
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3002,
+      "name": "局部广告-消息页面-顶部广告",
+      "desc": "规则误触,待修复,需要快照准确定位",
+      "activityIds": "com.tencent.mobileqq.activity.SplashActivity",
+      "rules": [
+        {
+          "key": 0,
+          "matches": "TextView[text!=null] < LinearLayout + ImageView[desc=\"关闭\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12892726",
+            "https://i.gkd.li/import/12774870",
+            "https://i.gkd.li/import/13207766",
+            "https://i.gkd.li/import/13386518"
+          ]
+        },
+        {
+          "key": 1,
+          "name": "局部广告-消息页面-顶部惊喜礼包",
+          "matches": "[text*=\"惊喜礼包\"] + FrameLayout + ImageView[clickable=true]",
+          "snapshotUrls": "https://i.gkd.li/import/13426912"
+        },
+        {
+          "key": 2,
+          "matches": "ImageView + RelativeLayout[childCount=2] > TextView[text!=null] + ImageView",
+          "snapshotUrls": "https://i.gkd.li/import/13476400"
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3003,
+      "name": "分段广告-好友动态-广告卡片",
+      "rules": [
+        {
+          "key": 0,
+          "activityIds": [
+            "com.tencent.mobileqq.activity.SplashActivity",
+            "com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity"
+          ],
+          "matches": "View[desc=\"广告\"] + ImageView[clickable=true]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12847842",
+            "https://i.gkd.li/import/13787345"
+          ]
+        },
+        {
+          "preKeys": 0,
+          "key": 1,
+          "activityIds": [
+            "com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity",
+            "com.tencent.mobileqq.activity.SplashActivity"
+          ],
+          "fastQuery": true,
+          "matches": "@[clickable=true] > ImageView + [text=\"关闭此条广告\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12840889",
+            "https://i.gkd.li/import/13831867"
+          ]
+        },
+        {
+          "preKeys": 0,
+          "key": 2,
+          "activityIds": [
+            "com.tencent.mobileqq.activity.SplashActivity",
+            "com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity"
+          ],
+          "fastQuery": true,
+          "matches": "@[clickable=true] > * > ImageView + [text=\"隐藏此条动态\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13761147",
+            "https://i.gkd.li/import/13849730"
+          ]
+        },
+        {
+          "key": 3,
+          "activityIds": [
+            "com.tencent.mobileqq.activity.SplashActivity",
+            "com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity"
+          ],
+          "matches": "[id=\"com.tencent.mobileqq:id/tv_name\"] + TextView[text=\"广告\"] + @ImageView[clickable=true]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12749584",
+            "https://i.gkd.li/import/13627967"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 3,
+      "name": "局部广告-频道页面广告",
+      "rules": [
+        {
+          "name": "弹窗广告",
+          "fastQuery": true,
+          "activityIds": [
+            "com.tencent.mobileqq.activity.SplashActivity",
+            "com.tencent.qqlive.module.videoreport.inject.dialog.ReportDialog"
+          ],
+          "matches": "ImageView[id=\"com.tencent.mobileqq:id/close\"][clickable=true]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13206663",
+            "https://i.gkd.li/import/12642081"
+          ]
+        },
+        {
+          "name": "右侧悬浮广告",
+          "activityIds": "com.tencent.mobileqq.activity.SplashActivity",
+          "matches": "FrameLayout[desc=\"发表帖子\"] - LinearLayout[id!=null] >3 ImageView[id!=null][clickable=false] - View[id!=null][clickable=true]",
+          "snapshotUrls": "https://i.gkd.li/import/12708844"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 4,
+      "name": "局部广告-顶部SVIP广告",
+      "desc": "消息界面-搜索框和消息记录之间的广告卡片,点击关闭右侧x",
+      "activityIds": "com.tencent.mobileqq.activity.SplashActivity",
+      "rules": "LinearLayout > TextView[text*=\"SVIP\"||text*=\"超级会员\"] + FrameLayout[childCount<=2] + [name$=\"ImageView\"||name$=\"Button\"][id!=null][clickable=true]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12706907",
+        "https://i.gkd.li/import/13107298",
+        "https://i.gkd.li/import/12793359",
+        "https://i.gkd.li/import/12855048",
+        "https://i.gkd.li/import/13228108"
+      ]
+    },
+    {
+      "enable": false,
+      "key": 5,
+      "name": "局部广告-好友热播",
+      "desc": "好友动态中的好友热播，自动选择“减少好友热播” - 默认关闭",
+      "activityIds": [
+        "com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity",
+        "com.tencent.mobileqq.activity.SplashActivity"
+      ],
+      "rules": [
+        {
+          "name": "点击[好友热播]卡片右上角菜单按钮",
+          "matches": "TextView[text=\"好友热播\"] + Button[id^=\"com.tencent.mobileqq.qzone_df_impl:id/\"][clickable=true]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12721427",
+            "https://i.gkd.li/import/12894359"
+          ]
+        },
+        {
+          "name": "点击[减少好友热播]",
+          "matches": "TextView[text=\"减少好友热播\"] <2 LinearLayout < LinearLayout[id^=\"com.tencent.mobileqq.qzone_df_impl:id/\"][clickable=true]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12721433",
+            "https://i.gkd.li/import/12894375"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 3004,
+      "name": "功能类-扫一扫-登录确认",
+      "desc": "自动点击登录。包括 PC 登录确认、QQ 互联登录确认。",
+      "fastQuery": true,
+      "rules": [
+        {
+          "key": 1,
+          "name": "PC 登录确认",
+          "activityIds": [
+            "com.tencent.biz.qrcode.activity.QRLoginAuthActivity",
+            "com.tencent.mobileqq.activity.DevlockQuickLoginActivity"
+          ],
+          "matches": "TextView[text=\"登录确认\"||text=\"一键验证\"] <n * +n * >n Button[text*=\"登录\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13623520",
+            "https://i.gkd.li/import/12789287",
+            "https://i.gkd.li/import/13063027"
+          ]
+        },
+        {
+          "key": 2,
+          "name": "QQ 互联登录确认",
+          "activityIds": [
+            "com.tencent.mobileqq.activity.DevLockQuickVerifyActivity"
+          ],
+          "matches": "Button[text=\"拒绝\"] - Button[text=\"登录\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13166314"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 3005,
+      "name": "局部广告-消息页面顶部-无法接收新消息通知",
+      "desc": "消息界面-搜索框和消息记录之间的通知卡片,点击关闭右侧x",
+      "activityIds": "com.tencent.mobileqq.activity.SplashActivity",
+      "rules": "RelativeLayout > [text^=\"当前无法接收\"] + ImageView",
+      "snapshotUrls": "https://i.gkd.li/import/12855441"
+    },
+    {
+      "key": 9,
+      "name": "局部广告-我的等级-浮窗广告",
+      "activityIds": "com.tencent.mobileqq.activity.QQBrowserActivity",
+      "rules": "TextView[text=\"QQ等级规则\"] + View > TextView[id=null&&text.length=0]",
+      "snapshotUrls": "https://i.gkd.li/import/12914734",
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 3006,
+      "name": "功能类-自动查看原图",
+      "desc": "查看图片时自动点击原图",
+      "activityIds": "com.tencent.richframework.gallery.QQGalleryActivity",
+      "rules": "[desc=\"查看原图\"][checked=false]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12840632",
+        "https://i.gkd.li/import/12840633"
+      ]
+    },
+    {
+      "enable": false,
+      "key": 12,
+      "name": "局部广告-QQ小世界评论区广告",
+      "desc": "点击广告-弹出原因框-关闭此条广告",
+      "activityIds": [
+        "com.tencent.mobileqq.activity.SplashActivity",
+        "com.tencent.biz.qqcircle.activity.QCircleFolderActivity"
+      ],
+      "rules": [
+        {
+          "key": 0,
+          "matches": "RelativeLayout[childCount=5] > @LinearLayout[clickable=true][childCount=2][id!=null] > TextView[text=\"广告\"][id!=null]",
+          "snapshotUrls": "https://i.gkd.li/import/12847819"
+        },
+        {
+          "preKeys": 0,
+          "matches": "@LinearLayout[clickable=true] > TextView[text=\"关闭此条广告\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12847821"
+        }
+      ]
+    },
+    {
+      "key": 3007,
+      "name": "全屏广告-QQ小程序开屏广告",
+      "desc": "点击右下角跳过",
+      "activityIds": [
+        "com.tencent.mobileqq.mini.appbrand.ui.AppBrandUI",
+        "com.tencent.mobileqq.activity.miniaio.MiniChatActivity"
+      ],
+      "rules": [
+        {
+          "matches": "TextView[text = \"广告\"] < RelativeLayout + RelativeLayout TextView[text = \"跳过\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12877215",
+            "https://i.gkd.li/import/12919195"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 14,
+      "name": "全屏广告-黄钻-弹窗广告",
+      "activityIds": "com.tencent.mobileqq.activity.QQBrowserActivity",
+      "rules": "TextView[text.length=0&&clickable=true&&visibleToUser=true] + View > Button[text.length=0&&focusable=true]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12914978",
+        "https://i.gkd.li/import/12914886"
+      ],
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 15,
+      "name": "局部广告-好友动态-为你推荐",
+      "fastQuery": true,
+      "activityIds": [
+        "com.tencent.mobileqq.activity.SplashActivity",
+        "com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity"
+      ],
+      "rules": [
+        {
+          "key": 0,
+          "matches": "@ImageView[clickable=true] - [text=\"为你推荐\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12929620",
+            "https://i.gkd.li/import/13387606"
+          ]
+        },
+        {
+          "preKeys": 0,
+          "key": 1,
+          "matches": "@LinearLayout[id!=null][clickable=true] > LinearLayout > [text=\"减少此类推荐\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12929619",
+            "https://i.gkd.li/import/13387605"
+          ]
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 19,
+      "name": "全屏广告-内测邀请弹窗",
+      "fastQuery": true,
+      "activityIds": "com.tencent.mobileqq.activity.SplashActivity",
+      "rules": [
+        {
+          "key": 0,
+          "matches": "@ImageView[desc=\"关闭\"] <2 * >2 [text=\"QQ测试版\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13526551"
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 20,
+      "name": "全屏广告-钱包-卡片广告",
+      "fastQuery": true,
+      "activityIds": "com.tencent.mobileqq.activity.SplashActivity",
+      "rules": [
+        {
+          "key": 0,
+          "matches": "ViewGroup[childCount=6] > [text=\"广告\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13695087"
+          ]
+        },
+        {
+          "preKeys": 0,
+          "key": 1,
+          "matches": "@LinearLayout > [text=\"关闭此条广告\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13699701"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 21,
+      "name": "全屏广告-首页广告弹窗",
+      "rules": [
+        {
+          "key": 0,
+          "name": "元梦之星广告弹窗",
+          "activityIds": "com.tencent.mobileqq.activity.QPublicTransFragmentActivity",
+          "matches": "ViewGroup[childCount=2] > ViewGroup[childCount=3][index=1] > ViewGroup[clickable=true][visibleToUser=true][index=1][childCount=0]",
+          "snapshotUrls": "https://i.gkd.li/import/13797876"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

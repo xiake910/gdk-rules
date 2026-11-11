@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -16,6 +16,16 @@ export default defineGkdApp({
         "https://i.gkd.li/i/12649616",
         "https://i.gkd.li/i/18455642"
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-首页-横幅广告",
+      "activityIds": "com.hose.ekuaibao.view.activity.EkbProActivity",
+      "rules": "View[childCount=2] > TextView + TextView[text=\"不感兴趣\"][clickable=true]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12649616"
+      ],
+      "enable": false
     }
   ]
 } as any);

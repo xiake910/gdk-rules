@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -654,6 +654,220 @@ export default defineGkdApp({
           "exampleUrls": "https://e.gkd.li/a057d535-db79-4faa-9c8f-69069dee91f6"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-多多视频",
+      "desc": "点击【X】",
+      "fastQuery": true,
+      "activityIds": ".ui.activity.HomeActivity",
+      "rules": [
+        {
+          "name": "左侧",
+          "matches": "@TextView[id=null][clickable=true] + Image[text=\"webp\"][id=null]",
+          "snapshotUrls": "https://i.gkd.li/import/12642058"
+        },
+        {
+          "name": "右侧",
+          "matches": "@TextView[id=null][clickable=true] + View > Image[text=\"webp\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12642058"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-优惠卷弹窗",
+      "desc": "点击【X】",
+      "fastQuery": true,
+      "rules": [
+        {
+          "activityIds": "com.miui.home.launcher.Launcher",
+          "matches": "ImageView - @ImageView < RelativeLayout[childCount=2] < FrameLayout < FrameLayout <2 FrameLayout[parent=null] ",
+          "snapshotUrls": "https://i.gkd.li/import/12642015"
+        },
+        {
+          "activityIds": "com.xunmeng.pinduoduo.ui.activity.HomeActivity",
+          "matches": "@ImageView < ViewGroup[clickable=true][visibleToUser=true] < ViewGroup + ViewGroup >n [text=\"开心收下\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13761182"
+        },
+        {
+          "activityIds": "com.xunmeng.pinduoduo.activity.NewPageActivity",
+          "matches": "[text=\"百亿补贴\"] > View > View > @View[clickable=true] +n [text^=\"立即领取\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13669963"
+        },
+        {
+          "activityIds": "com.xunmeng.pinduoduo.activity.NewPageActivity",
+          "matches": "View[childCount=1] > Button[text=\"关闭弹窗\"][id=null][clickable=true]",
+          "snapshotUrls": "https://i.gkd.li/import/12642053"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3002,
+      "name": "全屏广告-免单活动",
+      "desc": "点击【X】",
+      "fastQuery": true,
+      "activityIds": ".activity.NewPageActivity",
+      "rules": [
+        {
+          "name": "免单特权",
+          "matches": [
+            "TextView[text=\"免单特权\"]",
+            "@Image[text=\"webp\"] < View <7 View <2 View < View + View[id=\"portal-main-content\"]"
+          ],
+          "snapshotUrls": "https://i.gkd.li/import/12642032"
+        },
+        {
+          "name": "抽免单",
+          "matches": "TextView[text=\"再拼一单，抽免单\"] -2 @Image[text=\"webp\"] < View < View + View[id=\"portal-main-content\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12642038"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3003,
+      "name": "全屏广告-红包",
+      "desc": "点击【X】",
+      "fastQuery": true,
+      "activityIds": "com.xunmeng.pinduoduo.ui.activity.HomeActivity",
+      "rules": [
+        {
+          "matches": "@ImageView[id=null][clickable=true] < ViewGroup + ViewGroup > ImageView + ViewGroup > ImageView +(2) FrameLayout > TextView[text=\"专属现金红包\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12642023"
+        },
+        {
+          "matches": "@ImageView[clickable=true] < ViewGroup + ViewGroup >n [text=\"送你大额现金\"||text=\"现金\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13625441",
+            "https://i.gkd.li/import/14879427"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3004,
+      "name": "全屏广告-下单成功",
+      "desc": "点击【X】",
+      "fastQuery": true,
+      "rules": [
+        {
+          "activityIds": "com.xunmeng.pinduoduo.ui.activity.HomeActivity",
+          "matches": "@[text=\"关闭弹窗\"][clickable=true] + [text$=\"下单成功\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13308175"
+        },
+        {
+          "activityIds": "com.xunmeng.pinduoduo.activity.NewPageMaskActivity",
+          "matches": "[id=\"com.xunmeng.pinduoduo:id/pdd\"] >7 [text=\"关闭弹窗\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13927594"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3005,
+      "name": "全屏广告-多多视频-每日签到",
+      "desc": "点击【X】",
+      "fastQuery": true,
+      "activityIds": "com.xunmeng.pinduoduo.ui.activity.HomeActivity",
+      "rules": [
+        {
+          "matches": "@ImageView[id=null] < ViewGroup < ViewGroup +(2) ViewGroup >(n) [text^=\"每日签到\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12700615"
+        },
+        {
+          "matches": "ViewGroup[childCount=5] > @ViewGroup[index=0][clickable=true] +3 ViewGroup >2 [text=\"分享现金红包至拼小圈\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13804657"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3006,
+      "name": "全屏广告-爆款限时直降",
+      "desc": "点击【X】",
+      "fastQuery": true,
+      "activityIds": "com.xunmeng.pinduoduo.ui.activity.HomeActivity",
+      "rules": [
+        {
+          "matches": "@ImageView < ViewGroup < ViewGroup + ViewGroup >n TextView[text=\"去抢购\"]",
+          "snapshotUrls": "https://i.gkd.li/import/15212017"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3007,
+      "name": "功能类-多多视频-划到广告自动跳过",
+      "desc": "点击返回自动刷新，从而跳过广告",
+      "fastQuery": true,
+      "activityIds": "com.xunmeng.pinduoduo.ui.activity.HomeActivity",
+      "rules": [
+        {
+          "matches": [
+            "TextView[text=\"正在直播\"]",
+            "@ImageView[desc=\"返回\"] <4 ViewGroup <<3 FrameLayout[id=\"android:id/content\"]"
+          ],
+          "snapshotUrls": "https://i.gkd.li/import/13446291"
+        },
+        {
+          "matches": [
+            "TextView[text=\"查看更多低价商品\"]",
+            "@ImageView[desc=\"返回\"] <4 ViewGroup <<3 FrameLayout[id=\"android:id/content\"]"
+          ],
+          "snapshotUrls": "https://i.gkd.li/import/13791119"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3008,
+      "name": "功能类-多多视频-每日自动签到",
+      "desc": "",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "activityIds": [
+        "com.xunmeng.pinduoduo.ui.activity.HomeActivity"
+      ],
+      "rules": [
+        {
+          "key": 0,
+          "name": "自动签到",
+          "action": "clickCenter",
+          "matches": [
+            "FrameLayout > TextView[text=\"领取今日现金\"]"
+          ],
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13201422",
+            "https://i.gkd.li/import/13372677"
+          ]
+        },
+        {
+          "key": 1,
+          "preKeys": 0,
+          "name": "在签到后关闭弹窗",
+          "action": "clickCenter",
+          "matches": "FrameLayout > TextView[text=\"明日继续来领\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13205634"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3009,
+      "name": "功能类-自动点击原图",
+      "fastQuery": true,
+      "activityIds": "com.xunmeng.pinduoduo.app_album.album.MultiImageSelectorActivity",
+      "rules": "@[text=\"原图\"][checked=false] + [text=\"发送\"]",
+      "snapshotUrls": [
+        "https://i.gkd.li/import/13925378",
+        "https://i.gkd.li/import/13925380"
+      ],
+      "enable": false
     }
   ]
 } as any);

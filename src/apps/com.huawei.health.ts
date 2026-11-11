@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -110,6 +110,42 @@ export default defineGkdApp({
           "activityIds": "com.huawei.hwversionmgr.activity.AppUpdateDialogActivity",
           "matches": "[text=\"发现新版本\"]",
           "snapshotUrls": "https://i.gkd.li/i/15521811"
+        }
+      ]
+    },
+    {
+      "key": 1,
+      "name": "全屏广告-“我的”页会员广告",
+      "activityIds": [
+        "com.huawei.health.MainActivity"
+      ],
+      "rules": [
+        {
+          "matches": "[id=\"com.huawei.health:id/item_banner_ad_close_icon\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12667814"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-请求开启个性化推荐弹窗",
+      "activityIds": "com.huawei.watchface.api.WebViewActivity",
+      "rules": "[text=\"开启个性化推荐\"] +2 [text=\"开启\"] + Button",
+      "snapshotUrls": "https://i.gkd.li/import/13546292",
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 3001,
+      "name": "局部广告-底部横幅广告",
+      "rules": [
+        {
+          "activityIds": "com.huawei.health.MainActivity",
+          "matches": "[id=\"com.huawei.health:id/marketing_close_icon\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13587206"
         }
       ]
     }

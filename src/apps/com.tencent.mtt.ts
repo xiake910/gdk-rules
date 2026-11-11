@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -112,6 +112,64 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/12908955"
         }
       ]
+    },
+    {
+      "enable": false,
+      "key": 3000,
+      "name": "局部广告-小说阅读页面-卡片广告",
+      "activityIds": "com.tencent.mtt.MainActivity",
+      "rules": [
+        {
+          "actionCd": 3000,
+          "key": 0,
+          "name": "点击广告按钮",
+          "excludeMatches": "[desc=\"屏蔽此广告\"||desc=\"不感兴趣\"]",
+          "matches": "@ViewGroup[clickable=true][visibleToUser=true] > ViewGroup > [desc=\"广告\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12907446",
+            "https://i.gkd.li/import/12907445"
+          ]
+        },
+        {
+          "preKeys": 0,
+          "key": 1,
+          "name": "点击[屏蔽此广告]",
+          "matches": "@ViewGroup > [desc=\"屏蔽此广告\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12907654",
+            "https://i.gkd.li/import/12907651"
+          ]
+        },
+        {
+          "preKeys": 1,
+          "key": 2,
+          "name": "点击[不感兴趣]",
+          "matches": "@ViewGroup > [desc=\"不感兴趣\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12907655",
+            "https://i.gkd.li/import/12907653"
+          ]
+        }
+      ]
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-小说阅读页面-视频广告",
+      "activityIds": "com.qq.e.tg.RewardvideoPortraitADActivity",
+      "rules": [
+        {
+          "key": 0,
+          "matches": "[text=\"腾讯广告\"] >n [id^=\"button_close\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12909822"
+        },
+        {
+          "preKeys": 0,
+          "key": 1,
+          "matches": "[id=\"com.tencent.mtt:id/reward_dialog_close\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12908955"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

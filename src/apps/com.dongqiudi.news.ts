@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -171,6 +171,57 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/19666282"
         }
       ]
+    },
+    {
+      "key": 1,
+      "name": "青少年模式",
+      "activityIds": "com.dongqiudi.news.MainActivity",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "rules": "[text*=\"青少年模式\"] + [id=\"com.dongqiudi.news:id/tv_know\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12621980",
+      "enable": false
+    },
+    {
+      "enable": false,
+      "key": 3000,
+      "name": "局部广告-首页信息流广告",
+      "desc": "点击广告卡片x关闭按钮-关闭反馈理由弹窗",
+      "activityIds": "com.dongqiudi.news.MainActivity",
+      "fastQuery": true,
+      "rules": [
+        {
+          "preKeys": [
+            1,
+            2
+          ],
+          "name": "首页信息流广告-反馈理由",
+          "matches": "TextView[text=\"诱导点击\"][id=\"com.dongqiudi.news:id/text_item\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12620656"
+        },
+        {
+          "key": 1,
+          "matches": "TextView[id=\"com.dongqiudi.news:id/ads_label\"] +(n) ImageView[id=\"com.dongqiudi.news:id/feedback_close\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12620654"
+        },
+        {
+          "key": 2,
+          "matches": "TextView[id=\"com.dongqiudi.news:id/ads_title\"] +(2) RelativeLayout > ImageView[id=\"com.dongqiudi.news:id/feedback_close\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12620788"
+        }
+      ]
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-首页-广告弹窗",
+      "desc": "点击底部【x】关闭",
+      "activityIds": "com.dongqiudi.news.MainActivity",
+      "fastQuery": true,
+      "rules": "[id=\"com.dongqiudi.news:id/iv_close\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13260467",
+      "enable": false
     }
   ]
 } as any);

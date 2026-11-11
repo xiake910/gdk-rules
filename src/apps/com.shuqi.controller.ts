@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -41,6 +41,74 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/23831956"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-内部右侧浮动广告",
+      "activityIds": "com.shuqi.home.MainActivity",
+      "rules": "[id=\"com.shuqi.controller:id/promotion_close\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12513811",
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "全屏广告-关闭打卡红包弹窗",
+      "activityIds": "com.shuqi.common",
+      "rules": "[id=\"com.shuqi.controller:id/bottomCloseImg\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12513822",
+      "enable": false
+    },
+    {
+      "key": 2,
+      "name": "局部广告-阅读页面底部广告",
+      "desc": "点击关闭x图标-关闭优惠券弹窗-关闭当前广告",
+      "rules": [
+        {
+          "key": 0,
+          "activityIds": "com.shuqi.android.ui.dialog",
+          "matches": "[id=\"com.shuqi.controller:id/right_close_ad_text\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12513893"
+        },
+        {
+          "key": 1,
+          "activityIds": "com.shuqi.monthlypay.view",
+          "matches": [
+            "[text*=\"优惠券\"]",
+            "[id=\"com.shuqi.controller:id/close_btn\"]"
+          ],
+          "snapshotUrls": "https://i.gkd.li/import/12513908"
+        },
+        {
+          "key": 2,
+          "activityIds": "com.shuqi.reader.ShuqiReaderActivity",
+          "matches": "@ImageView[clickable=true] - RelativeLayout [id=\"com.shuqi.controller:id/noah_tv_stencil_native_source\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12513860"
+        },
+        {
+          "key": 3,
+          "activityIds": "com.shuqi.reader.ShuqiReaderActivity",
+          "matches": "[id=\"com.shuqi.controller:id/banner_container_ad\"] >n RelativeLayout + ImageView",
+          "snapshotUrls": "https://i.gkd.li/import/12901429"
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3,
+      "name": "局部广告-听书页面底部广告",
+      "desc": "点击卡片右上角关闭按钮-点击底部中间<关闭当前广告>",
+      "activityIds": "com.shuqi.audio.online.view.AudioBookActivity",
+      "rules": [
+        {
+          "matches": "[id=\"com.shuqi.controller:id/remove_current_ad\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12513959"
+        },
+        {
+          "matches": "[id=\"com.shuqi.controller:id/ad_close_but\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12513944"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

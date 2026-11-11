@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -175,6 +175,57 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/14810042"
         }
       ]
+    },
+    {
+      "enable": false,
+      "key": 3000,
+      "name": "全屏广告-首页推荐卡片广告",
+      "desc": "需二次点击关闭原因",
+      "fastQuery": true,
+      "activityIds": "com.ss.android.auto.activity.SplashActivity",
+      "rules": [
+        {
+          "key": 0,
+          "name": "点击【x】",
+          "matches": "TextView[text.length=1][id=null][clickable=false] < @FrameLayout[clickable=true][id!=null] - LinearLayout > [text=\"广告\"]",
+          "snapshotUrls": "https://i.gkd.li/import/12660816"
+        },
+        {
+          "preKeys": 1,
+          "name": "点击【不感兴趣】1",
+          "matches": "@ViewGroup[clickable=true] TextView[text=\"不感兴趣\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13538627"
+        },
+        {
+          "preKeys": 1,
+          "name": "点击【不感兴趣】2",
+          "matches": "[text=\"不感兴趣\"][clickable=true]",
+          "snapshotUrls": "https://i.gkd.li/import/12711589"
+        }
+      ]
+    },
+    {
+      "key": 3001,
+      "name": "局部广告-文章底部卡片式广告",
+      "fastQuery": true,
+      "activityIds": "com.ss.android.article.base.feature.detail2.view.NewDetailActivity",
+      "rules": "FrameLayout > RelativeLayout > @ImageView[clickable=true] + [text=\"广告\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12811597",
+      "enable": false
+    },
+    {
+      "key": 3002,
+      "name": "权限提示-请求推送通知弹窗",
+      "fastQuery": true,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "activityIds": [
+        "com.ss.android.auto.activity.SplashActivity",
+        "com.ss.android.auto.policy.AutoPrivacyActivity"
+      ],
+      "rules": "@TextView[clickable=true] + [text^=\"打开推送通知\"]",
+      "snapshotUrls": "https://i.gkd.li/import/12840664",
+      "enable": false
     }
   ]
 } as any);

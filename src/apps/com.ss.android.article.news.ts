@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -256,6 +256,125 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/17681713"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "功能类-[下次打开APP默认进入发现频道]弹窗",
+      "desc": "点击取消",
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "rules": [
+        {
+          "fastQuery": true,
+          "activityIds": "com.ss.android.article.news.activity.MainActivity",
+          "matches": "[text^=\"下次打开APP默认进入\"]",
+          "exampleUrls": "https://m.gkd.li/57941037/6166519d-d38d-49c0-b54b-72c25670aa24",
+          "snapshotUrls": "https://i.gkd.li/i/15102876"
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3001,
+      "name": "全屏广告-请求通知权限弹窗",
+      "activityIds": [
+        "com.ss.android.article.news.activity.MainActivity"
+      ],
+      "rules": [
+        {
+          "matches": "[text^=\"开启通知\"] + LinearLayout > [text=\"暂不开启\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12706699"
+          ]
+        },
+        {
+          "matches": "[text^=\"开启通知\"] < LinearLayout +2 ImageView[desc=\"关闭\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12840217"
+          ]
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3002,
+      "name": "局部广告-信息流广告",
+      "desc": "点击右上角x按钮,点击不感兴趣",
+      "rules": [
+        {
+          "name": "点击右上角x按钮",
+          "key": 0,
+          "activityIds": [
+            "com.ss.android.article.news.activity.MainActivity",
+            "com.bytedance.ugc.innerfeed.impl.PostInnerFeedActivity"
+          ],
+          "matches": "UIView[text^=\"不感兴趣\"][visibleToUser=true]",
+          "action": "clickCenter",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12733098",
+            "https://i.gkd.li/import/12755264",
+            "https://i.gkd.li/import/12836272",
+            "https://i.gkd.li/import/12840162",
+            "https://i.gkd.li/import/13093576",
+            "https://i.gkd.li/import/12733098"
+          ],
+          "exampleUrls": [
+            "https://user-images.githubusercontent.com/44717382/273436460-cf007525-81ce-418b-ac05-3bfd75a627fe.gif"
+          ]
+        },
+        {
+          "name": "点击不感兴趣",
+          "preKeys": 0,
+          "key": 1,
+          "activityIds": [
+            "com.ss.android.article.news.activity.MainActivity",
+            "com.bytedance.ugc.innerfeed.impl.PostInnerFeedActivity"
+          ],
+          "matches": "@ViewGroup[clickable=true] > ImageView + TextView[text=\"不感兴趣\"]",
+          "action": "clickCenter",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/12733152",
+            "https://i.gkd.li/import/12755265"
+          ]
+        }
+      ]
+    },
+    {
+      "enable": false,
+      "key": 3003,
+      "name": "全屏广告-自动观看广告视频",
+      "desc": "自动观看广告并等待30s后关闭",
+      "fastQuery": true,
+      "rules": [
+        {
+          "key": 0,
+          "name": "点击【看视频】",
+          "activityIds": "com.ss.android.article.news.activity.MainActivity",
+          "matches": "[id=\"com.bytedance.novel.api:id/component_ad_dialog_button_video\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13402468"
+        },
+        {
+          "name": "等待30s点击【关闭】",
+          "actionDelay": 30000,
+          "activityIds": "com.ss.android.excitingvideo.ExcitingVideoActivity",
+          "matches": "UIText[text=\"广告\"] +n UIText[text=\"关闭\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13402480"
+        }
+      ]
+    },
+    {
+      "key": 3004,
+      "fastQuery": true,
+      "name": "局部广告-局部广告-底部热榜弹窗",
+      "desc": "点击X",
+      "rules": [
+        {
+          "activityIds": "com.ss.android.article.news.activity.MainActivity",
+          "matches": "@FlattenUIImage[clickable=true] <n FrameLayout <<2 FrameLayout - LinearLayout [text=\"首页\"]",
+          "snapshotUrls": "https://i.gkd.li/import/13828331"
+        }
+      ],
+      "enable": false
     }
   ]
 } as any);

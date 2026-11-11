@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -100,6 +100,34 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/18530006"
         }
       ]
+    },
+    {
+      "enable": false,
+      "key": 10,
+      "name": "全屏广告-开门有奖弹窗",
+      "activityIds": "com.qinlin.edoor.MainActivity",
+      "rules": "[desc=\"开门有奖\"] +2 [desc=\"立即领取\"] + ImageView",
+      "snapshotUrls": "https://i.gkd.li/import/12707736"
+    },
+    {
+      "enable": false,
+      "key": 11,
+      "name": "全屏广告-获得金币弹窗",
+      "activityIds": "com.qinlin.edoor.MainActivity",
+      "rules": [
+        "[desc=\"获得金币\"] +3 [desc=\"开心收下\"] + ImageView"
+      ],
+      "snapshotUrls": [
+        "https://i.gkd.li/import/12707738"
+      ]
+    },
+    {
+      "key": 12,
+      "name": "全屏广告-开门成功后广告弹窗",
+      "desc": "来自【腾讯广告sdk】",
+      "rules": "[vid=\"interact_ad_root\"] >2 [vid=\"iv_close\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13932707",
+      "enable": false
     }
   ]
 } as any);

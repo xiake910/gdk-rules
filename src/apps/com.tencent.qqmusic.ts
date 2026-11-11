@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -267,6 +267,59 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/18410610"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "局部广告-广告卡片",
+      "activityIds": "com.tencent.qqmusic.activity.AppStarterActivity",
+      "rules": [
+        {
+          "key": 2,
+          "matches": "[text=\"广告\"] +n [desc=\"关闭\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13206534",
+            "https://i.gkd.li/import/13797001"
+          ]
+        },
+        {
+          "key": 3,
+          "matches": "@ImageView - ImageView - RelativeLayout >n [text=\"听歌入会赢绿钻\"||text=\"摇动点击广告跳转\"]",
+          "snapshotUrls": [
+            "https://i.gkd.li/import/13206982",
+            "https://i.gkd.li/import/13218134"
+          ]
+        }
+      ],
+      "enable": false
+    },
+    {
+      "key": 3001,
+      "name": "局部广告-首页-底部广告弹窗",
+      "fastQuery": true,
+      "activityIds": "com.tencent.qqmusic.activity.TranslucentWebViewActivity",
+      "rules": "View[id=\"js_close_btn\"][desc=\"关闭\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13115121",
+      "enable": false
+    },
+    {
+      "key": 3002,
+      "name": "全屏广告-内测体验弹窗",
+      "desc": "点击[不再提醒]",
+      "activityIds": "com.tencent.qqmusic.activity.AppStarterActivity",
+      "fastQuery": true,
+      "rules": "[text=\"抢先体验\"] -2 [text=\"不再提醒\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13178485",
+      "enable": false
+    },
+    {
+      "key": 4,
+      "name": "全屏广告-免流弹窗",
+      "desc": "点击[流量够用]",
+      "activityIds": "com.tencent.qqmusic.activity.AppStarterActivity",
+      "fastQuery": true,
+      "rules": "[text=\"流量够用\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13197868",
+      "enable": false
     }
   ]
 } as any);

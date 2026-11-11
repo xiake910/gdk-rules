@@ -1,4 +1,4 @@
-// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+// 自动生成, 请勿手改（规则来源: 667 v631 (镜像 gkd667.vv.ax) + AIsouler v406 (已停更) + 甘霖 v72 (MIT)）
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
@@ -37,6 +37,15 @@ export default defineGkdApp({
           "snapshotUrls": "https://i.gkd.li/i/13401991"
         }
       ]
+    },
+    {
+      "key": 3000,
+      "name": "全屏广告-请求通知权限弹窗",
+      "activityIds": "com.lenovo.leos.appstore.activities.NotificationGuideActivity",
+      "fastQuery": true,
+      "rules": "[text$=\"打开应用中心通知\"] +n [text=\"知道了\"]",
+      "snapshotUrls": "https://i.gkd.li/import/13401991",
+      "enable": false
     }
   ]
 } as any);
