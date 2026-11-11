@@ -12,7 +12,7 @@
     "format": "prettier --cache --write --ignore-unknown .",
     "lint": "eslint --cache --fix .",
     "check": "tsc --noEmit && tsx ./scripts/check.ts",
-    "build": "tsc --noEmit && tsx ./scripts/build.ts"
+    "build": "tsc --noEmit && tsx ./scripts/build.ts && node scripts/build-variants.cjs"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec lint-staged",
