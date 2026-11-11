@@ -2,7 +2,24 @@
 
 合并多个公开订阅（去重）的 GKD 订阅：**1056 个 App / 3508 个规则组 / 5432 条规则**。
 
-📄 更新日志：[CHANGELOG.md](CHANGELOG.md) ｜ 来源授权：[SOURCES.md](SOURCES.md)
+---
+
+## ⚠️ 来源与授权（请先看）
+
+本订阅**不是原创**，规则来自以下公开订阅，去重合并而来：
+
+| 来源 | 版本 | 许可证 | 取用范围 |
+|---|---|---|---|
+| id667 的 GKD 订阅<br>（镜像 `gkd667.vv.ax`，上游 [Lin-arm/GKD_subscription](https://github.com/Lin-arm/GKD_subscription)） | v631 | **未声明** | 主体规则 |
+| [AIsouler/GKD_subscription](https://github.com/AIsouler/GKD_subscription) | v406（已停更） | **未声明** | 仅 72 个不重复的组 |
+| [ganlinte/GKD-subscription](https://github.com/ganlinte/GKD-subscription) | v72 | **MIT** | 53 个新 App + 926 个不重复的组 |
+| 本项目自写 | — | — | 红果短剧 / B站 补充规则 |
+
+> **id667 与 AIsouler 的订阅没有声明开源许可证，规则版权归原作者。**
+> 本项目仅供**个人自用 / 离线备份**，请勿公开分发或商用；原作者如有异议，请删除对应部分。
+> 甘霖订阅为 MIT，保留其署名。完整取用范围、跳过的同名组数量见 [SOURCES.md](SOURCES.md)。
+
+---
 
 ## 订阅地址（选一个）
 
@@ -43,6 +60,7 @@ https://raw.githubusercontent.com/xiake910/gdk-rules/v10/dist/gkd.json5
 
 - 两个版本订阅 id 不同，**不要同时添加**。
 - 之前加过旧地址的，请**删除订阅后重新添加**（否则 GKD 保留旧的启用状态）。
+- 合并结果不会自动跟随上游更新，上游更新后需重新合并构建。
 
 ## 本地构建
 
@@ -50,3 +68,18 @@ https://raw.githubusercontent.com/xiake910/gdk-rules/v10/dist/gkd.json5
 pnpm install
 pnpm run build   # 生成 dist/gkd.json5(精简) + dist/gkd-full.json5(全量)
 ```
+
+---
+
+## 更新日志
+
+| 版本 | 日期 | 主要变化 |
+|---|---|---|
+| **v10** | 2026-11-11 | 精简版默认开启**全部广告类**规则（2145 组）；订阅地址改用 `@v10` 标签 |
+| v9 | 2026-11-11 | 改为「只开开屏广告」222 组；新增全量版；补 SOURCES.md |
+| v8 | 2026-11-11 | 仓库更名 `gdk-rules`，订阅名改「GDK规则」 |
+| v7 | 2026-11-11 | 合并 AIsouler（72 组）、甘霖（53 App + 926 组）去重部分 |
+| v6 | 2026-11-11 | 全量合并 id667 订阅（1003 App / 2510 组 / 3962 条） |
+| v1–v5 | 2026-11-11 | 搭建工程、加自写规则（红果 / B站）、发布到 GitHub |
+
+完整记录：[CHANGELOG.md](CHANGELOG.md)
