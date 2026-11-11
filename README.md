@@ -4,23 +4,15 @@
 
 - 订阅 ID：`2026111101`（随机大数字，避免和别人的订阅冲突）
 - 作者：`xiake910`
-- 仓库：`https://github.com/xiake910/gkd-subscription`
+- 仓库：`https://github.com/xiake910/gdk-`
 - 构建产物：`dist/gkd.json5`（GKD 里添加这个文件的地址即可）
 
-## 目录结构
+## 订阅地址（GKD 里粘贴这两个之一）
 
-```
-src/
-  subscription.ts   订阅详情（id / 名称 / 作者 / 链接）
-  globalGroups.ts   全局规则组（对所有 App 生效，默认留空）
-  categories.ts     规则分类（按名字前缀捕获规则组）
-  apps/             各 App 的规则，一个 App 一个文件
-    com.example.demo.ts   示例规则（可删掉换成自己的）
-    li.songe.gkd.ts       GKD 自身的空占位
-scripts/            构建/校验脚本
-dist/               构建产物（gkd.json5、版本文件、CHANGELOG、README）
-.github/workflows/  GitHub Actions（构建发布、提交检查）
-```
+- 直连：
+  `https://raw.githubusercontent.com/xiake910/gdk-/main/dist/gkd.json5`
+- 国内镜像（推荐）：
+  `https://fastly.jsdelivr.net/gh/xiake910/gdk-@main/dist/gkd.json5`
 
 ## 当前规则
 
@@ -36,9 +28,22 @@ dist/               构建产物（gkd.json5、版本文件、CHANGELOG、README
 > 红果的「功能类」组默认关闭，需要时在 GKD → 订阅 → 本订阅里单独打开。
 > B站只写了最不容易误触的两组，其他广告位要按真机快照加。
 
+## 目录结构
+
+```
+src/
+  subscription.ts   订阅详情（id / 名称 / 作者 / 链接）
+  globalGroups.ts   全局规则组（对所有 App 生效，默认留空）
+  categories.ts     规则分类（按名字前缀捕获规则组）
+  apps/             各 App 的规则，一个 App 一个文件
+scripts/            构建/校验脚本
+dist/               构建产物（gkd.json5、版本文件、CHANGELOG、README）
+.github/workflows/  GitHub Actions（构建发布、提交检查）
+```
+
 ## 本地构建
 
-需要 **Node.js ≥ 22**（工程按 26 写的，22 以上都行）和 **pnpm ≥ 9**：
+需要 **Node.js ≥ 22** 和 **pnpm ≥ 9**：
 
 ```bash
 pnpm install
@@ -56,26 +61,13 @@ pnpm install --registry=https://registry.npmmirror.com
 - 用 Node 22+ 的 WasmGc 校验选择器里的 Java/Kotlin 正则是否合法
 - 把 `src/` 合并成 `dist/gkd.json5`，版本号自动 +1，更新 `CHANGELOG.md`
 
-## 发布到 GitHub（第一次）
+## 改了规则之后怎么发布
 
-1. 新建仓库 `gkd-subscription`（不要勾选自动生成 README）
-2. 把这个目录里的**除 `node_modules` 以外**的所有文件传上去：
-   - 网页版：仓库页 → Add file → Upload files，把 `src`、`dist`、`scripts`、`.github`、`package.json`、`pnpm-lock.yaml`、`pnpm-workspace.yaml`、`tsconfig.json`、`eslint.config.ts`、`prettier.config.ts`、`.gitignore`、`.prettierignore` 拖进去（拖文件夹会保留子目录结构）
-   - 或者用 GitHub Desktop / git 命令行提交
-3. 打开 **Settings → Actions → General → Workflow permissions**，选 **Read and write permissions** 并保存
-   （构建成功后要自动 commit 回仓库，没有写权限会失败）
-4. 打开 **Actions → build_release → Run workflow**，跑完 `dist/gkd.json5` 和版本号会自动更新并 commit
-
-## 在 GKD 里添加订阅
-
-- 官方地址（国内常打不开 raw）：
-  `https://raw.githubusercontent.com/xiake910/gkd-subscription/main/dist/gkd.json5`
-- jsDelivr 镜像（推荐国内用）：
-  `https://fastly.jsdelivr.net/gh/xiake910/gkd-subscription@main/dist/gkd.json5`
-
-GKD → 订阅 → 右上角 `+` → 粘贴上面的地址。
-
-> 因为 `checkUpdateUrl` 用的是相对路径 `./gkd.version.json5`，GKD 会基于你填的订阅地址自动拼出更新检查地址，两个源都能正常检查更新。
+1. 改 `src/` 下对应文件
+2. 本地 `pnpm run build`，把 `src/` 和 `dist/` 的改动提交到 GitHub
+3. 也可以在仓库 **Actions → build_release → Run workflow** 让 GitHub 自动构建并提交
+   （需要先在 Settings → Actions → General → Workflow permissions 选 **Read and write permissions**）
+4. GKD 会自动检查更新：`checkUpdateUrl` 是相对路径 `./gkd.version.json5`，跟着订阅地址走
 
 ## 加自己的规则
 
