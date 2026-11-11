@@ -1,0 +1,23 @@
+// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+import { defineGkdApp } from '@gkd-kit/define';
+
+export default defineGkdApp({
+  "id": "com.pandabus.android.zb",
+  "name": "淄博出行",
+  "groups": [
+    {
+      "key": 3,
+      "name": "全屏广告-弹窗广告",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "rules": [
+        {
+          "matches": "[vid=\"iv_native_dislike\"]",
+          "snapshotUrls": "https://i.gkd.li/i/13400177"
+        }
+      ]
+    }
+  ]
+} as any);

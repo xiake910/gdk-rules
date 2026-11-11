@@ -1,0 +1,28 @@
+// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+import { defineGkdApp } from '@gkd-kit/define';
+
+export default defineGkdApp({
+  "id": "ai.ling.luka.app",
+  "name": "Luka阅读养成",
+  "groups": [
+    {
+      "key": 1,
+      "name": "权限提示-通知权限",
+      "desc": "点击[取消]",
+      "fastQuery": true,
+      "matchTime": 10000,
+      "actionMaximum": 1,
+      "resetMatch": "app",
+      "rules": [
+        {
+          "activityIds": ".page.activity.MainActivity",
+          "matches": [
+            "[text=\"通知服务未开启\"]",
+            "[text=\"取消\"]"
+          ],
+          "snapshotUrls": "https://i.gkd.li/i/15796616"
+        }
+      ]
+    }
+  ]
+} as any);

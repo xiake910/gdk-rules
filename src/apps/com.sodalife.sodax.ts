@@ -1,0 +1,32 @@
+// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+import { defineGkdApp } from '@gkd-kit/define';
+
+export default defineGkdApp({
+  "id": "com.sodalife.sodax",
+  "name": "苏打校园",
+  "groups": [
+    {
+      "key": 1,
+      "name": "全屏广告-弹窗广告",
+      "rules": [
+        {
+          "key": 1,
+          "name": "字节广告",
+          "activityIds": "com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity",
+          "matches": "@Image < View +3 View > View > TextView[text$=\"广告\"]",
+          "snapshotUrls": "https://i.gkd.li/i/13400643"
+        },
+        {
+          "key": 10,
+          "name": "双十一广告",
+          "matchTime": 10000,
+          "actionMaximum": 1,
+          "resetMatch": "app",
+          "activityIds": ".libraries.ads.gromore.GroMoreSplashActivity",
+          "matches": "ViewGroup[childCount=2] > ViewGroup + ViewGroup[clickable=true][childCount=1]",
+          "snapshotUrls": "https://i.gkd.li/i/13400653"
+        }
+      ]
+    }
+  ]
+} as any);

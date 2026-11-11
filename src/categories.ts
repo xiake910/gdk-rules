@@ -1,15 +1,56 @@
+// 自动生成, 请勿手改（分类来自 id667 订阅 + 本项目）
 import { defineGkdCategories } from '@gkd-kit/define';
 
-/**
- * 规则分类: 名字是「前缀匹配」的
- * 例如 name 为 `开屏广告` 的分类, 会捕获名字以 `开屏广告` 开头的所有规则组
- * (如 `开屏广告`、`开屏广告-1`、`开屏广告-2`)
- *
- * 用户在 GKD 里可以按分类一键启用/禁用, 所以建议给你的规则组起一个统一前缀
- */
 export default defineGkdCategories([
-  { key: 1, name: '开屏广告' },
-  { key: 2, name: '更新提示' },
-  { key: 3, name: '权限提示' },
-  { key: 4, name: '功能类' },
-]);
+  {
+    "key": 1,
+    "name": "开屏广告"
+  },
+  {
+    "key": 2,
+    "name": "更新提示"
+  },
+  {
+    "key": 3,
+    "name": "权限提示"
+  },
+  {
+    "key": 4,
+    "name": "功能类"
+  },
+  {
+    "key": 104,
+    "name": "青少年模式",
+    "enable": false
+  },
+  {
+    "key": 105,
+    "name": "评价提示",
+    "enable": false
+  },
+  {
+    "key": 106,
+    "name": "通知提示",
+    "enable": false
+  },
+  {
+    "key": 107,
+    "name": "局部广告",
+    "enable": false
+  },
+  {
+    "key": 108,
+    "name": "全屏广告",
+    "enable": false
+  },
+  {
+    "key": 109,
+    "name": "分段广告",
+    "enable": false
+  },
+  {
+    "key": 110,
+    "name": "其他",
+    "enable": false
+  }
+] as any);

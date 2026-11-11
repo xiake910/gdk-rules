@@ -1,0 +1,33 @@
+// 自动生成, 请勿手改（规则来源: id667 订阅 v631, 合并时间 2026-11-11）
+import { defineGkdApp } from '@gkd-kit/define';
+
+export default defineGkdApp({
+  "id": "com.youloft.icloser",
+  "name": "心动日常",
+  "groups": [
+    {
+      "key": 1,
+      "name": "全屏广告-购买会员弹窗广告",
+      "rules": [
+        {
+          "fastQuery": true,
+          "activityIds": ".view.dialog.VipRetainPacketDialog",
+          "matches": "[vid=\"tv_later_buy\"]",
+          "snapshotUrls": "https://i.gkd.li/i/13067183"
+        }
+      ]
+    },
+    {
+      "key": 2,
+      "name": "局部广告-右下角悬浮窗小广告",
+      "rules": [
+        {
+          "fastQuery": true,
+          "activityIds": ".activity.MainActivity",
+          "matches": "[vid=\"iv_close\"]",
+          "snapshotUrls": "https://i.gkd.li/i/13164387"
+        }
+      ]
+    }
+  ]
+} as any);
