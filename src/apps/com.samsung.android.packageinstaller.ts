@@ -2,90 +2,70 @@
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
-  "id": "com.samsung.android.packageinstaller",
-  "name": "(三星)软件包安装程序",
-  "groups": [
+  id: 'com.samsung.android.packageinstaller',
+  name: '(三星)软件包安装程序',
+  groups: [
     {
-      "key": 1,
-      "name": "局部广告",
-      "desc": "x掉",
-      "rules": [
+      key: 1,
+      name: '局部广告',
+      desc: 'x掉',
+      rules: [
         {
-          "fastQuery": true,
-          "activityIds": "com.android.packageinstaller.PackageInstallerActivity",
-          "matches": "@[clickable=true][id$=\"close\"] - [text=\"广告\"]",
-          "snapshotUrls": "https://i.gkd.li/i/32292609",
-          "exampleUrls": "https://e.gkd.li/03f085e3-c1ca-4d0a-9b54-8dfadcbf2c8e"
-        }
+          fastQuery: true,
+          activityIds: 'com.android.packageinstaller.PackageInstallerActivity',
+          matches: '@[clickable=true][id$="close"] - [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/32292609',
+          exampleUrls: 'https://e.gkd.li/03f085e3-c1ca-4d0a-9b54-8dfadcbf2c8e',
+        },
       ],
-      "enable": true
+      enable: true,
     },
     {
-      "key": 2,
-      "name": "功能类-跳过安全使用协议",
-      "desc": "自动点击略过并关闭反恶意软件协议",
-      "fastQuery": true,
-      "rules": [
+      key: 2,
+      name: '功能类-跳过安全使用协议',
+      desc: '自动点击略过并关闭反恶意软件协议',
+      fastQuery: true,
+      rules: [
         {
-          "key": 0,
-          "matches": [
-            "[text^=\"是否打开反恶意软件\"]",
-            "[text=\"取消\"]"
-          ],
-          "snapshotUrls": "https://i.gkd.li/i/13233686"
+          key: 0,
+          matches: ['[text^="是否打开反恶意软件"]', '[text="取消"]'],
+          snapshotUrls: 'https://i.gkd.li/i/13233686',
         },
         {
-          "key": 1,
-          "matches": "[text=\"略过\"]",
-          "snapshotUrls": "https://i.gkd.li/i/13255641"
+          key: 1,
+          matches: '[text="略过"]',
+          snapshotUrls: 'https://i.gkd.li/i/13255641',
         },
         {
-          "key": 2,
-          "matches": [
-            "[text^=\"打开应用程序保护?\"]",
-            "[text=\"取消\"]"
-          ],
-          "snapshotUrls": "https://i.gkd.li/i/13650528"
-        }
+          key: 2,
+          matches: ['[text^="打开应用程序保护?"]', '[text="取消"]'],
+          snapshotUrls: 'https://i.gkd.li/i/13650528',
+        },
       ],
-      "enable": false
+      enable: false,
     },
     {
-      "name": "全屏广告-跳过安全使用协议",
-      "key": 3000,
-      "desc": "自动点击略过并关闭反恶意软件协议",
-      "enable": true,
-      "rules": [
+      name: '全屏广告-跳过安全使用协议',
+      key: 3000,
+      desc: '自动点击略过并关闭反恶意软件协议',
+      enable: true,
+      rules: [
         {
-          "key": 1,
-          "matches": [
-            "[text *=\"略过\"]"
-          ],
-          "snapshotUrls": [
-            "https://i.gkd.li/import/13255641"
-          ]
+          key: 1,
+          matches: ['[text *="略过"]'],
+          snapshotUrls: ['https://i.gkd.li/import/13255641'],
         },
         {
-          "key": 0,
-          "matches": [
-            "[text^=\"是否打开反恶意软件\"]",
-            "[text=\"取消\"]"
-          ],
-          "snapshotUrls": [
-            "https://i.gkd.li/import/13233686"
-          ]
+          key: 0,
+          matches: ['[text^="是否打开反恶意软件"]', '[text="取消"]'],
+          snapshotUrls: ['https://i.gkd.li/import/13233686'],
         },
         {
-          "key": 2,
-          "matches": [
-            "[text^=\"打开应用程序保护?\"]",
-            "[text=\"取消\"]"
-          ],
-          "snapshotUrls": [
-            "https://i.gkd.li/import/13650528"
-          ]
-        }
-      ]
-    }
-  ]
+          key: 2,
+          matches: ['[text^="打开应用程序保护?"]', '[text="取消"]'],
+          snapshotUrls: ['https://i.gkd.li/import/13650528'],
+        },
+      ],
+    },
+  ],
 } as any);

@@ -2,25 +2,25 @@
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
-  "id": "com.example.maintenancemaster",
-  "name": "维护大师",
-  "groups": [
+  id: 'com.example.maintenancemaster',
+  name: '维护大师',
+  groups: [
     {
-      "key": 0,
-      "name": "开屏广告",
-      "fastQuery": true,
-      "matchTime": 10000,
-      "actionMaximum": 1,
-      "resetMatch": "app",
-      "priorityTime": 10000,
-      "rules": [
+      key: 0,
+      name: '开屏广告',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      priorityTime: 10000,
+      rules: [
         {
-          "matches": "[vid=\"advertisement_countdown_ccd\"]",
-          "snapshotUrls": "https://i.gkd.li/i/12903877"
-        }
+          matches: '[vid="advertisement_countdown_ccd"]',
+          snapshotUrls: 'https://i.gkd.li/i/12903877',
+        },
       ],
-      "order": -10,
-      "enable": true
-    }
-  ]
+      order: -10,
+      enable: true,
+    },
+  ],
 } as any);

@@ -2,51 +2,49 @@
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
-  "id": "com.xiaomi.mico",
-  "name": "小爱音箱",
-  "groups": [
+  id: 'com.xiaomi.mico',
+  name: '小爱音箱',
+  groups: [
     {
-      "key": 1,
-      "name": "全屏广告-首页弹窗广告",
-      "fastQuery": true,
-      "matchTime": 10000,
-      "actionMaximum": 1,
-      "resetMatch": "app",
-      "rules": [
+      key: 1,
+      name: '全屏广告-首页弹窗广告',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
         {
-          "activityIds": ".main.MainActivity",
-          "matches": "[vid=\"adImage\"] + [vid=\"ivCloseAd\"]",
-          "snapshotUrls": "https://i.gkd.li/i/12745621"
-        }
+          activityIds: '.main.MainActivity',
+          matches: '[vid="adImage"] + [vid="ivCloseAd"]',
+          snapshotUrls: 'https://i.gkd.li/i/12745621',
+        },
       ],
-      "enable": true
+      enable: true,
     },
     {
-      "key": 2,
-      "name": "权限提示-请求开启定位权限弹窗",
-      "fastQuery": true,
-      "matchTime": 10000,
-      "actionMaximum": 1,
-      "resetMatch": "app",
-      "rules": [
+      key: 2,
+      name: '权限提示-请求开启定位权限弹窗',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
         {
-          "activityIds": ".main.MainActivity",
-          "matches": [
-            "[text*=\"开启位置服务\"]",
-            "[text=\"取消\"]"
-          ],
-          "snapshotUrls": "https://i.gkd.li/i/15284753"
-        }
+          activityIds: '.main.MainActivity',
+          matches: ['[text*="开启位置服务"]', '[text="取消"]'],
+          snapshotUrls: 'https://i.gkd.li/i/15284753',
+        },
       ],
-      "enable": false
+      enable: false,
     },
     {
-      "key": 3000,
-      "name": "全屏广告-首页广告弹窗",
-      "activityIds": "com.xiaomi.mico.main.MainActivity",
-      "rules": "[id=\"com.xiaomi.mico:id/adImage\"] + [id=\"com.xiaomi.mico:id/ivCloseAd\"]",
-      "snapshotUrls": "https://i.gkd.li/import/12745621",
-      "enable": true
-    }
-  ]
+      key: 3000,
+      name: '全屏广告-首页广告弹窗',
+      activityIds: 'com.xiaomi.mico.main.MainActivity',
+      rules:
+        '[id="com.xiaomi.mico:id/adImage"] + [id="com.xiaomi.mico:id/ivCloseAd"]',
+      snapshotUrls: 'https://i.gkd.li/import/12745621',
+      enable: true,
+    },
+  ],
 } as any);

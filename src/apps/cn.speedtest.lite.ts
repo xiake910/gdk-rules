@@ -2,38 +2,39 @@
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
-  "id": "cn.speedtest.lite",
-  "name": "网速管家极速版",
-  "groups": [
+  id: 'cn.speedtest.lite',
+  name: '网速管家极速版',
+  groups: [
     {
-      "key": 1,
-      "name": "更新提示",
-      "matchTime": 10000,
-      "actionMaximum": 1,
-      "resetMatch": "app",
-      "rules": [
+      key: 1,
+      name: '更新提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
         {
-          "activityIds": ".main.MainActivity",
-          "matches": "@[vid=\"iv_close\"] - [vid=\"ll_main_pane\"] >2 [vid=\"tv_upgrade_content\"]",
-          "snapshotUrls": "https://i.gkd.li/i/12715483"
-        }
+          activityIds: '.main.MainActivity',
+          matches:
+            '@[vid="iv_close"] - [vid="ll_main_pane"] >2 [vid="tv_upgrade_content"]',
+          snapshotUrls: 'https://i.gkd.li/i/12715483',
+        },
       ],
-      "enable": false
+      enable: false,
     },
     {
-      "key": 10,
-      "name": "全屏广告-新人专享优惠弹窗",
-      "matchTime": 10000,
-      "actionMaximum": 1,
-      "resetMatch": "app",
-      "rules": [
+      key: 10,
+      name: '全屏广告-新人专享优惠弹窗',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
         {
-          "activityIds": ".main.MainActivity",
-          "matches": "@[vid=\"iv_close\"] - RelativeLayout >n [vid=\"ad_banner\"]",
-          "snapshotUrls": "https://i.gkd.li/i/12715511"
-        }
+          activityIds: '.main.MainActivity',
+          matches: '@[vid="iv_close"] - RelativeLayout >n [vid="ad_banner"]',
+          snapshotUrls: 'https://i.gkd.li/i/12715511',
+        },
       ],
-      "enable": true
-    }
-  ]
+      enable: true,
+    },
+  ],
 } as any);

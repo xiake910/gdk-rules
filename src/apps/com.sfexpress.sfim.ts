@@ -2,55 +2,55 @@
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
-  "id": "com.sfexpress.sfim",
-  "name": "丰声",
-  "groups": [
+  id: 'com.sfexpress.sfim',
+  name: '丰声',
+  groups: [
     {
-      "key": 10,
-      "name": "功能类-自动确认登录",
-      "desc": "自动点击[登录]按钮",
-      "fastQuery": true,
-      "rules": [
+      key: 10,
+      name: '功能类-自动确认登录',
+      desc: '自动点击[登录]按钮',
+      fastQuery: true,
+      rules: [
         {
-          "key": 0,
-          "activityIds": [
-            ".scan.view.SfScanActivity",
-            ".microservice.commonservice.ui.MicroAppContainerActivity",
-            ".sdkuikit.widget.dialog.NoticeDialog"
+          key: 0,
+          activityIds: [
+            '.scan.view.SfScanActivity',
+            '.microservice.commonservice.ui.MicroAppContainerActivity',
+            '.sdkuikit.widget.dialog.NoticeDialog',
           ],
-          "matches": "@[visibleToUser=true][text=\"登录\"] <<n [vid=\"flContainer\"]",
-          "snapshotUrls": [
-            "https://i.gkd.li/i/12745239",
-            "https://i.gkd.li/i/12745240",
-            "https://i.gkd.li/i/12745241",
-            "https://i.gkd.li/i/14830687"
-          ]
+          matches: '@[visibleToUser=true][text="登录"] <<n [vid="flContainer"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12745239',
+            'https://i.gkd.li/i/12745240',
+            'https://i.gkd.li/i/12745241',
+            'https://i.gkd.li/i/14830687',
+          ],
         },
         {
-          "key": 1,
-          "activityIds": ".middleplatform.ui.SFMiddlePlatformLoginActivity",
-          "matches": "[text=\"登录\"]",
-          "snapshotUrls": "https://i.gkd.li/i/14830682"
-        }
+          key: 1,
+          activityIds: '.middleplatform.ui.SFMiddlePlatformLoginActivity',
+          matches: '[text="登录"]',
+          snapshotUrls: 'https://i.gkd.li/i/14830682',
+        },
       ],
-      "enable": false
+      enable: false,
     },
     {
-      "enable": false,
-      "key": 3000,
-      "name": "功能类-CAS安全认证-自动登录",
-      "desc": "自动点击【登录】按钮",
-      "activityIds": [
-        "com.sfexpress.sfim.scan.view.SfScanActivity",
-        "com.sfexpress.sfim.microservice.commonservice.ui.MicroAppContainerActivity",
-        "com.sfexpress.sfim.sdkuikit.widget.dialog.NoticeDialog"
+      enable: false,
+      key: 3000,
+      name: '功能类-CAS安全认证-自动登录',
+      desc: '自动点击【登录】按钮',
+      activityIds: [
+        'com.sfexpress.sfim.scan.view.SfScanActivity',
+        'com.sfexpress.sfim.microservice.commonservice.ui.MicroAppContainerActivity',
+        'com.sfexpress.sfim.sdkuikit.widget.dialog.NoticeDialog',
       ],
-      "rules": "[text=\"CAS安全认证\"] >n [text=\"登录\"]",
-      "snapshotUrls": [
-        "https://i.gkd.li/import/12745239",
-        "https://i.gkd.li/import/12745240",
-        "https://i.gkd.li/import/12745241"
-      ]
-    }
-  ]
+      rules: '[text="CAS安全认证"] >n [text="登录"]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/12745239',
+        'https://i.gkd.li/import/12745240',
+        'https://i.gkd.li/import/12745241',
+      ],
+    },
+  ],
 } as any);

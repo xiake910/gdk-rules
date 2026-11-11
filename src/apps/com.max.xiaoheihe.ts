@@ -2,129 +2,130 @@
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
-  "id": "com.max.xiaoheihe",
-  "name": "小黑盒",
-  "groups": [
+  id: 'com.max.xiaoheihe',
+  name: '小黑盒',
+  groups: [
     {
-      "key": 1,
-      "name": "功能类-签到成功弹窗",
-      "desc": "返回关闭弹窗",
-      "fastQuery": true,
-      "matchTime": 10000,
-      "actionMaximum": 1,
-      "resetMatch": "app",
-      "rules": [
+      key: 1,
+      name: '功能类-签到成功弹窗',
+      desc: '返回关闭弹窗',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
         {
-          "action": "back",
-          "matches": "[text*=\"签到成功\"][text.length<10]",
-          "snapshotUrls": [
-            "https://i.gkd.li/i/13421535",
-            "https://i.gkd.li/i/15048252"
-          ]
-        }
+          action: 'back',
+          matches: '[text*="签到成功"][text.length<10]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13421535',
+            'https://i.gkd.li/i/15048252',
+          ],
+        },
       ],
-      "enable": false
+      enable: false,
     },
     {
-      "key": 2,
-      "name": "局部广告-卡片广告",
-      "desc": "点击关闭",
-      "rules": [
+      key: 2,
+      name: '局部广告-卡片广告',
+      desc: '点击关闭',
+      rules: [
         {
-          "name": "收藏帖子后底部推荐关注卡片",
-          "fastQuery": true,
-          "activityIds": ".module.bbs.post.ui.activitys.WebNewsPostPageActivity",
-          "matches": "[vid=\"iv_notify_close\"]",
-          "exampleUrls": "https://m.gkd.li/57941037/b7c25b6e-cc77-4bcc-a477-23b3de74c61f",
-          "snapshotUrls": "https://i.gkd.li/i/14914139"
-        }
+          name: '收藏帖子后底部推荐关注卡片',
+          fastQuery: true,
+          activityIds: '.module.bbs.post.ui.activitys.WebNewsPostPageActivity',
+          matches: '[vid="iv_notify_close"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/b7c25b6e-cc77-4bcc-a477-23b3de74c61f',
+          snapshotUrls: 'https://i.gkd.li/i/14914139',
+        },
       ],
-      "enable": true
+      enable: true,
     },
     {
-      "key": 3,
-      "name": "功能类-自动[查看原图]",
-      "desc": "点击[查看原图]",
-      "rules": [
+      key: 3,
+      name: '功能类-自动[查看原图]',
+      desc: '点击[查看原图]',
+      rules: [
         {
-          "fastQuery": true,
-          "activityIds": [
-            ".module.bbs.post.ui.activitys.WebNewsPostPageActivity",
-            ".module.bbs.post.ui.activitys.PicturePostPageActivity",
-            ".module.bbs.post.ui.activitys.v2.PicturePostPageActivityV2",
-            ".module.bbs.post.ui.activitys.v2.WebNewsPostPageActivityV2"
+          fastQuery: true,
+          activityIds: [
+            '.module.bbs.post.ui.activitys.WebNewsPostPageActivity',
+            '.module.bbs.post.ui.activitys.PicturePostPageActivity',
+            '.module.bbs.post.ui.activitys.v2.PicturePostPageActivityV2',
+            '.module.bbs.post.ui.activitys.v2.WebNewsPostPageActivityV2',
           ],
-          "matches": "[vid=\"tv_original\"][clickable=true]",
-          "exampleUrls": "https://e.gkd.li/f7222b21-7037-4614-95ab-cff19ee15d38",
-          "snapshotUrls": [
-            "https://i.gkd.li/i/16646832",
-            "https://i.gkd.li/i/17574462",
-            "https://i.gkd.li/i/25336815",
-            "https://i.gkd.li/i/30749472"
+          matches: '[vid="tv_original"][clickable=true]',
+          exampleUrls: 'https://e.gkd.li/f7222b21-7037-4614-95ab-cff19ee15d38',
+          snapshotUrls: [
+            'https://i.gkd.li/i/16646832',
+            'https://i.gkd.li/i/17574462',
+            'https://i.gkd.li/i/25336815',
+            'https://i.gkd.li/i/30749472',
           ],
-          "excludeSnapshotUrls": "https://i.gkd.li/i/22377026"
-        }
+          excludeSnapshotUrls: 'https://i.gkd.li/i/22377026',
+        },
       ],
-      "enable": false
+      enable: false,
     },
     {
-      "key": 4,
-      "name": "功能类-自动隐藏cy评论",
-      "desc": "进入帖子点击一次[Cy]按钮",
-      "rules": [
+      key: 4,
+      name: '功能类-自动隐藏cy评论',
+      desc: '进入帖子点击一次[Cy]按钮',
+      rules: [
         {
-          "fastQuery": true,
-          "actionMaximum": 1,
-          "activityIds": [
-            ".module.bbs.post.ui.activitys.v2.WebNewsPostPageActivityV2",
-            ".module.bbs.post.ui.activitys.v2.PicturePostPageActivityV2"
+          fastQuery: true,
+          actionMaximum: 1,
+          activityIds: [
+            '.module.bbs.post.ui.activitys.v2.WebNewsPostPageActivityV2',
+            '.module.bbs.post.ui.activitys.v2.PicturePostPageActivityV2',
           ],
-          "matches": "[vid=\"tb_cy_filter\"][text=\"关闭\"][visibleToUser=true]",
-          "snapshotUrls": [
-            "https://i.gkd.li/i/31803161",
-            "https://i.gkd.li/i/31818275"
-          ]
-        }
+          matches: '[vid="tb_cy_filter"][text="关闭"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/31803161',
+            'https://i.gkd.li/i/31818275',
+          ],
+        },
       ],
-      "enable": false
+      enable: false,
     },
     {
-      "key": 3000,
-      "name": "功能类-自动点击查看原图",
-      "rules": [
+      key: 3000,
+      name: '功能类-自动点击查看原图',
+      rules: [
         {
-          "fastQuery": true,
-          "activityIds": [
-            ".module.bbs.post.ui.activitys.WebNewsPostPageActivity",
-            ".module.bbs.post.ui.activitys.PicturePostPageActivity"
+          fastQuery: true,
+          activityIds: [
+            '.module.bbs.post.ui.activitys.WebNewsPostPageActivity',
+            '.module.bbs.post.ui.activitys.PicturePostPageActivity',
           ],
-          "matches": "[vid=\"tv_original\"][visibleToUser=true]",
-          "exampleUrls": "https://e.gkd.li/f7222b21-7037-4614-95ab-cff19ee15d38",
-          "snapshotUrls": [
-            "https://i.gkd.li/i/16646832",
-            "https://i.gkd.li/i/17574462"
+          matches: '[vid="tv_original"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/f7222b21-7037-4614-95ab-cff19ee15d38',
+          snapshotUrls: [
+            'https://i.gkd.li/i/16646832',
+            'https://i.gkd.li/i/17574462',
           ],
-          "excludeSnapshotUrls": "https://i.gkd.li/i/22377026"
-        }
+          excludeSnapshotUrls: 'https://i.gkd.li/i/22377026',
+        },
       ],
-      "enable": false
+      enable: false,
     },
     {
-      "key": 3001,
-      "name": "全屏广告-弹窗_签到成功",
-      "actionMaximum": 1,
-      "resetMatch": "app",
-      "fastQuery": true,
-      "rules": [
+      key: 3001,
+      name: '全屏广告-弹窗_签到成功',
+      actionMaximum: 1,
+      resetMatch: 'app',
+      fastQuery: true,
+      rules: [
         {
-          "matches": [
-            "[text=\"签到成功!\"]",
-            "[id=\"com.max.xiaoheihe:id/tv_confirm\"]"
+          matches: [
+            '[text="签到成功!"]',
+            '[id="com.max.xiaoheihe:id/tv_confirm"]',
           ],
-          "snapshotUrls": "https://i.gkd.li/import/13421535"
-        }
+          snapshotUrls: 'https://i.gkd.li/import/13421535',
+        },
       ],
-      "enable": true
-    }
-  ]
+      enable: true,
+    },
+  ],
 } as any);

@@ -2,30 +2,30 @@
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
-  "id": "com.android.settings",
-  "name": "设置",
-  "groups": [
+  id: 'com.android.settings',
+  name: '设置',
+  groups: [
     {
-      "key": 1,
-      "name": "功能类-选默认USB连接方式",
-      "desc": "(小米华为📱)点击[取消]",
-      "enable": false,
-      "rules": [
+      key: 1,
+      name: '功能类-选默认USB连接方式',
+      desc: '(小米华为📱)点击[取消]',
+      enable: false,
+      rules: [
         {
-          "fastQuery": true,
-          "matches": [
-            "[text=\"USB 用于\" || text=\"USB 连接方式\"][visibleToUser=true]",
-            "[text=\"取消\"][clickable=true]"
+          fastQuery: true,
+          matches: [
+            '[text="USB 用于" || text="USB 连接方式"][visibleToUser=true]',
+            '[text="取消"][clickable=true]',
           ],
-          "snapshotUrls": [
-            "https://i.gkd.li/i/23428639",
-            "https://i.gkd.li/i/23696166",
-            "https://i.gkd.li/i/25351690",
-            "https://i.gkd.li/i/25351689"
+          snapshotUrls: [
+            'https://i.gkd.li/i/23428639',
+            'https://i.gkd.li/i/23696166',
+            'https://i.gkd.li/i/25351690',
+            'https://i.gkd.li/i/25351689',
           ],
-          "exampleUrls": "https://e.gkd.li/1ab102bd-99dd-471a-8841-33a7aaf2790a"
-        }
-      ]
-    }
-  ]
+          exampleUrls: 'https://e.gkd.li/1ab102bd-99dd-471a-8841-33a7aaf2790a',
+        },
+      ],
+    },
+  ],
 } as any);

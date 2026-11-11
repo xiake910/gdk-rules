@@ -2,25 +2,25 @@
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
-  "id": "com.eco.global.app",
-  "name": "ECOVACS HOME",
-  "groups": [
+  id: 'com.eco.global.app',
+  name: 'ECOVACS HOME',
+  groups: [
     {
-      "key": 0,
-      "name": "开屏广告",
-      "fastQuery": true,
-      "matchTime": 10000,
-      "actionMaximum": 1,
-      "resetMatch": "app",
-      "priorityTime": 10000,
-      "rules": [
+      key: 0,
+      name: '开屏广告',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      priorityTime: 10000,
+      rules: [
         {
-          "matches": "ImageView[vid=\"adview_jump\"]",
-          "snapshotUrls": "https://i.gkd.li/i/13538616"
-        }
+          matches: 'ImageView[vid="adview_jump"]',
+          snapshotUrls: 'https://i.gkd.li/i/13538616',
+        },
       ],
-      "order": -10,
-      "enable": true
-    }
-  ]
+      order: -10,
+      enable: true,
+    },
+  ],
 } as any);

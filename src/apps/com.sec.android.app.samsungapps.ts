@@ -2,97 +2,101 @@
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
-  "id": "com.sec.android.app.samsungapps",
-  "name": "(三星)应用商店",
-  "groups": [
+  id: 'com.sec.android.app.samsungapps',
+  name: '(三星)应用商店',
+  groups: [
     {
-      "key": 0,
-      "name": "开屏广告",
-      "fastQuery": true,
-      "matchTime": 10000,
-      "actionMaximum": 1,
-      "resetMatch": "app",
-      "priorityTime": 10000,
-      "rules": [
+      key: 0,
+      name: '开屏广告',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      priorityTime: 10000,
+      rules: [
         {
-          "action": "clickCenter",
-          "matches": "[vid=\"skip\"][visibleToUser=true]",
-          "snapshotUrls": [
-            "https://i.gkd.li/i/14810528",
-            "https://i.gkd.li/i/18329468"
-          ]
-        }
-      ],
-      "order": -10,
-      "enable": true
-    },
-    {
-      "key": 1,
-      "name": "其他-[是否年满18岁]弹窗",
-      "desc": "点击[是]",
-      "rules": [
-        {
-          "fastQuery": true,
-          "activityIds": [
-            ".SearchResultActivity",
-            ".SamsungAppsMainActivity",
-            ".updatelist.UpdateListActivity"
+          action: 'clickCenter',
+          matches: '[vid="skip"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14810528',
+            'https://i.gkd.li/i/18329468',
           ],
-          "matches": "[text*=\"年满 18 岁\"] +4 [vid=\"positive\"]",
-          "snapshotUrls": [
-            "https://i.gkd.li/i/14473690",
-            "https://i.gkd.li/i/33385203",
-            "https://i.gkd.li/i/33868896"
+        },
+      ],
+      order: -10,
+      enable: true,
+    },
+    {
+      key: 1,
+      name: '其他-[是否年满18岁]弹窗',
+      desc: '点击[是]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: [
+            '.SearchResultActivity',
+            '.SamsungAppsMainActivity',
+            '.updatelist.UpdateListActivity',
           ],
-          "exampleUrls": "https://e.gkd.li/1417cf6c-e06d-4565-ab2e-eae6a713f1f1"
-        }
+          matches: '[text*="年满 18 岁"] +4 [vid="positive"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14473690',
+            'https://i.gkd.li/i/33385203',
+            'https://i.gkd.li/i/33868896',
+          ],
+          exampleUrls: 'https://e.gkd.li/1417cf6c-e06d-4565-ab2e-eae6a713f1f1',
+        },
       ],
-      "enable": false
+      enable: false,
     },
     {
-      "key": 2,
-      "name": "全屏广告-[大家还下载了]弹窗",
-      "desc": "点击关闭",
-      "rules": [
+      key: 2,
+      name: '全屏广告-[大家还下载了]弹窗',
+      desc: '点击关闭',
+      rules: [
         {
-          "fastQuery": true,
-          "activityIds": ".detail.activity.ContentDetailActivity",
-          "matches": "@[desc=\"关闭\"][clickable=true] - [vid=\"tv_detail_related_other_opp_title_layout\"][visibleToUser=true]",
-          "exampleUrls": "https://e.gkd.li/de1b9cc4-c47e-456a-b975-5eefaedb5e42",
-          "snapshotUrls": "https://i.gkd.li/i/18209149"
-        }
+          fastQuery: true,
+          activityIds: '.detail.activity.ContentDetailActivity',
+          matches:
+            '@[desc="关闭"][clickable=true] - [vid="tv_detail_related_other_opp_title_layout"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/de1b9cc4-c47e-456a-b975-5eefaedb5e42',
+          snapshotUrls: 'https://i.gkd.li/i/18209149',
+        },
       ],
-      "enable": true
+      enable: true,
     },
     {
-      "key": 3,
-      "name": "全屏广告-应用推荐广告",
-      "desc": "点击[今天不要再显示]",
-      "rules": [
+      key: 3,
+      name: '全屏广告-应用推荐广告',
+      desc: '点击[今天不要再显示]',
+      rules: [
         {
-          "fastQuery": true,
-          "activityIds": ".SamsungAppsMainActivity",
-          "matches": "@[clickable=true] > [vid=\"do_not_show_again_area_text\"][visibleToUser=true]",
-          "snapshotUrls": "https://i.gkd.li/i/22320803",
-          "exampleUrls": "https://e.gkd.li/37b29a88-d564-4ef6-9ab3-ff88954c87fc"
-        }
+          fastQuery: true,
+          activityIds: '.SamsungAppsMainActivity',
+          matches:
+            '@[clickable=true] > [vid="do_not_show_again_area_text"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/22320803',
+          exampleUrls: 'https://e.gkd.li/37b29a88-d564-4ef6-9ab3-ff88954c87fc',
+        },
       ],
-      "enable": true
+      enable: true,
     },
     {
-      "key": 3000,
-      "name": "其他-[您是否年满 18 岁？]弹窗",
-      "desc": "点击[是]",
-      "rules": [
+      key: 3000,
+      name: '其他-[您是否年满 18 岁？]弹窗',
+      desc: '点击[是]',
+      rules: [
         {
-          "fastQuery": true,
-          "activityIds": "com.sec.android.app.samsungapps.SearchResultActivity",
-          "matches": "[text=\"您是否年满 18 岁？\"] +4 @[clickable=true] > [text=\"是\"]",
-          "exampleUrls": "https://m.gkd.li/57941037/cee78493-fbe1-46a0-8dcf-a8b1f1f61f19",
-          "snapshotUrls": "https://i.gkd.li/i/14473690"
-        }
+          fastQuery: true,
+          activityIds: 'com.sec.android.app.samsungapps.SearchResultActivity',
+          matches:
+            '[text="您是否年满 18 岁？"] +4 @[clickable=true] > [text="是"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/cee78493-fbe1-46a0-8dcf-a8b1f1f61f19',
+          snapshotUrls: 'https://i.gkd.li/i/14473690',
+        },
       ],
-      "enable": false
-    }
-  ]
+      enable: false,
+    },
+  ],
 } as any);

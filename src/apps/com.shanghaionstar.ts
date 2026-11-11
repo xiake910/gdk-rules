@@ -2,24 +2,24 @@
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
-  "id": "com.shanghaionstar",
-  "name": "安吉星",
-  "groups": [
+  id: 'com.shanghaionstar',
+  name: '安吉星',
+  groups: [
     {
-      "key": 0,
-      "name": "开屏广告",
-      "matchTime": 10000,
-      "actionMaximum": 1,
-      "resetMatch": "app",
-      "priorityTime": 10000,
-      "rules": [
+      key: 0,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      priorityTime: 10000,
+      rules: [
         {
-          "matches": "[vid=\"jump_view\"]",
-          "snapshotUrls": "https://i.gkd.li/i/13071523"
-        }
+          matches: '[vid="jump_view"]',
+          snapshotUrls: 'https://i.gkd.li/i/13071523',
+        },
       ],
-      "order": -10,
-      "enable": true
-    }
-  ]
+      order: -10,
+      enable: true,
+    },
+  ],
 } as any);

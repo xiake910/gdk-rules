@@ -2,40 +2,41 @@
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
-  "id": "com.lxt.cfmoto",
-  "name": "CFMOTO",
-  "groups": [
+  id: 'com.lxt.cfmoto',
+  name: 'CFMOTO',
+  groups: [
     {
-      "key": 1,
-      "name": "全屏广告-弹窗广告",
-      "matchTime": 10000,
-      "actionMaximum": 1,
-      "resetMatch": "app",
-      "rules": [
+      key: 1,
+      name: '全屏广告-弹窗广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
         {
-          "key": 1,
-          "name": "首页弹窗广告",
-          "fastQuery": true,
-          "activityIds": "com.cfmoto.oilmoto.ui.MainCfActivity",
-          "matches": "[vid=\"closeClick\"]",
-          "snapshotUrls": "https://i.gkd.li/i/13401967"
-        }
+          key: 1,
+          name: '首页弹窗广告',
+          fastQuery: true,
+          activityIds: 'com.cfmoto.oilmoto.ui.MainCfActivity',
+          matches: '[vid="closeClick"]',
+          snapshotUrls: 'https://i.gkd.li/i/13401967',
+        },
       ],
-      "enable": true
+      enable: true,
     },
     {
-      "key": 3000,
-      "name": "局部广告-弹窗广告",
-      "rules": [
+      key: 3000,
+      name: '局部广告-弹窗广告',
+      rules: [
         {
-          "key": 1,
-          "name": "首页弹窗广告",
-          "activityIds": "com.cfmoto.oilmoto.ui.MainCfActivity",
-          "matches": "RelativeLayout[childCount=2] > [id=\"com.lxt.cfmoto:id/image\"] + [id=\"com.lxt.cfmoto:id/closeClick\"]",
-          "snapshotUrls": "https://i.gkd.li/import/13401967"
-        }
+          key: 1,
+          name: '首页弹窗广告',
+          activityIds: 'com.cfmoto.oilmoto.ui.MainCfActivity',
+          matches:
+            'RelativeLayout[childCount=2] > [id="com.lxt.cfmoto:id/image"] + [id="com.lxt.cfmoto:id/closeClick"]',
+          snapshotUrls: 'https://i.gkd.li/import/13401967',
+        },
       ],
-      "enable": true
-    }
-  ]
+      enable: true,
+    },
+  ],
 } as any);

@@ -2,30 +2,30 @@
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
-  "id": "com.m.mfood",
-  "name": "mFood",
-  "groups": [
+  id: 'com.m.mfood',
+  name: 'mFood',
+  groups: [
     {
-      "key": 1,
-      "name": "局部广告-浮窗广告",
-      "rules": [
+      key: 1,
+      name: '局部广告-浮窗广告',
+      rules: [
         {
-          "fastQuery": true,
-          "activityIds": "com.zdyl.mfood.ui.home.MainActivity",
-          "matches": "[vid=\"close\"]",
-          "snapshotUrls": "https://i.gkd.li/i/13350787"
-        }
+          fastQuery: true,
+          activityIds: 'com.zdyl.mfood.ui.home.MainActivity',
+          matches: '[vid="close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13350787',
+        },
       ],
-      "enable": true
+      enable: true,
     },
     {
-      "key": 3000,
-      "name": "局部广告-浮窗廣告",
-      "fastQuery": true,
-      "activityIds": "com.zdyl.mfood.ui.home.MainActivity",
-      "rules": "[id=\"com.m.mfood:id/close\"]",
-      "snapshotUrls": "https://i.gkd.li/import/13350787",
-      "enable": true
-    }
-  ]
+      key: 3000,
+      name: '局部广告-浮窗廣告',
+      fastQuery: true,
+      activityIds: 'com.zdyl.mfood.ui.home.MainActivity',
+      rules: '[id="com.m.mfood:id/close"]',
+      snapshotUrls: 'https://i.gkd.li/import/13350787',
+      enable: true,
+    },
+  ],
 } as any);

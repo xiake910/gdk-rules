@@ -2,55 +2,55 @@
 import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
-  "id": "com.lbe.security.miui",
-  "name": "权限管理服务",
-  "groups": [
+  id: 'com.lbe.security.miui',
+  name: '权限管理服务',
+  groups: [
     {
-      "key": 1,
-      "name": "功能类-权限授予弹窗",
-      "desc": "自动点击\"仅在使用中允许\"",
-      "fastQuery": true,
-      "matchTime": 10000,
-      "actionMaximum": 1,
-      "resetMatch": "app",
-      "rules": [
+      key: 1,
+      name: '功能类-权限授予弹窗',
+      desc: '自动点击"仅在使用中允许"',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
         {
-          "activityIds": "com.android.packageinstaller.permission.ui.GrantPermissionsActivity",
-          "matches": "[text=\"仅在使用中允许\"]",
-          "snapshotUrls": "https://i.gkd.li/i/13761264"
-        }
+          activityIds:
+            'com.android.packageinstaller.permission.ui.GrantPermissionsActivity',
+          matches: '[text="仅在使用中允许"]',
+          snapshotUrls: 'https://i.gkd.li/i/13761264',
+        },
       ],
-      "enable": false
+      enable: false,
     },
     {
-      "key": 2,
-      "name": "权限提示-通知权限",
-      "desc": "点击拒绝",
-      "matchTime": 10000,
-      "actionMaximum": 1,
-      "resetMatch": "app",
-      "rules": [
+      key: 2,
+      name: '权限提示-通知权限',
+      desc: '点击拒绝',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
         {
-          "fastQuery": true,
-          "matches": [
-            "[text$=\"发送通知\"]",
-            "[text=\"拒绝\"]"
-          ],
-          "exampleUrls": "https://m.gkd.li/57941037/0487a113-5b57-402e-96ca-1f351e121d82",
-          "snapshotUrls": "https://i.gkd.li/i/14321882"
-        }
+          fastQuery: true,
+          matches: ['[text$="发送通知"]', '[text="拒绝"]'],
+          exampleUrls:
+            'https://m.gkd.li/57941037/0487a113-5b57-402e-96ca-1f351e121d82',
+          snapshotUrls: 'https://i.gkd.li/i/14321882',
+        },
       ],
-      "enable": false
+      enable: false,
     },
     {
-      "key": 3000,
-      "name": "权限提示-权限授予弹窗",
-      "desc": "自动点击【仅在使用中允许】",
-      "activityIds": "com.android.packageinstaller.permission.ui.GrantPermissionsActivity",
-      "fastQuery": true,
-      "rules": "[text=\"仅在使用中允许\"]",
-      "snapshotUrls": "https://i.gkd.li/import/13761264",
-      "enable": false
-    }
-  ]
+      key: 3000,
+      name: '权限提示-权限授予弹窗',
+      desc: '自动点击【仅在使用中允许】',
+      activityIds:
+        'com.android.packageinstaller.permission.ui.GrantPermissionsActivity',
+      fastQuery: true,
+      rules: '[text="仅在使用中允许"]',
+      snapshotUrls: 'https://i.gkd.li/import/13761264',
+      enable: false,
+    },
+  ],
 } as any);
