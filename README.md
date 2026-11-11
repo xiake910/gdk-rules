@@ -9,18 +9,15 @@
 
 ## ⚠️ 来源与授权（请先看）
 
-本订阅**不是原创**，规则来自以下公开订阅，去重合并而来：
+本订阅**不是原创**，规则由以下公开订阅去重合并，**许可状态不一**：
 
-| 来源 | 版本 | 许可证 | 取用范围 |
-|---|---|---|---|
-| id667 的 GKD 订阅<br>（镜像 `gkd667.vv.ax`，上游 [Lin-arm/GKD_subscription](https://github.com/Lin-arm/GKD_subscription)） | v631 | **未声明** | 主体规则 |
-| [AIsouler/GKD_subscription](https://github.com/AIsouler/GKD_subscription) | v406（已停更） | **未声明** | 仅 72 个不重复的组 |
-| [ganlinte/GKD-subscription](https://github.com/ganlinte/GKD-subscription) | v72 | **MIT** | 53 个新 App + 926 个不重复的组 |
-| 本项目补充（AI 辅助） | — | — | 红果短剧 / B站 / 喜马拉雅 补充规则 |
+- **id667** v631（[Lin-arm](https://github.com/Lin-arm/GKD_subscription) / 镜像 gkd667.vv.ax）— 主体 · 许可**未声明**
+- **AIsouler** v406（已停更）— 仅 72 组 · 许可**未声明**
+- **甘霖** v72 — 53 App + 926 组 · **MIT**
+- 本项目补充（AI 辅助）— 红果 / B站 / 喜马拉雅
 
-> **id667 与 AIsouler 的订阅没有声明开源许可证，规则版权归原作者。**
-> 本项目仅供**个人自用 / 离线备份**，请勿公开分发或商用；原作者如有异议，请删除对应部分。
-> 甘霖订阅为 MIT，保留其署名。完整取用范围、跳过的同名组数量见 [SOURCES.md](SOURCES.md)。
+> 前两个来源**未声明开源许可**，版权属原作者：本项目**仅个人自用**，请勿公开分发或商用；原作者可要求删除对应内容。
+> 详见 [SOURCES.md](SOURCES.md)。
 
 ---
 
